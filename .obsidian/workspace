@@ -1,0 +1,139 @@
+{
+  "main": {
+    "id": "dbfc40bf7aaa5b56",
+    "type": "split",
+    "children": [
+      {
+        "id": "66efede574fc8ec6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "FCUP/Ano 1, Semestre 2/Eletro 1/Teóricas/T16 - Condensador 2 placas e Pressão eletroestática.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7a28ed2ad77a2eef",
+    "type": "split",
+    "children": [
+      {
+        "id": "98b5acdfcd9dfc42",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8b9b4ec01b7d208",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f02be67229b13bf8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "pressão eletroestática",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4d9244b610df117a",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 493
+  },
+  "right": {
+    "id": "ff78a0b8e7bb2758",
+    "type": "split",
+    "children": [
+      {
+        "id": "445cd8c7da8bfafb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc7ea1f42eba28fb",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "4ea09a018e1db959",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "FCUP/Ano 1, Semestre 2/Eletro 1/Teóricas/T16 - Condensador 2 placas e Pressão eletroestática.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "04f3edb4632818c8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0836882ea6eb3228",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b8b9b4ec01b7d208",
+  "lastOpenFiles": [
+    "FCUP/Ano 1, Semestre 2/Eletro 1/Resumos/RESUMO COMPLETO DE EM1.md",
+    "DLOTAT/2022/2022-10/2022-10-03.md",
+    "DLOTAT/Template_entrada.md",
+    "DLOTAT/2022/2022-09/2022-09-28 - Estou farto disto tudo.md",
+    "DLOTAT/Tags_Feelings.md",
+    "DLOTAT/2022/2022-09/2022-09-27 - Aulas do Boris são do caralho.md",
+    "DLOTAT/2022/2022-09/2022-09-26 - Devia de deixar de procrastinar.md",
+    "DLOTAT/2022/2022-09/2022-09-20 - Análise 3 vai ser fdd.md",
+    "DLOTAT/2022/2022-09/2022-09-09 - Horários, más notícias e sustos.md",
+    "DLOTAT/2022/2022-09/2022-09-25 - Hoje trabalhei bem.md"
+  ]
+}

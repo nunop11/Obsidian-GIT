@@ -1,0 +1,23 @@
+{
+  "legacyEditor": false,
+  "livePreview": true,
+  "promptDelete": false,
+  "foldHeading": true,
+  "showFrontmatter": true,
+  "readableLineLength": false,
+  "spellcheck": false,
+  "spellcheckLanguages": null,
+  "useTab": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 70
+  },
+  "alwaysUpdateLinks": true,
+  "communityThemeSortOrder": "download",
+  "strictLineBreaks": false,
+  "showLineNumber": true,
+  "attachmentFolderPath": "Attachments"
+}

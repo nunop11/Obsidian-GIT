@@ -1,0 +1,7 @@
+.math > mjx-container[jax="CHTML"]  {
+  font-size: 110%;
+}
+
+.math-block > mjx-container[jax="CHTML"]  {
+  font-size: 120%;
+}

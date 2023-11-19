@@ -1,0 +1,58 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:\"FCUP/Ano 1, Semestre 1\"",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:\"FCUP/Ano 1, Semestre 2\"",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:\"FCUP/Ano 2, Semestre 1\"",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "path:\"FCUP/Ano 2, Semestre 2\"",
+      "color": {
+        "a": 1,
+        "rgb": 5405920
+      }
+    },
+    {
+      "query": "path:\"FCUP/Ano 3, Semestre 1\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 1,
+  "repelStrength": 20,
+  "linkStrength": 1,
+  "linkDistance": 81,
+  "scale": 1.241454005910251,
+  "close": true
+}

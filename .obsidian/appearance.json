@@ -1,0 +1,13 @@
+{
+  "baseFontSize": 15,
+  "translucency": false,
+  "cssTheme": "Minimal",
+  "theme": "obsidian",
+  "accentColor": "#858585",
+  "interfaceFontFamily": "",
+  "textFontFamily": "Arial,Calibri",
+  "enabledCssSnippets": [
+    "center",
+    "latex-big"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "obsidian-languagetool-plugin:ltcheck-text": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "workspace:close-others": [],
+  "canvas:new-file": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "C"
+    }
+  ]
+}
