@@ -8,14 +8,29 @@
         "type": "tabs",
         "children": [
           {
+            "id": "70f98c71aa0bddf6",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "FCUP/Ano 3, Semestre 1/MF/Notas para o estudo de MF.pdf"
+              }
+            }
+          },
+          {
             "id": "a01ee4aff5282845",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo 5 - Análise Integral.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -90,6 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo 5 - Análise Integral.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,9 +176,11 @@
   },
   "active": "a01ee4aff5282845",
   "lastOpenFiles": [
-    "FCUP/Ano 3, Semestre 1/Labs 3/T1 -.md",
-    "Attachments/Pasted image 20231118234022.png",
+    "FCUP/Ano 3, Semestre 1/Labs 3/T1 - Metais e Semicondutores.md",
     "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo 5 - Análise Integral.md",
+    "FCUP/Ano 3, Semestre 1/MF/Notas para o estudo de MF.pdf",
+    "FCUP/Ano 3, Semestre 1/Labs 3/T9 - Luz.md",
+    "Attachments/Pasted image 20231118234022.png",
     "Untitled 1.md",
     "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 7 - Sep Variáveis e Coords Esféricas.md",
     "FCUP/Ano 3, Semestre 1/MQ1/MQ1 - Teórica 15 -  CCOC.md",
@@ -174,7 +192,6 @@
     "Attachments/Pasted image 20231116100016.png",
     "FCUP/Ano 3, Semestre 1/Labs 3/Efeito Hall - que dizer.md",
     "FCUP/Ano 3, Semestre 1/Labs 3/T4 - Efeito Hall.md",
-    "FCUP/Ano 3, Semestre 1/MF/Notas para o estudo de MF.pdf",
     "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 15 - Dipolo Magnético, Magnetização.md",
     "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 16 - Campo H, Ferromagnético.md",
     "Attachments/Pasted image 20231115214510.png",
@@ -195,7 +212,6 @@
     "FCUP/Ano 3, Semestre 1/OF/HETCH/3 - Eletromagnetismo, fotões e luz.md",
     "Attachments/Pasted image 20231114000358.png",
     "FCUP/Ano 3, Semestre 1/FESTA/KARDAR/1 - Termodinâmica.md",
-    "FCUP/Ano 3, Semestre 1/Labs 3/T9 - Luz.md",
     "FCUP/Ano 3, Semestre 1/OF/Perusall",
     "FCUP/Ano 3, Semestre 1/FESTA/KARDAR",
     "Untitled",

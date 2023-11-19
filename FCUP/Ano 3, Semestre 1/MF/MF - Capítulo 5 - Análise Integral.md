@@ -65,7 +65,15 @@ $$\frac{DB_{sist}}{Dt}=\frac{\partial}{\partial t}\int_{VC}\rho b ~dV+\int_{AC}\
     - Na maioria dos problemas desta matéria temos $\frac{DB_{sist}}{Dt}=0$, umas vez que este termo expressa a variação da Massa, Momento, etc. do sistema no tempo; se essa propriedade é conservada, este termo é nulo!
 
 ## 5.3 - Conservação de Massa
+### 5.3.1 - Dedução da Equação de Reynolds
 - Quando a propriedade $B$ é a massa do sistema temos $b=1$ (porque $b$ é $B$ por unidade de massa). O teorema de transporte de Reynolds fica na forma:
 $$\frac{DM_{sist}}{Dt}= \frac{\partial}{\partial t}\int_{VC}\rho dV+\int_{AC}\rho \vec{v}\cdot\hat{n}~dA$$
 - Ora, dentro de um sistema tem que haver conservação de massa, logo $\frac{DM_{sist}}{Dt}=0$ e fica:
 $$\frac{\partial}{\partial t}\int_{VC}\rho dV+\int_{AC}\rho \vec{v}\cdot \hat{n}~dA=0$$
+
+(Fazer exs e tomar notas)
+
+## 5.4 - Equação da energia - 1ª Lei Termodinâmica
+### 5.4.1 - Dedução da Equação 
+- Sendo $e$ a energia por unidade de massa o teorema do transporte de Reynolds fica:
+$$\frac{D}{Dt}\int_{sist} e\rho ~dV=\frac{\partial}{\partial t}\int_{VC}e \rho~dV+\int_{AC}e \rho \vec{v}\cdot\hat{n}~dA$$
