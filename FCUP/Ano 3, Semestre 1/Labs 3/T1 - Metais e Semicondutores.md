@@ -7,6 +7,10 @@ $$\sigma=\frac{N e^{2} \tau}{m} \quad \quad \quad \Biggr|\substack{N-\textsf{den
 - Para temperaturas acima de 100K, verifica-se experimentalmente que a resistividade de um material $\rho$ varia linearmente com a temperatura. Sendo $T_{0}$ a temperatura ambiente temos:
 $$\rho(T)=\rho_{0}[1+\alpha(T-T_{0})]$$
 em que $\alpha$ é o coeficiente de variação relativa com a temperatura.
+- E temos:
+$$\frac{R}{R_{0}}= \alpha T + (1-\alpha T_{0})$$
+ou
+$$\frac{R}{R_{0}}=\alpha (T-T_{0}) + 1$$
 
 - Em metais temos $N$ muito elevado. A resistividade destes materiais é então dependente da mobilidade elétrica destes: $\mu=e\tau/m$.
 - Num qualquer material, mesmo que perfeito, temos que as oscilações térmicas dos átomos afetam/dificultam o movimento dos eletrões de condução.
@@ -14,12 +18,13 @@ em que $\alpha$ é o coeficiente de variação relativa com a temperatura.
 $$\rho_{total}=\rho_{termico}+\rho_{impurezas}+\rho_{defeitos}$$
 
 ### Banda proibida de semicondutor
-![[Pasted image 20231118234022.png]]
+![[juncao pn diodo.png]]
 - Um díodo consiste na junção de 2 semicondutores com dopagens opostas. Gera-se uma região de depleção.
 - Se o díodo for polarizado inversamente, ele não deixa passar corrente. Se for polarizado diretamente, ele conduz.
 - No entanto, na realidade mesmo com o díodo polarizado inversamente verifica-se uma corrente da escala de $\mu A$. Isto ocorre porque alguns eletrões e lacunas têm energia térmica e conseguem saltar a banda de condução. Ora, isto vai depender da relação entre a energia disponível e a banda proibida caraterística do material. A excitação térmica será descrita pela distribuição de Maxwell-Boltzmann e temos:
 $$I=A e^{\frac{-\Delta}{k_{B}T}}\quad \quad \quad \substack{A-\textsf{constante}\\\Delta-\textsf{energia da banda proibida}}$$
-de notar que esta corrente não depende da DDP aplicada.
+de notar que esta corrente não depende da DDP aplicada. E temos:
+$$\ln I=\frac{-\Delta}{k_{B}} \frac{1}{T}+\ln A$$
 
 ### Medida de pequenas resistências com LCR
 - O método que os multimetros usam para medir resistencias consiste em passar corrente por resistência e determinar a DDP nos terminar. Portanto, se a resistência for muiiiiito baixa, este método começa a falhar: a certo ponto a resistência do fio condutor usado e dos terminais começa a interferir.

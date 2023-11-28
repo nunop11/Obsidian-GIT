@@ -39,7 +39,7 @@ ou seja, o equilíbrio entre 2 parâmetros é caraterizado por uma função term
 >     - B) Material com magnetização $M$ em campo magnético $B$
 >     - C) Gás de volume $V$ a pressão $P$
 > - Ora, temos então as combinações A+C e B+C:
->   ![[Pasted image 20231113210623.png]]
+>   ![[sistemas termodinamicos exemplo.png]]
 >   - Da experiência verifica-se que quando estes 2 sistemas estão em equilíbrio temos: $$\begin{align*}
 \left(P+\frac{a}{V^{2}}\right)(V_b)(L-L_{0})-c(F-K(L-L_{0}))&= 0\\ \left(P+ \frac{a}{V^{2}}\right)(V-b)M-dB=0
 \end{align*}$$o que implica $$\Theta\propto \left(P + \frac{a}{V^{2}}\right)(V-b)=c \left(\frac{F}{L-L_{0}}-K \right)=d \frac{B}{M}$$
@@ -53,7 +53,7 @@ F = \frac{K+DT}{L-L_{0}}  &  & \textsf{(Lei de Hooke)}
 "O trabalho necessário realizar para mudar o estado de um sistema isolado depende apenas dos estados final e inicial e não dos passos intermédios."
 
 - Num sistema mecânico em que temos uma partícula sujeita a um potencial (normalmente gravítico), o trabalho necessário para mover a partícula entre 2 posições permite-nos estudar/determinar a energia potencial no sistema.
-![[Pasted image 20231113220445.png]]
+![[percursos termodinamicos.png]]
 - Analogamente, num sistema termodinâmico temos a energia interna $E(\vec{X})$, que pode ser determinada a menos de 1 constante através do trabalho necessário para transitar o sistema de um estado $\vec{X_{i}}$ para um estado $\vec{X_{f}}$ através d euma transformação adiabática: $$\Delta W= E(\vec{X_{f}})-E(\vec{X_{i}})$$
 - Se, por outro lado, o sistema não for adiabático já não temos esta igualdade. Passa a haver uma diferença: $\Delta Q=\Delta E-\Delta W$, que é a *troca de calor* do sistema com a vizinhança. Assim, é evidente que $\Delta W,\Delta Q$ dependem de fatores externos AKA não são funções de estado. Assim, escrevemos:
 $$\mathscr{d}Q=dE-\mathscr{d}W$$
@@ -72,7 +72,7 @@ ou seja, para cada deslocamento temos uma força correspondente: força tensão 
 
 #### Gás Ideal
 - Determinou-se de forma empirica que para um gás ideal $PV\propto T$. Vejamos como será a energia interna de um gás ideal
-![[Pasted image 20231113224418.png]]
+![[sistemas em eq termico.png]]
 - Temos acima a **Experiência da Expansão Livre de Joule**, em que um gás ideal se expanse de forma adiabática de um volume $V_{i}$ para outro, $V_{f}$. Joule verificou que a temperatura não varia: $T_{i}=T_{f}$. 
 - Ora, como a transformação é adiabática, temos $\Delta Q=0$
 - Parte da experiência é que não se exerce qualquer força externa, logo $\Delta W=0$

@@ -349,7 +349,7 @@ e num meio não vácuo: $I=\varepsilon v \langle E^{2}\rangle_{T}$
 
 ### Lei do Quadrado Inverso
 - Consideremos uma fonte isotrópico a emitir ondas esféricas (a emitir energia de forma igual em todas as direções)
-![[Pasted image 20231114000358.png]]
+![[fonte ondas esfericas.png]]
 - A amplitude da onda que passa nas superfícies esféricas de raio $r_{1},r_{2}$ será $E_{0}(r_{1}),E_{0}(r_{2})$. 
 - Se houver conservação de energia, a energia total contida na onda ao passar na superfície de raio $r_{1}$ terá que ser a mesm que na outra superfície. Temos:
 $$\begin{align*}

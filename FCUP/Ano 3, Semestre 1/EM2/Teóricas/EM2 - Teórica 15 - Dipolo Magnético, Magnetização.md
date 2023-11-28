@@ -1,4 +1,4 @@
-![[Pasted image 20231114225510.png]]
+![[fluxo magnetico por loop.png]]
 - Consideremos um loop de corrente, com corrente de intensidade $I$ e com área $S=ab$ como representado acima. Este loop está sujeito a um campo magnético uniforme $\vec{B}$ com direção $\hat{z}$.
 - A forças aplicadas nos 2 lados de comprimento $a$ (diagonais, que intersetam o eixo dos xx em $x=\pm b/2$) *anulam-se*, sendo estas as 2 forças desenhadas a amarelo na figura da esquerda (usar regra da mão direita com $\vec{F}=I\vec{\ell}\times\vec{B}$, em que $\vec{I}$ gira em torno da espira conforme indicado pelos vetores $d\vec{\ell}$ na figura).
 - Assim, as unicas forças aplicadas nesta linha de corrente estão nos lados de comprimento $b$ (que são paralelos ao eixo xx). Podemos então definir:
@@ -34,7 +34,7 @@ de notar que para um dipolo elétrico tinhamos $\vec{\tau}=\vec{p}\times\vec{E}$
 # Campo Magnético na Matéria
 - No dia a dia ouvimos falar em magnetismo no contexto de imans e coisas do género. Ora, estas coisas não parecem ter nada a ver com linhas de corrente a gerar campos magnéticos.
 - No entanto, na realidade temos que todos os materiais têm cargas elétricas a mover-se AKA correntes (eletrões a orbitar o núcleo):
-![[Pasted image 20231114235556.png]]
+![[material magnetizado.png]]
 - Ora, a uma escala macroscópica os átomos e as respetivas correntes são tão pequenos que podemos considerá-los **dipolos magnéticos**.
 - Normalmente, eles anulam-se todos porque os átomos têm orientações aleatórias. Mas se um campo magnético passar pelo material, estes dipolos alinham-se e o material fica **magnetizado**.
 - Ora, na *Polarização* tinhamos sempre que $\vec{P}\parallel\vec{E}$. No caso da magnetização:
@@ -44,7 +44,7 @@ de notar que para um dipolo elétrico tinhamos $\vec{\tau}=\vec{p}\times\vec{E}$
 - De notar que os dipolos não são gerados por todos os eletrões nos átomos, apenas pelos eletroes *não emparelhdos*! 
 
 ## Campo Magnético VS Orbita Atómica
-![[Pasted image 20231115092403.png]]
+![[loop de corrente e vetor magnetizacao.png]]
 - Consideremos um eletrão a orbitar em torno do nucleo com raio $R$ e a velocidade $v$, tal que o período é $T=\frac{2\pi R}{v}$. Consideremos que o eletrão forma uma corrente constante na órbita (na realidade isto não acontece, mas podemos aproximar porque o período é muito reduzido). Essa corrente será:
 $$I=\frac{\Delta q}{\Delta t}=\frac{-e}{T}=- \frac{ev}{2\pi R}$$
 pelo que:
@@ -91,11 +91,11 @@ $$\begin{align*}
 $$\vec{A}(\vec{r})=\frac{\mu_{0}}{4\pi}\left[\int \frac{\vec{\mathcal{J}_{m}}(\vec{r'})}{|\vec{r}-\vec{r'}|} d^{3}r'+\oint \frac{\vec{k_{m}}(\vec{r'})}{|\vec{r}-\vec{r'}|}ds' \right] $$
 
 #### Densidade superficial de corrente
-![[Pasted image 20231115180854.png]]
+![[material com espessura magnetizado.png]]
 - Consideremos a seguinte representação de uma material uniformemente magnetizado.
 - Vemos que as "correntes" que geram a magnetização se anulam todas. Sempre que temos uma corrente, a corrente adjacente vai no sentido oposto. Isto para todo o volume *exceto a berma*. Aí, como vemos na figura, temos linhas de corrente triangulares, em que um dos lados nunca é cancelado.
 - Ou seja, se considerarmos todos os loops de corrente e respetivos lados que não são cancelados, temos uma "fita" de corrente assim:
-![[Pasted image 20231115181158.png]]
+![[beira de material com espessura magnetizado.png]]
 
 - Consideremos 1 dos loops da figura inicial. Ele tem área $a$ e espessura/profundidade $t$. Podemos então escrever o momento dipolar de 1 loop em função de $M$:
 $$m=Mat$$
@@ -105,7 +105,7 @@ $$\vec{k_{m}}=\vec{M}\times\hat{n}$$
 - Comparar à densidade superficial de carga de polarização: $\sigma_{p}=\vec{P}\cdot\hat{n}$
 
 #### Densidade Volúmica de Corrente
-![[Pasted image 20231115182138.png]]
+![[generalizacao material magnetizado.png]]
 - A Magnetização num material não é sempre uniforme. Consideremos a figura acima, parte a): temos que em $y$ a magnetização é menor que a magnetização um pouco ao lado, em $y+dy$: $M(y)<M(y+dy)$
 - Ora, neste caso as correntes também não são todas iguais e não se anulam!
 - Consideremos a superfície onde eles se juntam. Irá existir uma corrente com direção $x$. Conforme vimos acima, $I=Mt$, que neste caso nos dá: $$I_{x}=Mt\to I_{x}= \Delta M t=\Delta M dz=(M_{z}(y+dy)-M_{z}(y))dz=\frac{\partial M_{z}}{\partial y}dydz$$

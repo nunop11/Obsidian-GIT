@@ -8,7 +8,7 @@ $$\hat{A}|u_{n}^{i}\rangle=a_{n}|u_{n}^{i}\rangle \quad\quad;\quad \substack{n=1
 em que, tal como já fizemos atrás, $n$ é a direção do vetor e $g_{n}$ o seu grau de degenerescência nessa direção.
 - Sabemos que $$\langle u_{n}^{i}|\hat{B}|u_{m}^{j}\rangle=0~~~~~~ (n\neq m)$$
 pelo que $\hat{B}$ nesta base é diagonal por blocos:
-![[Pasted image 20231116100016.png]]
+![[ccoc.png]]
 - Se o valor próprio $a_{n}$ é não degenerado $\xi_{n}$ tem dimensão 1 (é 1 só número) e temos que o vetor próprio correspondente, $|u_{n}\rangle$, também é vetor próprio de $\hat{B}$.
 - Se $a_{n}$ é degenerado, a matriz que represeneta $\hat{A}$ no subespaço $\xi_{n}$ é $a_{n}\mathbb{1}_{n}$.
 - Na base $|u_{n}^{i}\rangle$, o operador $\hat{B}$ tem elementos $$\beta_{ij}^{n}=\langle u_{n}^{i}|\hat{B}|u_{n}^{j}\rangle \quad \quad;\quad i,j=1,\dots,g_{n}$$
@@ -67,7 +67,7 @@ $$\langle g|f\rangle=\langle\hat{B}\hat{A}\rangle-\langle\hat{B}\rangle\langle\h
 - De onda resulta:
 $$\langle\ f|g\rangle-\langle g|f\rangle=\langle[\hat{A},\hat{B}]\rangle$$
 - E daqui resulta a **Fora Geral do Princípio de Incerteza**:
-$$\sigma_{A}^{2}\sigma_{B}^{2}\ge \left(\frac{1}{2i} \langle[\hat{A},\hat{B}]\rangle \right)^{2}$$
+$$\boxed{\sigma_{A}^{2}\sigma_{B}^{2}\ge \left(\frac{1}{2i} \langle[\hat{A},\hat{B}]\rangle \right)^{2}}$$
 em que se $\langle\hat{A},\hat{B}\rangle\neq0$ temos que as grandezas $\mathcal{A},\mathcal{B}$ são incompatíveis, porque não é possível medi-las em simultâneo com precisão arbitrária.
 - De notar que, apesar de termos um $i$ dentro do quadrado, ele irá sempre ser anulado pelo valor médio do comutador, ficando-se sempre com $\sigma_{A}^{2}\sigma_{B}^{2}\ge \textsf{valor positivo}$
 
@@ -103,3 +103,10 @@ e temos a fórmula:
 $$\frac{d}{dt}\langle\hat{A}\rangle=\left\langle \frac{\partial\hat{A}}{\partial t}\right\rangle + \frac{i}{\hbar} \langle[\hat{H},\hat{A}]\rangle$$
 que é equivalente ao que tinhamos na mecânica clássica: $\frac{df}{dt}=\frac{\partial f}{\partial t}+\{H,f\}$
 - Desta forma, é evidente que se um operador comutar com o Hamiltoniano ($[\hat{H},\hat{A}]=0$) e não depender explicitamente do tempo, então o valor da sua grandeza física é constante.
+- Aplicando o princípio de incerteza a uma observável $\hat{A}$ que não depende do tempo temos:
+$$\sigma_{A}^{2}\sigma_{H}^{2}\ge \left(\frac{1}{2i} \langle[\hat{A},\hat{H}]\rangle\right)^{2}=\left( \frac{1}{2i} i\hbar \frac{d}{dt}\langle\hat{A}\rangle \right)^{2}= \left(\frac{\hbar}{2} \right)^{2}\left(\frac{d\langle\hat{A}\rangle}{dt} \right)^{2}$$
+e podemos definir:
+    - $\Delta E=\sqrt{\sigma_{H}^{2}}$ 
+    - $\Delta t=\frac{\sigma_{A}}{\frac{d\langle\hat{A}\rangle}{dt}}$ que será o tempo que o valor médio demora a variar uma quantidade de 1 desvio padrão
+e ficamos com:
+$$\Delta E\Delta t\ge \frac{\hbar}{2}$$

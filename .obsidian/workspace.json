@@ -4,33 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "6936f1b403503287",
+        "id": "df781e832fe01267",
         "type": "tabs",
         "children": [
           {
-            "id": "70f98c71aa0bddf6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "FCUP/Ano 3, Semestre 1/MF/Notas para o estudo de MF.pdf"
-              }
-            }
-          },
-          {
-            "id": "a01ee4aff5282845",
+            "id": "3d17979ab84d8f55",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo 5 - Análise Integral.md",
+                "file": "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 19 - Energia e Eqs Maxwell.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -88,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 457.5,
-    "collapsed": true
+    "width": 457.5
   },
   "right": {
     "id": "ff78a0b8e7bb2758",
@@ -105,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo 5 - Análise Integral.md",
+                "file": "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 19 - Energia e Eqs Maxwell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,44 +162,44 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a01ee4aff5282845",
+  "active": "3d17979ab84d8f55",
   "lastOpenFiles": [
-    "FCUP/Ano 3, Semestre 1/Labs 3/T1 - Metais e Semicondutores.md",
+    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 19 - Energia e Eqs Maxwell.md",
+    "Attachments/Pasted image 20231128180606.png",
+    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 16 - Campo H, Ferromagnético.md",
+    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 18 - Campo Induzido e Indutância.md",
+    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 17 - Eletrodinâmica, Força Eletromotriz.md",
+    "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo 6 - Análise Dimensional.md",
+    "Untitled 3.md",
+    "Untitled 2.md",
+    "Attachments/Pasted image 20231127223422.png",
+    "Attachments/Pasted image 20231127223227.png",
+    "Attachments/Pasted image 20231127222112.png",
     "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo 5 - Análise Integral.md",
-    "FCUP/Ano 3, Semestre 1/MF/Notas para o estudo de MF.pdf",
-    "FCUP/Ano 3, Semestre 1/Labs 3/T9 - Luz.md",
-    "Attachments/Pasted image 20231118234022.png",
+    "Attachments/FCUP/A3S1/MF/navier-stokes componentes cilindricas.png",
+    "Attachments/FCUP/A3S1/MF/exemplo escoamento couette.png",
+    "Attachments/FCUP/A3S1/MF/navier-stokes componentes cartesianas.png",
+    "Attachments/FCUP/A3S1/MF/pistão e fluido a ser comprimido.png",
+    "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo X - Navier-Stokes.md",
+    "Attachments/Pasted image 20231127214605.png",
+    "Attachments/FCUP/A3S1/EM2/indutancia.png",
+    "FCUP/Ano 3, Semestre 1/OF/HETCH/3 - Eletromagnetismo, fotões e luz.md",
+    "FCUP/Ano 3, Semestre 1/FESTA/KARDAR/1 - Termodinâmica.md",
     "Untitled 1.md",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 7 - Sep Variáveis e Coords Esféricas.md",
+    "FCUP/Ano 3, Semestre 1/Labs 3/T1 - Metais e Semicondutores.md",
+    "FCUP/Ano 3, Semestre 1/MQ1/MQ1 - Teórica 16 - Canónica, Teoria Mom Angular.md",
+    "FCUP/Ano 3, Semestre 1/MF/Notas para o estudo de MF.pdf",
+    "co.md",
     "FCUP/Ano 3, Semestre 1/MQ1/MQ1 - Teórica 15 -  CCOC.md",
+    "FCUP/Ano 3, Semestre 1/Labs 3/T9 - Luz.md",
+    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 7 - Sep Variáveis e Coords Esféricas.md",
     "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 6 - Teorema, Método Imagens.md",
     "FCUP/Ano 3, Semestre 1/MQ1/MQ1 - Teórica 5 - Vel Grupo, Heisenberg.md",
     "FCUP/Ano 3, Semestre 1/MQ1/MQ1 - Teórica 6 - ESIT.md",
     "FCUP/Ano 3, Semestre 1/MQ1/MQ1 - Teórica 7 - Observações sobre ESIT, combos lineares.md",
     "FCUP/Ano 2, Semestre 2/Moderna/Teóricas/Aula 11+12 - Eq Schrodinger (12-4-2023).md",
-    "Attachments/Pasted image 20231116100016.png",
     "FCUP/Ano 3, Semestre 1/Labs 3/Efeito Hall - que dizer.md",
     "FCUP/Ano 3, Semestre 1/Labs 3/T4 - Efeito Hall.md",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 15 - Dipolo Magnético, Magnetização.md",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 16 - Campo H, Ferromagnético.md",
-    "Attachments/Pasted image 20231115214510.png",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 8 - Expansão Multipolar.md",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 10 - Deslocamento.md",
-    "Attachments/Pasted image 20231115182138.png",
-    "Attachments/Pasted image 20231115181158.png",
-    "Attachments/Pasted image 20231115180854.png",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 9 - Polarização.md",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 12 - Energia e Forças em Dielétricos.md",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 11 - Dielétricos Lineares.md",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 2 - Eletrostática.md",
-    "Attachments/Pasted image 20231115092403.png",
-    "Attachments/Pasted image 20231114235556.png",
-    "Attachments/Pasted image 20231114225510.png",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 15 -.md",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 14 - Biot-Savart, Multipolo Magnético.md",
-    "FCUP/Ano 3, Semestre 1/OF/HETCH/3 - Eletromagnetismo, fotões e luz.md",
-    "Attachments/Pasted image 20231114000358.png",
-    "FCUP/Ano 3, Semestre 1/FESTA/KARDAR/1 - Termodinâmica.md",
     "FCUP/Ano 3, Semestre 1/OF/Perusall",
     "FCUP/Ano 3, Semestre 1/FESTA/KARDAR",
     "Untitled",

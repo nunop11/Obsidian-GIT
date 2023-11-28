@@ -54,4 +54,4 @@ logo, se o meio é isotrópico temos $\nabla\cdot\vec{M}=0$
 ## Ferromagnetismo
 - Num meio linear, os dipolos magnéticos alinham-se devido à presença de um campo magnético externo. Já os materiais ferromagnéticos não são lineares e não requerem um campo externo para manter a sua magnetização: o alinhamento dos dipolos é fixo.
 - A caraterística que difere ferromagnetismo de paramagnetismo é que os dipolos têm uma tendência para apontar na mesma direção que os vizinhos. Ora, esta tendência é tão forte que quase 100% dos dipolos estão alinhados. No entanto, nem todos os materiais deste tipo são ímans por razões muito bem explicadas no Griffiths :D
-![[Pasted image 20231115214510.png]]
+![[magnetizacao curva.png]]
