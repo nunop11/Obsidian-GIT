@@ -1,4 +1,4 @@
-## 6.1 - Intro
+ ## 6.1 - Intro
 - Muitos problemas de Mec Fluídos podem ser resolvidos analiticamente, mas alguns têm que ser resolvidos experimentalmente ou através de uma mistura experimental+analítico. Veremos neste capítulo técnicas que permitem fazer isto.
 
 - Consideremos um caso simples: fluido newtoniano, incompressível, em estado estacionário a escoar num tubo circular horizontal de secção reta constante. Queremos determinar a perda de pressão por unidade de comprimento de tubo devido à viscosidade do fluido.
@@ -8,13 +8,13 @@ pelo que o que pretendemos determinar é a função $f$.
 - Assim, devemos realizar várias experiências, em que verificamos qual a perda de pressão, alterando 1 variável e mantendo as outras constantes. Ora, isto pode ser muito difícil ou até impossível (por exemplo, é muito complicado arranjar vários fluidos com a mesma massa volúmica mas com viscosidades diferentes).
 
 - Fazendo experiências assim, para o sistema em estudo indicado, obtemos os seguintes gráficos:
-![[Pasted image 20231127222112.png]]
+![[estudo experimental.png]]
 - Ora, pode ser muito difícil obter destes gráficos uma função $f(D,\rho,\mu,v)$.
 
 - Assim, usamos a *Análise Dimensional*.
 - No exemplo do fluido no tubo acima obtemos da análise dimensional: $$\frac{D \frac{\Delta p}{l}}{\rho v^{2}}=\phi\left(\frac{\rho v D}{\mu}\right)$$
 Ora, isto permite que, ao fazer o estudo experimental deste problema, não é preciso alterar 1 variável e manter 3 constantes. Aqui apenas temos 2 "variáveis" AKA 2 *grupos adimensionais*. Assim, basta variar $\frac{\rho vD}{\mu}$ e medir os valores de $\frac{D \frac{\Delta p}{l}}{\rho v^{2}}$ equivalentes e temos:
-![[Pasted image 20231127223227.png|350]]
+![[grupos adimensionais.png|350]]
 ora, esta curva é universal. Podemos fazer a experiência para um qualquer fluido de propriedades $\rho,\mu$ e num qualquer tubo de diâmetro $D$, desde que se varie a velocidade $v$.
 
 - Podemos verificar que estes 2 grupos adimensionais são, de facto, adimensionais:
@@ -129,7 +129,7 @@ $$\frac{\Delta p}{\rho v^{2}}=\psi \left(\frac{\varepsilon}{D},\frac{l}{D},\text
 - Ora, para estudar isto iremos usar um modelo do tubo. Para que haja semelhança geométrica entre eles é preciso que:
 $$\frac{l_{m}}{D_{m}}=\frac{l_{p}}{D_{p}} \quad \quad;\quad \quad \frac{\varepsilon_{m}}{D_{m}}=\frac{\varepsilon_{p}}{D_{p}}$$
 de onde resulta
-$$\frac{l_{m}}{m_{p}}=\frac{D_{m}}{D_{p}} \quad \quad;\quad \quad \frac{\varepsilon_{m}}{\varepsilon_{p}}=\frac{D_{m}}{D_{p}}$$
+$$\frac{l_{m}}{l_{p}}=\frac{D_{m}}{D_{p}} \quad \quad;\quad \quad \frac{\varepsilon_{m}}{\varepsilon_{p}}=\frac{D_{m}}{D_{p}}$$
 o que implica:
 $$\frac{l_{m}}{l_{p}}=\frac{\varepsilon_{m}}{\varepsilon_{p}}=\frac{D_{m}}{D_{p}}=\lambda$$
 sendo $\lambda$ o **Fator de Escala**. Se $\lambda\ll1$ (modelo muito menor que protótipo) este estudo por ser muito complicado, porque isso implica que a rugosidade do modelo seja muito reduzida.

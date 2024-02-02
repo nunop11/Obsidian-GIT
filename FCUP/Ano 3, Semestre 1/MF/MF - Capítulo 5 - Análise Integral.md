@@ -187,3 +187,4 @@ em que $\alpha_{s},\alpha_{e}$ são os *coeficientes de energia cinética* e $\b
 
 - A equação da energia para escoamentos não uniformes fica então:
 $$\frac{p_{s}}{\rho}+ \frac{\alpha_{s}\bar v_{s}^{2}}{2} + gz_{s} = \frac{p_{e}}{\rho}+ \frac{\alpha_{e}\bar v_{e}^{2}}{2} + gz_{e} + w_{veio} -perdas$$
+

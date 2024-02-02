@@ -1,8 +1,8 @@
 {
-  "baseFontSize": 15,
+  "baseFontSize": 17,
   "translucency": false,
   "cssTheme": "Minimal",
-  "theme": "obsidian",
+  "theme": "moonstone",
   "accentColor": "#858585",
   "interfaceFontFamily": "",
   "textFontFamily": "Arial,Calibri",

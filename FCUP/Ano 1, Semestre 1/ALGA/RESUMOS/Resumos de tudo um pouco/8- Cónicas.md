@@ -54,7 +54,7 @@ $$b^2=a^2+c^2$$
 - conjunto dos pontos do plano tais que a diferença das distâncias a dois pontos fixos (os focos) é constante e menor que a distância entre os focos
 - Ou seja, tendo dois pontos $F_1 ~~e~~ F_2$ em R2 e um número real $0<d<d(F_1,F_2)=2c$, a hipérbole de focos F1 e F2 é o conjunto de todos os pontos X=(x,y) de R2 tais que 
 $$|d(X,F_1)-d(X,F_2)|=d$$
-![[hiperbole.png]]
+![[Attachments/FCUP/A1S1/ALGA/hiperbole.png]]
 - Assim fica a hipérbole se os focos estiverem no eixo dos Xs (os focos são os pontos com x=c e x=-c) e o seu centro na origem. Desta forma, a equação da elipse é dada por:
 $$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$$
 - Se igualarmos a fórmula a 0, facilmente obtemos as coordenadas dos "zeros" hipérbole, que terão de ser (a,0) e (-a,0)
@@ -76,7 +76,7 @@ A sua equação seria dada por
 - Conjunto dos pontos do plano equidistantes de um ponto fixo (o foco) e de uma reta fixa (a reta diretriz) que não contem o foco.
 - Dado um ponto F e uma reta d em R2 que não contem F, a parábola de foco F e diretriz d é o conjunto de todos os pontos X=(x,y) de R2 para os quais se tem
 $$d(X,F)=d(X,d)$$
-![[parabola.png]]
+![[Attachments/FCUP/A1S1/ALGA/parabola.png]]
 - Temos assim a parábola para a um foco contido no eixo dos Y e uma reta diretriz paralela ao eixo dos X.
 - Assim, a formúla será dada por
 $$x^2=4py$$

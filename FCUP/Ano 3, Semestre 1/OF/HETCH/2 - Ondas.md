@@ -9,7 +9,7 @@
 - Consideremos uma perturbação $\psi$ a deslocar-se no espaço e tempo com velocidade $v$: $$\psi(x,t)=f(x,t)$$
 - Para saber o formato/*perfil* da onda num instante $t=a$ basta tornar o tempo constante: $\psi(x,t)|_{t=a}=f(x,a)$ 
 - Para já consideraremos apenas ondas que não alteram de forma consoante se deslocam. Assim, de deixarmos passar um tempo $t$, a onda terá-se movido uma distância $vt$; mas todas as suas outras caraterísticas ficaram iguais. A onda só "desliza" para o lado.
-![[onda progressiva.png]]
+![[Attachments/FCUP/A3S1/OF/onda progressiva.png]]
 
 - Assim, podemos mudar o referencial de $S$ (referencial do LAB) para um referencial $S'$ que se move com a onda, com velocidade $v$. Ora, neste referencial temos $x\to x'$ e a onda já não varia com o tempo, é sempre constante:
 ![[onda prog referencial em movimento.png]]

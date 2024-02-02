@@ -39,7 +39,7 @@ $$\frac{\partial\rho}{\partial t} + \frac{1}{r}\frac{\partial(\rho rv_{r})}{\par
 que num fluido incompressível fica:
 $$\boxed{\frac{1}{r}\frac{\partial(rv_{r})}{\partial r}+ \frac{1}{r}\frac{\partial(v_{\theta})}{\partial\theta} + \frac{\partial(\rho v_{z})}{\partial z}=0}$$
 # Equação de Navier-Stokes
-$$\boxed{\rho \frac{D \vec{v}}{Dt} = - \nabla p + \rho \vec{g} + \mu \nabla^{2}\vec{v}}$$
+$$\rho \left[\frac{\partial \vec{v}}{\partial t}+(\nabla \cdot \vec{v})\vec{v}\right] = - \nabla p + \rho \vec{g} + \mu \nabla^{2}\vec{v}$$
 em que:
     - 1º termo ($\rho\frac{D\vec{v}}{Dt}$) é a derivada total AKA transporte convectivo da qttd de movimento
     - 2º termo ($-\nabla p$) é o gradiente de pressão

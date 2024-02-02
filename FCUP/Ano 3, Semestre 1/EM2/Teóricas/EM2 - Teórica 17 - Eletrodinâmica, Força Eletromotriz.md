@@ -1,6 +1,6 @@
 # ELETRODINÂMICA :D
 ## Lei de Ohm :D
-- Para fazer uma corrente fluir temos que "empurrar" as cargas. Para isso, temos que "empurrar" as cargas. Ora, a velocidade a que a corrente se move para uma certa força aplicada $\vec{f}$ (por unidade de carga) vai depender das propriedades do material em que a corrente ocorre. Mais precisamente, depende da sua *condutividade* $\sigma$:
+- Para fazer uma corrente fluir temos que "empurrar" as cargas. Ora, a velocidade a que a corrente se move para uma certa força aplicada $\vec{f}$ (por unidade de carga) vai depender das propriedades do material em que a corrente ocorre. Mais precisamente, depende da sua *condutividade* $\sigma$:
 $$\vec{\mathcal{J}}=\sigma \vec{f}$$
 - E podemos escrever a resistividade do material: $\rho=1/\sigma$ (não trocar com densidades volúmica e superficial de corrente)
 - Evidentemente, condutores perfeitos teriam $\sigma=\infty,\rho=0$ e isoladores perfeitos têm $\sigma=0,\rho=\infty$.

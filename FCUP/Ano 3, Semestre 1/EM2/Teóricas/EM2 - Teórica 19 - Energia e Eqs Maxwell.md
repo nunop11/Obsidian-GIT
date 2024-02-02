@@ -104,7 +104,7 @@ $$\vec{\mathcal{J_{d}}}=\frac{\partial \vec{D}}{\partial t}$$
 ### Descontinuidades de $\vec{E},\vec{B},\vec{D},\vec{H}$
 - Estes 4 campos serão em geral descontinuos no interface entre 2 meios diferentes ou numa superfície com densidade de carga $\sigma$ ou corrente superfícial $\vec{\kappa}$.
 - Mostremos isso:
-![[Pasted image 20231128180606.png]]
+![[descontinuidades em superficie com carga ou corrente.png]]
 - Temos:
 $$\nabla \cdot \vec{D}=\rho_{\ell}\to \oint \vec{D}\cdot d\vec{s}=Q_{\ell}$$
 o que nos dá

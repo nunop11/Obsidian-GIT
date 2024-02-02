@@ -58,9 +58,9 @@ $$V(x,y)=\frac{2V_{0}}{\pi} \arctan \left( \frac{\sin\left(\frac{\pi}{a}y\right)
 ![[EM2/coordenadas esfericas.png]]
 - Consideremos que temos um potencial com geometria esférica, mas que não varia de forma azimutal: $V=V(r,\theta)$
 - Ora, em coordenadas esféricas o laplaciano é da forma:
-$$\nabla^{2}=\frac{1}{r^{2}} \frac{\partial}{\partial r}\left(r \frac{\partial}{\partial r}\right)+ \frac{1}{r^{2}\sin\theta} \frac{\partial}{\partial\theta} \left(\sin\theta \frac{\partial}{\partial\theta}\right)+ \frac{1}{r^{2}\sin^{2}\theta} \frac{\partial^{2}}{\partial\phi^{2}}$$
+$$\nabla^{2}=\frac{1}{r^{2}} \frac{\partial}{\partial r}\left(r^{2} \frac{\partial}{\partial r}\right)+ \frac{1}{r^{2}\sin\theta} \frac{\partial}{\partial\theta} \left(\sin\theta \frac{\partial}{\partial\theta}\right)+ \frac{1}{r^{2}\sin^{2}\theta} \frac{\partial^{2}}{\partial\phi^{2}}$$
 - Assim, para o potencial que estamos a considerar, a equação de Laplace fica da forma:
-$$\frac{1}{r^{2}} \frac{\partial}{\partial r}\left(r \frac{\partial V}{\partial r}\right)+ \frac{1}{r^{2}\sin\theta} \frac{\partial}{\partial\theta} \left(\sin\theta \frac{\partial V}{\partial\theta}\right)=0$$
+$$\frac{1}{r^{2}} \frac{\partial}{\partial r}\left(r^{2} \frac{\partial V}{\partial r}\right)+ \frac{1}{r^{2}\sin\theta} \frac{\partial}{\partial\theta} \left(\sin\theta \frac{\partial V}{\partial\theta}\right)=0$$
 em que podemos fazer *separação de variáveis*: $V(r, \theta)=R(r)\Theta(\theta)$. Temos:
 $$\frac{1}{R} \frac{d}{dr}\left(r^{2} \frac{dR}{dr}\right)=- \frac{1}{\Theta\sin\theta} \frac{d}{d\theta}\left(\sin\theta \frac{d\Theta}{d\theta}\right)=\ell(\ell+1)$$
 em que, novamente, temos 2 lados que dependem de 2 variáveis diferentes. Por essa razão, terão que ser ambos iguais a uma constante, que definimos como $\ell(\ell+1)$.

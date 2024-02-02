@@ -28,7 +28,7 @@ E_{y}=E_{0y}\cos(kz-\omega t+\phi)
 e conseguimos obter:
 $$\left(\frac{E_{y}}{E_{0y}}\right)^{2}+ \left(\frac{E_{x}}{E_{0x}}\right)^{2}- \left(\frac{E_{y}}{E_{0y}}\right) \left(\frac{E_{x}}{E_{0x}}\right)\cos\phi=\sin^{2}\phi$$
 que representa uma elipse, ou seja, temos um feixe elipticamente polarizado:
-![[polarizacao eliptica.png]]
+![[Attachments/FCUP/A3S1/LABS 3/polarizacao eliptica.png]]
 podemos escrever:
 $$\tan(2\chi)=\frac{2E_{0x}E_{0y}}{E_{0x}^{2}+E_{0y}^{2}}\cos\phi\tag{1}$$
 

@@ -17,8 +17,8 @@
 - Ora, o número de bins será da ordem de $N/\sqrt{N}=\sqrt{N}$
 
 ## Fórmula de Stirling
-- Ou seja, com $N$ muito elevado podemos aproximar o sistema a um sistema contínuo. Ora, surge um problema em converter uma distribuição binomial para o contínuo: **fatoriais**. Vejamos como resolver isso.
-- Um integral pode ser definido em forma integral como:
+- Com $N$ muito elevado podemos aproximar o sistema binomial discreto a um sistema contínuo. Ora, surge um problema: **fatoriais**. Vejamos como resolver isso.
+- Um fatorial pode ser definido em forma integral como:
 $$\begin{align*}
 M!&= \int_{0}^{+\infty}dx ~ x^{M}e^{-x}=I_{M}\\
 &= -x^{M}e^{-x}\biggr|_{0}^{+\infty} + M\int_{0}^{+\infty}dx~x^{M-1}e^{-x}\\

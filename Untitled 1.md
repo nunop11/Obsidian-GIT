@@ -1,0 +1,1 @@
+$$\langle j,m|\frac{J_{+}+J_{-}}{2}|j,m\rangle$$

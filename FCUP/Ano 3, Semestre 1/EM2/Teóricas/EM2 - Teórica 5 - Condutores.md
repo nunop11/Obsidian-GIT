@@ -69,7 +69,7 @@ dW=Vdq~~~~\to~~~~ W=\int_{0}^{Q} Vdq=\int_{0}^{Q} \frac{q}{C} dq&= \frac{Q^{2}}{
 # Equação de Laplace / Poisson
 - Quando queremos determinar o potencial num sistema com uma distribuição de carga em repouso, podemos usar:
 $$V(\vec{r}_{\pm})=\frac{1}{4\pi\varepsilon_{0}} \int \frac{\rho(\vec{r}')}{|\vec{r}-\vec{r}'|} d^{3}r'$$
-mas este integral rapidamente se torna uma muito complicado e demoroso de resolver.
+mas este integral rapidamente se torna em algo muito complicado e demoroso de resolver.
 
 - Assim, muitas vezes é útil usar a *equação de Poisson*:
 $$\nabla^{2}V=- \frac{\rho}{\varepsilon_{0}}$$
@@ -77,7 +77,7 @@ $$\nabla^{2}V=- \frac{\rho}{\varepsilon_{0}}$$
 
 ## Equação de Laplace
 **1 Dimensão**
-- Temos $V=V(x)$. Assim: $$\nabla^{2}V=\frac{d^{2}V}{dx^{2}}=0\to V(x)=\frac{1}{2}[V(x+a)-V(x-a)]$$
+- Temos $V=V(x)$. Assim: $$\nabla^{2}V=\frac{d^{2}V}{dx^{2}}=0\to V(x)=\frac{1}{2}[V(x+a)+V(x-a)]$$
 - Ou seja, o potencial é uma reta a subir ou descer. Assim, não há máximos nem mínimos na região com $\rho=0$. Os extremos encontram-se apenas nas fronteiras.
 
 **N Dimensões**

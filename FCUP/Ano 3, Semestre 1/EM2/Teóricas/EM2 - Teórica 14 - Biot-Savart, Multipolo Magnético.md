@@ -76,7 +76,7 @@ que fica:
 $$\begin{align*}
 \vec{A}(\vec{r})&= \frac{\mu_{0}}{4\pi}\sum\limits_{n=0}^{\infty} \frac{1}{r^{n+1}} \int (r')^{n} P_{n}(\cos\theta')\vec{\mathcal{J}}(\vec{r'})d^{3}r'\\
 &= \frac{\mu_{0}I}{4\pi}\sum\limits_{n=0}^{\infty} \frac{1}{r^{n+1}}\int (r')^{n} P_{n}(\cos\theta')d \vec{\ell}\\
-&= \frac{\mu_{0}I}{4\pi}\left[ \frac{1}{r}\oint d\vec{\ell} + \frac{1}{r^{2}}\oint r'\cos\theta' d \vec{\ell} + \frac{1}{r^{3}}\oint (r')^{2} \left( \frac{3}{2}\cos \frac{^{2}\theta'-1}{2} \right)d \vec{\ell} + \dots \right]\\
+&= \frac{\mu_{0}I}{4\pi}\left[ \frac{1}{r}\oint d\vec{\ell} + \frac{1}{r^{2}}\oint r'\cos\theta' d \vec{\ell} + \frac{1}{r^{3}}\oint (r')^{2} \left( \frac{3}{2}\cos^{2} \frac{\theta'-1}{2} \right)d \vec{\ell} + \dots \right]\\
 &= \frac{\mu_{0}I}{4\pi}\left[ \frac{1}{r^{2}}\oint r'\cos\theta' d \vec{\ell} + \frac{1}{r^{3}}\oint (r')^{2} \left( \frac{3}{2}\cos \frac{^{2}\theta'-1}{2} \right)d \vec{\ell} + \dots \right]
 \end{align*}$$
 em que o 1º termo da soma é anulado pois corresponde ao monopolo magnético, que vimos que não existe.

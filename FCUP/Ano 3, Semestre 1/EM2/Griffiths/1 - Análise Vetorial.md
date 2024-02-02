@@ -205,7 +205,7 @@ $$\begin{align*}
 \nabla \cdot(\mathbf{A}\times \mathbf{B})&=\mathbf{B}\cdot(\nabla \times \mathbf{A})-\mathbf{A}\cdot(\nabla \times \mathbf{B})\\
 \textsf{(rotacionais)}\\
 \nabla \times (f \mathbf{A})&=f(\nabla \times \mathbf{A})-\mathbf{A}\times(\nabla f)\\
-\nabla \times (\mathbf{A}\times \mathbf{B})&=(\mathbf{B}\cdot \nabla)\mathbf{A}-(\mathbf{A}\cdot \nabla)\mathbf{B}+\mathbf{A}(\nabla \cdot\mathbf{B})-\mathbf{}{B}(\nabla \cdot\mathbf{A})
+\nabla \times (\mathbf{A}\times \mathbf{B})&=(\mathbf{B}\cdot \nabla)\mathbf{A}-(\mathbf{A}\cdot \nabla)\mathbf{B}+\mathbf{A}(\nabla \cdot\mathbf{B})-\mathbf{B}(\nabla \cdot\mathbf{A})
 \end{align*}$$
 (Para as provar, basta substituir os vetores e o nabla num produto normal de vetores e usar as regras do secundário)
 

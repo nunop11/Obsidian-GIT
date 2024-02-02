@@ -7,7 +7,7 @@
     - **Monocromáticas** - Descritas por uma função periódica sinusoidal
     - **Polarização Linear** - O vetor campo elétrico tem origentação constante
 Uma onda dessas:
-![[onda EM.png]]
+![[Attachments/FCUP/A3S1/LABS 3/onda EM.png]]
 em que temos:
 $$\vec{E}=E_{y}(x,t)\hat{y}=E_{0y} \hat{y} \cos(\omega t-kx+\phi)$$
 em que temos $\lambda=vT \to v=\lambda/T=\lambda \nu$

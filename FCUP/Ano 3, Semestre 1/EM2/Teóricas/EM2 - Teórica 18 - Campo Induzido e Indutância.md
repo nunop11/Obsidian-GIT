@@ -4,10 +4,10 @@ Voltemos ao problema da aula anterior. Imaginemos agora que a região com o camp
 - Como na prática temos a mesma situação que tinhamos antes, deveremos continuar a ter
 $$\varepsilon=- \frac{d\Phi}{dt}$$
 e temos portanto:
-$$\vec{0}\neq\frac{\partial\vec{B}}{\partial t}=- \nabla \times \vec{E}$$
-e da definição do fluxo do campo magnético temos
-$$\frac{d\Phi}{dt}=\frac{d}{dt}\left(\int \vec{B}\cdot d \vec{s} \right)=\int \frac{\partial\vec{B}}{\partial t}\cdot d \vec{s}=- \int (\nabla \times \vec{E})\cdot d \vec{s}=-\oint \vec{E}\cdot d\vec{\ell}=- \varepsilon$$
-e daqui temos a **Lei de Faraday**:
+$$\varepsilon=- \frac{d}{dt}\int \vec{B}\cdot d \vec{s}=-\int \frac{\partial\vec{B}}{\partial t}\cdot d \vec{s}$$
+e da definição de força eletromotriz temos:
+$$\varepsilon=\int \vec{E}\cdot d \vec{\ell}=\int (\nabla \times \vec{E})\cdot d \vec{s}$$
+e daqui surge a **Lei de Faraday**:
 $$\nabla \times \vec{E}=- \frac{\partial\vec{B}}{\partial t}$$
 - Esta pequena dedução diz-nos ainda que, no caso em que o campo magnético é que se move, o campo elétrico variável é que gera a força eletromotriz.
 - Nesta lei, pode por vezes ser dificil saber qual será o sentido da corrente ou do campo (overall saber os sinais). Assim torna-se útil a **Lei de Lenz**:

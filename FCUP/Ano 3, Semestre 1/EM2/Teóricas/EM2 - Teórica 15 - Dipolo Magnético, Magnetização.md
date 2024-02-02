@@ -31,6 +31,14 @@ $$\boxed{\vec{\tau}=\vec{m}\times\vec{B}}$$
 de notar que para um dipolo elétrico tinhamos $\vec{\tau}=\vec{p}\times\vec{E}$
 - De notar ainda que esta fórmula é válida para qualquer loop de corrente na presença de um campo uniforme $\vec{B}$. OU válido para dipolos de tamanho infinitesimal na presença de um campo não uniforme.
 
+- Podemos definir o ***momento dipolar*** de outras formas:
+$$\boxed{\begin{align*}
+\vec{m}&= \frac{1}{2}\int \vec{r}\times\vec{\mathcal{J}}dV\\
+\vec{m}&= \frac{1}{2}\int \vec{r}\times\vec{\mathcal{K}}ds\\
+\vec{m}&= I\int d\vec{s}
+\end{align*}}$$
+
+
 # Campo Magnético na Matéria
 - No dia a dia ouvimos falar em magnetismo no contexto de imans e coisas do género. Ora, estas coisas não parecem ter nada a ver com linhas de corrente a gerar campos magnéticos.
 - No entanto, na realidade temos que todos os materiais têm cargas elétricas a mover-se AKA correntes (eletrões a orbitar o núcleo):

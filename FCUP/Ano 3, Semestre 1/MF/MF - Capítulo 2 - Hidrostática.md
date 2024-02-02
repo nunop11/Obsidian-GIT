@@ -197,6 +197,6 @@ $$\begin{cases}
 \frac{\partial p}{\partial x}=-\rho a_{x} \\
 \frac{\partial p}{\partial x}=-\rho a_{y} \\
 \frac{\partial p}{\partial x}=-\rho (a_{z}+g) 
-\end{cases} \Longrightarrow \boxed{\nabla p=-\rho (\vec{a}+\vec{g})}$$
+\end{cases} \Longrightarrow \boxed{\nabla p=-\rho (\vec{a}-\vec{g})}$$
 pelo que a Equação Fundamental da Hidrostática é um caso particular desta, em que $\vec{a}=\vec{0}$
 

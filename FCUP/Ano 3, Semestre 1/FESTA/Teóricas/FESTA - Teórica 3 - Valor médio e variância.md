@@ -1,7 +1,5 @@
 ## Variável Contínua
 - Consideremos que temos um intervalo finito $[a,b]$
-------- INTERVALO COM DIVISOES ---------
-
 - Podemos então definir o comprimento de uma divisão: $\large \Delta x=\frac{b-a}{M}$ 
 - Consideremos agora que temos 1 número dentro de 1 divisão $i \to ]i \Delta x, (i+1)\Delta x[$
 - Basta redesenhar a figura com intervalos mais curtos que se torna claro que:

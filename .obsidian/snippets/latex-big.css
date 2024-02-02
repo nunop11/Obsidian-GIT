@@ -1,6 +1,8 @@
 .math > mjx-container[jax="CHTML"]  {
-  font-size: 110%;
+/* O meu default é 110% */
+  font-size: 110%; 
 }
+
 
 .math-block > mjx-container[jax="CHTML"]  {
   font-size: 120%;
