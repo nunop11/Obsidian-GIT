@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "936c6647f4c3dfaa",
+        "id": "94ed5a674c784e66",
         "type": "tabs",
         "children": [
           {
-            "id": "fee4f85dac6b9873",
+            "id": "f0848bcfa85c210a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo X - Navier-Stokes.md",
+                "file": "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 2 - TAC.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 465.5
+    "width": 465.5,
+    "collapsed": true
   },
   "right": {
     "id": "ff78a0b8e7bb2758",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo X - Navier-Stokes.md",
+                "file": "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 2 - TAC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,8 +160,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
@@ -181,8 +181,40 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b8b9b4ec01b7d208",
+  "active": "f0848bcfa85c210a",
   "lastOpenFiles": [
+    "Attachments/Pasted image 20240226094309.png",
+    "Attachments/Pasted image 20240226094305.png",
+    "Attachments/Pasted image 20240226094218.png",
+    "Attachments/Pasted image 20240226093716.png",
+    "Attachments/Pasted image 20240226093659.png",
+    "Attachments/Pasted image 20240226093011.png",
+    "Attachments/Pasted image 20240226092423.png",
+    "Attachments/Pasted image 20240226092117.png",
+    "Attachments/Pasted image 20240226092005.png",
+    "Attachments/Pasted image 20240226091812.png",
+    "Attachments/Pasted image 20240226091619.png",
+    "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 1 - Fourier.md",
+    "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 2 - TAC.md",
+    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 1 - Intro Drude.md",
+    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 2 - Correntes e Hall.md",
+    "FCUP/Ano 3, Semestre 2/Métodos/Untitled.md",
+    "FCUP/Ano 3, Semestre 2/EDM🪩/EDM🪩- Teórica 2 - Operações.md",
+    "FCUP/Ano 3, Semestre 2/EDM🪩/EDM🪩- Teórica 3 - Booleano.md",
+    "Attachments/FCUP/A3S2/MCE",
+    "Attachments/FCUP/A3S2/FMC",
+    "FCUP/Ano 3, Semestre 2/EDM🪩/EDM🪩- Teórica 1 - Bases.md",
+    "Attachments/FCUP/A3S2/Untitled.md",
+    "Attachments/FCUP/A3S2/EDM",
+    "FCUP/Ano 3, Semestre 2/EDM/Untitled",
+    "Attachments/FCUP/A3S2",
+    "Attachments/FCUP/Untitled.md",
+    "FCUP/Ano 3, Semestre 1/MQ1/Miguel Costa/4 - Teoria Geral do momento angular.md",
+    "FCUP/Ano 3, Semestre 2/Instrumentação",
+    "FCUP/Ano 3, Semestre 2/MCE",
+    "FCUP/Ano 3, Semestre 2/FMC",
+    "FCUP/Ano 3, Semestre 2/EDM🪩",
+    "FCUP/Ano 3, Semestre 2",
     "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo 8 - Escoamento em Tubagens.md",
     "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo 7 - Escoamento Laminar e Turbulento.md",
     "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo 5 - Análise Integral.md",
@@ -193,42 +225,10 @@
     "Untitled.md",
     "Untitled 1.md",
     "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 16 - Canónica, Teoria Mom Angular.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Miguel Costa/4 - Teoria Geral do momento angular.md",
     "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 22 - Polarização e Energias.md",
     "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 20 - Conservação q,E,p.md",
     "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 2 - Eletrostática.md",
     "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 8 - Expansão Multipolar.md",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 7 - Sep Variáveis e Coords Esféricas.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Cohen/2 - Introdução Matemática.md",
-    "FCUP/Ano 3, Semestre 1/OF/Resumos/1 - Ótica Física.md",
-    "FCUP/Ano 3, Semestre 1/OF/Formulário de Ótica e Fotónica.md",
-    "Attachments/Pasted image 20240125154017.png",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 11 - Dielétricos Lineares.md",
-    "FCUP/Ano 3, Semestre 1/OF/Resumos/3 - Ótica Ondulatória.md",
-    "FCUP/Ano 3, Semestre 1/OF/Resumos/2 - Ótica Geométrica.md",
-    "Attachments/Pasted image 20240125144710.png",
-    "Attachments/Pasted image 20240125114756.png",
-    "Excalidraw/Drawing 2024-01-25 11.44.00.excalidraw.md",
-    "Attachments/Pasted image 20240125114305.png",
-    "Attachments/Pasted image 20240125113850.png",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 16 - Campo H, Ferromagnetismo.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 4 - Conserv Probab, Operadores.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 8 - Operadores Criação e Destruição.md",
-    "Attachments/Pasted image 20240120020651.png",
-    "Attachments/Pasted image 20240120013739.png",
-    "Attachments/Pasted image 20240119153208.png",
-    "Attachments/Pasted image 20240119003123.png",
-    "Attachments/Pasted image 20240118235625.png",
-    "FCUP/Ano 3, Semestre 1/MF/Notas para o estudo de MF.pdf",
-    "FCUP/Ano 3, Semestre 1/OF/Resumos",
-    "FCUP/Ano 3, Semestre 1/MQ1/Miguel Costa",
-    "FCUP/Ano 3, Semestre 1/FESTA/Resumos",
-    "FCUP/Ano 3, Semestre 1/MQ1/Cohen",
-    "FCUP/Ano 3, Semestre 1/MQ1",
-    "FCUP/Ano 3, Semestre 1/OF/Perusall",
-    "FCUP/Ano 3, Semestre 1/FESTA/KARDAR",
-    "Untitled",
-    "Untitled.canvas",
-    "FCUP/Ano 3, Semestre 1/OF/HETCH"
+    "Untitled.canvas"
   ]
 }

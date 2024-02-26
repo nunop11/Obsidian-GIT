@@ -344,7 +344,7 @@ $$\begin{align*}
 &= \sqrt{\frac{3}{8\pi}} \frac{1}{r} \begin{pmatrix}-1 & 0 & 1\\ -i & 0 & -i\\ 0 & \sqrt{2} & 0\end{pmatrix}\sum\limits_{m,m'=1}\langle 1m'|J_{i}|1m\rangle \sqrt{\frac{2\pi}{3}}r \begin{pmatrix}-1 & i & 0\\ 0 & 0 & \sqrt{2}\\ 1 & i & 0\end{pmatrix}
 \end{align*}$$
 em que 
-![[Pasted image 20240118235625.png]]
+![[mom angular.png]]
 
 - Conforme as matrizes de $J_{x},J_{y},J_{z}$ obtidas atrás para $j=1$ obtemos:
 $$\langle x_{k}|J_{x}|x_{\ell}\rangle=\frac{\hbar}{\sqrt{2}} \frac{1}{2}\begin{pmatrix}-1 & 0 & 1\\ -i & 0 & -i\\ 0 & \sqrt{2} & 0\end{pmatrix}\begin{pmatrix}0 & 1 & 0\\1 & 0 & 1 \\0 & 1 & 0\end{pmatrix}\begin{pmatrix}-1 & i & 0\\ 0 & 0 & \sqrt{2}\\ 1 & i & 0\end{pmatrix}=i\hbar \begin{pmatrix}0 & 0 & 0\\0 & 0 & -1\\0 & 1 & 0\end{pmatrix}$$
@@ -365,7 +365,7 @@ $$R_{\theta\hat{z}}=\mathbb{1}+\sum\limits_{\substack{n=1\\(ímpar)}}^{\infty}\f
 
 ## 4.2 - Spin Intrínseco
 ### STERN-GERLACH
-![[Pasted image 20240119003123.png]]
+![[stern gerlach.png]]
 - Temos um feixe de átomos de Prata a atravessar um campo magnético não uniforme.
 
 - Se analisarmos o problema de forma clássica, os átomos são neutros e temos que $\vec{F}=q(\vec{E}+\vec{v}\times\vec{B})=\vec{0}$
@@ -549,7 +549,7 @@ em que obtemos que $J_{z}$ tem o valor próprio $m=m_{1}+m_{2}$.
 
 #### Degenerescência
 - Consideremos $j_{1}=2,j_{2}=1$. Temos $-2\le m_{1}\le2,-1\le m_{2}\le1$. Podemos representar estes pontos num gráfico:
-![[Pasted image 20240119153208.png]]
+![[degenerescencia nums quanticos.png]]
 - As retas diagonais unem os pares $(m_{1},m_{2})$ que nos dão o mesmo $m=m_{1}+m_{2}$.
     - Para $m=3$ temos apenas 1 ponto: $m_{1}=2,m_{2}=1$. Temos o grau de degenerescência $g(m=3)=1$
     - Para $m=1$ (há um erro no desenho) temos 3 pontos: $(m_{1},m_{2})=(2,-1)(1,0)(0,1)$. Ou seja $g(m=1)=3$

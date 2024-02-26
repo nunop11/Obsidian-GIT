@@ -120,7 +120,7 @@ $\frac{n_{1}}{p}+\frac{n_{2}}{q}-(n_{2}-n_{1})\frac{1}{r}=0$
 **Dioptro oval cartesiana** : $n_1 p + n_2 q = n_1 \sqrt{(x-p)^2 + y^2} + n_2 \sqrt{(x+q)^2 + y^2}$
 
 ### 2.2 - Lentes
-![[Pasted image 20240125114305.png|450]]
+![[lente 2 dioptros.png|450]]
 $$\frac{n_m}{s_{o1}}+\frac{n_m}{s_{i2}} = (n_l - n_m)\left(\frac1{R_1} - \frac1{R_2}\right) + \frac{n_l d}{(s_{i1} - d)(s_{o2} + s_{i1})}$$
 com $n_{1}>n_{l}~,~R_{2}<0$. $s_{o},f_{o}$ são positivos à esquerda de $V$. $s_{i},f_{i}$ são positibos à direita de $V$.
 **Equação das Lentes Finas** : $\frac1f = \frac1{s_o} + \frac1{s_i} = \left(\frac{n_l}{n_m} - 1\right)\left(\frac1{R_1} - \frac1{R_2}\right)$
@@ -132,7 +132,7 @@ com $n_{1}>n_{l}~,~R_{2}<0$. $s_{o},f_{o}$ são positivos à esquerda de $V$. $s
 **Relações da distância focal** : $s_{o}s_{i}=f^{2}~~~~;~~~~ f=\frac{r}{2}=\frac{1}{\frac{1}{r_{1}}- \frac{1}{r_{2}}}$
 **Aberração Esférica** : $\eta=$
 
-![[Pasted image 20240125113850.png]]      ![[Pasted image 20240125144710.png|216]]
+![[magnificacoes lentes.png]]      ![[tipos lentes.png|216]]
 
 Numa lente côncava os focos de entrada e saída estão trocados ($f_{e}$ do lado oposto à lente)
 Raios:
@@ -154,7 +154,7 @@ em que $A=m_{T}$ e $B=0$ garante que estamos no plano da imagem.
 | $\frac{1}{\sqrt{2}}\begin{pmatrix}1 & -1\\1 & 1\end{pmatrix}$ | "beam splitter" | $\begin{pmatrix}1 & 0\\-\frac{2}{R_{e}} & 1\end{pmatrix}$ | reflexão em interface curvo <br>(com $R_e=R\cos\theta$ o raio de curvatura <br>efetivo num plano tangencial) |
 
 ## 2.4 - Telescópio
-![[Pasted image 20240125154017.png|500]]
+![[sistema 2 lentes ocular.png|500]]
 $f_{o}$ é a distância focal da objetiva (amplifica objeto) e $f_{e}$ a distância focal da ocular. Temos a magnificação angular: $m_{A}=- \frac{f_{o}}{f_{e}}$. Se a objetiva estiver  a $>2f_{e}$ temos $|m_{T}|<1$ mesmo que $m_{A}\gg1$
 Sendo $A_{o1}$ a distância olho-ocular, $f_{1}$ a distância focal da ocular, $f_{2}$ a da objetiva. As lentes estão distâncias em $d$. Então a distância entre a objetiva e o objeto será:
 $$A_{o2}=\frac{f_{2}d-\frac{f_{2}A_{o1}f_{1}}{A_{o1}-f_{1}}}{d-f_{2}-\frac{A_{o1}f_{1}}{A_{o1}-f_{1}}}$$

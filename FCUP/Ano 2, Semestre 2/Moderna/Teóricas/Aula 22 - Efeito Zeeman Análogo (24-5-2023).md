@@ -1,5 +1,5 @@
 # Experiência de Stern-Gerlach - Recapitular
-![[efeito zeeman.png]]
+![[Attachments/FCUP/A2S2/Moderna/efeito zeeman.png]]
 - Na aula anterior vimos que, ao projetar um feixe de eletrões por um campo magnético não uniforme, o feixe se dividia em partes. 
 - Do modelo de Bohr temos que, para 1 eletrão temos o **momento dipolar** em relação ao momento angular:
 $$\vec{\mu}_{L}=- \frac{|e|}{2m}\vec{L}=- \frac{|e|\hbar}{2m} \frac{\vec{L}}{\hbar} = - \mu_{B} \frac{\vec{L}}{\hbar} \equiv g_{\ell} \mu_{B} \frac{\vec{L}}{\hbar} \quad; \quad \textsf{sendo que}\quad g_{\ell}=-1$$

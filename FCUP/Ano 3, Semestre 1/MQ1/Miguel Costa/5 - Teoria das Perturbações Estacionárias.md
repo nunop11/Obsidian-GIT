@@ -219,7 +219,7 @@ e todos os estados têm degenerescência, devido ao spin intríseco do eletrão:
 
 - Assim, para determinar o efeito de perturbação $W=W_{mv}+W_{SO}+W_{D}$ temos que diagonalizar $W$ neste subespaço 8D. Os valores próprios serão as correções à energia de 1ª ordem. Os vetores próprios são os estados correspondentes.
 - Conseguimos verificar que $L^{2}$ comuta com $W$. Temos então que a matriz de $W$ é diagonal por blocos:
-![[Pasted image 20240120013739.png]]
+![[perturbacao matriz.png]]
 
 #### Nível 2s - $\ell=0$
 - Temos que os termos $W_{mv},W_{D}$ mão atuam nas variáveis de spin:
@@ -259,5 +259,5 @@ $$\begin{align*}
 E_{2p\frac12}=-m_{e}c^{2}\left(\frac{\alpha^{2}}{8}+\frac{5\alpha^{4}}{128}+\mathcal{O}(\alpha^{6})\right)\\
 E_{2p\frac32}=-m_{e}c^{2}\left(\frac{\alpha^{2}}{8}+\frac{\alpha^{4}}{128}+\mathcal{O}(\alpha^{6})\right)\\
 \end{align*}$$
-![[Pasted image 20240120020651.png]]
+![[estrutura fina niveis.png]]
 - Temos então sepração do espetro do átomo de hidrogénio, com uma separação de $\frac{4}{128}m_{e}c^{2}\alpha^{4}$.
