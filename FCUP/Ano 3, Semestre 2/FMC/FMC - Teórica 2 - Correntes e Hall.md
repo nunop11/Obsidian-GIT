@@ -95,3 +95,6 @@ $$R_{H}=\frac{E_{y}}{\mathcal{J_{x}}B}=\frac{\frac{-\omega_{c}\tau\mathcal{J}_{x
 ou seja, o modelo de Drude, tal como dito atrás, não explica $R_{H}$ positivo.
 - Outra coisa que não é explicada pelo modelo é o facto que $R_{H}$ varia com a temperatura. Ora, como $n,e$ são constantes, a única forma de hipoteticamente explicar isto seria através de $\tau$, do qual $R_{H}$ também não depende 
 
+**Tensor**
+- De notar que a equação $\mathcal{J}=\sigma E$ ou até $\vec{\mathcal{J}}=\sigma\vec{E}$ apenas se aplica quando os vetores densidade de corrente e campo elétrico são *colineares*. Se não forem, teremos o **tensor da condutividade**, que consiste numa matriz:
+    - Em 3D a equação $\vec{\mathcal{J}}=\sigma\vec{E}$ fica com $\vec{\mathcal{J}},\vec{E}$ a serem vetores coluna e $\sigma$ uma matriz 3x3.  

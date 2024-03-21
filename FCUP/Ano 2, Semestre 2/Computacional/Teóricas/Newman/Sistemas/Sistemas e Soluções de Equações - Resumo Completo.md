@@ -491,7 +491,7 @@ $$x_{n+1}=D^{-1}(v-(L+U)x_{n})$$
 e temos $$(x_{n})_{i} = \frac{1}{a_{ii}} (v_{i}- \sum\limits_{i\ne j} a_{ij}(x_{n-1})_{j})$$(isto não passa de eliminação de gauss)
 
 ### 15.1.1 - Na prática
-![[codigo jacobi.png]]
+![[Attachments/FCUP/A2S2/Computacional/codigo jacobi.png]]
 - Podemos ver que isto consiste em apenas aplicar a última fórmula.
 - Se a matriz não for diagonal-dominante, não teremos convergência
 

@@ -94,3 +94,36 @@ $$\tau\sim \frac{0,22}{\rho_{\mu}}\left(\frac{r_{s}}{a_{0}}\right)^{3}\cdot10^{-
 $$\ell=v_{d}\tau\sim 1-10\dot{A}$$
 o que é aproximadamente a distânca entre os iões da rede do metal (o dobro do raio dos átomos).
 
+## 1.4 - Comportamento Estatístico
+- Vimos que a probabilidade por unidade de tempo de *ocorrer* uma colisão é $1/\tau$. Ou seja, podemos escrever $dp=dt/\tau$. Podemos definir a probabilidade de *não* colidir é $dP=1-dt/\tau$.
+    - À probabilidade de *colidir* num intervalo $t$ chamarei $p(t)$
+    - À probabilidade de *não* colidir num intervalo $t$ chamarei $P(t)$
+- Ora, neste modelo que cada instante de tempo é independente dos restantes. Ou seja, a probabilidade de o eletrão não colidir agora não influencia a probabilidade de não colidir daqui a um tempo $t$. Por outras palavras: temos **eventos independentes**.
+
+*(Baseado no ex 1.2 da Ficha 1)*
+- Podemos então recordar probabilidades e temos que a probabilidade de o eletrão não colidir colidir em 2 intervalos $dt$ consecutivos é o produto das probabilidades de colidir em cada um: $(1-dt/\tau)^{2}$.
+- Desta forma, a probabilidade de o eletrão não colidir num certo intervalo $t$ dividido em $N\to\infty$ intervalos infinitesimais $dt$ será:
+$$\begin{align*}
+P(t)&= \lim\limits_{N\to\infty} \left(1- \frac{dt}{\tau} \right)^{N}\\
+&= \lim\limits_{N\to\infty}\left(1- \frac{t}{N\tau}\right)^{N}\\
+&= \lim\limits_{N\to\infty}\left(1- \frac{t}{N\tau}\right)^{N}\\
+&= \lim\limits_{N\to\infty}\left(\left(1- \frac{t}{N\tau}\right)^{\frac{N\tau}{t}}\right)^{\frac{t}{\tau}}\\
+&= \left[\lim\limits_{N\to\infty}\left(1- \frac{t}{N\tau}\right)^{\frac{N\tau}{t}}\right]^{\frac{t}{\tau}}\\
+&= [e^{-1}]^\frac{t}{\tau}=e^{\frac{-t}{\tau}}
+\end{align*}$$
+- Podemos simplesmente definir $t=0$ como sendo o instante em que o eletrão colide. Assim, $t>0$ será o tempo passado desde a última colisão. Como seria de esperar, consoante passa tempo torna-se cada vez menos provável *não* colidir.
+
+*(Baseado no ex 1.3 da Ficha 1)*
+- Consideremos novamente que o eletrão colidiu em $t=0$. Usando esta lógica de eventos independentes, podemos dizer que a probablidade de só voltar a colidir apenas no intervalo $[t,t+dt]$ é dada pelo produto das probabilidades:
+    - de *não* colidir em $[0,t]$ AKA probablidade de não colidir num intervalo $t$
+    - de *colidir* em $[t,dt]$ AKA probabilidade de colidir num intervalo $dt$. Aqui nota-se algo importante: como temos eventos independentes, apenas importa o intervalo de tempo, não quando ele ocorre.
+
+- Assim, temos que a probabilidade de só colidir em $[t,t+dt]$, a que chamarei $\mathcal{P}_{1}$, é dada por:
+$$\begin{align*}
+\mathcal{P}_{1}&= P_{t} \cdot p_{dt}\\
+&= e^{\frac{-t}{\tau}} \cdot \frac{dt}{\tau}\\
+&= \frac{dt}{\tau}e^{\frac{-t}{\tau}}
+\end{align*}$$
+
+*(Baseado no ex 1.4 da Ficha 1)*
+- Consideremos que em $T=0$ temos $N_{0}$ eletrões que não colidiram. Usando a probabilidade de não colidir $P(t)$ obtida acima, podemos definir que num instante $t>0$ teremos $N(t)=N_{0}e^{\frac{-t}{\tau}}$ eletrões que não colidiram.

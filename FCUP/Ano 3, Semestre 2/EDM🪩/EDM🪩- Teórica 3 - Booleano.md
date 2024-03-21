@@ -189,3 +189,9 @@ $F=(X+\overline{Y}+Z).(X+\overline Y+\overline{Z}).(\overline{X}+\overline{Y}+Z)
     1. Para o grupo vertical à esquerda temos $N_{2}=x,N_{0}=0,N_{0}=0$. Assim temos: $N_{1}+N_{0}$. Aqui negamos as variáveis que são 1. As variáveis que não estão explicitamente definidas dentro do grupo são excluidas.
     2. No grupo horizontal em baixo, temos $N_{2}=1,N_{1}=x,N_{0}=x$. Assim simplesmente temos $\overline{N}_{2}$
     3. Fica $F=(N_{1}+N_{0})\overline{N_{2}}$
+
+### 2.4.8 - Critérios de Minimização
+- Mapas de *Karnaugh* permitem obter expressões SOP, POS mínmias. No entanto, o circuito que estes mapas nos dão nem sempre é o mais barato ou simples.
+- Assim, é importante minimizar os circutios lógicos. Mas ao minimizar, é importante ter em conta:
+    - os materiais que temos disponíveis
+    - o que queremos atingir com a simplificação: rapidez e menor consumo de energia

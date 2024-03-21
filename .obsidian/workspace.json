@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "94ed5a674c784e66",
+        "id": "9d474478a6ee18ad",
         "type": "tabs",
         "children": [
           {
-            "id": "f0848bcfa85c210a",
+            "id": "40b4c367df61fc68",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 2 - TAC.md",
+                "file": "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 10.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "723842428ac1c3d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 1 - Fourier.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "heisen",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,8 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 465.5,
-    "collapsed": true
+    "width": 465.5
   },
   "right": {
     "id": "ff78a0b8e7bb2758",
@@ -94,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 2 - TAC.md",
+                "file": "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 1 - Fourier.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +172,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -181,54 +194,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f0848bcfa85c210a",
+  "active": "723842428ac1c3d5",
   "lastOpenFiles": [
-    "Attachments/Pasted image 20240226094309.png",
-    "Attachments/Pasted image 20240226094305.png",
-    "Attachments/Pasted image 20240226094218.png",
-    "Attachments/Pasted image 20240226093716.png",
-    "Attachments/Pasted image 20240226093659.png",
-    "Attachments/Pasted image 20240226093011.png",
-    "Attachments/Pasted image 20240226092423.png",
-    "Attachments/Pasted image 20240226092117.png",
-    "Attachments/Pasted image 20240226092005.png",
-    "Attachments/Pasted image 20240226091812.png",
-    "Attachments/Pasted image 20240226091619.png",
-    "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 1 - Fourier.md",
+    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 10.md",
+    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 9 -.md",
+    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 7 - Sommerfeld Térmico.md",
+    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 8 -.md",
+    "FCUP/Ano 3, Semestre 2/Projeto/AutoCAD Cheatsheet.md",
     "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 2 - TAC.md",
-    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 1 - Intro Drude.md",
-    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 2 - Correntes e Hall.md",
-    "FCUP/Ano 3, Semestre 2/Métodos/Untitled.md",
-    "FCUP/Ano 3, Semestre 2/EDM🪩/EDM🪩- Teórica 2 - Operações.md",
+    "Attachments/Pasted image 20240319225848.png",
+    "FCUP/Ano 3, Semestre 2/EDM🪩/EDM🪩- Teórica 5 - Circuitos Sequenciais.md",
+    "FCUP/Ano 3, Semestre 2/EDM🪩/EDM🪩- Teórica 6 -.md",
+    "FCUP/Ano 3, Semestre 2/EDM🪩/EDM🪩- Teórica 4 - CIs, Mux.md",
     "FCUP/Ano 3, Semestre 2/EDM🪩/EDM🪩- Teórica 3 - Booleano.md",
+    "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 3 - Poisson.md",
+    "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 1 - Fourier.md",
+    "FCUP/Ano 2, Semestre 2/Computacional/Teóricas/Newman/Dif Parciais/Parciais 3 - Valores Iniciais.md",
+    "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 5 - Calor.md",
+    "Attachments/Pasted image 20240318085925.png",
+    "FCUP/Ano 2, Semestre 2/Computacional/Teóricas/Newman/EDO/EDO 11 - Initial Value Problems.md",
+    "FCUP/Ano 2, Semestre 2/Computacional/Teóricas/Newman/EDO/EDO 8 - Verlet.md",
+    "FCUP/Ano 2, Semestre 2/Computacional/Teóricas/Newman/EDO/EDO 9 - Midpoint Modificado.md",
+    "FCUP/Ano 2, Semestre 2/Computacional/Teóricas/Newman/EDO/EDO 10 - Bulirsch-Stoer.md",
+    "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 4 - Poisson 2.md",
+    "Attachments/Pasted image 20240317160611.png",
+    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 11 - Dielétricos Lineares.md",
+    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 12 - Energia e Forças em Dielétricos.md",
+    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 14 - Biot-Savart, Multipolo Magnético.md",
+    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 6 - Densidade de Energia.md",
+    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 8 - Expansão Multipolar.md",
+    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 6 - Teorema, Método Imagens.md",
+    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 7 - Sep Variáveis e Coords Esféricas.md",
+    "Attachments/Pasted image 20240314102508.png",
+    "Attachments/Pasted image 20240314102234.png",
+    "Attachments/Pasted image 20240314101940.png",
+    "Attachments/Pasted image 20240314101139.png",
+    "Attachments/Pasted image 20240314100446.png",
+    "Attachments/Pasted image 20240314100232.png",
+    "Attachments/Pasted image 20240314095943.png",
+    "FCUP/Ano 3, Semestre 2/Projeto",
+    "Excalidraw/A3S2/FMC",
+    "Excalidraw/A3S2",
     "Attachments/FCUP/A3S2/MCE",
     "Attachments/FCUP/A3S2/FMC",
-    "FCUP/Ano 3, Semestre 2/EDM🪩/EDM🪩- Teórica 1 - Bases.md",
-    "Attachments/FCUP/A3S2/Untitled.md",
     "Attachments/FCUP/A3S2/EDM",
     "FCUP/Ano 3, Semestre 2/EDM/Untitled",
     "Attachments/FCUP/A3S2",
-    "Attachments/FCUP/Untitled.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Miguel Costa/4 - Teoria Geral do momento angular.md",
     "FCUP/Ano 3, Semestre 2/Instrumentação",
     "FCUP/Ano 3, Semestre 2/MCE",
-    "FCUP/Ano 3, Semestre 2/FMC",
-    "FCUP/Ano 3, Semestre 2/EDM🪩",
-    "FCUP/Ano 3, Semestre 2",
-    "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo 8 - Escoamento em Tubagens.md",
-    "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo 7 - Escoamento Laminar e Turbulento.md",
-    "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo 5 - Análise Integral.md",
-    "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo 2 - Hidrostática.md",
-    "FCUP/Ano 3, Semestre 1/MF/MF - Capítulo 3 - Cinemática de Fluidos.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Cohen/3 - Postulados Mec Quântica.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Miguel Costa/5 - Teoria das Perturbações Estacionárias.md",
-    "Untitled.md",
-    "Untitled 1.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 16 - Canónica, Teoria Mom Angular.md",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 22 - Polarização e Energias.md",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 20 - Conservação q,E,p.md",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 2 - Eletrostática.md",
-    "FCUP/Ano 3, Semestre 1/EM2/Teóricas/EM2 - Teórica 8 - Expansão Multipolar.md",
     "Untitled.canvas"
   ]
 }
