@@ -28,7 +28,7 @@ $$\chi_{Pauli}= \frac{3}{2} \frac{n\mu_{0}\mu_{B}^{2}}{2\varepsilon_{F}}\ll1$$
     - Dureza
     - Condutividade (grafite conduz, diamante não)
 - Mais concretamente, a estrutura do diamante é *cúbica* e a da grafite é *hexagonal*:
-------------- foto ----------
+![[Pasted image 20240326120819.png]]
 
 **Propriedades Translacionais**
 - Como visto acima, as células primitivas têm que ter propriedades translacionais.
@@ -45,9 +45,17 @@ $$V(\vec{r}+\vec{f})=V(\vec{r})$$
 - Os elementos que compõe as grelhas nem sempre são as células primitivas! Por exemplo, no caso de $\alpha$-quartzo ou grafite. Na grafite os hexagonos *não* são a célula primitiva.
 
 *Bravais 2D*
------------ foto com alfas e angulos ---------
+![[Pasted image 20240326121042.png]]
+Seguindo a ordem (esquerda para a direita, cima para baixo):
+1. **Rede Quadrada** - simetria de reflexão conforme $x=0,y=0$ e de rotações de 90º em torno do eixo dos zz. 
+2. **Rede Retangular** - obtida ao esticar rede quadrada numa direção. Mantéma  simetria de reflexão segundo $x=0,y=0$
+3. **Rede Hexagonal** - simetria de reflexao nos planos $x=0,y=0$ e em rotações de 60º segundo eixo zz.
+4. **Retangular Centrada** - obtida ao comprimir a rede hexagonal numa direção. Simetria de reflexão segundo $x=0,y=0$
+5. **Rede Oblíqua** - sem simetria. 
 
 - É evidente que a rede quadrada tem a maior simetria. Podemos partir dela e aplicar deformações (reduzir simetria) e obter as restantes redes:
------------- hierarquia -------------
+![[Pasted image 20240326121646.png]]
+Inversamente, podemos partir da rede menos simétrica e obter as restantes.
 
-- Qualquer uma destas simetrias com direções $\alpha_{i},\alpha_{j}$ (que fazem ângulo $\varphi$), permite gerar a grelha infinita 2D usando translações com combinações lineares de coeficientes inteiros destas 2 direções.
+- Qualquer uma destas simetrias com direções $\alpha_{i},\alpha_{j}$ (que fazem ângulo $\varphi$), permite gerar a grelha infinita 2D usando translações com combinações lineares de coeficientes inteiros destas 2 direções:
+![[Pasted image 20240326121825.png]]
