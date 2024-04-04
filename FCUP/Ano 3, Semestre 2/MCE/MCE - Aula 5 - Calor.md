@@ -15,6 +15,6 @@ $$q_{x}=\frac{\partial q}{\partial x}=- k \frac{\partial u}{\partial x}$$
 
 ### Adimensionalizar
 - As variáveis que entram nesta EDDP tem diferentes dimensões. Assim definimos tempo, distância e temperatura caraterísticos $\overline{L},\overline{T},\overline{\Theta}$:
-![[Pasted image 20240318085925.png]]
+![[adimensionalização.png]]
     - Se para uma barra como vista acima de comprimento $\ell$, devemos definir $\overline{L}=\ell$ e ficamos com $\hat{x}$ entre 0 e 1.
 

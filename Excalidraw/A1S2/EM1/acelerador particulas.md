@@ -16,7 +16,6 @@ tags: [excalidraw]
 
 4 ^0TsHJZJ0
 
-
 # Embedded files
 cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 79ef8a993d5464c813e61ac338bc99dac0759f71: $$\color{#aaa}\vec B$$
@@ -29,7 +28,7 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://excalidraw.com",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.1",
 	"elements": [
 		{
 			"type": "line",
@@ -51,7 +50,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 115.16442325548049,
 			"seed": 860402238,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591578211,
 			"link": null,
@@ -124,7 +126,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 115.16442325548049,
 			"seed": 142678178,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591571493,
 			"link": null,
@@ -197,7 +202,8 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 52.57145472935264,
 			"seed": 900663998,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
 			"updated": 1655591571493,
 			"link": null,
@@ -219,11 +225,12 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"y": -288.97416440478634,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 27,
-			"height": 54,
+			"width": 25.950057983398438,
+			"height": 53.66670009068078,
 			"seed": 145393698,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
 			"updated": 1655591571493,
 			"link": null,
@@ -232,11 +239,11 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"fontFamily": 2,
 			"text": "1",
 			"rawText": "1",
-			"baseline": 43,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "1"
+			"originalText": "1",
+			"lineHeight": 1.15
 		},
 		{
 			"type": "ellipse",
@@ -258,7 +265,8 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 52.57145472935264,
 			"seed": 1262189374,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
 			"updated": 1655591571493,
 			"link": null,
@@ -280,11 +288,12 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"y": -285.81048043442587,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 27,
-			"height": 54,
+			"width": 25.950057983398438,
+			"height": 53.66670009068078,
 			"seed": 884694946,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
 			"updated": 1655591571493,
 			"link": null,
@@ -293,11 +302,11 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"fontFamily": 2,
 			"text": "2",
 			"rawText": "2",
-			"baseline": 43,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "2"
+			"originalText": "2",
+			"lineHeight": 1.15
 		},
 		{
 			"type": "ellipse",
@@ -319,7 +328,8 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 52.57145472935264,
 			"seed": 1194531682,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
 			"updated": 1655591571493,
 			"link": null,
@@ -341,24 +351,25 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"y": 126.7339221736328,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 27,
-			"height": 54,
+			"width": 25.950057983398438,
+			"height": 53.66670009068078,
 			"seed": 1302873022,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
 			"updated": 1655591571493,
-			"link": "",
+			"link": null,
 			"locked": false,
 			"fontSize": 46.66669573102676,
 			"fontFamily": 2,
 			"text": "3",
 			"rawText": "3",
-			"baseline": 43,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "3"
+			"originalText": "3",
+			"lineHeight": 1.15
 		},
 		{
 			"type": "ellipse",
@@ -380,7 +391,8 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 52.57145472935264,
 			"seed": 651864226,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
 			"updated": 1655591571493,
 			"link": null,
@@ -402,11 +414,12 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"y": 126.99999865107011,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 27,
-			"height": 54,
+			"width": 25.950057983398438,
+			"height": 53.66670009068078,
 			"seed": 1207642750,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
 			"updated": 1655591571493,
 			"link": null,
@@ -415,11 +428,11 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"fontFamily": 2,
 			"text": "4",
 			"rawText": "4",
-			"baseline": 43,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "4"
+			"originalText": "4",
+			"lineHeight": 1.15
 		},
 		{
 			"type": "line",
@@ -441,7 +454,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 115.16442325548049,
 			"seed": 1409367842,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591571493,
 			"link": null,
@@ -514,7 +530,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 115.16442325548049,
 			"seed": 1460616190,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591583220,
 			"link": null,
@@ -587,7 +606,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 115.16442325548049,
 			"seed": 2052260578,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591588867,
 			"link": null,
@@ -660,7 +682,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 115.16442325548049,
 			"seed": 1249678398,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591593869,
 			"link": null,
@@ -733,7 +758,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 115.16442325548049,
 			"seed": 1221891390,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591601085,
 			"link": null,
@@ -806,7 +834,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 115.16442325548049,
 			"seed": 1280894370,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591571494,
 			"link": null,
@@ -879,7 +910,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 30.567842895564524,
 			"seed": 1760516578,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591571494,
 			"link": null,
@@ -920,7 +954,8 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 11.724650100187063,
 			"seed": 155081342,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
 			"updated": 1655591571494,
 			"link": null,
@@ -946,7 +981,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 61.13568579112902,
 			"seed": 515228734,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591571494,
 			"link": null,
@@ -983,15 +1021,16 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 518.870840849229,
-			"y": -146.5624363799975,
+			"x": 514.1347524381192,
+			"y": -141.19221689870682,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 36.4480504643388,
-			"height": 52.068643520484,
+			"width": 45.92022728655844,
+			"height": 41.3282045579026,
 			"seed": 200523326,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [
 				{
 					"id": "SVTspjFZic18pVoV01Bq-",
@@ -1001,6 +1040,9 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"updated": 1655591571494,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			},
 			"status": "pending",
 			"fileId": "3dbcf25df29899ecfcffe1761b17b3bae7b352dc",
 			"scale": [
@@ -1028,7 +1070,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 44.096373143625044,
 			"seed": 1678940450,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591714059,
 			"link": null,
@@ -1085,7 +1130,8 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 11.724650100187063,
 			"seed": 651089506,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
 			"updated": 1655591714059,
 			"link": null,
@@ -1111,7 +1157,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 14.876072098926784,
 			"seed": 1011295422,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591571494,
 			"link": null,
@@ -1152,7 +1201,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 14.773014899470752,
 			"seed": 1790512674,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591571494,
 			"link": null,
@@ -1185,15 +1237,16 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 765.582774929005,
-			"y": -223.75023048025213,
+			"x": 762.4575854955863,
+			"y": -220.11454103569568,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 27.41626764802426,
-			"height": 39.16609664003466,
+			"width": 33.666646514861874,
+			"height": 31.894717750921778,
 			"seed": 62905598,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
 			"updated": 1655591571494,
 			"link": null,
@@ -1225,7 +1278,8 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 21.852968845898264,
 			"seed": 1342690750,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
 			"updated": 1655591571494,
 			"link": null,
@@ -1251,7 +1305,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 14.876072098926784,
 			"seed": 2137813310,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591686760,
 			"link": null,
@@ -1292,7 +1349,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 14.773014899470752,
 			"seed": 1354549666,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591686760,
 			"link": null,
@@ -1325,15 +1385,16 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 782.7994112198711,
-			"y": 385.65751700164435,
+			"x": 779.6742217864523,
+			"y": 389.29320644620077,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 27.41626764802426,
-			"height": 39.16609664003466,
+			"width": 33.666646514861874,
+			"height": 31.894717750921778,
 			"seed": 1032296830,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
 			"updated": 1655591681993,
 			"link": null,
@@ -1365,7 +1426,8 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 21.852968845898264,
 			"seed": 1937196386,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
 			"updated": 1655591686760,
 			"link": null,
@@ -1391,7 +1453,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 30.567842895564524,
 			"seed": 1154656738,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591620140,
 			"link": null,
@@ -1432,7 +1497,8 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 11.724650100187063,
 			"seed": 644799806,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
 			"updated": 1655591620140,
 			"link": null,
@@ -1458,7 +1524,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 61.13568579112902,
 			"seed": 913640318,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591633099,
 			"link": null,
@@ -1495,15 +1564,16 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 514.5780827203139,
-			"y": 251.7607462841379,
+			"x": 509.84199430920404,
+			"y": 257.1309657654286,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 36.4480504643388,
-			"height": 52.068643520484,
+			"width": 45.92022728655844,
+			"height": 41.3282045579026,
 			"seed": 1607594850,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [
 				{
 					"id": "_m6V1h2YzdG50y-5iv9UZ",
@@ -1513,6 +1583,9 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"updated": 1655591628701,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			},
 			"status": "pending",
 			"fileId": "cf2e42b5594d19a7df43d9125e43844717b127a5",
 			"scale": [
@@ -1540,7 +1613,10 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 59.019460453423164,
 			"seed": 345073826,
 			"groupIds": [],
-			"strokeSharpness": "round",
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
 			"boundElements": [],
 			"updated": 1655591679826,
 			"link": null,
@@ -1601,7 +1677,8 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			"height": 11.724650100187063,
 			"seed": 1175480958,
 			"groupIds": [],
-			"strokeSharpness": "sharp",
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [
 				{
 					"id": "hpDbzTkt-_G69fHijvlsr",
@@ -1610,33 +1687,44 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 			],
 			"updated": 1655591667453,
 			"link": null,
-			"locked": false
+			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			}
 		},
 		{
-			"id": "ALDUH1D5dtYtdq9_WFTVH",
 			"type": "line",
-			"x": 867.2784845457504,
-			"y": 324.44297535431065,
-			"width": 2.6070644474771143,
-			"height": 451.88657406809216,
-			"angle": 0,
-			"strokeColor": "#000000",
-			"backgroundColor": "#ccc",
+			"version": 105,
+			"versionNonce": 911681214,
+			"isDeleted": false,
+			"id": "ALDUH1D5dtYtdq9_WFTVH",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "dashed",
 			"roughness": 0,
 			"opacity": 100,
-			"groupIds": [],
-			"strokeSharpness": "round",
+			"angle": 0,
+			"x": 867.2784845457504,
+			"y": 324.44297535431065,
+			"strokeColor": "#000000",
+			"backgroundColor": "#ccc",
+			"width": 2.6070644474771143,
+			"height": 451.88657406809216,
 			"seed": 1390258622,
-			"version": 105,
-			"versionNonce": 911681214,
-			"isDeleted": false,
-			"boundElements": null,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"boundElements": [],
 			"updated": 1655591727001,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
 			"points": [
 				[
 					0,
@@ -1646,16 +1734,47 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 					2.6070644474771143,
 					-451.88657406809216
 				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": null
+			]
+		},
+		{
+			"id": "tvnFDNzX",
+			"type": "text",
+			"x": 543.3712856402102,
+			"y": -110.43969339384512,
+			"width": 10,
+			"height": 25,
+			"angle": 0,
+			"strokeColor": "#000000",
+			"backgroundColor": "#ccc",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "dashed",
+			"roughness": 0,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 318917359,
+			"version": 2,
+			"versionNonce": 1176094561,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1712247725837,
+			"link": null,
+			"locked": false,
+			"text": "",
+			"rawText": "",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "",
+			"lineHeight": 1.25
 		}
 	],
 	"appState": {
-		"theme": "light",
+		"theme": "dark",
 		"viewBackgroundColor": "#ffffff",
 		"currentItemStrokeColor": "#000000",
 		"currentItemBackgroundColor": "#ccc",
@@ -1667,12 +1786,28 @@ cf2e42b5594d19a7df43d9125e43844717b127a5: $$\color{#e67700}\vec E$$
 		"currentItemFontFamily": 1,
 		"currentItemFontSize": 20,
 		"currentItemTextAlign": "left",
-		"currentItemStrokeSharpness": "sharp",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"currentItemLinearStrokeSharpness": "round",
+		"scrollX": -24.950233008631244,
+		"scrollY": 314.57126752264855,
+		"zoom": {
+			"value": 0.9500000000000001
+		},
+		"currentItemRoundness": "round",
 		"gridSize": null,
-		"colorPalette": {}
+		"gridColor": {
+			"Bold": "#C9C9C9FF",
+			"Regular": "#EDEDEDFF"
+		},
+		"colorPalette": {},
+		"currentStrokeOptions": null,
+		"previousGridSize": null,
+		"frameRendering": {
+			"enabled": true,
+			"clip": true,
+			"name": true,
+			"outline": true
+		}
 	},
 	"files": {}
 }

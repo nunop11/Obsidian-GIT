@@ -23,10 +23,10 @@ $$n=\int d\varepsilon~g(\varepsilon)\frac{e^{\beta(\mu-\varepsilon)}}{1+ e^{\bet
 e vemos que obtivemos $f(\varepsilon)$, a **distribuição de Fermi**.
 
 - Ora, como vimos na aula anterior, $g(\varepsilon)\propto\sqrt{\varepsilon}$ é a densidade de estados. Tem a forma:
-![[Pasted image 20240312112502.png|500]]
+![[densidade energias e energia fermi.png|500]]
 
 - E temos que a distribuição de Fermi é representada por
-![[Pasted image 20240312112634.png]]
+![[distribuição estados em energia de sommerfeld.png]]
 (sendo o eixo xx $\varepsilon-\varepsilon_{F}$, a zona mais vertical corresponde a $\varepsilon=\varepsilon_{F}$)
 
 - Podemos ver, de uma forma gráfica, porquê que o nível de Fermi é o nível ocupado com maior energia: A densidade de estados é dada pelo produto $g\cdot f$. Como em $\varepsilon=\varepsilon_{F}$ a distribuição de Fermi cai para zero rapidamente (ou instantaneamente se $T=0K$), então o produto $g\cdot f$ e consequentemente $n$ também o faz.
@@ -34,7 +34,7 @@ e vemos que obtivemos $f(\varepsilon)$, a **distribuição de Fermi**.
 **Comportamento Térmico**
 - Podemos dizer que $g(\varepsilon)d\varepsilon$ é o número de estados com energia $[\varepsilon,\varepsilon+d\varepsilon]$, por unidade de volume.
 - Assim, $g(\varepsilon_{F})k_{B}T$  será o número de estados por volume com energia $\varepsilon_{F}$. Nesta equação substituimos $d\varepsilon=k_{B}T$ porque a "largura" da secção curva do gráfico de $f(\varepsilon)$ é $k_{B}T$:
-![[Pasted image 20240312113204.png|450]]
+![[largura zona curva densidade estados fermi.png|450]]
 ou seja, $g(\varepsilon_{F})k_{B}T$ é a densidade volúmica de estados com energia no intervalo $[\varepsilon_{F}- \frac{1}{2}k_{B}T,\varepsilon_{F}+ \frac{1}{2} k_{B}T]$.
 
 - Sabemos que, pela definição de nível de Fermi, para $T=0$ temos:

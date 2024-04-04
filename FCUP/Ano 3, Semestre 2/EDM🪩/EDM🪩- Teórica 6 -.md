@@ -5,7 +5,7 @@
 ### Circuito Síncrono
 - Todos os flip-flops têm o mesmo sinal. 
 - O circuito é combinacional entre os flip-flops. Podemos esquematizar assim:
-![[Pasted image 20240314093358.png]]
+![[FSM esquema.png]]
 
 ### Funções Sequenciais Padrão
 **Registos** - armazena vários bits em paralelo. Basicamente um flip-flop de vários bits.
@@ -15,19 +15,19 @@ veremos agora cada um destes:
 
 ## Registos
 - Consiste num conjunto de flip-flops tipo D que permite armazenar vários bits:
-![[Pasted image 20240314095943.png]]
+![[registo.png]]
 - Temos registos com
     - 4,6,8... bits -- consiste em ter N entradas e N saídas
     - CLR -- Clear, uma entrada que quando ativada torna as saídas todas 0
     - EN -- Enable
-![[Pasted image 20240314100232.png]]
+![[registos 2.png]]
 
 ## Contadores
 ### Assíncrono
 - Contam em binário, decimal ou outras sequências. Podem ser síncronos ou assíncronos.
 - Podem ser usados para regular comportamento de uma FSM 
 - Podemos fazer um com contador com Flip-flops tipo T:
-![[Pasted image 20240314100446.png]]
+![[flip flop t.png]]
 a imagem explica bastante bem. Sendo $Q_{2}$ o MSB temos a sequência de acontecimentos:
     - Temos sempre $EN=1$. Assim, sempre que a entrada CLK é ativada o valor muda.
     - $Q_{i}=0$ temos 0
@@ -38,18 +38,18 @@ a imagem explica bastante bem. Sendo $Q_{2}$ o MSB temos a sequência de acontec
     - por aí fora....
 
 ### Síncrono
-![[Pasted image 20240314101139.png]]
+![[fsm flip flop t.png]]
 - Ser síncrono significa que todos os FF têm o mesmo sinal CLK. Atingimos a funcionalidade ao ter as entradas $T_{1},T_{2}$ a depender de $Q_{0},Q_{1}$ (do bit anterior).
 - Podemos ainda fazer isto com FF tipo D:
-![[Pasted image 20240314102234.png]]
+![[fsm sincrono.png]]
 
 ### Contador com Load (LD)
-![[Pasted image 20240314101940.png]]
+![[contador com load.png]]
 - Quando o canal LD é ativado todos os Mux passam para a entrada $1$. Assim, o contador passa para o número $D_{2}D_{1}D_{0}$. Isto permite, por exemplo, contar $1,2,3,6$.
 
 ### 74x163
 - Temos:
-![[Pasted image 20240314102508.png]]
+![[contador CI.png]]
 as 2 entradas EN são redundância e nem o prof tentou explicar.
 
 ### Exemplo

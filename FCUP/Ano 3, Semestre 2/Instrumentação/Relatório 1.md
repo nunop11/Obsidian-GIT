@@ -1,4 +1,4 @@
-# Explicação de $R_{s},R_{z}$
+o# Explicação de $R_{s},R_{z}$
 O díodo de Zener usado é de 6.8V. Ou seja, quando uma corrente passa por ele ocorre uma queda de tensão de 6.8V: teremos $V_{z_{1}}=12-6.8=5.2\text{V}$. Assim, assumindo que o amplificador é ideal, teremos $V_{+}=V_{-}=V_{z_{1}}=V_{z_{2}}$.
 Desta forma, a queda de tensão na resistência $R_{s}$ será também 6.8V. Desta forma, como queremos que a corrente $I_{s}$ que atravessa o transístor seja de $\sim1\text{mA}$ temos:
 $$R_{s}I_{s}=6.8~~\to~~R_{s}\cdot10^{-3}=6.8~~\to~~ R_{s}=6800\Omega$$
@@ -6,7 +6,7 @@ Segundo a datasheet do díodo de Zener, a corrente que ele precisa para funciona
 $$V_{z_{1}}-R_{z}I_{z}=-12~~\to~~ R_{z}I_{z}=17.2~~\to~~ R_{z}\cdot 5\cdot10^{-3}=17.2~~\to~~R_{z}=3440\Omega$$
 
 # Dedução $R(V)$ teórico - circuito 1
-![[Pasted image 20240327171623.png|400]]
+![[circuito 1.png|400]]
 Como vimos acima, temos $I_{s}=10^{-3}\text{A},R_{z}=3300\Omega,R_{s}=6800\Omega$. Considerando que não há perda de corrente para a base do transístor nem queda de tensão nele. Teremos então: $V_{j}-R_{j}I_{s}=-12$ em que $V_{j}$ é a tensão no terminal "superior" da resistência. O voltimetro irá medir: $V=V_{j}-(-12)=R_{j}I_{s}$. Ou seja, temos $$V=10^{-3}R_{j}$$
 Por exemplo, se medirmos $1V$ é porque temos uma resistência de $1\text{k}\Omega$. Por outras palavras, 1mV equivale a 1$\Omega$.
 
@@ -21,7 +21,7 @@ Ora, neste circuito temos $R_{1}=R_{3}=10\text{k}\Omega,R_{2}=R_{4}=100\text{k}\
 $$V_{0}=10(V_{A}-V_{B})$$
 
 # Dedução $R(V)$ teórico - circuito 2
-![[Pasted image 20240327172643.png|450]]
+![[circuito 2.png|450]]
 Tal como atrás, mantemos $R_{z}=3300\Omega,R_{s}=6800\Omega$. Consideremos que não há perda de corrente no transístor, tal que $I_{A}=I_{s}=10^{-3}\text{A}$. Temos ainda $R_{1}=R_{3}=10\text{k}\Omega,R_{2}=R_{4}=100\text{k}\Omega$. Consideremos $i_{-}$ a corrente que passa em $B$ e no ramo do terminal inversor do amplificador e $i_{+}$ a corrente que passa em $A$, no terminal não-inversor e na terra. 
 Imediatamente vemos que:
 $$\begin{cases}
@@ -53,17 +53,30 @@ Teoricamente, esta equação permite-nos determinar $R_{j}$ conforme o valor de 
 
 ## R max
 Assumindo que a tensão máxima $V_{0}$ do circuito é $V_{cc}-1.5\text{V}=10.5\text{V}$, temos que a resistência máxima será dada por:
-$$R_{j}^{max}=\frac{10.5}{10I_{s}+\left(\frac{12}{1.1}- \frac{0.1\cdot10.5}{1.1}\right)10^{-4}}=\frac{10.5}{10I_{s}+9.95\cdot10^{-4}}$$
+$$R_{j}^{max}(I_{s})=\frac{10.5}{10I_{s}+\left(\frac{12}{1.1}- \frac{0.1\cdot10.5}{1.1}\right)10^{-4}}=\frac{10.5}{10I_{s}+9.95\cdot10^{-4}}$$
 Assim:
     - para $R_{s}=6800\Omega$ temos $I_{s}=1\text{mA}$ logo $R_{j}^{max}=955\Omega$ 
     - para $R_{s}=68\text{k}\Omega$ temos $I_{s}=0.1\text{mA}$ logo $R_{j}^{max}=5263\Omega$ 
     - para $R_{s}=680\text{k}\Omega$ temos $I_{s}=10\mu\text{A}$ logo $R_{j}^{max}=9589\Omega$ 
 Isto foi verificado experimentalmente. Vemos ainda que, neste circuito, assumir que as correntes $i_{+},i_{-}$ são nulas é incorreto. Nas aulas práticas fizemos estas aproximações, tendo obtido resistências máximas de $1050\Omega,10.5\text{k}\Omega,105\text{k}\Omega$, o que está completamente errado.
-
 ## R min
-Podemos inverter a relação obtida acima, tendo:
-$$V_{0}=\frac{10I_{s}+0.001091R_{j}}{1+9\cdot10^{-6}R_{j}}$$
---- Não consigo deduzir isto :)
+Segundo a datasheet, para o amplificador TL082 funcionar corretamente, é preciso que a tensão de entrada ($V_{+},V_{-}$) esteja no Common-mode voltage range: $[V_{cc-}+1.5,V_{cc+}]$. No nosso circuito, isto siginifica que $V_{-},V_{+}\in[-10.5,12]$.
+Ora, se a resistência $R_{j}$ for reduzida haverá menor queda de tensão e teremos $V_{A}$ mais próximo de $V_{B}$. Assim, $V_{+}$ será menor, sendo eventualmente inferior a $-10.5\text{V}$
+Desta forma, queremos determinar a resistência mínima para a qual o sistema funciona. O valor mínimo será aquele em que $V_{+}=V_{-}=-10.5\text{V}$. Temos:
+$$\begin{align*}
+V_{-}&= V_{0}- R_{2}i_{-}\\
+&= V_{0}- R_{2} \frac{V_{0}+12}{R_{1}+R_{2}}\\
+&= \frac{V_{0}}{11} - \frac{120}{11}=-10.5
+\end{align*}$$
+em que se usou a equação (--------- equação de $i_{-}$ --------------)
+
+Daqui obtemos logo que a resistência mínima será aquela em que $V_{0}=4.5\text{V}$. Usando a equação $R_{j}(V_{0})$ acima, vemos que:
+$$R_{j}^{min}(I_{s})=\frac{4.5}{10I_{s}+\left(\frac{12}{1.1}- \frac{0.1\cdot4.5}{1.1}\right)10^{-4}}=\frac{4.5}{10I_{s}+1.05\cdot10^{-3}}$$
+E assim temos:
+    - para $R_{s}=6800\Omega$ temos $I_{s}=1\text{mA}$ logo $R_{j}^{min}=407\Omega$ 
+    - para $R_{s}=68\text{k}\Omega$ temos $I_{s}=0.1\text{mA}$ logo $R_{j}^{min}=2195\Omega$ 
+    - para $R_{s}=680\text{k}\Omega$ temos $I_{s}=10\mu\text{A}$ logo $R_{j}^{min}=3913\Omega$ 
+Isto foi verificado experimentalmente.
 
 # Dedução $R(V)$ teórico - circuito Rf
 
@@ -126,3 +139,9 @@ R_{j}= \frac{V_{0}}{10} \frac{(10^{6}+10R_{f})\frac{5\cdot10^{4}-5R_{f}}{10^{5}+
 Finalmente, se substituirmos os valores $I_{0}=10^{-5}\text{A},R_{f}=180\text{k}\Omega$ obtemos:
 $$R_{j}(V_{0})=\frac{\frac{470000}{19}V_{0}}{\frac{149}{19}-V_{0}}=\frac{470000V_{0}}{149-19V_{0}}$$
 
+$$\begin{align*}
+R_{j}(V_{0})&= R_{teor}(I_{s},V_{0}) + f(I_{s})g(V_{0})\\\\
+R_{teor}(I_{s},V_{0})&= \frac{V_{0}}{10I_{s}+\left(\frac{12}{1.1}- \frac{0.1V_{0}}{1.1}\right)10^{-4}}\\
+f(I_{s})&= \frac{-470I_{s}+1}{54000I_{s}+0.92}\\
+g(V_{0})&= -1.435\cdot10^{-12}V_{0}^{4}+3.46\cdot10^{-8}V_{0}^{3}-2.64\cdot10^{-4}V_{0}^{2}+0.524V_{0}+3090
+\end{align*}$$

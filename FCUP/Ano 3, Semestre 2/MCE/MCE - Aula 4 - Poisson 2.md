@@ -25,7 +25,7 @@ $$A=\begin{pmatrix}T & I & 0 & 0 & \dots & \dots & \dots \\ I & T & I & 0 & 0 & 
 que geralmente fica (para Poisson 2D)
 $$A=\begin{pmatrix}-4 & 1 & 0 & 0 & \dots & \dots & \dots \\ 1 & -4 & 1 & 0 & 0 & \dots & \dots \\  \dots &\dots & \dots & \dots & \dots & \dots &\dots \\ \dots & \dots & \dots & 0 & 1 & -4 & 1 \\ \dots & \dots & \dots & \dots & 0 & 1 & -4 \end{pmatrix}$$
 e temos
-![[Pasted image 20240311090651.png]]
+![[matriz coeficientes poisson.png]]
 
 ## Consistência
 - Conseguimos acima resolver a EDDP. Mas como sabemos se estamos próximos da realidade?

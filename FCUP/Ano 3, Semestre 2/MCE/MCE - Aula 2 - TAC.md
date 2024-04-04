@@ -29,7 +29,7 @@ ou seja, num TAC ou semelhantes exames estamos a obter dados que constituem a so
 ![[projecao ponto.png]]
 - Para algo assim teremos sempre $s=r\sin\phi$. 
 - Assim, se traçarmos $p(s,\phi)$ obtemos um Seno. Se representarmos os senos de muitos ângulos $\phi$ juntos temos um *sinograma*:
-![[Pasted image 20240319225848.png|450]]
+![[imagem original vs sinograma.png|450]]
 
 ### EX
 ![[sinograma.png]]

@@ -45,12 +45,30 @@
     "2024/2/21": 306,
     "2024/2/26": 983,
     "2024/2/27": 1598,
-    "2024/2/28": 189
+    "2024/2/28": 434,
+    "2024/3/3": 0,
+    "2024/3/4": 1574
   },
   "todaysWordCount": {
     "FCUP/Ano 3, Semestre 2/Instrumentação/Relatório 1.md": {
-      "initial": 1592,
-      "current": 1781
+      "initial": 2027,
+      "current": 2111
+    },
+    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 11.md": {
+      "initial": 0,
+      "current": 1414
+    },
+    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 9 - Cristais.md": {
+      "initial": 574,
+      "current": 578
+    },
+    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 8 -.md": {
+      "initial": 1845,
+      "current": 1906
+    },
+    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 11 - Rede Recíproca e Difração.md": {
+      "initial": 1415,
+      "current": 1426
     }
   }
 }
