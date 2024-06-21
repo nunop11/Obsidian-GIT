@@ -1,4 +1,4 @@
-###### Aula 6 - 7/3/2024
+ ###### Aula 6 - 7/3/2024
 ## Ordens de Grandeza
 - Na aula anterior vimos que $$k_{F}=3\pi^{2}n$$
 ora, vimos no início da cadeira que:

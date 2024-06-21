@@ -1,7 +1,7 @@
 ###### Aula 7 - 13/03/2024
 **Distribuição de estados de Fermi**
 - Consideremos o modelo de Sommerfeld : um sistema de $N$ eletrões livres (não sujeitos a potencial) e independentes (não colidem nem interagem entre si)
-- Num certo estado $\ell$ de energia $\varepsilon_{\ell}$ definimos o *parâmetro de ocupação* $\varepsilon_{\ell}$ que pode ser 0 ou 1 (1 se ocupado e vice-versa)
+- Num certo estado $\ell$ de energia $\varepsilon_{\ell}$ definimos o *parâmetro de ocupação* $n_{\ell}$ que pode ser 0 ou 1 (1 se ocupado e vice-versa)
 - Desta forma temos $N=\sum\limits_{\ell}n_{\ell}$ estados com energia total $\varepsilon=\sum\limits_{\ell}n_{\ell}\varepsilon_{\ell}$.
 - Recordando Física Estatística, podemos definir a função partição: $$Z=\sum\limits_\text{estados} e^{\beta(\mu N-\varepsilon)} \quad \quad ;\quad \beta=\frac{1}{k_{B}T}$$
 que podemos escrever como:

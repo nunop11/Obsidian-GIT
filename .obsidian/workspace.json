@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "8d89c4caf7acea1e",
+        "id": "30817329ca1a2817",
         "type": "tabs",
         "children": [
           {
-            "id": "cbc15ed8d52db198",
+            "id": "9694f4416a21d9a2",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Attachments/FCUP/A3S2/FMC/paramagnetismo pauli.png"
+                "file": "FCUP/Ano 3, Semestre 2/Projeto/Notas Relatório.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -46,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "quadratura",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Attachments/FCUP/A3S2/FMC/paramagnetismo pauli.png",
+                "file": "FCUP/Ano 3, Semestre 2/Projeto/Notas Relatório.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +163,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5
+    "width": 508.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,54 +180,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b8b9b4ec01b7d208",
+  "active": "9694f4416a21d9a2",
   "lastOpenFiles": [
-    "Attachments/FCUP/A3S2/FMC/calor especifico vs temperatura.png",
-    "Attachments/FCUP/A3S2/FMC/difracao bragg.png",
-    "Attachments/FCUP/A3S2/FMC/hexagono png.png",
-    "Attachments/FCUP/A3S2/FMC/fcc vetores.png",
-    "Attachments/SF1S/Pasted image 20220111100551.png",
-    "Attachments/SF1S/Pasted image 20220111100047.png",
-    "Attachments/FCUP/A3S2/FMC/rede reciproca hex.png",
-    "Attachments/FCUP/A3S2/Instrumentação/circuito 2.png",
-    "Attachments/FCUP/A3S2/Instrumentação/circuito 1.png",
-    "Attachments/FCUP/A3S2/FMC/redes 3d primitivas e não primitivas.png",
-    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 10 - Redes de Bravais.md",
-    "Attachments/FCUP/A3S2/FMC/hexagonal 3d.png",
-    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 9 - Fim Sommerfeld, Cristais.md",
-    "FCUP/Ano 3, Semestre 2/EDM🪩/EDM🪩- Teórica 6 -.md",
-    "Attachments/FCUP/A3S2/Instrumentação",
-    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 11 - Rede Recíproca e Difração.md",
-    "Excalidraw/rede hexagonal e reciproca.md",
-    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 8 - Energia, g(E), Pauli.md",
-    "Excalidraw/A3S2/FMC/rede retangular e reciproca - inclinada.md",
-    "Excalidraw/A3S2/FMC/rede retangular e reciproca.md",
-    "FCUP/Ano 3, Semestre 2/Instrumentação/Relatório 1 - passos intermédios.md",
-    "FCUP/Ano 2, Semestre 2/Moderna/Teóricas/Aula 2 - Efeito Fotoelétrico (17-2-2023).md",
-    "Excalidraw/Efeito fotoelétrico em eletrão livre.md",
-    "Excalidraw/A1S2/EM1/acelerador particulas.md",
-    "Excalidraw/A1S2/EM1/2 cargas campo.md",
+    "Attachments/Pasted image 20240619190417.png",
+    "FCUP/Ano 3, Semestre 2/Projeto/Coisas que usei no projeto livre.md",
+    "Attachments/FCUP/A3S2/PI/labview 2.png",
+    "Attachments/FCUP/A3S2/PI/labview 4.png",
+    "Attachments/FCUP/A3S2/PI/labview 3.png",
+    "Attachments/FCUP/A3S2/PI/labview 1.png",
+    "FCUP/Ano 3, Semestre 2/Projeto/Notas Relatório.md",
+    "FCUP/Ano 3, Semestre 2/Projeto/AutoCAD Cheatsheet.md",
+    "Attachments/Pasted image 20240619185002.png",
+    "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 5 - Calor.md",
+    "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 6 - Calor 2.md",
+    "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 7 - Onda.md",
+    "FCUP/Ano 3, Semestre 2/MCE/MCE - ME2 - D, FFT, Poisson.md",
+    "FCUP/Ano 2, Semestre 2/Computacional/Teóricas/Newman/Integrais/Integrais - Resumo Completo.md",
+    "FCUP/Ano 3, Semestre 2/Instrumentação/Balança - Relatório.md",
     "FCUP/Ano 3, Semestre 2/Instrumentação/Relatório 1.md",
-    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 4 - Drude Térmico.md",
-    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 2 - Correntes e Hall.md",
-    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 1 - Intro Drude.md",
-    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 3 - AC, Plasma e Ótica.md",
-    "FCUP/Ano 3, Semestre 2/EDM🪩/EDM🪩- Teórica 3 - Booleano.md",
-    "FCUP/Ano 3, Semestre 2/EDM🪩/EDM🪩- Teórica 4 - CIs, Mux.md",
-    "FCUP/Ano 3, Semestre 2/EDM🪩/EDM🪩- Teórica 2 - Operações.md",
-    "FCUP/Ano 3, Semestre 2/EDM🪩/EDM🪩- Teórica 1 - Bases.md",
-    "FCUP/Ano 3, Semestre 2/EDM🪩/EDM🪩- Teórica 5 - Circuitos Sequenciais.md",
-    "FCUP/Ano 2, Semestre 2/Computacional/Coisas q escrevi aqui para ser mais rapido.md",
-    "FCUP/Ano 2, Semestre 2/Computacional/TPC2-2.md",
+    "FCUP/Ano 3, Semestre 2/Instrumentação/Medidor pH 1.md",
+    "FCUP/Ano 3, Semestre 2/Instrumentação/Balança - Relatório XXX0.md",
+    "FCUP/Ano 3, Semestre 2/Instrumentação/Teoria/Transdutores.md",
+    "Attachments/Pasted image 20240610222312.png",
+    "Attachments/Pasted image 20240610222110.png",
+    "Attachments/Pasted image 20240610222036.png",
+    "Attachments/Pasted image 20240610221918.png",
+    "Attachments/Pasted image 20240610221527.png",
+    "FCUP/Ano 3, Semestre 2/MCE/MCE - ME3 - vsDifFinitas, Onda Elástica.md",
+    "FCUP/Ano 3, Semestre 2/MCE/MCE - ME1 - métodos, exs.md",
+    "FCUP/Ano 3, Semestre 2/MCE/MCE - Aula 3 - Poisson.md",
+    "FCUP/Ano 2, Semestre 2/Moderna/Teóricas/Aula 15 - Barreira de Potencial (21-4-2023).md",
+    "FCUP/Ano 3, Semestre 1/MF/Notas para o estudo de MF.pdf",
+    "FCUP/Ano 2, Semestre 2/Moderna/Teóricas/Aula 14 - Salto Potencial (19-4-2023).md",
+    "Untitled.md",
+    "Untitled 2.md",
+    "Untitled 1.md",
+    "Attachments/FCUP/A3S2/PI",
+    "Attachments/FCUP/A3S2/PI.md",
+    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 6 - Densidade de Energia.md",
+    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 7 - Sommerfeld Térmico.md",
+    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 11 - RRecíproca, Miller, Brillouin.md",
+    "FCUP/Ano 3, Semestre 2/EDM🪩/Parte 2",
+    "FCUP/Ano 3, Semestre 2/EDM🪩/Parte 1",
+    "FCUP/Ano 3, Semestre 2/Instrumentação/Teoria",
+    "Attachments/FCUP/A3S2/Instrumentação",
     "FCUP/Ano 3, Semestre 2/Instrumentação",
     "FCUP/Ano 3, Semestre 2/Projeto",
     "Excalidraw/A3S2/FMC",
     "Excalidraw/A3S2",
-    "Attachments/FCUP/A3S2/MCE",
-    "Attachments/FCUP/A3S2/FMC",
-    "Attachments/FCUP/A3S2/EDM",
-    "FCUP/Ano 3, Semestre 2/EDM/Untitled",
-    "Attachments/FCUP/A3S2",
     "Untitled.canvas"
   ]
 }
