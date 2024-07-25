@@ -19,7 +19,7 @@ $$\begin{align*}
 se derivarmos os dois lados da equação em $\mu$ temos:
 $$\frac{\partial \mathcal{G}}{\partial \mu}=- \cancel{k_{B}T} V \int d\varepsilon ~g(\varepsilon)\frac{\cancel{\beta} e^{\beta(\mu-\varepsilon)}}{1+e^{\beta(\mu-\varepsilon)}}$$
 - Ora, temos a equação $N=-\frac{\partial \mathcal{G}}{\partial \mu}$. Assim, se dividirmos os 2 lados por $V$ obtemos:
-$$n=\int d\varepsilon~g(\varepsilon)\frac{e^{\beta(\mu-\varepsilon)}}{1+ e^{\beta(\mu-\varepsilon)}}=\int d\varepsilon~g(\varepsilon)\frac{1}{1^{\beta(\varepsilon-\mu)}+1}=\int d\varepsilon~g(\varepsilon)f(\varepsilon)$$
+$$n=\int d\varepsilon~g(\varepsilon)\frac{e^{\beta(\mu-\varepsilon)}}{1+ e^{\beta(\mu-\varepsilon)}}=\int d\varepsilon~g(\varepsilon)\frac{1}{e^{\beta(\varepsilon-\mu)}+1}=\int d\varepsilon~g(\varepsilon)f(\varepsilon)$$
 e vemos que obtivemos $f(\varepsilon)$, a **distribuição de Fermi**.
 
 - Ora, como vimos na aula anterior, $g(\varepsilon)\propto\sqrt{\varepsilon}$ é a densidade de estados. Tem a forma:
@@ -75,7 +75,7 @@ Temos que $\varepsilon_{k}=\frac{\hbar^{2}k^{2}}{2m}\to k^{2}=\frac{2m\varepsilo
 $$n=\int_{0}^{+\infty} \frac{2m\varepsilon}{\hbar^{2}\pi^{2}}dk~F(\varepsilon)f(\varepsilon)$$
  e ainda $dk=\frac{1}{2}\sqrt{\frac{2m}{\hbar^{2}\varepsilon}}d\varepsilon$:
 $$\begin{align*}
-n&= \int_{0}^{+\infty} \frac{2m\varepsilon}{\hbar^{2}\pi^{2}} \frac{1}{2} \sqrt{\frac{2m}{\hbar^{2}\varepsilon}}~F(\varepsilon)f(\varepsilon)\\
+n&= \int_{0}^{+\infty} \frac{2m\varepsilon}{\hbar^{2}\pi^{2}} \frac{1}{2} \sqrt{\frac{2m}{\hbar^{2}\varepsilon}}~F(\varepsilon)f(\varepsilon)d\varepsilon\\
 &= \int_{0}^{\infty} \frac{m}{\hbar^{2}\pi^{2}}\sqrt{\frac{2m\varepsilon}{\hbar^{2}}}F(\varepsilon)f(\varepsilon)d\varepsilon\\
 &= \int_{0}^{\infty}g(\varepsilon)F(\varepsilon)f(\varepsilon)d\varepsilon
 \end{align*}$$

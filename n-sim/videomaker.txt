@@ -1,0 +1,4 @@
+## ir no cmd para pasta das fotos (usando `cd -diretoria-`)
+## colocar isto (ajustar o %04d.png, framerate e nome conforme caso)
+
+ffmpeg -framerate 60 -i %04d.png -c:v libx264 -vf format=yuv420p output.mp4

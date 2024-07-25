@@ -1,4 +1,4 @@
-    # 1 - Equação do Calor
+# 1 - Equação do Calor
 ## 1.2 - Dedução 1
 ### Calor
 - Podemos escrever a energia calorífica de um corpo como $Q=cmu$ com $c$ um calor específico, $u$ a temperatura e $m$ a massa.

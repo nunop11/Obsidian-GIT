@@ -1,16 +1,16 @@
-###### Aula 7 - 15/03/2024
+###### Aula 8 - 15/03/2024
 **Cenas de Episódios Anteriores**
 - Vimos na aula anterior:
 $$\begin{align*}
 c_{v}&= \frac{\partial u}{\partial T}\\
-\int \frac{d^{3}k}{4\pi}F(\vec{k})&= \int_{0}^{\infty} g(\varepsilon)F(\varepsilon)d\varepsilon
+\int \frac{d^{3}k}{4\pi^3}F(\vec{k})&= \int_{0}^{\infty} g(\varepsilon)F(\varepsilon)d\varepsilon
 \end{align*}$$
 em que $$\varepsilon(\vec{k})=\frac{\hbar^{2}k^{2}}{2m} \quad \quad;\quad \quad g(\varepsilon)=\frac{m}{\pi^{2}\hbar^{2}}\sqrt{\frac{2m}{\hbar^{2}}}\sqrt{\varepsilon}=\frac{3}{2} \frac{n}{\varepsilon_{F}}\sqrt{\frac{\varepsilon}{\varepsilon_{F}}}$$
 - Temos então:
 $$u=\int_{0}^{+\infty}\varepsilon f(\varepsilon)g(\varepsilon)~d\varepsilon \quad \quad;\quad \quad n=\int_{0}^{+\infty}f(\varepsilon)g(\varepsilon)~d\varepsilon$$
 
 - Vimos ainda que $u,n$ são definidos por integrais do tipo $I=\int_{0}^{+\infty}d\varepsilon~H(\varepsilon)f(\varepsilon)d\varepsilon$ que pode ser aproximada pela **Expansão de Sommerfeld**:
-$$I = \int_{0}^{\mu}H(\varepsilon)d\varepsilon+ \frac{\pi^{2}}{6}(k_{B}T)^{2} \frac{dH}{du}|_{\mu} + \frac{7\pi^{4}}{360}(k_{B}T)^{4} \frac{d^{3}H}{du^{3}}|_{\mu}+\dots$$
+$$I = \int_{0}^{\mu}H(\varepsilon)d\varepsilon+ \frac{\pi^{2}}{6}(k_{B}T)^{2} \frac{dH}{d\varepsilon}|_{\mu} + \frac{7\pi^{4}}{360}(k_{B}T)^{4} \frac{d^{3}H}{d\varepsilon^{3}}|_{\mu}+\dots$$
 
 **Energia por volume**
 - Vimos então que $u=\int_{0}^{\infty}d\varepsilon~[\varepsilon g(\varepsilon)]f(\varepsilon)=\int_{0}^{\infty}d\varepsilon~H(\varepsilon)f(\varepsilon)$. Podemos aplicar a expansão de Sommerfeld:
