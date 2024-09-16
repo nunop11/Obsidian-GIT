@@ -35,7 +35,7 @@ isto vem de $E=\hbar \omega$, pelo que teríamos um sistema quântico.
 - Antes de começar este capítulo, vamos substituir a noção clássica de trajetória (de ter uma partícula com posição e momento bem definidos) pelo conceito de estados que evoluem no tempo.
 - Assim, para partículas sem spin, o seu estado é definido pela função de onda $\Psi(\vec{r},t)$ (sendo esta uma função complexa). Temos que:
     - $\Psi(\vec{r},t)$ é a *amplitude de Probabilidade*
-    - $|\Psi(\vec{r},t)|^{2}=\Psi^{*}\Psi$ é a *densidade de Probabilidade*
+    - $|\Psi(\vec{r},t)|^{2}=\Psi\Psi^{*}$ é a *densidade de Probabilidade*
 
 - Deste modo, a probabilidade de, num instante $t$, encontrar uma partícula e, $[\vec{r}, \vec{r}+ d \vec{r}]$ é $$d \mathcal{P}=|\Psi(\vec{r},t)|^{2}~d^{3}r$$
 - Vejamos então alguns pontos importantes

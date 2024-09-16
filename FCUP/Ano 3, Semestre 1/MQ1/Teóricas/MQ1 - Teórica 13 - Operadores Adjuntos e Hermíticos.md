@@ -59,8 +59,8 @@ $$\begin{align*}
 $$\begin{align*}
 (\hat{A}^{\dagger})^{\dagger}&= \hat{A}\\
 (\lambda \hat{A})^{\dagger}&= \lambda^{*}\hat{A}^{\dagger}\\
-(\hat{A}+\hat{B})^{\dagger} &= \hat{A}^{+}+\hat{B}^{\dagger}\\
-(AB)^{\dagger}&= A^{\dagger}B^{\dagger}
+(\hat{A}+\hat{B})^{\dagger} &= \hat{A}^{\dagger}+\hat{B}^{\dagger}\\
+(AB)^{\dagger}&= B^{\dagger}A^{\dagger}
 \end{align*}$$
 
 ## Operadores Hermíticos

@@ -92,7 +92,6 @@
   "minimal-style@@italic-color@@dark": "#B6FFE2",
   "minimal-style@@bold-color@@light": "#006B9F",
   "minimal-style@@bold-color@@dark": "#B5E6FF",
-  "minimal-style@@bold-weight": 600,
   "minimal-style@@pdf-page-style": "pdf-seamless-on",
   "minimal-style@@pdf-invert-dark": false,
   "minimal-style@@minimal-strike-lists": true,
@@ -101,5 +100,8 @@
   "minimal-style@@h3-l": false,
   "minimal-style@@h4-variant": "normal",
   "minimal-style@@h5-variant": "normal",
-  "minimal-style@@h6-variant": "normal"
+  "minimal-style@@h6-variant": "normal",
+  "minimal-style@@base@@dark": "#262626",
+  "minimal-style@@bg1@@dark": "#262626",
+  "minimal-style@@bg2@@dark": "#262626"
 }
