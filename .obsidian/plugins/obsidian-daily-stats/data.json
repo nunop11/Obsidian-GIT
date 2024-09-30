@@ -118,12 +118,19 @@
     "2024/8/9": 213,
     "2024/8/12": 0,
     "2024/8/15": 1163,
-    "2024/8/16": 265
+    "2024/8/16": 265,
+    "2024/8/23": 1168,
+    "2024/8/24": 423,
+    "2024/8/25": 1577,
+    "2024/8/26": 165,
+    "2024/8/27": 542,
+    "2024/8/28": 603,
+    "2024/8/29": 678
   },
   "todaysWordCount": {
-    "nsim/25 - Mandelbrot.md": {
-      "initial": 201,
-      "current": 466
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios/Apontamentos Aula.md": {
+      "initial": 604,
+      "current": 1282
     }
   }
 }

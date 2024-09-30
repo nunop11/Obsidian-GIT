@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c2d6819556cfd38c",
+        "id": "33372e4705871de0",
         "type": "tabs",
         "children": [
           {
-            "id": "13463f0d33f52fae",
+            "id": "8b3fac990eefe946",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nsim/25 - Mandelbrot.md",
+                "file": "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios/Apontamentos Aula.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 465.5,
-    "collapsed": true
+    "width": 465.5
   },
   "right": {
     "id": "ff78a0b8e7bb2758",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nsim/25 - Mandelbrot.md",
+                "file": "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios/Apontamentos Aula.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,25 +180,42 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "13463f0d33f52fae",
+  "active": "8b3fac990eefe946",
   "lastOpenFiles": [
-    "nsim/21 - Difração.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios/Resumo PPT Alumina.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios/Apontamentos Aula.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios/Resumo do Labview DEP.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios/Resumo do Artigo.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios/Resumo do Labview Dendrites.md",
+    "Attachments/FCUP/A4S1/Nano/tamanho probabilidade perda yield.png",
+    "Attachments/FCUP/A4S1/Nano/contaminações escala de tamanho.png",
+    "Attachments/FCUP/A4S1/Nano/contaminação porquê.png",
+    "Attachments/FCUP/A4S1/Nano/contaminação.png",
+    "Attachments/FCUP/A4S1/Nano/defeitos vs tamanho die.png",
+    "Attachments/FCUP/A4S1/Nano/aplicacoes nano.png",
+    "Attachments/FCUP/A4S1/Nano/resistencia quantizada.png",
+    "Attachments/FCUP/A4S1/Nano/contacto 1d.png",
+    "Attachments/FCUP/A4S1/Nano/contacto de fila de átomo.png",
+    "Attachments/FCUP/A4S1/Nano/resistividade vs espessura.png",
+    "Attachments/FCUP/A4S1/ACE",
+    "Attachments/FCUP/A4S1/Untitled.md",
+    "Attachments/FCUP/A4S1/ML",
+    "Attachments/FCUP/A4S1/SDC",
+    "Attachments/FCUP/A4S1/TLA1",
+    "Attachments/FCUP/A4S1/Nano",
+    "Attachments/FCUP/A4S1",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/Nano/Teóricas/Aula 2 - Yield, Contaminações.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/Nano/Teóricas/Aula 1 - Intro.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/Nano/Teóricas",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Ótica",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios",
     "nsim/25 - Mandelbrot.md",
+    "nsim/21 - Difração.md",
     "nsim/14 - Pendulo duplo TRY 1.md",
-    "nsim",
     "Untitled 1.md",
     "FCUP/Ano 3, Semestre 1/Labs 3/T3 - Interferências Óticas.md",
     "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 5 - Sommerfeld.md",
-    "n-sim/15 - pend - com mola/photos/1690.png",
-    "n-sim/15 - pend - com mola/photos/1680.png",
-    "n-sim/15 - pend - com mola/photos/1670.png",
-    "n-sim/15 - pend - com mola/photos/1660.png",
-    "n-sim/15 - pend - com mola/photos/1650.png",
-    "n-sim/15 - pend - com mola/photos/1640.png",
-    "n-sim/15 - pend - com mola/photos/1630.png",
-    "n-sim/15 - pend - com mola/photos/1620.png",
-    "n-sim/15 - pend - com mola/photos/1610.png",
-    "n-sim/15 - pend - com mola/photos/1590.png",
     "FCUP/Ano 3, Semestre 1/MQ1/Miguel Costa/5 - Teoria das Perturbações Estacionárias.md",
     "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 10 - Átomo de Hidrogénio.md",
     "FCUP/Ano 3, Semestre 1/MQ1/Miguel Costa/4 - Teoria Geral do momento angular.md",
@@ -212,23 +228,6 @@
     "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 14 - Valores Próprios, Observáveis, Postulados.md",
     "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 7 - Observações sobre ESIT, combos lineares.md",
     "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 4 - Conserv Probab, Operadores.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 3 - De Broglie e Função Onda.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 2 - H, Partícula-Onda.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 1 - Lagrange.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Cohen/3 - Postulados Mec Quântica.md",
-    "n-sim/000 - INSTA/n=1/n=1.psd",
-    "n-sim/000 - INSTA/n=1",
-    "n-sim/000 - INSTA/n=0/n=0.psd",
-    "n-sim/000 - INSTA/n=0/color code.psd",
-    "n-sim/000 - INSTA/n=0",
-    "n-sim/000 - INSTA/n=0 - 9.8.24/ps2029.tmp",
-    "n-sim/000 - INSTA/n=1 - 10.8.24/ps954.tmp",
-    "n-sim/000 - INSTA/n=1 - 10.8.24/psC6A8.tmp",
-    "n-sim/000 - INSTA/n=0 - 9.8.24/color code.psd",
-    "Coisas Úteis.md",
-    "nSim/Pendulo Simples.md",
-    "FCUP/Ano 3, Semestre 2/Projeto/Fotos LABVIEW.md",
-    "Random Bullshit.md",
     "Untitled.canvas"
   ]
 }
