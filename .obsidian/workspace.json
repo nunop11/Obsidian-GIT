@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "33372e4705871de0",
+        "id": "58e83253576f726a",
         "type": "tabs",
         "children": [
           {
-            "id": "8b3fac990eefe946",
+            "id": "9ec9708563dc0330",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios/Apontamentos Aula.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -39,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +54,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +64,9 @@
             "type": "leaf",
             "state": {
               "type": "starred",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -70,7 +74,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -93,7 +99,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios/Apontamentos Aula.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +106,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
             }
           },
           {
@@ -112,7 +119,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -120,7 +129,9 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -128,7 +139,9 @@
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -140,7 +153,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -148,7 +163,9 @@
             "type": "leaf",
             "state": {
               "type": "graph",
-              "state": {}
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           },
           {
@@ -156,7 +173,9 @@
             "type": "leaf",
             "state": {
               "type": "stats-tracker",
-              "state": {}
+              "state": {},
+              "icon": "bar-graph",
+              "title": "Daily Stats"
             }
           }
         ]
@@ -180,54 +199,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8b3fac990eefe946",
+  "active": "9ec9708563dc0330",
   "lastOpenFiles": [
-    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios/Resumo PPT Alumina.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios/Apontamentos Aula.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios/Resumo do Labview DEP.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios/Resumo do Artigo.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios/Resumo do Labview Dendrites.md",
-    "Attachments/FCUP/A4S1/Nano/tamanho probabilidade perda yield.png",
-    "Attachments/FCUP/A4S1/Nano/contaminações escala de tamanho.png",
-    "Attachments/FCUP/A4S1/Nano/contaminação porquê.png",
-    "Attachments/FCUP/A4S1/Nano/contaminação.png",
-    "Attachments/FCUP/A4S1/Nano/defeitos vs tamanho die.png",
-    "Attachments/FCUP/A4S1/Nano/aplicacoes nano.png",
-    "Attachments/FCUP/A4S1/Nano/resistencia quantizada.png",
-    "Attachments/FCUP/A4S1/Nano/contacto 1d.png",
-    "Attachments/FCUP/A4S1/Nano/contacto de fila de átomo.png",
-    "Attachments/FCUP/A4S1/Nano/resistividade vs espessura.png",
-    "Attachments/FCUP/A4S1/ACE",
-    "Attachments/FCUP/A4S1/Untitled.md",
-    "Attachments/FCUP/A4S1/ML",
-    "Attachments/FCUP/A4S1/SDC",
-    "Attachments/FCUP/A4S1/TLA1",
-    "Attachments/FCUP/A4S1/Nano",
-    "Attachments/FCUP/A4S1",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/Nano/Teóricas/Aula 2 - Yield, Contaminações.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/Nano/Teóricas/Aula 1 - Intro.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/Nano/Teóricas",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Ótica",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 1 - Nanofios",
-    "nsim/25 - Mandelbrot.md",
-    "nsim/21 - Difração.md",
-    "nsim/14 - Pendulo duplo TRY 1.md",
-    "Untitled 1.md",
-    "FCUP/Ano 3, Semestre 1/Labs 3/T3 - Interferências Óticas.md",
-    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 5 - Sommerfeld.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Miguel Costa/5 - Teoria das Perturbações Estacionárias.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 10 - Átomo de Hidrogénio.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Miguel Costa/4 - Teoria Geral do momento angular.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 8 - Operadores Criação e Destruição.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 15 -  CCOC.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 11 - Base de Funções.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Cohen/2 - Introdução Matemática.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 12 - Notação de Dirac.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 13 - Operadores Adjuntos e Hermíticos.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 14 - Valores Próprios, Observáveis, Postulados.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 7 - Observações sobre ESIT, combos lineares.md",
-    "FCUP/Ano 3, Semestre 1/MQ1/Teóricas/MQ1 - Teórica 4 - Conserv Probab, Operadores.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Ótica/1O - Faraday/Resumo do documento.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/ACE/Registo progresso LAB1 v2.md",
+    "Excalidraw/A4S1/ACE/lab1_b_v2.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/ACE/Registo progresso LAB1.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/ML/Projeto/Artigos que encontrei.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/ML/Projeto",
+    "Attachments/FCUP/A4S1/TLA1/I_det vs ang.png",
+    "Attachments/FCUP/A4S1/TLA1/montagem t1o v4.png",
+    "Attachments/FCUP/A4S1/TLA1/valores constante verdet.png",
+    "Attachments/FCUP/A4S1/TLA1/efeito faraday.png",
+    "Attachments/FCUP/A4S1/TLA1/ang vs B.png",
+    "Attachments/FCUP/A4S1/TLA1/ang vs I.png",
+    "Attachments/FCUP/A4S1/TLA1/B vs dist em amostra v2.png",
+    "Attachments/FCUP/A4S1/TLA1/B vs I v2.png",
+    "Attachments/FCUP/A4S1/TLA1/montagem t1o v3.png",
+    "Attachments/FCUP/A4S1/TLA1/B vs I medio.png",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/ML/4 - Classifiers Generativos.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 5 - Supercondutor/Resumo do Artigo.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 4 - PPMS/Resumo do Artigo.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 4 - PPMS/Resumo do Ficheiro.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Ótica/1O - Faraday/Resumo do artigo.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Ótica/1O - Faraday/Resumo das notas fabricante.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Ótica/Untitled.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Ótica/1O - Faraday",
+    "Excalidraw/Drawing 2024-11-11 10.05.11.excalidraw.md",
+    "Excalidraw/Drawing 2024-11-11 10.05.14.excalidraw.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/Nano/Perguntas e Detalhes.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/Nano/Artigos que o Nuno encontrou (feat. Carlos).md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/Nano/O que falta mencionar.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/Nano/Respostas R&D.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/Nano/Notas apresentação.md",
+    "Excalidraw/A4S1/ACE/lab1_b_v3.md",
+    "Excalidraw/Drawing 2024-07-10 01.49.08.excalidraw.md",
+    "Excalidraw/Efeito fotoelétrico em eletrão livre.md",
+    "Excalidraw/A4S1/ACE/lab1_b_v1.md",
+    "FCUP/PEEC/Artigo 1 - Medidas Magnéticas.md",
+    "Excalidraw/int dupla retangulos.md",
+    "Excalidraw/Drawing 2024-04-23 18.36.18.excalidraw.md",
+    "Excalidraw/A4S1/ACE",
+    "nsim/Untitled",
+    "Attachments/FCUP/PEEC",
+    "FCUP/PEEC",
+    "Excalidraw/A4S1/SDC",
+    "Excalidraw/A4S1",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 4 - PPMS",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 3 - VESTA",
     "Untitled.canvas"
   ]
 }
