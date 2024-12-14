@@ -226,4 +226,3 @@ Vejamos alguns tipos
         - Nanoporous Alumina Templates
     - Soft Litography
         - Micro contact printing
-        - 

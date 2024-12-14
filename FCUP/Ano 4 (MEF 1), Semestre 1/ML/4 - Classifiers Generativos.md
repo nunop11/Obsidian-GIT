@@ -241,7 +241,7 @@ $$\begin{align*}
 - Isto pode parecer insignificante porque é só 1 atributo possivelmente em dezenas
 - Mas como vimos, na aproximação de condiconalmente independentes, temos uma *multiplicação* desta probabilidade para *todos* os atributos.
     - Se algum deles for zero, o resultado vai ser zero.
-- Uma forma de impedir isto é usar estimadores MAP:
+- Uma forma de impedir isto é usar estimadores **MAP**:
 $$\begin{align*}
 \hat{\pi}&= \hat{P}(y=y_{k})=\frac{\# D\{y=y_{k}\}+\alpha_{k}}{|D|+\sum_{m}\alpha_{m}}\\
 \hat{\theta}_{ijk}&= \hat{P}(x_{ij}|y=y_{k})=\frac{\# D\{x_{i}=x_{ij}\wedge y=y_{k}\}+\alpha_{k}'}{\# D\{y=y_{k}\}+\sum_{m}\alpha_{m}'}
@@ -302,8 +302,8 @@ em que $\mu_{ik}$ é a média da feature i, classe k
 
 - Na prática:
 $$\begin{align*}
-\hat{\mu}_{ik}&= \frac{1}{\Sigma_{j}\delta(Y^{j}=y_{k})}\sum\limits_jX_{i}^{j}\delta(Y^{j}=y_{k})\\
-\hat{\sigma}_{ik}^{2}&= \frac{1}{\Sigma_{j}\delta(Y^{j}=y_{k})}\sum\limits_{j}(X_{i}^{j}-\hat{\mu}_{ik})^{2}\delta(Y^{j}=y_{k})
+\hat{\mu}_{ik}&= \frac{1}{\sum_{j}\delta(Y^{j}=y_{k})}\sum\limits_jX_{i}^{j}\delta(Y^{j}=y_{k})\\
+\hat{\sigma}_{ik}^{2}&= \frac{1}{\sum_{j}\delta(Y^{j}=y_{k})}\sum\limits_{j}(X_{i}^{j}-\hat{\mu}_{ik})^{2}\delta(Y^{j}=y_{k})
 \end{align*}$$
 
 # Estimação de Densidade

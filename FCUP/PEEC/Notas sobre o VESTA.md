@@ -1,0 +1,11 @@
+- Começar com File > New Structure
+    - Aba "Phase"
+        - Dar nome e definir coordenadas
+        - Definir sistema de coordenadas global ou relativo
+        - Podemos ter várias estruturas em 1 ficheiro
+    - Aba "Unit Cell"
+        - Escolher entre grupos espaciais e mudar parâmetros de rede
+        - Não sei bem o que são os grupos espaciais
+    - Aba "Structure parameters"
+        - Escolher os átomos e a sua posição
+        - 

@@ -99,12 +99,13 @@ z&= \int_{t_{0}}^{t}e^{A(\tau-t_{0})}Bu(\tau)d\tau\\
 - Assim, para o sistema ser controlável, é preciso que "z consiga atingir qualquer ponto de $\mathbb{R}^{n}$"
 
 - Temos ainda a *matriz de controlabilidade*:
-$$M=\begin{bmatrix}B &| &  AB^{2} &| & \cdots & | & A^{n-1}B \end{bmatrix}$$
+$$M=\begin{pmatrix}B  &  A^{2}B & \cdots  & A^{n-1}B \end{pmatrix}$$
 que, para o sistema ser controlável tem que *span* $\mathbb{R}^{n}$. De outra forma, é preciso que:
 $$\text{rank}(M)=n$$
 mais especificamente, se o input for escalar, isto é equivalente a
 $$\det(M)\equiv|M|\neq0$$
-- O **rank** é a "dimensão do subespaço vetorial que cosneguimos criar com as colunas da matriz" ou "o número de colunas que são vetores linearmente independentes".
+- O **rank** é a "dimensão do subespaço vetorial que cosneguimos criar com as colunas da matriz" ou "o número de colunas OU linhas que são vetores linearmente independentes".
+    - Por exemplo, se tivermos uma linha ou coluna de zeros, o rank nunca será zero.
 
 **EX**
 - Temos $$A=\begin{pmatrix}1 & 2 \\ 0 & 1\end{pmatrix}~~,~~B=\begin{pmatrix}1 \\ 0\end{pmatrix}$$
@@ -112,9 +113,25 @@ logo temos:
 $$M=\begin{pmatrix}B & AB\end{pmatrix}=\begin{pmatrix}1 & 1 \\ 0 & 0\end{pmatrix}$$
 logo $\text{rank}(M)=1$. Como estamos em $\mathbb{R}^{2}$, o sistema *não* é controlável.
 
+### CCF
+- Consideremos que um sistema é descrito por uma matriz $A$, escrita na forma canónica controlável (CCF):
+$$A=\begin{pmatrix}0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ a_{4} & a_{3} & a_{2} & a_{1}\end{pmatrix}\quad;\quad B=\begin{pmatrix}0 \\ 0 \\ 0 \\ 1\end{pmatrix}$$
+pelo que podemos calcular:
+$$M=\begin{pmatrix}B & AB & A^{2}B & A^{3}B\end{pmatrix}=\begin{pmatrix}0 & 0 & 0 & 1 \\ 0 & 0 & 1 & a_{1} \\ 0 & 1 & a_{1} & \alpha \\ 1  & a_{1} & \alpha & \beta\end{pmatrix}~~,~~ \alpha,\beta\in\mathbb{R}$$
+em que claramente teremos $\text{rank}(M)=4$ logo é controlável.
+- Ou seja, um sistema que pode ser escrito na forma CCF é controlável.
+
 ## Observabilidade
 - Um sistema é observável se, conhecendo o output $y$ conseguimos determinar o estado do sistema $x$ em **tempo finito**
 - Podemos definir a matriz de observabilidade:
 $$Q=\begin{pmatrix}C & CA & CA^{2} & \cdots & CA^{n-1}\end{pmatrix}^{T}$$
 e o sistema é observável se
 $$\text{rank}(Q)=n~~,~~ A\in\mathbb{R}^{n\times n}$$
+
+### COF
+- Consideremos que um sistema é descrito por uma matriz $A$, escrita na forma canónica observável (COF):
+$$A=\begin{pmatrix}0 & 0 & 0 & a_{4} \\ 1 & 0 & 0 & a_{3} \\ 0 & 1 & 0 & a_{2} \\ 0 & 0 & 1 & a_{1}\end{pmatrix}\quad;\quad C=\begin{pmatrix}0 & 0 & 0 & 1\end{pmatrix}$$
+pelo que podemos calcular:
+$$Q=\begin{pmatrix}C  \\ CA \\ CA^{2} \\ CA^{3}\end{pmatrix} = \begin{pmatrix}0 & 0 & 0 & 1 \\ 0 & 0 & 1 & a_{1} \\ 0 & 1 & a_{1} & \alpha \\ 1 & a_{1} & \alpha & \beta\end{pmatrix}$$
+em que claramente teremos $\text{rank}(Q)=4$ logo é observável.
+- Ou seja, um sistema que pode ser escrito na forma COF é observável.
