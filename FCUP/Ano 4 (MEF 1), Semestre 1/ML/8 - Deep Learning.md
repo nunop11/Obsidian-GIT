@@ -61,6 +61,7 @@
     - Se temos filtros 10x10, então cada filtro irá analisar uma região 10x10 píxeis
     - Além de dividir a imagem em partes, cada filtro pode alterar os dados. Por exemplo aplicando uma função para reduzir contraste
     - Podemos aplicar vários filtros às mesmas regiões, sucessivamente
+    - O tamanho dos filtros é decidido conforme os padrões que queremos que a rede aprenda.
 
 ### Convolução
 - Ou seja, cada perceptron liga apenas aos seus vizinhos
@@ -72,10 +73,146 @@
 
 ### Arquitetura
 - Temos:
-![[Pasted image 20241211154000.png]]
+![[Pasted image 20241211154000.png|425]]
 
 ### Como funciona
 ![[Pasted image 20241211154104.png]]
 - Pooling consiste em juntar grupos de dados em 1 só. Por exemplo, *max pooling* consiste em escolher o máximo dentro de cada bloco. Na imagem acima escolhemos o máximo em cada bloco 2x2. Abaixo escolhemos o máximo a cada 3 pontos:
 ![[Pasted image 20241211154609.png|500]]
-- Existem muitas coisas diferentes que podem ser feitas, com diferentes arquiteturas, divisões da image, funções de ativação, etc etc. Ver PPT
+- Definimos a quantidade e tamanho das camadas de pooling conforme o quão importante é que a rede seja robusta em distorções. Em geral, o melhor é fazer pooling lentamente.
+
+### Outros
+- Existem muitas coisas diferentes que podem ser feitas, com diferentes arquiteturas:
+#### R-CNN
+- Esta é a técnica usada para detetar objetos em imagens. Primeiro definimos caixas que limitam os objetos. Depois temos um passo de classificação.
+![[Pasted image 20241230162444.png]]
+#### U-Net
+![[Pasted image 20241230162603.png]]
+- Esta arquitetura tem a principal função de segmentar imagens. 
+    - Azul - serve para extrair informação das imagens.
+    - Vermelho - diminuem a resolução espacial da imagem. Faz com que a rede consiga aprender informação em diferentes escalas.
+    - Verde - faz up-sampling / aumenta a resolução da imagem. Serve para trazer a segmentação de volta à escala da entrada
+    - Azul-verde - reduzir número de canais. Converte os dados na versão final
+    - Cinzento - misturam canais de up e down sampling. Permite guardar detalhes das imagens.
+
+#### Convolução transposta
+![[Pasted image 20241230163410.png]]
+- Acima temos um exemplo simples. Movemos um kernel 3x3 ao longo de um input 4x4 com stride unitário.
+- Isto é equivalente a INVERTER uma convolução de uma input 2x2  padded com zeros com um kernel 3x3, com stride unitário. 
+- Isto permite aumentar a resolução (up-scaling!!!)
+
+##### Stride
+- Consiste no passo com que a o kernel/filtro se desloca pelo input. 
+    - Se stride=1 vamos andando para os pontos ao lado. 
+    - Se stride=2 vamos de 2 em 2 (saltamos 1)
+- Temos:
+$$\text{Tamanho saída} = \frac{\text{Tamanho Entrada} - \text{Tamanho Filtro}}{\text{Stride}} + 1$$
+
+## Treinar NN profundas
+### Problemas com o gradiente
+- Em redes em que usamos sigmoide ou funções hiperbolicas como ativação, é comum ter o problema de *gradientes a anular* (vanishing, a ir para zero). Ou seja, consoante fazemos backpropagation o gradiente vai diminuindo. Quando chegamos ao início da rede ele é nulo:
+![[Pasted image 20241230194732.png]]
+    - RELU já ajuda a evitar isto
+- No entanto, como estamos a usar valores numéricos, o gradiente poded **explodir**.
+- Assim, temos os seguintes indícios que nos permitem inferir o que se estará a passar:
+    - Gradientes a explodir: o modelo não aprende, loss oscila ou é NaN, os pesos aumentam muito ou torna-se NaN
+    - Gradientes a anular: modelo aprende muito lentamente ou para, apenas os inputs perto do output mudam
+- Temos algumas soluções:
+    - Reduzir o tamanho dos gradientes para não explodirem
+    - Usar algum método de pre-treino para garantir que o pesos começam com bons valores
+    - Não ter todas as ligações das camadas feitas (dropout)
+    - Batch normalization
+
+### Problemas com learning rate
+- Parâmetro mais importante e o mais difícil de acertar.
+- Como seria de esperar, afeta muito a velocidade de treino, estabilização e decide se conseguimos sair de um mínimo local rumo a um mínimo melhor.
+- Assim:
+    - LR demasiado baixo: treino lento, difícil de sair de um sítio com gradiente baixo
+    - LR demasiado alto: valores oscilam muito ou não convergem. Impossível chegar a mínimos estreitos
+- Temos algumas estratégias:
+    - Começar com LR grande inicialmente para garantir que os pesos iniciais random não afetam muito o resultado
+    - Ir alterando o LR ao longo do treino 
+- Assim, 2 formas de melhorar a convergência:
+    - Ajustar o learning rate de cada dimensão separadamente
+    - Substituir o gradiente pela sua moving average para aproveitar o "momento" dele (Adam)
+
+### Regularização
+- Para criar um modelo ML temos que definir a família de modelo a usar, a função de custo e o método de optimização.
+- *Regularização*  pode ser definida como algo que fazemos ao modelo para que o seu erro de generalização diminua (mas não o de treino!)
+    - Em termos do tradeoff bias-variancia, reduzimos a variância a aumentamos o bias. Quanto melhor a regularização, menos aumentamos o bias
+- Uma forma de fazer isto é *penalizar normas* - isto é o que fazemos em Ridge, estamos a aumentar a perda de forma linear com a norma
+- Outra forma consiste em *early stopping*. Como o nome indica, paramos o treino quando se deteta que a loss da validação não está a melhorar há algum tempo. Isto é feito para melhorar a performance do modelo.
+
+### Data augmentation
+- Quando a base de dados que temos não é ENORME, isto é uma técnica útil.
+- Por exemplo, no caso de imagens, isto consiste em replicar uma imagem com algumas alterações (distorção, ruído, deformação, flip, mudança de cor) conforme o que queremos que a rede aprenda:
+![[Pasted image 20241230202253.png]]
+
+### Noise
+- Regra geral, é importante que a rede seja robusta a ruído. Assim, pode ser útil inserir ruído nos pesos e/ou nas saídas
+
+### Dropout
+- Exatamente o que o nome indica:
+![[Pasted image 20241230203152.png]]
+
+## Learning Multi-Task
+- Consiste em treinar uma rede com o objetivo de poder fazer uma série de tarefas
+- Mais concretamente, redes podem ser treinadas para poder fazer muito bem tarefas/representações intermédias que podem ser usadas em várias tarefas distintas. Algo assim:
+![[Pasted image 20241230212228.png]]
+
+## Optimizações para treinar redes profundas
+- No passado, NN foram treinadas com o objetivo de se manterem convexas.
+- No entanto, NN que sejam não lineares fazem com que a maioria das funções de perda não sejam convexas!
+
+### Aprendizagem com gradiente
+- Consistem em procurar exaustivamente um mínimo de perda. 
+- É o método mais usado por NN
+- Nomeadamente, é comum usar *descida do gradiente*. Este método baseia-se neste funcionamento que temos sempre perto de mínimos (locais e absolutos):
+![[Pasted image 20241230213644.png]]
+ou seja, ao somar o gradiente (derivada em n-D) a um certo ponto, iremos parar a um ponto mais próximo do mínimo. Consoante repetimos isto, eventualmente chegamos ao mínimo em si.
+- No que toca a encontrar mínimos de perda, temos:
+![[Pasted image 20241231151556.png]]
+
+### Computation Graph
+- Isto é uma representação. 
+- Uma linha/*edge* representa um argumento de função (AKA dependência). Apontam para nodos
+- Um nodo/*node* para onde aponta um edge é uma **função** do nodo de onde sai.
+    - Assume-se que um nodo sabe computar o seu valor e da sua derivada.
+- Um exemplo simples de um graph:
+![[Pasted image 20241231150721.png]]
+
+- Para fazer $\mathbf{x}^{T}\mathbf{Ax}$ temos:
+![[Pasted image 20241231150806.png]]
+a rede da direita é mais direta. A rede da esquerda é mais versátil e geral.
+
+#### Forward Propagation (FPROP)
+- Consiste em seguir a ordem topológica, a ordem das setas
+- Para um conjunto de entradas a rede calcula a saída de forma direta
+
+#### Backward Propagation (BPROP)
+- Fazemos a ordem inversa (da saída para as entradas)
+- Calculamos a derivada de cada nó relativamente ao anterior. Com eles fazemos descida de gradiente
+- Esta propagação funciona com qualquer função de ativação derivável
+- Tem o dobro do custo computacional de FPROP
+![[Pasted image 20241231151436.png]]
+
+### SGD
+- Este método normalmente vai descendo pela loss até eventualmente atingir um ponto crítico (que pode ser um máximo, mínimo ou ponto de cela). Felizmente, na maioria dos casos atinge um mínimo.
+- Massss, este mínimo apenas será local. É mais difícil garantir que vamos para um mínimo global.
+- Se tivermos um sistema cuja função de perda só tem 1 mínimo (global) mas vários pontos de cela, o SGD pode mover-se entre pontos de cela, mas a performance da rede irá variar sem propriamente melhorar.
+    - Neste caso, dizemos que o SGD está "preso"
+    - Isto pode acontecer devido a condições iniciais demasiado más ou devido a gradientes com ruído
+    - Isto pode levar a overfitting
+- Ora, consoante a dimensão dos dados (dimensão as in 2D, 3D, ...) auemnta, diminui exponencialmente a chance de encontrar um mínimo (porque passam a haver muitos mais pontos de sela)
+
+### Batch Normalization
+- Consiste nisto:
+![[Pasted image 20241231152721.png]]
+- Transformamos cada batch numa distribuição normal e controlada
+- Assim, cada batch transformável é diferenciável
+- Isto reduz a dependência dos gradientes na escala dos valores e nos valores iniciais. Por garantir que tudo é diferenciável, estabilziamos e regularizamos a rede
+- Reduz a necessidade de dropout
+
+## Transfer Learning
+- Na realidade, não é comum treinar uma rede CNN de raíz. Assim, usamos uma base de dados muito grande online. Por exemplo, VGG deep net está treinada com milhões de caras, mas para uma certa função.
+- Se pegarmos nessa rede num ponto antes do fim, poderemos adaptá-la para a nossa função

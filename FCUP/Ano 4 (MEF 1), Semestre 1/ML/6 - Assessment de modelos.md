@@ -154,7 +154,7 @@ por exemplo, a última imagem representa algo que tem maior complexidade, já qu
     2. Vamos percorrendo $k=1,2,\dots,K$ e ajustamos o modelo com a parte $k$ removida, calculando o erro de previsão associado à parte $k$.
     3. A nossa previsão final é a média ou voto da maioria dos $K$ estimadores que temos.
 - Dito de outra forma, aplicamos $K$ estimadores hold-out que usam os conjuntos $k$ e não-$k$ como sets de validação e treino.
-![[Pasted image 20241127224404.png|500]]
+![[Pasted image 20241127224404.png|450]]
 
 ### LOO (Leave One Out)
 - Isto é um caso especial de K-fold em que $K=n$.
