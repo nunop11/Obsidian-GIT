@@ -11,7 +11,7 @@
 - No caso de regressão, conssite no Average Squared Error: $\frac{1}{N}\sum_{i=1}^{N}(f(\mathbf{x}_{i})-y_{i})^{2}$
 
 ## Complexidade vs Erro
-![[Pasted image 20241127182145.png|550]]
+![[curvas treino.png|550]]
 - Vemos que consoante aumentamos a complexidade do modelo usado, o risco empírico desce. Mas o risco real não desce. Invés disso ele aumenta.
     - O risco empírico aumenta porque começaremos a ter muito overfitting, pelo que a performance do modelo com os dados de treino parece ótima!
     - O risco real aumenta, porque consoante o modelo se complica mais, ele começa a criar overfitting e começa a deixar de seguir o comportamento real do sistema em estudo.
@@ -25,9 +25,9 @@
 - Como já fizemos várias vezes nesta UC, podemos subtrair e somar algo. Temos então o risco de excesso:
 $$\underbrace{\mathbb{E}[R(\hat{f}_{n})] - \inf_{f\in\mathcal{F  }}R(f)}_\text{Erro de estimação} + \underbrace{\inf_{f\in\mathcal{F}} R(f) - R^{*}}_\text{Erro de aproximação}$$
 em que $\inf$ é o *infimum* - o maior valor menor que $R(f)$. Ou seja, é o valor de risco imediatamente abaixo do risco da função $f$ que nos dá o risco $R(f)$ mínimo. $f\in\mathcal{F}$ é um modelo usado, dentro do conjunto dos modelos.
-![[Pasted image 20241127183328.png]]
+![[tipos de erro.png]]
 ou, de uma forma mais intuitiva:
-![[Pasted image 20241127183359.png]]
+![[curvas de treino 2.png]]
 
 ### Comportamento do previsor ótimo
 **Previsor Ótimo**
@@ -57,7 +57,7 @@ e aqui a variância corresponde ao erro de estimação e o bias ao erro de aprox
 - O teorema de Bias-Variance diz-nos que: o MSE de um estimador $\hat{\theta}$ pode ser decomposto nos termos de bias e variância.
 - No PPT tem uma série de deduções.
 - No final temos:
-![[Pasted image 20241127184639.png]]
+![[curvas de treino 3.png]]
 
 ### Famílias de Modelos VS complexidade
 - KNN - Menor vizinhança (menor $k$) -> maior complexidade
@@ -100,7 +100,7 @@ $$\hat{\text{Err}}=\overline{\text{err}}+\text{optimismo}$$
 $$AIC = \overline{\text{err}} + 2 \frac{d}{N} \hat{\sigma}_{\epsilon}^{2}$$
 em que temos $N$ samples, $\sigma_{\epsilon}^{2}$ é a estimativa da variância do ruído (obtido com o MSE de um modelo com bias baixo) e $d$ é o número de parâmetros.
 - Temos abaixo como se comporta o AIC:
-![[Pasted image 20241127215642.png|500]]
+![[log likelihood curva treino.png|500]]
 
 ### BIC
 - O critério de informação de Bayes (BIC) diz que:
@@ -130,7 +130,7 @@ $$BIC = \frac{N}{\hat{\sigma}_\epsilon^{2}} \left[\overline{\text{err}} + \log (
 - Vamos então medir a complexidade vendo o número de pontos que conseguimos shatter com $\mathcal{H}$
 
 **Exemplo**
-![[Pasted image 20241127222842.png]]
+![[classificacao impossivel.png]]
 por exemplo, a última imagem representa algo que tem maior complexidade, já que não podemos usar uma reta para limitar as classes.
 
 **O jogo**
@@ -154,12 +154,12 @@ por exemplo, a última imagem representa algo que tem maior complexidade, já qu
     2. Vamos percorrendo $k=1,2,\dots,K$ e ajustamos o modelo com a parte $k$ removida, calculando o erro de previsão associado à parte $k$.
     3. A nossa previsão final é a média ou voto da maioria dos $K$ estimadores que temos.
 - Dito de outra forma, aplicamos $K$ estimadores hold-out que usam os conjuntos $k$ e não-$k$ como sets de validação e treino.
-![[Pasted image 20241127224404.png|450]]
+![[k-fold.png|450]]
 
 ### LOO (Leave One Out)
 - Isto é um caso especial de K-fold em que $K=n$.
 - Por outras palavras, aplicamos $n$ estimadores hold-out em que cada um tem apenas 1 observação.
-![[Pasted image 20241127224704.png|500]]
+![[k fold com k alto.png|500]]
 
 ### Random Subsampling
 - Mais um tipo de cross-validation
@@ -171,19 +171,19 @@ por exemplo, a última imagem representa algo que tem maior complexidade, já qu
     2. Usamos esses pontos aleatórios como conjunto de validação
     3. Repetimos para todos os $k$, sendo escolhendo aleatoriamente
     4. A previsão final é a média ou voto de maioria dos $K$ estimadores
-![[Pasted image 20241127225134.png|500]]
+![[random subsampling.png|500]]
 
 ### Comparação de métodos de cross-validation
 - Quando temos $K$ muito elevado (LOO) teremos um bias muito reduzido porque cada ensaio tem perto de $n$ pontos de treino. Mas teremos uma maior variância porque todos os sets de validação são demasiado parecidos e podemos facilmente ter valores longe da média. Computacionalmente, torna-se muito pesado e até impossível.
 - Com $K$ menor teremos variância menor mas o bias já será maior. Computação muito mais razoável.
-![[Pasted image 20241127225526.png]]
+![[erro vs k-fold.png]]
 - Na prática, $K=3$ já é bom
 - Se tivermos dados muito esparsos podemos ter que usar LOO
 - Uma escolha comum é $K=10,\alpha=0.1$
 
 ## Medidas da Classificação
 ### Confusion Matrix
-![[Pasted image 20241127225950.png]]
+![[confusion matrix.png]]
 - Daqui podemos definir:
     - Erro de classificação: $\frac{\text{erros}}{\text{total}}=\frac{FP+FN}{TP+TN+FP+FN}$
     - Accuracy: $1-\text{erro}=\frac{\text{correto}}{\text{total}}=\frac{TP+TN}{TP+TN+FP+FN}$
@@ -210,7 +210,7 @@ $$\begin{align*}
 \end{align*}$$
 ou seja, $t$ afeta o rate de erro do modelo.
 - Temos aqui o TPR em função de FPR conforme varia $t$:
-![[Pasted image 20241127231502.png]]
+![[tp e fp.png]]
 
 ### Avaliar Regressões
 - No caso de classificadores só temos que ver quandas vezes erramos 

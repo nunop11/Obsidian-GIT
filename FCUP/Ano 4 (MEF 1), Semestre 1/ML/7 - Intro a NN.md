@@ -1,4 +1,4 @@
-# O que são?
+ # O que são?
 - Uma NN é uma rede de neurónios. O termo pode descrever redes reais tipo no cérebro ou computacionais 
 - Uma ANN (artificial NN) é uma rede de neurónios artificiais. Ou seja, uma ANN simula/aproxima o comportamento de uma parte do cérebro.
 - De um ponto de vista mais prático, uma ANN é um sistema computacional paralelo que consiste em vários elementos simples que estão ligados de uma forma que permite fazer uma certa tarefa.
@@ -36,7 +36,7 @@ em que cada camada funciona como uma *camada* da rede
 - Outra forma de ver NN é assim:
 $$\hat{y}=f \left(\sum\limits_{j=1}^{N}w_{j}h_{j}(\mathbf{x}) \right)$$
 numa rede multi-layer temos:
-![[Pasted image 20241205093019.png]]
+![[nn.png]]
 em que as camadas entre o input e o output chamam-se camadas escondidas.
 - Temos então uma entrada $\mathbf{z}$. O que um perceptron a que esta está ligada calcula é:
 $$\mathbf{u}=h_{j}(\mathbf{z},\boldsymbol{\theta}_{j})=\sigma(w_{j}\mathbf{z} + \mathbf{b}_{j})$$
@@ -96,18 +96,18 @@ z &; &  z\ge0 \\
 \end{cases}$$
     - Tangente hiperbólica: $$\sigma(z)=\tanh(z)$$
 - Temos abaixo o gráfico:
-![[Pasted image 20241205101639.png]]
+![[funcs ativacao.png]]
 - De notar que, apesar do que fissemos acima, se quisermos fazer regressão podemos usar uma função de ativação linear.
 
 ## XOR
 - Um exemplo de NN importantes é para representar uma porta XOR
 - Esta porta consiste em: 1 se $x_{1},x_{2}$ forem diferentes, 0 se iguais. Isso dá-nos:
-![[Pasted image 20241205102110.png]]
+![[problema de xor.png]]
 - Ora, esta gama de pontos não pode ser dividida por métodos como Softmax, porque este apenas divide o espaço de dados em 2, usando uma linha.
 - O que precisamos é algo assim:
-![[Pasted image 20241205102217.png]]
+![[problema de xor solucao.png]]
 - Uma maneira de conseguir isto é com uma NN com 2 camadas (quando dizemos X camadas incluímos X-1 camadas escondidas e 1 camada de output) assim:
-![[Pasted image 20241205102317.png]]
+![[problema de xor rede solucao.png]]
 e funciona!
 
 ## Three-Layer
@@ -141,7 +141,7 @@ $$\mathbf{w}^{(\tau+1)}=\mathbf{w}^{(\tau)}- \eta \nabla E(\mathbf{w}^{(\tau)})$
 ou seja
 $$E(\mathbf{w}+\Delta \mathbf{w})\approx E(\mathbf{w}) + \Delta \mathbf{w}^{T}\nabla E(\mathbf{w})$$
 - Ou seja:
-![[Pasted image 20241205110949.png]]
+![[ciclo otimizacao rede nn.png]]
 
 #### Backpropagation de erro
 - Método eficiente para avaliar as derivadas da função de erro AKA calcular o gradiente.
@@ -256,12 +256,12 @@ $$g(x)=w_{0} + \sum\limits_{i=1}^{M} w_{i}\exp(-\gamma_{i}(\mathbf{x}-c_{i})^{T}
 ### MLP
 - Consideremos que com uma NN queremos prever o próximo estado de um sistema. Claro, o estado depende do passado do sistema
 - Poderemos usar então uma camada escondida para armazenar o estado anterior
-![[Pasted image 20241206002715.png]]
+![[nn recorrente.png]]
 
 mas vejamos agora a rede recorrente:
 ### Rede Recorrente
 - Temos acima uma representação de uma rede recorrente. Mas vejamos como ela fica se a "espalhar-mos" no tempo:
-![[Pasted image 20241206002924.png]]
+![[nn recorrente 2.png]]
 então como treinar?
 
 - Ora, espalhar a rede no tempo para a treinar NÃO é boa ideia

@@ -2,7 +2,7 @@
 
 ## Teoria
 - Um guia de onda step-index (**SI**) é uma camada de material com indice de refração (**RI**) alto, rodeado dos 2 lados por materiais com índice inferior:
-![[Pasted image 20241126214010.png]]
+![[guias de onda.png]]
 
 - Podemos ver um guia de onda como um meio em que ocorre uma série de reflexões internas totais que ocorrem nas interfaces do material com os que o rodeiam, que têm RI inferior. Isto ocorre conforme os índices de refração e o ângulo de incidência, que tem que ser maior que o ângulo crítico.
 - A condição que tem que ser cumprida para que a luz seja guiada é: 
@@ -30,7 +30,7 @@ $$\phi_{i}=\tan^{-1}\xi \left(\frac{n_{e}^{2}-n_{i}^{2}}{n_{2}^{2}-n_{e}^{2}} \r
     - O RI ($n_{p}$) do prisma tem que ser maior que o do guia
     - O prisma e o guia têm que ter um bom contacto ótico, para garantir que o campo evanescente da reflexão interna total entra no guia
     - O RI efetivo e a velocidade da fase da luz ao atingir a parte de baixo do prisma permite gerar um modo no guia. Este ajuste é feito ao rodar a montagem guia+prisma até termos guiagem.
-![[Pasted image 20241126224020.png]]
+![[coupling de prisma.png]]
 
 - O índice de refração *efetivo* ($n_{ep}$) do feixe a incidir do prisma para o guia era $n_{ep}=n_{p}\sin\theta_{p}$, em que $\theta_{p}=\theta_{t}+A$ (conforme indicado na imagem acima)
 - Pela lei de Snell, podemos escrever $n_{p}\sin\theta_{t}=\sin\theta_{i}$. 
@@ -41,7 +41,7 @@ em $\theta_{i}(m)$ é o ângulo de incidência que resulta na criação do modo 
 ### Retirar o feixe
 - Este processo é invertível. Podemos retirar o feixe da guia de onda ao acoplar um 2º prisma, a cerca de 1-3cm do primeiro.
 - Se os prismas forem iguais, o feixe sairá com o mesmo ângulo que entrou no primeiro (ver abaixo).
-![[Pasted image 20241126230328.png]]
+![[guia com prisma montagem.png]]
 
 ## Procedimento
 1. Montar o sistema como mostrado acima. O prisma e o método de acoplamento deste usado devem estar centrados na plataforma rotativa. Rodamos o sistema para variar o ângulo de incidência do feixe. Limpar bem o prisma

@@ -12,10 +12,10 @@ em que $D,F,C$ são os RI do material nos comprimentos de onda das linhas espect
 - Medir este valor permite testar a pureza, concentração e condição ótica de um material.
 
 ### Refratometro de Abbe
-![[Pasted image 20241127001000.png]]
+![[abbe.png]]
 - Permite medir RI a várias temperaturas
 - O funcionamento deste instrumento basei-se em ter a amostra líquida entre 2 prismas: um de iluminação e um de refração.
-![[Pasted image 20241127001128.png]]
+![[abbe como funciona.png]]
 - O feixe de luz é incidido no prisma de iluminação. A face de baixo do prisma é polida para que cada ponto espalhe a onda em todas as direções. Ora, o que devemos notar é que isto significa que na amostra teremos feixes em todas as direções, sempre.
 - Vemos na imagem que o feixe que vai de A para B terá o maior ângulo de incidência ($\theta_{i}$) e depois o maior ângulo de refração $(\theta_{r})$
     - Todos os outros feixes terão ângulos inferiores e, juntos, resultam numa zona clara/iluminada abaixo do prisma de refração.
@@ -27,7 +27,7 @@ em que $D,F,C$ são os RI do material nos comprimentos de onda das linhas espect
 
 ## Experimentalmente
 ### Medir RI de líquidos
-![[Pasted image 20241127003443.png]]
+![[procedimento abbe 1.png]]
 
 ### Determinar o número de Abbe de água
 - O valor da dispersão pode ser determinado com
@@ -37,7 +37,7 @@ em que $A,B,a$ são funções relacionadas com RI e o Z da amostra. Estes valore
 $$v=\frac{n_{D}-1}{A+Ba}$$
 - Ora, $n_{D}$ é medido diretamente no refratometro (usando um feixe com comprimento de onda da linha D do espetro de Sódio). 
 - Para determinar $a$ (ou melhor, para determinar $Z$ para depois ver $a$ na tabela):
-![[Pasted image 20241127003836.png]]
+![[procedimento abbe 2.png]]
 
 ### Determinação de RI de água com sal
 - Usando várias amostras de água com diferentes concentrações de sal podemos determinar o RI de cada uma e ver a evolução

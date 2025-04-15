@@ -1,7 +1,7 @@
 ## Linear Feedback State Estimation
 - Outra coisa que falamos no início da UC foi que a variável/vetor de estado, $x$, normalmente não pode ser medida normalmente. Em muitos casos nem tem significado físico.
 - Assim, introduzimos um estimador no sistema, que estima $x$ usando o output $y$:
-![[Pasted image 20241125113640.png]]
+![[feedback com estimador.png]]
 e vemos que a única coisa nova é $K_{e}$!
 
 - Podemos ver que a nossa estimativa é:
@@ -79,7 +79,7 @@ $$K_{e}=U^{-1}\begin{pmatrix}\beta_{n}-a_{n} \\ \beta_{n-1}-a_{n-e} \\ \vdots \\
 
 ## Juntar tudo em forma matricial
 - Consideremos então um sistema assim:
-![[Pasted image 20241125122333.png]]
+![[feedback com estimador e controlador.png]]
 em que 
 $$\begin{cases}
 \dot{x}=Ax+Bu \\

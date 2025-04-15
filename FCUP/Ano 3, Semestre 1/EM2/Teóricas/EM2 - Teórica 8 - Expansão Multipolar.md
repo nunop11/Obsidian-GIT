@@ -54,7 +54,7 @@ Ora, isto faz sentido. Temos densidade de carga positiva para $\theta<\frac{\pi}
 
 ## Distribuição Discreta de Carga
 ### Dipolo
-![[dipolo.png]]
+![[Attachments/FCUP/A3S1/EM2/dipolo.png]]
 - Temos:
 $$V(\vec{r})= \frac{q}{4\pi\varepsilon_{0}} \left(\frac{1}{r_{+}}- \frac{1}{r_{-}} \right)$$
 - Podemos escrever:

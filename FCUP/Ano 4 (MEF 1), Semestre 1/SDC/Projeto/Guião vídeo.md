@@ -1,7 +1,7 @@
 ## Ex7
 ### Explanation
 - In this exercise we want to make a system like this:
-![[Pasted image 20241208214027.png|600]]
+![[feedback 2.png|600]]
 - From the classes we know that the error will follow an exponential equation:
 $$e(t)=e_{0}e^{(A-K_{e}C)t}$$
 - We also know that the maximum error is determined by the highest eigenvalue of the exponent $A-K_{e}C$. Because we want a maximum error of 10% in 2 seconds we get that the highest eigenvalue is -1.15:
@@ -23,11 +23,11 @@ k_{e2}&= 83
 \end{align*}$$
 
 - Using this we plotted of the evolution of the true-state angle VS the estimated angle over time:
-![[Pasted image 20241207163758.png|450]]
+![[projeto sdc.png|450]]
 - We can see that the estimation follows the true-state angle, although it goes to a higher maximum angle and doesn't overshoot.
 - This happens because the estimator reacts to the true state, so it is delayed and smoother.
 
 - We also plotted the error in a logarithmic scale:
-![[Pasted image 20241207165436.png|525]]
+![[projeto sdc 2.png|525]]
 it follows our requirements.
 

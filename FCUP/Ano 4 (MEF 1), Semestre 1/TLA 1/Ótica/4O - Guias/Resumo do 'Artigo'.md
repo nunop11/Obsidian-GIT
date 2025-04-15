@@ -2,7 +2,7 @@
 ## 3.2 - Categorização de dispositivos óticos integrados
 ### 3.2.1 - Medir perda de inserção (IL)
 **Montagem**
-![[Pasted image 20241204000444.png]]
+![[montagem teste guias.png]]
 - Usou-se um laser com 632.8nm de comprimento de onda para confirmar o coupling e um laser ajustável para testar na zona de 1550nm.
 - A luz do lazer é levada por uma fibra até um 90/10 coupler (divide o sinal para 2 canais, um com 90% da potência e outro com 10%)
     - A fibra com os 90% vai par a amostra
@@ -25,12 +25,12 @@ $$IL=10\log_{10}\left(\frac{P_{1}}{P_{0}}\right)$$
 **Mode diameter do guia**
 - Precisamos de medir o diâmetro dos modos
 - Temos esta montagem
-![[Pasted image 20241204005941.png]]
+![[montagem teste guias 2.png]]
 invés de ter uma fibra na transmissão, temos uma câmara CCD. Temos ainda uma objetiva de microscópio de ampliação 20x.
 - O diâmetro dos modos na fibra é de 10.4um para um comprimento de onda de 1550nm. Isto é dado pelo fabricante
 - Removeu-se o ruído das imagens obtidas com a CCD ao subtrair imagens de referência. Os diâmetros são determinados com LaseView, em que se usou uma gaussiana para ajustar as direções X,Y
 - A eficiência do coupling pode então ser determinada assim:
-![[Pasted image 20241204010609.png]]
+![[eficiencia guia.png]]
 em que $$\Psi_{1}(X,Y)=A\exp (-(X^{2}+Y^{2})/a)~~~~,~~~~\Psi_{2}(X,Y)=B\exp(-(X^{2}/d_{X}^{2}+Y^{2}/d_{Y}^{2}))$$
 - $a$ é o diâmetro do modo nas fibras. $d_{X},d_{Y}$ são os diâmetros dos modos medidos para a amostra nas direções xx e yy
 - Podemos então escrever:
@@ -54,7 +54,7 @@ $$IL=2CL + PL \cdot L$$
 - Temos então outra técnica: medição indireta. Determinamos IL,CL conforme explciado acima. Temos: $$PL=\frac{IL-2CL}{L}$$
 
 ### 3.2.4 - Caraterização de grating
-![[Pasted image 20241204012247.png]]
+![[montagem teste guias 3.png]]
 - O setup de cima serve para determinar rapidamente o comprimento de onda de Bragg. O segundo serve para caraterizar os gratings de Bragg com mais resolução
     - Um grating de Bragg de fibra e um dispositivo que reflete comprimentos de onda muito específicos e deixa passar os outros
 - O 1º setup consiste em medir o sinal refletido removido por um circulador

@@ -39,7 +39,7 @@
     - propriedades mecânicas - strain, stress e adesão
     - propriedades óticas
 
-### Morfolofia
+### Morfologia
 **Amorfo**
 - AKA sem estrutura cristalina. O que implica que não há defeitos cristalinos
 - Comum para fazer isoladores

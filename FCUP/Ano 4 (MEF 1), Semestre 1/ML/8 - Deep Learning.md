@@ -9,7 +9,7 @@
 - Normalmente, isto consiste em introduzir um $\lambda$ na função de perda, de uma forma que estejamos a penalizar complexidade.
 
 ## ML clássico
-![[Pasted image 20241211151218.png]]
+![[tipo aprendizagem.png]]
 - Que é o que temos visto.
 
 ## Deep Learning
@@ -23,19 +23,19 @@
 
 ### Então, quando usar Deep?
 - Existem casos em que, por mais que apliquemos funções de linearização, nunca iremos conseguir.
-![[Pasted image 20241211151721.png]]
+![[classificacao complexa.png]]
 - Um dos principais casos que devemos usar deep learning é: *Classificação Binária Complexa*, como acima.
 - Usando NN, podemos obter representações mais compactas dos dados input-output. 
     - Uma NN é compacta se tiver poucos parâmetros livres 
     - Uma NN compacta deverá ter melhor performance de generalização
 - Ou seja, em problemas muito complexos (ver foto, detetar audio, detetar texto), é quase impossível expressar a relação entre os pixeis de forma analítica.
 - Ou seja, temos modelos que encontram/formam os atributos em si: *Representation Learning*
-![[Pasted image 20241211152221.png]]
+![[tipo aprendizagem 2.png]]
 
 # NN Convolutional
 ## Deep Multilayer Perceptron (DNN)
 - Consiste numa NN profunda (varias layers) e wide (muitos perceptrons por linha)
-![[Pasted image 20241211152451.png]]
+![[nn densa.png]]
 
 ## Imagens
 - Se tivermos uma imagem que queremos analisar com uma MLP, primeiro teremos que converter a imagem 2D num vetor muito longo 1D, pelo que perdemos informação sobre a disposição da imagem.
@@ -45,18 +45,18 @@
 
 ### O que queremos
 - Ora, naturalmente, queremos um modelo que detete algo numa imagem. Mesmo que o objeto seja: rodado, movido, deformado ou resized.
-![[Pasted image 20241211152831.png]]
+![[invariancia rotacao.png]]
 
 ## Rede Convolucional
 - Este tipo de rede consiste em poder estudar imagens de grande resolução ou até vídeos
 - Passamos a ter *ligações esparsas* na NN (nem todos os perceptrons ligam a todos):
-![[Pasted image 20241211153307.png]]
+![[rede não densa.png]]
 - Ocorre partilha de parâmetros determinados entre redes:
-![[Pasted image 20241211153417.png]]
+![[nn densa vs nao densa.png]]
 (isto reduz automaticamente o erro quando há translação)
 - Pode ser usado para qualquer input numa grid (até 3D+)
 - Permite reduzir imenso o número de parâmetros
-![[Pasted image 20241211153235.png]]
+![[rede convolucional.png]]
 - Falamos em **filters**
     - Se temos filtros 10x10, então cada filtro irá analisar uma região 10x10 píxeis
     - Além de dividir a imagem em partes, cada filtro pode alterar os dados. Por exemplo aplicando uma função para reduzir contraste
@@ -66,28 +66,28 @@
 ### Convolução
 - Ou seja, cada perceptron liga apenas aos seus vizinhos
 - Mas falamos em convolução: isso implica que todas as ligações têm os mesmos pesos (que são partilhados):
-![[Pasted image 20241211153723.png]]
+![[tipos ligacao.png]]
 - Existe então uma *camada de convolução* (kernel) que contém estes pesos
 - Por exemplo, num caso 2D em que cada perceptron analiza um conjunto 2x2:
-![[Pasted image 20241211153854.png]]
+![[funcionamento cnn.png]]
 
 ### Arquitetura
 - Temos:
-![[Pasted image 20241211154000.png|425]]
+![[tipos rede.png|425]]
 
 ### Como funciona
-![[Pasted image 20241211154104.png]]
+![[funcionamento cnn 2.png]]
 - Pooling consiste em juntar grupos de dados em 1 só. Por exemplo, *max pooling* consiste em escolher o máximo dentro de cada bloco. Na imagem acima escolhemos o máximo em cada bloco 2x2. Abaixo escolhemos o máximo a cada 3 pontos:
-![[Pasted image 20241211154609.png|500]]
+![[ligacao nao densa 2.png|500]]
 - Definimos a quantidade e tamanho das camadas de pooling conforme o quão importante é que a rede seja robusta em distorções. Em geral, o melhor é fazer pooling lentamente.
 
 ### Outros
 - Existem muitas coisas diferentes que podem ser feitas, com diferentes arquiteturas:
 #### R-CNN
 - Esta é a técnica usada para detetar objetos em imagens. Primeiro definimos caixas que limitam os objetos. Depois temos um passo de classificação.
-![[Pasted image 20241230162444.png]]
+![[cnn particoes.png]]
 #### U-Net
-![[Pasted image 20241230162603.png]]
+![[rede em u.png]]
 - Esta arquitetura tem a principal função de segmentar imagens. 
     - Azul - serve para extrair informação das imagens.
     - Vermelho - diminuem a resolução espacial da imagem. Faz com que a rede consiga aprender informação em diferentes escalas.
@@ -96,7 +96,7 @@
     - Cinzento - misturam canais de up e down sampling. Permite guardar detalhes das imagens.
 
 #### Convolução transposta
-![[Pasted image 20241230163410.png]]
+![[up sampling.png]]
 - Acima temos um exemplo simples. Movemos um kernel 3x3 ao longo de um input 4x4 com stride unitário.
 - Isto é equivalente a INVERTER uma convolução de uma input 2x2  padded com zeros com um kernel 3x3, com stride unitário. 
 - Isto permite aumentar a resolução (up-scaling!!!)
@@ -111,7 +111,7 @@ $$\text{Tamanho saída} = \frac{\text{Tamanho Entrada} - \text{Tamanho Filtro}}{
 ## Treinar NN profundas
 ### Problemas com o gradiente
 - Em redes em que usamos sigmoide ou funções hiperbolicas como ativação, é comum ter o problema de *gradientes a anular* (vanishing, a ir para zero). Ou seja, consoante fazemos backpropagation o gradiente vai diminuindo. Quando chegamos ao início da rede ele é nulo:
-![[Pasted image 20241230194732.png]]
+![[backpropagation.png]]
     - RELU já ajuda a evitar isto
 - No entanto, como estamos a usar valores numéricos, o gradiente poded **explodir**.
 - Assim, temos os seguintes indícios que nos permitem inferir o que se estará a passar:
@@ -146,19 +146,19 @@ $$\text{Tamanho saída} = \frac{\text{Tamanho Entrada} - \text{Tamanho Filtro}}{
 ### Data augmentation
 - Quando a base de dados que temos não é ENORME, isto é uma técnica útil.
 - Por exemplo, no caso de imagens, isto consiste em replicar uma imagem com algumas alterações (distorção, ruído, deformação, flip, mudança de cor) conforme o que queremos que a rede aprenda:
-![[Pasted image 20241230202253.png]]
+![[data augmentation.png]]
 
 ### Noise
 - Regra geral, é importante que a rede seja robusta a ruído. Assim, pode ser útil inserir ruído nos pesos e/ou nas saídas
 
 ### Dropout
 - Exatamente o que o nome indica:
-![[Pasted image 20241230203152.png]]
+![[dropout.png]]
 
 ## Learning Multi-Task
 - Consiste em treinar uma rede com o objetivo de poder fazer uma série de tarefas
 - Mais concretamente, redes podem ser treinadas para poder fazer muito bem tarefas/representações intermédias que podem ser usadas em várias tarefas distintas. Algo assim:
-![[Pasted image 20241230212228.png]]
+![[mutli task nn.png]]
 
 ## Optimizações para treinar redes profundas
 - No passado, NN foram treinadas com o objetivo de se manterem convexas.
@@ -168,10 +168,10 @@ $$\text{Tamanho saída} = \frac{\text{Tamanho Entrada} - \text{Tamanho Filtro}}{
 - Consistem em procurar exaustivamente um mínimo de perda. 
 - É o método mais usado por NN
 - Nomeadamente, é comum usar *descida do gradiente*. Este método baseia-se neste funcionamento que temos sempre perto de mínimos (locais e absolutos):
-![[Pasted image 20241230213644.png]]
+![[minimo vs derivada.png]]
 ou seja, ao somar o gradiente (derivada em n-D) a um certo ponto, iremos parar a um ponto mais próximo do mínimo. Consoante repetimos isto, eventualmente chegamos ao mínimo em si.
 - No que toca a encontrar mínimos de perda, temos:
-![[Pasted image 20241231151556.png]]
+![[minimos de loss e significados.png]]
 
 ### Computation Graph
 - Isto é uma representação. 
@@ -179,10 +179,10 @@ ou seja, ao somar o gradiente (derivada em n-D) a um certo ponto, iremos parar a
 - Um nodo/*node* para onde aponta um edge é uma **função** do nodo de onde sai.
     - Assume-se que um nodo sabe computar o seu valor e da sua derivada.
 - Um exemplo simples de um graph:
-![[Pasted image 20241231150721.png]]
+![[computational graph.png]]
 
 - Para fazer $\mathbf{x}^{T}\mathbf{Ax}$ temos:
-![[Pasted image 20241231150806.png]]
+![[computational graph 2.png]]
 a rede da direita é mais direta. A rede da esquerda é mais versátil e geral.
 
 #### Forward Propagation (FPROP)
@@ -194,7 +194,7 @@ a rede da direita é mais direta. A rede da esquerda é mais versátil e geral.
 - Calculamos a derivada de cada nó relativamente ao anterior. Com eles fazemos descida de gradiente
 - Esta propagação funciona com qualquer função de ativação derivável
 - Tem o dobro do custo computacional de FPROP
-![[Pasted image 20241231151436.png]]
+![[computational graph 3.png]]
 
 ### SGD
 - Este método normalmente vai descendo pela loss até eventualmente atingir um ponto crítico (que pode ser um máximo, mínimo ou ponto de cela). Felizmente, na maioria dos casos atinge um mínimo.
@@ -207,7 +207,7 @@ a rede da direita é mais direta. A rede da esquerda é mais versátil e geral.
 
 ### Batch Normalization
 - Consiste nisto:
-![[Pasted image 20241231152721.png]]
+![[batch normalization.png]]
 - Transformamos cada batch numa distribuição normal e controlada
 - Assim, cada batch transformável é diferenciável
 - Isto reduz a dependência dos gradientes na escala dos valores e nos valores iniciais. Por garantir que tudo é diferenciável, estabilziamos e regularizamos a rede

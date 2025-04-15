@@ -57,7 +57,6 @@
   "things-style@@active-line": true,
   "shimmering-focus@@hide-longform-status-bar": false,
   "shimmering-focus@@show-urls": true,
-  "shimmering-focus@@mac-os-native": true,
   "obsidian-prism-theme@@pt-font-alt-a": false,
   "obsidian-prism-theme@@pt-font-alt-g": true,
   "obsidian-prism-theme@@pt-font-slashed-zero": false,
@@ -111,5 +110,6 @@
   "shimmering-focus@@uncolored-italic": false,
   "anuppuccin-theme-settings@@anuppuccin-theme-light": "ctp-latte",
   "anuppuccin-theme-settings@@anuppuccin-theme-dark": "ctp-macchiato",
-  "anuppuccin-theme-settings@@anuppuccin-theme-accents": "ctp-accent-yellow"
+  "anuppuccin-theme-settings@@anuppuccin-theme-accents": "ctp-accent-yellow",
+  "shimmering-focus@@alt-colorschemes": "colorscheme-coffee"
 }

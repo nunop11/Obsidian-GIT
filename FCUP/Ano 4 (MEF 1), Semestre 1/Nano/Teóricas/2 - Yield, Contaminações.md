@@ -87,3 +87,5 @@ $$\frac{dC_{n}}{dt}=\frac{P}{V}- \frac{F}{V}\eta C_{n}$$
 
 - Uma solução estacionária desta EDO é:
 $$C_{n}^{0}=\frac{P}{F\eta}=\frac{P}{V} \frac{V}{F} \frac{1}{\eta}$$
+
+$$C_{n}=10^N(\frac{0.1}{D})^{2.08}$$

@@ -65,7 +65,7 @@ k=K &: &&P(y=y_{k}|\mathbf{x})=\frac{1}{1+\sum_{j=1}^{K-1}\exp(w_{j0}+\sum_{i=1}
 - Definimos: $$P(\mathcal{C}_{1}|\mathbf{x}_{i})=\mu_{i}=\frac{1}{1+\exp(-\mathbf{w}^{t}\mathbf{x}_{i})}~~~~;~~~~ p(\mathcal{C}_{0}|\mathbf{x}_{i})=1-\mu_{i}=\frac{1}{1+\exp(\mathbf{w}^{t}\mathbf{x}_{i})}$$
 - Temos a output em estudo $y_{i}\in\{0,1\}$
 - Para ajustar usamos uma *função Goal*, que neste caso é **NLL** - Negative Log-Likelihood:
-$$\text{NLL}(\mathbf{w})=-\sum\limits_{i=1}^{N}\log \left[ \mu_{i}^{y_{i}}(1-\mu_{i})^{1-\mu_{i}} \right]=-\sum\limits_{i=1}^{N} \left[y_{i}\log \mu_{i}+(1-\mu_{i})\log(1-\mu_{i}) \right]$$
+$$\text{NLL}(\mathbf{w})=-\sum\limits_{i=1}^{N}\log \left[ \mu_{i}^{y_{i}}(1-\mu_{i})^{1-y_{i}} \right]=-\sum\limits_{i=1}^{N} \left[y_{i}\log \mu_{i}+(1-y_{i})\log(-\mu_{i}) \right]$$
 - Os parâmetros $\mathbf{w}$ ótimos são auqeles em que temos:
 $$\mathbf{w} \leftarrow \text{argmin}_\mathbf{w} \left[-\sum\limits_{i=1}^{N} \left[y_{i}\log \mu_{i}+(1-\mu_{i})\log(1-\mu_{i}) \right] \right]$$
 

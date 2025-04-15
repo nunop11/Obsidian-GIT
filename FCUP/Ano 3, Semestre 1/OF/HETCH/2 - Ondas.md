@@ -191,7 +191,7 @@ k_{x}x+k_{y}y+k_{z}z&= a \quad\to\quad \mathbf{k}\cdot \mathbf{r}=a
 
 - Podemos então definir uma onda como $$\psi(\mathbf{r})=A\sin(\mathbf{k}\cdot \mathbf{r})$$
 ou seja, esta função vai descrever uma série de planos, em que todos os pontos têm a mesma amplitude e fase. Ora:
-![[onda plana.png|456]]
+![[Attachments/FCUP/A3S1/OF/onda plana.png|456]]
 
 **Onda parada no tempo**
 - Podemos visualizar ondas planas de outra forma:

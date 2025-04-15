@@ -88,7 +88,7 @@ e podemos fazer estruturas específicas
 ![[padroes feitos com evap.png]]
 
 ### Monitorizar espessura
-![[monitorizacao espessura evap.png]]
+![[monitorizacao espessura evap.png|354]]
 - Usamos uma *QCM* (quartz crystal micro-balance)
 - Isto consiste num material piezoelétrico, que gera uma corrente AC na sua frequência de ressonância
 - Consoante é sujeito a mais massa, a frequência muda
@@ -112,4 +112,168 @@ estas coisas são : período de ressonância, massa do filme, densidade do filme
 - Danos raios X
 
 # 2 - Epitaxy com Molecular Beam
-------- slide 31
+![[epitaxy.png]]
+- Sublimamos elementos de alta pureza e eles condensam na wafer. Feito num vácuo muito alto: $10^{-11}\text{ Torr}$
+- Usamos um beam de moleculas, que garante que as moléculas depositadas não colidem com as paredes da câmara nem outros átomos de gás
+- A deposição ocorre a um rate de 0.1nm/s
+
+![[epitaxy 2.png]]
+- A lógica:
+    - Usa-se efusão (moleculas saem de uma câmara inicial por orifícios menores que o caminho livre médio). Um dos métodos usados é Knudson cell
+    - Elementos de alta pureza (como Ga, As) são aquecidos em câmaras separadas e começam a sublimar lentamente. Saem para a câmara principal por efusão
+    - Os gases sublimam na wafer e podem reagir
+- Este método permite fazer estruturas muito precisas
+
+# 3 - Sputtering
+- Uma técnica mais flexível, usada pela industria de ICs para depositar alloys e dielétricos
+- Deposição rápida, com bom controlo de espessura
+- A lógica consiste em usar um plasma para expelir material de um target. Acontece uma série de colisões em cadeia assim:
+![[sputter.png]]
+
+### Sistema
+![[sputtering.png]]
+- Normalmente usamos ~1000V e ~10A
+- Como temos aqui, os átomos saem do target e sobem para o substrato, ficando depositados. Se trocarmos os dois de sítio, passamos a fazer etch do substrado.
+- Feito em câmara com gás em pressões de 1-10 mTorr
+- O rate de deposição chega a ser de dezenas de nm/min
+- Um sistema DC permite depositar metais. Um sistema pulsed permite depositar metais e isoladores
+
+### Como
+1. Coloca-se na câmara um gás inerte a baixa pressão
+2. Aplica-se DDP entre ânodo e cátodo
+3. Iões (positivos) do gás são acelerados rumo ao cátodo (que tem carga negativa)
+4. Ocorre sputtering e material do target deposita no substrado
+
+### Deposição
+$$R\propto \frac{M_{1}M_{2}}{(M_{1}+M_{2})^{2}} \frac{E_{m}}{U_{m}} \frac{1}{\cos\theta}$$
+- Em que:
+    - $M_{1}, M_{2}$ - massa do target e átomos do plasma
+    - $E_{m}$ - E cinética do ião que colide com target
+    - $U_{m}$ - Energia de bonding do átomo do material do target
+    - $\theta$ - ângulo entre ângulo de incidência do ião e a normal do target
+
+- Podemos definir o *yield de sputtering*: $$S=\frac{\# \text{médio de átomos emitidos}}{\# \text{iões incidentes}}$$
+
+#### VS Energia
+- Este aumenta com a energia:
+![[sputtering yield.png]]
+- Podemos acima ver que existe uma energia limite. Abaixo dela temos rendimento completamente nulo. Esta será:
+$$E_\text{threshold} = \gamma \phi= \frac{(M_{1}+M_{2})^{2}}{4M_{1}M_{2}}\phi$$
+em que $\phi$ é o calor de sublimação. Notemos que esta não é uma constante:
+![[sublimacao de materiais.png|187]]
+
+#### VS ângulo
+![[deposicao vs angulo.png]]
+- Se o ângulo $\theta$ não for muito alto (incidência quase normal), temos:
+$$S\propto \frac{1}{\cos\theta}$$
+- Isto faz sentido: quando menos perpendicular a incidência (maior $\theta$), mais energia é desperdiçada nos átomos do target perto da superfície de impacto
+- A partir de um certo ângulo o yield baixa muito porque desperdiçamos tanta energia que os iões incidentes são refletidos
+
+#### VS massa do ião
+![[deposicao sputtering atomos.png]]
+- Aumenta com a massa do ião (ou seja, ao percorrer átomos da tabela periódica)
+- Temos rendimento máximo para átomo com camadas de valência completas AKA *gases nobres*
+
+#### VS pressão da câmara
+![[sputtering pressao.png]]
+(ignora as setas)
+
+- A pressões muitooo baixas basicamente nem temos plasma
+- A baixas pressões temos poucos iões na câmara/plasma logo menos impactos e menos deposição.
+- A alta pressão temos tantos iões que um átomo sputtered passa por dezenas de colisões antes de depositar. Nisto, pode desviar-se e ir parar às paredes da câmara
+
+#### Step coverage
+- Os átomos são emitidos/sputtered do cátodo com altas energias (10-50 eV) e em ângulos diversos. Assim:
+![[step coverage sputtering.png]]
+- O filme depositado será mais denso (melhor)
+
+**Melhorar**
+- Uma forma de melhor isto será rodar/inclinar o substrado ao longo da deposição, já que ocorre algo assim:
+![[sputtering direcional.png]]
+- Usar uma fonte com maior área
+- Aquecer a fonte, o que permite maior mobilidade dos átomos depositados
+- Aplicar tensão negativa (bias) no substrado para reforçar deposição 
+
+## Sputtering de Alloys
+![[sputtering metais.png]]
+- A composição dos alloys é mantida consoante estes vão de target para film
+    - Nisto, começamos por ter uma combinação $A_{x}B_{y}$ no target
+    - Após algum tempo, em que $A$ é mais sputtered, ficamos com um sistema em equilíbrio: $A_{x'}B_{y'}$
+
+### DC Sputtering
+![[sputtering eletrico.png]]
+- O que vimos atrás
+- O target fica no cátodo e a wafer no ânodo 
+    - Iões positivos do gás seguem o campo elétrico, que vai de "+" para "-", ou seja, vão para o cátodo
+    - Num sistema de etch metemos a wafer no cátodo
+- Aplicamos uma DDP alta o suficiente para ionizar o gás (como usamos gases nobres, eles perdem 1 eletrão e ficamos com átomos com carga 1+):
+![[sputtering eletrico 2.png]]
+- Na câmara temos iões ionizados. Um ião colide e são libertados eletrões do target. 
+    - Estes eventualmente perdem energia e são recolhidos por um ião Ar+
+    - Ouuu, os eletrões juntam-se a um dos eletrodos
+
+### Magnetron sputtering
+- Usamos campo magnético perto do target para prender eletrões nessa zona. 
+- Os eletrões, devido ao campo B, fazem um circulo e regressam logo ao target:
+![[magnetron sputtering.png]]
+
+**Vantagens**
+- A corrente de deposição aumenta 100x
+- O rate de deposição aumenta 100x
+- Temos que usar menor pressão de gás (~0.5mTorr), melhora qualidade do filme
+![[magnetron vs dc depsoicao.png]]
+
+**Problemas**
+- Devido ao campo, maioritariamente só removemos material da região "racetrack"
+- Os materiais podem atingir a temperatura de Curie
+- Não podemos fazer sputtering de materiais magnéticos
+![[magnetron sputtering marca alvo.png]]
+
+### RF sputtering
+- Em DC sputtering ocorre concentração de carga positiva no cátodo. Isto efetivamente reduz o campo magnético que temos na câmara e portanto reduz a deposição
+![[sputtering rf.png]]
+- Usamos uma fonte de tensão oscilatória. Se a frequência for >50kHz, os iões não seguem o campo e neutralizamos a tensão em cada elétrodo
+- Ficamos com uma região intermédia com uma DDP. Isto é suficiente para acelerar os iões. Depois de colidir eles não ficam no target
+
+### Reactive sputtering
+- Usamos gases reativos (O2, N2)
+- Serve para garantir que parte do gás *fica* no filme depositado
+- Por exemplo, para depositar um filme TiN, usamos um target de Ti e um gas de N2
+    - Ou seja, o material do target combina com o gás em si
+- Aqui torna-se dificil controlar a estequiometria
+    - Na prática, frequentemente acabamos a formar mistura de materiais (que usam os mesmos átomos base, com estequiometrias diferentes)
+
+## Vantagens de Sputtering
+- Permite depositar muitos tipos de materiais
+- Permite replicar o target no filme
+- Ao inverter a polaridade dos eletrodos "limpamos" ?
+- Melhor step coverage e qualidade do filme do que evaporação
+- Temos mais controlo e replicabilidade da deposição
+- Podemos usar targets grandes
+- O material do target chegará para várias deposições
+- Sem dados Raios X
+
+## Desvantagens de Sputtering
+- Danificação do substrado por bombardeamento e UV
+- Pressão muito maior que evaporação, maior chance de contaminação
+- Para alguns materiais, deposição muito lenta
+- Alguns materiais não funcionam (organicos)
+- Ocorre muito aquecimento nas colisões
+- Muito alta tensão elétrica (DC,RF)
+- Luz UV emitida por Argon é perigosa para os olhos
+- Na prática, a câmara atua como um condensador gigante. Perigo
+
+## Sputtering VS Evaporação
+![[tabela sputtering.png]]
+
+# 4 - Pulsed Laser Deposition
+![[pulsed laser dep.png]]
+- Pulsos de laser concentrados evaporam o target no ponto de incidência e convertem-no em plasma
+- Este plasma reverte para gás e deposita no substrato
+- Estes pulsos são de fs ou ns. Usamos pulsos porque o plasma que se gera é refletido. Se o laser fosse constante iriamos atingir coisas que não queremos:
+![[pulsed laser dep 2.png]]
+
+- O tamanho dos buracos deixados no target com diametro na gama 10-75um, com ~15um de profundidade
+
+#### Aplicações
+![[apliacaoes dep.png]]

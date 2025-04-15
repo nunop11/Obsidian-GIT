@@ -22,7 +22,7 @@ $$TL=2CL-PL$$
 **Alinhadores**
 - Os alinhadores das fibras têm 3 eixos de movimento: X (perpendicular à fibra), Y (direção da fibra, aproximar e afasta da amostra) e Z (vertical)
 - O alinhador da amostra tem 4 parafusos: X (igual às fibras, mais coarse), Z (vertical), YAW e PITCH. O professor disse para nunca mexer no pitch
-![[Pasted image 20241207231800.png]]
+![[roll pitch yaw.png]]
 - Como os alinhadores são controlados por piezocristais, pelo que há 2 dispostivos que permitem controlar o alinhador de cada fibra com muita precisão
 
 **Fibras**
@@ -74,29 +74,29 @@ $$TL=2CL-PL$$
 ## Aplicação 1 - Divisor
 - A primeira amostra era um divisor de potência 8x 
 - Na amostra temso 3 guias de onda retos em cima e 3 em baixo. No centro temos um guia que se divide em 2 desta forma:
-![[Pasted image 20241207232332.png]]
+![[guia divisao x2.png]]
 cada um dos guias da biforcação divide-se mais 2 vezes, fazendo 8 ramos.
 - Como estas estruturas são feitas com processos litográficos, a resolução é limitada, o que faz com que o "bico" da biforcação seja suavizado. Isto é a principal perda por reflexão de Fresnel no divisor.
 
 ## Aplicação 2 - Coupler
-![[Pasted image 20241207234930.png]]
+![[coupling 90-10.png]]
 - Podemos passar 2 fibras muito, muito próximas. 
 - Como vimos na T3, isto vai fazer com que ocorra efeito de tunneling. Ou seja, os perfis do campo das 2 fibras sobrepõem-se.
 - Assim, através duma conjugação das fases dos inputs e comprimento da zona de união conseguimos controlar a intensidade das 2 saídas
 
 ## Aplicação 3 - Interferómetros
 ### Mach-Zehnder
-![[Pasted image 20241207235531.png|500]]
+![[coupler e decoupler guia.png|500]]
 - Esta configuração de fibras permite fazer este interferómetro. A forma normal deste interferómetro é:
-![[Pasted image 20241207235622.png|500]]
+![[Mach-Zehnder guia.png|500]]
 
 ### Michelson
-![[Pasted image 20241207235735.png|500]]
+![[Mach-Zehnder guia 2.png|500]]
 novamente, esta configuração permite fazer este interferómetro:
-![[Pasted image 20241207235843.png]]
+![[michelson guia.png]]
 
 ## Aplicação 4 - AWG
-![[Pasted image 20241208003024.png]]
+![[awg.png]]
 - Isto permite ter uma fibra multimodo (esquerda) que tem modos associados a muitos comprimentos de onda. Através deste dispositivo os sinais dessa fibra são divididos em cada um dos seus comprimentos de onda (direita).
 - Este tipo de sistema é usado nas fibras óticas subaquáticas. É muito mais fácil ter 1 fibra com milhares de comprimentos de onda que depois são decompostos. De um lado do oceano temo este sistema usado para juntar vários sinais e do outro lado do oceano temos o sistema a separar o sinal.
     - A alternativa era colocar mais cabos de fibra no oceano

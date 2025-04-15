@@ -74,11 +74,11 @@ $$\alpha=\sin^{-1}\left(\frac{y}{d}\right)$$
     1. O servo2 começa alinhado com o servo1 e isso é $\theta=90$. Para cada coordenada que queremos alcançar, ele roda entre 0 e 180. Ou seja, roda 90º para a esquerda e para a direita. Isto parece a approach mais intuitiva.
     2. O servo2 começa alinhado com o servo1 e isso é $\theta=0$. Para cada coordenada, ele roda de 0 a 180, sempre "atrás" do servo 1. Ou seja, o zero é quando o braço está extendido e o 180 seria quando o servo está completamente dobrado. Esta approach é menos intuitiva mas dá melhor cobertura:
 Cobertura de método 1:
-![[Pasted image 20241130233315.png]]
+![[range braco 2.png]]
 Cobertura de método 2:
-![[Pasted image 20241130233220.png]]
+![[range braco 1.png]]
 
 - Para o método 2 n\ao podemos ter exatamente isto. Na realidade o servo2 não pode rodar 180º para trás, bate no braço em si. Mudemos então a escala de $[0,180]$ para $[-30,150]$. A cobertura fica:
-![[Pasted image 20241130234642.png]]
+![[range braco 4.png]]
 continuamos a ter uma cobertura grande e agora conseguimos chegar ao canto oposto. Mas quanto mais próximo do range $[0,180]$ maior será a nossa área disponível.
 - O código que tenho pode facilmente ser adapatado para qualquer range que vejamos que é possível na vida real. Também penso que não será muito difícil recriar a função em C++

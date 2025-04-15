@@ -1,9 +1,9 @@
 ## 1.1 - Equações de Maxwell
 $$\boxed{\begin{align*}
-\nabla \cdot \vec{E}&= \frac{\rho}{\varepsilon_{0}} &&&& \textsf{(Lei de Gauss)} \\
+\nabla \cdot \vec{D}&= \rho_{\text{livre}} &&&& \textsf{(Lei de Gauss)} \\
 \nabla \cdot \vec{B}&= 0 &&&& \textsf{(Sem nome)}\\
 \nabla \times \vec{E}&= -\partial_{t}\vec{B} &&&& \textsf{(Lei de Faraday)}\\
-\nabla \times \vec{E}&= \mu_{0}\vec{\mathcal{J}}+ \mu_{0}\varepsilon_{0}\vec{E} &&&& \textsf{(Lei de Ampere-Maxwell)}
+\nabla \times \vec{H}&= \vec{\mathcal{J}}_{\text{livre}} + \partial_{t}\vec{D} &&&& \textsf{(Lei de Ampere-Maxwell)}
 \end{align*}}$$
 
 ## 1.2 - Ondas EM
