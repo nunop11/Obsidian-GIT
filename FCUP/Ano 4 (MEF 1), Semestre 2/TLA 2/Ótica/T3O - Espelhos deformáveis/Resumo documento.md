@@ -13,7 +13,7 @@
 
 #### Aberrações e polinómios Zernike
 - Aberrações são basicamente deviações lead ou lag em relação à aproximação paraxial
-![[Pasted image 20250409104724.png]]
+![[espelho deformavel.png]]
 (ou seja, é o desvio da frente de onda em comparação a uma frente de onda paraxial)
 - Consideramos $W(x,y)$ como sendo a diferença de caminho ótico entre a frente de onda real e a frente de onda paraxial (em $\mu\text{m}$) (abaixo vemos como funciona o sensor de frente de onda e vamos entender melhor isto). Podemos relacioná-la com a fase: $$\phi(x,y)=\frac{2\pi}{\lambda}W(x,y)$$
 - Os polinómios de Zernike são uma base completa e ortogonal de funções que cobrem o circulo unitário. Eles são muito úteis porque os termos de menor ordem coincidem com aberrações comuns. Eles consistem em produtos de fatores de normalização, poilnómios radiais e funções azimutais
@@ -31,14 +31,14 @@ $$W(x,y)=W(\rho,\theta)=\sum\limits_{j=1}^{\infty}a_{j}Z_{j}(\rho,\theta)$$
 #### WFS de Shack-Hartmann (SHWFS)
 - Consiste num array 2D de microlentes. O pitch (espaçamento) das microlentes deve ser pequenos o suficiente para o sampling detetar as aberrações
 - Temos este funcionamento:
-![[Pasted image 20250409110232.png]]
+![[shfws.png]]
 basicamente, as lentes focam os feixes e enviam-no para detetores. Assim, estamos a fazer sampling da frente de onda com um sistema ótico!
 - A distância a que um ponto se encontra do equivalente numa onda plana chama-se *gradiente / slope*.
 
 **Uma lente**
 - Para uma onda com aberração $W$, podemos aproximar a onda que chega a cada lente como uma onda plana *inclinada* (isto se a lente for menor em diametros do que a escala espacial da aberração). 
 - O ponto focado está desviado do eixo de propagação (o ponto equivalente de uma onda plana) em uma distância $\delta y$:
-![[Pasted image 20250409110654.png]]
+![[espelho deformavel 2.png]]
 e temos $$\tan\alpha=\frac{\delta y}{f_{ML}}=\frac{\Delta z}{\Delta y}$$
 temos que $f_{ML}$ é a distância focal da microlente. Obtemos estas 2 igualdades ao ver os triângulos à direita e à esquerda da lente, respetivamente. 
 - Como $z$ não é nada mais que a aberração em si, temos:
@@ -60,10 +60,10 @@ $$\mathbf{H}=(\mathbf{GG}^{T})^{-1}\mathbf{G}^{T}$$
 - Ou seja, sabemos $\mathbf{s}$ porque são medições. Se determinarmos $\mathbf{H}$, temos $\mathbf{b}$. Como $\mathbf{b}$ são os coeficientes da base Zernike, temos a frente de onda.
 
 ### Setup
-![[Pasted image 20250409111921.png]]
+![[montagem t3o.png]]
 - Este setup baseia-se no kit da Thorlabs.
 - As lentes e espelhos estão montados num sistema de cage (gaiola?), que garante caminhos óticos constantes e bem conhecidos:
-![[Pasted image 20250409112111.png]]
+![[sistema de cage.png]]
 - Esta configuração está feita de modo que o SHWFS, o DM e a saída do Laser (LS) estejam em planos óticos conjugados.
 - São usaadas lentes com distância focal 75mm
 - O X marca onde são colocadas amostras
@@ -78,8 +78,8 @@ $$\mathbf{H}=(\mathbf{GG}^{T})^{-1}\mathbf{G}^{T}$$
 7. No software do SHWFS guardar a frente de onda e os centroids
 8. No AOkit2, colocar o espelho plano e  guardar novamente os dados no software SHWFS - isto serão as posições de referência
 9. Repetir 6-8 para polinómios até $Z_{10}$ (ou $Z_{15}$ se possível)
-![[Pasted image 20250409113145.png]]
-![[Pasted image 20250409113156.png]]
+![[software espelho deformavel.png]]
+![[software shfws.png]]
 
 #### Análise
 - Queremos reconstruir a frente de onda a partir das medições. Precisamos então de um reconstrutor  $\mathbf{H}$

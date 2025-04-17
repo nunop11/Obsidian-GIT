@@ -4,20 +4,21 @@
     "2025/3/6": 591,
     "2025/3/7": 140,
     "2025/3/8": 2412,
-    "2025/3/9": 3314
+    "2025/3/9": 3314,
+    "2025/3/16": 2416
   },
   "todaysWordCount": {
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T1 - SQUID/T1M - Notas aula Nuno.md": {
-      "initial": 737,
-      "current": 1758
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Introdução.md": {
+      "initial": 3818,
+      "current": 3912
     },
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T5 - Baterias/T5M - Notas aula Nuno.md": {
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/2 - Proporções.md": {
       "initial": 0,
-      "current": 1100
+      "current": 2322
     },
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T3O - Espelhos deformáveis/Resumo documento.md": {
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/3 - Teste de Potência.md": {
       "initial": 0,
-      "current": 1193
+      "current": 0
     }
   }
 }

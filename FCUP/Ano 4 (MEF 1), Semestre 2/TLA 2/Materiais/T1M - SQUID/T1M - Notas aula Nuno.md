@@ -158,7 +158,7 @@ No final, isolamos as bombas da câmara antes de meter Ar e fazer o melting
 
 ## Medições
 - Ao variar a corrente na junção, o traçado $V(I)$ é assim:
-![[Pasted image 20250409001818.png]]
+![[curva transicao mrsquid.png]]
 (este traçado é medido com o sistema a baixa temperatura, com um cabo a liga-lo à fonte)
 - Ligamos o X da caixa ao CH1 e o Y ao CH2
     - X: corrente dente de serra que a caixa dá à junção

@@ -7,7 +7,7 @@
 - Podemos classificar tipos de armazenamento de energia conforme 2 variáveis:
     1. Capacidade de carga
     2. Rapidez de carregar
-![[Pasted image 20250409005408.png]]
+![[densidade e energia baterias.png]]
 
 *Condensadores*
 - Em condensadores, temos 2 placas condutoras com 1 isolador no centro : controlamos o fluxo de eletões/carga no espaço. Mas não controlamos o fluxo no tempo, a carga e descarga são quase instantaneas
@@ -63,7 +63,7 @@ ENTAOOOO nesta experiencia iremos usar SÓDIO. Ele é muito abundante e de fáci
 
 ## Espectrometria
 - Medimos um traçado que permite determinar a resistividade e capacitância do sistema
-![[Pasted image 20250409012829.png]]
+![[curvas nyquist.png]]
 - Tal como acima, podemos "fitar" os dados medidos a um circuito equivalente, mas temos que ter em conta a física!!!
 - A resistência medida:
     - associada ao interface onde há transferência (e acumulação) de carga

@@ -329,3 +329,9 @@ tal como vimos antes, normalmente não conhecemos $p_{1},p_{2}$ então usamos $P
 ### 1.4.2 - Testes unilaterais
 - Um teste bilateral é algo do tipo "ver se a média é igual ou não a X". 
 - Um teste unilateral será algo do tipo "ver se a média é superior a Y"
+- Apesar de parecer bastante diferente, este tipo de problemas pode ser resolvido usando ICs. Para isso, definimos a hipótese nula de forma diferente: $H_{0}: \mu \le \mu_{0} \quad;\quad H_{1}: \mu>\mu_{0}$ 
+    - Rejeitamos $H_{0}$ se $\mu\gg\mu_{0}$
+    - Ora, podemos definir $U_{0}=\frac{\overline{X}-\mu_{0}}{\sigma/\sqrt{n}}\sim N(0,1)$ e rejeitamos $H_{0}$ de $U_{0}$ for *elevado*
+        - Rejeitamos com 95% de confiança se $U_{0}>1.645$
+        - No caso *bilateral* rejeitariamos se $U_{0}>1.96$ OU $U_{0}<-1.96$
+

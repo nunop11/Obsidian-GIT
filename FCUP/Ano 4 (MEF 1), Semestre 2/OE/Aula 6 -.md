@@ -1,6 +1,6 @@
 ### Onda quase monocromática
 - Temos que as componentes de Fourier estão restritras a um intervalo estreito $\Delta\nu$ em torno de $\nu_{0}$
-![[Pasted image 20250402095439.png]]
+![[fourier onda cromatica.png]]
 vemos que a TF da função analítica apenas tem componentes de frequência positiva
 - Isto é o caso de um LED: não é monocromático mas quase
 
@@ -28,7 +28,7 @@ Y = y_{1}+y_{2}&= 2a\underbrace{\cos \left( \frac{\omega_{1}-\omega_{2}}{2}t - \
 &= 2a \cos \left( \frac{\omega_{1}-\omega_{2}}{2}t - \frac{k_{1}-k_{2}}{2}x \right)\cos (\overline{\omega}t-\overline{k}x)
 \end{align*}$$
 - Temos então a envolvente, que tem uma propagação lenta, multiplicada por uma onda principal
-![[Pasted image 20250402095940.png]]
+![[sobreposicao 2 ondas.png]]
 
 - Temos que $v_{f1}=v_{f2}=v_{f}$ logo $$v_{f1}=\frac{\omega_{1}}{k_{1}}=\frac{\omega_{2}}{k_{2}}=v_{f2}$$
 e temos, para a envolvente:
@@ -46,7 +46,7 @@ $$v_{g}=v_{f}-\lambda \frac{dv_{f}}{d\lambda}$$
 
 **Sobreposição de muiiiitas ondas com freqs diferentes**
 - Consideremos que temos $n$ ondas monocromáticas com a mesma amplitude, distanciadas de $\delta\omega$ e inseridas num intervalo $\Delta \omega=n\delta \omega$. Consideremos que $x=0$. Temos:
-![[Pasted image 20250402100443.png]]
+![[n ondas fourier.png]]
 - Temos, claro: $$\begin{align*}
 y(t,x=0)&= \sum\limits_{m=0}^{n-1} a\cos[(\omega_{1}+m\delta\omega)t]\\
 &= a \frac{\sin\left(\frac{n\delta\omega}{2}t\right)}{\sin\left(\frac{\delta\omega}{2}t\right)} \cos \left[ (\omega_{1}+ \tfrac{n-1}{2}\delta\omega)t \right]\\
@@ -70,7 +70,7 @@ temos $A(t)$ que é a envolvente complexa e $\nu_{0}$ a frequência central do e
 - A onda plana monocromática é um caso especial deste tipo de onda, em que $A(t)$ é *constante*.
 
 - Consideramos que a envolviente tem duração $\tau$, de modo que o pulso tem dimensão espacial $c_{0}\tau$
-![[Pasted image 20250402111911.png]]
+![[sobreposição n ondas.png]]
 - Podemos definir a FT:
 $$\begin{align*}
 V(\vec{r},\nu)&= \mathcal{F}[U(\vec{r},t)]\\
@@ -150,8 +150,8 @@ D_{\lambda_{0}}&= \frac{d \left(\frac{c_{0}}{\lambda_{0}} \right)}{d\lambda_{0}}
 - Ou seja, vimos que $D_{\nu},D_{\lambda_{0}}$ têm sinais opostos. Ora, este sinal não afeta o grau de alargamento do impulso. MAS afeta a fase da envolvente complexa.
 - Assim, o sinal do coeficiente (na prática só temos 1 coeficiente, representado de 2 formas) determina a propagação do pulso através de certos meios.
 - Se $D_{\nu}>0$ temos **dispersão normal** - Frequências mais elevadas demoram mais a proapgar. Ou seja, estas componentes chegam mais tarde.
-![[Pasted image 20250402120612.png]]
+![[dispersao normal.png]]
 - Se $D_{\nu}<0$ temos **dispersão anómala** - Frequências mais elevadas têm mais velocidade e chegam mais cedo.
-![[Pasted image 20250402120620.png]]
+![[dispersao anomala.png]]
 
 ---- SLIDE 23
