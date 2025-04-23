@@ -40,14 +40,14 @@ $$\text{Bias}[\tilde{p}]=\mathbb{E}[\tilde{p}-p]=\mathbb{E} \left[\frac{n \hat{p
 - Assim, se temos IC 95%, seria de esperar que contenham o valor real 95% das vezes
 - Para fazer isto, fazemos uma experiência de Monte Carlo: usamos sets aleatórios e testamos os ICs. No site que estamos a seguir, foi usada a função `dbinom` do R, que foi ainda mais simples que isto.
 - O resultado abaixo foi obtido para $n=25$:
-![[Pasted image 20250416191912.png]]
+![[wald vs ac, n const.png]]
 e para $n=50,n=100$:
-![[Pasted image 20250416192053.png]]
+![[wald vs ac, n const 2.png]]
 - De uma forma geral, vemos que o AC se comporta de forma muito mais estável. Especialmente para $p\sim0,p\sim1$ vemos que o IC de Wald é muito errático
 - Notamos ainda que Wald consistentementa tem coverage **abaixo** de 95%. Por outro lado, AC consistentemente está acima de 95%
 
 - Inversamente, podemos observar a coverage de Wald e IC, com $p$ fixo, consoante aumentamos o tamanho da amostra:
-![[Pasted image 20250416192530.png]]
+![[wal vs ac, p const.png]]
 - Podemos ver que, apesar de Wald tender a melhorar (como seria de esperar), AC consistentemente é melhor.
 
 ## Wilson
@@ -90,7 +90,7 @@ $$p\in \hat{p}\pm 1.96 \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$
 - Isto seria um teste de comparação como o Score Test, mas adaptado da fórmula de Wald:
 $$\text{Rejeitamos }H_{0}:p=p_{0}\text{ se :} \frac{\hat{p}-p_{0}}{\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}} > 1.96$$
 - Podemos comparar este teste ao Score teste. Vemos que o teste de Wald herda todos os defeitos de IC Wald: para $p$ perto de 0 ou 1, temos uma muito alta chance de cometer erros tipo 1:
-![[Pasted image 20250416200056.png]]
+![[score vs wald test, n const.png]]
 - Vemos então que este teste, apesar de concordante com o IC, é muito pior do que o score teste.
 - Então, porque não fazer o oposto: inverter o score teste!
 
@@ -109,7 +109,7 @@ $$\begin{align*}
 p_{0}=\frac{2n\hat{p}+z^{2} \pm \sqrt{4z^{2}n\hat{p}(1-\hat{p}) + z^{4}}}{2(n+z^{2})}
 \end{align*}$$
 que podemos desenvolver e obtemos:
-$$p_{0}=\frac{1}{2n(1+ \frac{z^{2}}{n})} \left[2n\left(\hat{p} + \frac{z^{2}}{2n}\right) \pm 2nz \sqrt{\frac{\hat{p}(1-\hat{p})}{n}+ \frac{z^{2}}{4n^{2}}} \right]$$
+$$p_{0}=\frac{1}{1+ \frac{z^{2}}{n}} \left[\left(\hat{p} + \frac{z^{2}}{2n}\right) \pm z \sqrt{\frac{\hat{p}(1-\hat{p})}{n}+ \frac{z^{2}}{4n^{2}}} \right]$$
 e aqui temos! Até já apareceu o termo do desvio padrão de Wald.
 - Notemos que, em R, fazer `prop.test()` faz o IC de Wilson.
 

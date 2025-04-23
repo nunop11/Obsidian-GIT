@@ -154,4 +154,84 @@ D_{\lambda_{0}}&= \frac{d \left(\frac{c_{0}}{\lambda_{0}} \right)}{d\lambda_{0}}
 - Se $D_{\nu}<0$ temos **dispersão anómala** - Frequências mais elevadas têm mais velocidade e chegam mais cedo.
 ![[dispersao anomala.png]]
 
----- SLIDE 23
+### Lorentz
+- Vamos agora interligar estas grandezas ao modelo de Lorentz
+- Consideremos um meio com 1 ressonância, na frequência $\nu_{0}$, com comprimento de onda $\lambda_{0}$
+- Temos $\chi=\chi'+i\chi''$. Desta forma, $k$ será complexo:
+$$k=k_{0}\sqrt{1+\chi}=k_{0}\sqrt{1+\chi'+i\chi''}$$
+- É útil escrever este número na forma $k=\beta- i \frac{1}{2}\alpha$ e facilmente definimos $\beta=n k_{0}$
+- Assim temos:
+$$n- i \frac{1}{2} \frac{\alpha}{k_{0}}=\sqrt{1+\chi'+i\chi''}$$
+- Na aula 4 vimos que:
+$$\chi'(\nu)=\chi_{0} \frac{\nu_{0}^{2}(\nu_{0}^{2}-\nu^{2})}{(\nu_{0}^{2}-\nu^{2})^{2}+(\nu\Delta\nu)^{2}} \quad;\quad \chi''(\nu)= -\chi_{0} \frac{\nu_{0}^{2}\nu\Delta\nu}{(\nu_{0}^{2}-\nu^{2})^{2}+(\nu\Delta\nu)^{2}}$$
+- Vimos nesta aula que:
+$$v_{g}=\frac{c_{0}}{N}\quad;\quad D_{\lambda_{0}}=- \frac{\lambda_{0}}{c_{0}} \frac{d^{2}n}{d\lambda_{0}^{2}}  \quad;\quad N(\lambda_{0})=n(\lambda_{0})- \lambda_{0} \frac{dn}{d\lambda_{0}}$$
+- Para $\chi_{0}=0.05, \Delta\nu/\nu_{0}=0.1$, temos:
+![[Pasted image 20250420162458.png]]
+- Os pontos de inflexão:
+    - Dão $N$ máximo - temos a menor velocidade de propagação da envolvente
+    - Dão $D_{\lambda_{0}}=0$ - menor dispersão temporal
+- Vemos que $n$ varia muito com $\lambda_{0}$ perto da ressonância e que $N$ explode nessa regição - isto acontece porque ele depende da derivada $\frac{dn}{d\lambda_{0}}$
+- Daqui surge uma dúvida interessante, vemos que $N$ desce  para bastante abaixo de $1$, logo teremos velocidade de grupo $v_{g}=\frac{c_{0}}{N}> c_{0}$  
+    - Ou seja, como é possível algo se mover mais rápido que a velocidade da luz no vácuo?? Na realidade isso não acontece - neste regime, a *informação* não se move à velocidade de grupo, logo nenhuma lei de Einstein é quebrada
+
+#### Sílica
+- Vidro de quartzo AKA sílica AKA $\text{SiO}_{2}$ 
+- "Parece" vidro, mas não tem ingredientes adicionados a vidro normal para baixar a sua temperatura de fusão
+- Como tal, sílica tem alta pureza e propriedades bem conhecidas
+- Na região de $[0.21-3.71]\mu\text{m}$ a dependência $n(\lambda_{0})$ é descrita pela equação de Sellmeier com 3 ressonâncias:
+$$n^{2}(\lambda_{0})=1 + \chi_{01}\frac{\lambda_{0}^{2}}{\lambda_{0}^{2}-\lambda_{01}^{2}} + \chi_{02}\frac{\lambda_{0}^{2}}{\lambda_{0}^{2}-\lambda_{02}^{2}} + \chi_{03}\frac{\lambda_{0}^{2}}{\lambda_{0}^{2}-\lambda_{03}^{2}}$$
+![[Pasted image 20250420163424.png]]
+e daqui é fácil representar $n,N,D_{\lambda_{0}}$ em função de $\lambda_{0}$:
+![[Pasted image 20250420163455.png]]
+- Tal como vimos acima com equações teóricas, para $\lambda_{0}=1.276\mu\text{m}$ temos 
+    - $N$ mínimo, logo temos $v_{g}=c_{0}/N$ máximo
+    - $D=0$ 
+
+# Guias de onda
+- Sistemas óticos convencionais usam elemetos óticos por onde a luz passa. Entre os elementos, a luz propaga-se no *ar*
+    - Temos lentes, espelhos, polarizadores que têm o objetivo de controlar as propriedades da luz 
+    - A isto chamamos de **bulk optics**
+- Mas sistemas deste tipo rapidamente se tornam MUITO complexos:
+![[Pasted image 20250420164016.png]]
+- Assim, em algumas situações é possível transmitir ondas óticas através de estruturas dielétricas, evitando-se a propagação no ar - **ótica guiada**
+- Na maioria dos casos, a luz é mantida dentro de um material dielétrico (alto $n$) graças ao princípio de *reflexão total*
+- Podemos ter guias de vários tipos:
+![[Pasted image 20250420164157.png]]
+
+**Fotónica (ou Ótica) integrada** 
+- Combinar num só chip vários elementos óticos que podem controlar a luz: geração de luz, focagem, divisão, combinação, isolamento, deteção, etc etc
+- A estes chips chamamos de PICs - Photonic Integrated Circuits
+![[Pasted image 20250420164344.png|500]]
+
+### História
+- Inicialmente comunicava-se com meios de propagação "pelo ar" - sinais de fumo, sinais com lenço
+- Mais recentemente, usam-se lasers colimados para comunicar a distâncias reduzidas:
+![[Pasted image 20250420164555.png]]
+que é muito interessante e útil, mas apenas para comunicar entre edifícios e que existe comercialmente.
+- Mas, em distâncias maiores, estes não funcionam devido a alta atenuação do sinal na atmosfera
+- Em 1842, Colladon demonstrou reflexão interna total em jatos de água
+- Em 1961, um guia de onda com lentes e espelhos foi construido
+- Em 1958, Karbowiak construiu um guia de onda em tubos metálicos ocos
+    - Mas este tipo de guias apenas tinham altas perdas porque apenas se colocava a luz num meio refletor, no ar
+- Assim, tornou-se mais relevante desenvolver um sistema mais como os atuais. Os primeiros estudos teóricos sobre guias dielétricos começaram em 1910, por Hondros e Debye - concluiu-se que um cilindro dielétrico suspenso no ar consegue guiar uma onda EM
+- Em 1920, Schreiver desenvolveu um sistema assim - havia alta propagação, com muitos modos com imensas distribuições
+- Em 1936 a propagação no sistema de Schreiver foi compreendida por Carson, Mead e Schelkunoff
+    - Mostrou-se que a propagação acontece com modos híbridos (componentes de E e H)
+    - Provaram que cada modo tem uma frequência de corte (freq mínima possível)
+    - Existe um modo de ordem mais baixa $HE_{11}$ que se propaga a qualquer frequência
+- Nos 1940s foi melhor ainda entendida a propagação e as funções de atenuação. Mas era muito difícil fazer vidros tão finos e uniformes como desejado
+- EM 1954, van Heel desenvolveu um guia otico coberto com um dielétrico e teve resultados promissores
+- Mesmo em 1960, os vidros mais puros tinham atenuações de $500\text{dB/km}$. Pensou-se que era impossível propagação em fibras
+- Em 1966, Hockham lançou um artigo fruto de 2 anos de investigação
+    - Revelou-se que a atenuação elevadissima era causada por iões de impurezas nos vidros (Cu, Fe, Cr, V, água, etc)
+    - Concluiu-se que o material com melhor transmissão era _**dióxido de silício / sílica**_
+- Em 1970, a Corning patenteou a primeira fibra ótica de baixa perda
+    - Tinha um núcleo de SiO2 e Ti, com perdas de $20\text{dB/km}$ para comp onda de $\sim850\text{nm}$
+    - Foi difícil fabricar em escala / difícil reproduzir
+- Em 1976, a NTT e Fujicara (Japão) desenvolveram uma fibra monomodo 1300-1500nm, com atenuação de $0.5\text{dB/km}$
+    - Em 1979, estas empresas atingiram o limite teórico a 1550nm - 0.2dB/km
+- Em 1975, Payne e Gambling descobriram a região de menor dispersão em fibras de sílica - por torno de 1300nm
+- Em 1984 foram criadas fibras com mínimo de dispersão em 1550nm - isto é perfeito tendo em conta os resultados japoneses em 1979
+- Esta é a tecnologia usada hoje em dia!
+
