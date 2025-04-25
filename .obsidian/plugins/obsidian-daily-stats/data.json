@@ -12,16 +12,13 @@
     "2025/3/20": 4203,
     "2025/3/21": 3595,
     "2025/3/22": 760,
-    "2025/3/23": 953
+    "2025/3/23": 3009,
+    "2025/3/24": 4
   },
   "todaysWordCount": {
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T4O - Pinças/Resumo artigo 1.md": {
-      "initial": 757,
-      "current": 1672
-    },
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T4O - Pinças/Resumo artigo 2.md": {
-      "initial": 0,
-      "current": 38
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/2 - Proporções.md": {
+      "initial": 2331,
+      "current": 2335
     }
   }
 }

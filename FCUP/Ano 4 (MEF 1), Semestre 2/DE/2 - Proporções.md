@@ -4,9 +4,9 @@
 $$\begin{align*}
 P \left(-z_{0} < \frac{\hat{p}-p}{\sqrt{\hat{p}\hat{q}/n}} < z_{0}\right) &= 1-\alpha\\
 P \left(-z_{0} \sqrt{\frac{\hat{p}\hat{q}}{n}}< \hat{p}-p < z_{0}\sqrt{\frac{\hat{p}\hat{q}}{n}}\right) &= 1-\alpha\\
-P \left(\hat{p}-z_{0} \sqrt{\frac{\hat{p}\hat{q}}{n}}< p < P+z_{0}\sqrt{\frac{\hat{p}\hat{q}}{n} }\right) &= 1-\alpha\\
+P \left(\hat{p}-z_{0} \sqrt{\frac{\hat{p}\hat{q}}{n}}< p < \hat{p}+z_{0}\sqrt{\frac{\hat{p}\hat{q}}{n} }\right) &= 1-\alpha\\
 \end{align*}$$
-e temos: $$\text{IC Wald : }p\pm z_{1-\alpha/2} \sqrt{\frac{pq}{n}}$$
+e temos: $$\text{IC Wald : }\hat{p}\pm z_{1-\alpha/2} \sqrt{\frac{\hat{p}\hat{q}}{n}}$$
 - Ora, podemos notar que, obviamente, nesta equação temos $p$ e $q=1-p$ que são precisamente a variável que queremos determinar e não conhecemos. Ora, para poder usar este intervalo na prática temos que usar $P,Q$ - as aproximações amostrais.
 - Temos então o **intervalo de Wald** que é bastante mau
 
