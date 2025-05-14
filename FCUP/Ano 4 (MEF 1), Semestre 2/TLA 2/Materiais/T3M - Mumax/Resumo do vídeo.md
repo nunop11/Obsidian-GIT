@@ -3,6 +3,7 @@
 - Neste tipo de material os momentos magnéticos tendem a alinhar
 - Temos:
 $$\vec{M}(\vec{r},t)=M_{S}(\vec{r})\vec{m}(\vec{r},t)$$
+
 em que $M$ é a magnetização do material, $M_{S}$ o campo de magnetização saturada e $m$ um vetor que indica a direção da polarização num ponto num certo instante.
 ![[tipos magnetizacao.png]]
 
@@ -11,6 +12,11 @@ em que $M$ é a magnetização do material, $M_{S}$ o campo de magnetização sa
 
 - A dinâmica da magnetização é descrita pela equação LLG:
 $$\dot{\vec{m}}=- \frac{\gamma}{1+\alpha^{2}} \left( \vec{m} \times \vec{H}_{eff} + \alpha \vec{m} \times (\vec{m} \times \vec{H}_{eff}) \right) \quad;\quad \vec{H}_{eff}=\frac{-1}{\mu_{0}M_{s}}\frac{\partial E}{\partial \vec{m}}$$
+ou:
+$$\frac{\partial\vec{m}}{\partial t}=- \gamma' (\vec{m} \times \vec{H}_{eff}) - \alpha' \vec{m} \times (\vec{m} \times \vec{H}_{eff})$$
+em que
+$$\gamma'=\frac{\gamma}{1+\alpha^{2}} ~~;~~ \alpha'=\gamma'\alpha~~;~~\vec{H}_{eff}=\frac{-1}{\mu_{0}M_{S}}\frac{\partial E}{\partial \vec{m}} $$
+
 - O termo $\vec{m}\times\vec{H}_{eff}$ descreve a *rotação/evolução* da magnetização em torno de Heff. O termo $\alpha \vec{m} \times (\vec{m} \times \vec{H}_{eff})$ é o *damping* da magnetização.
     - Temos então  um movimento em espiral da ponta da magnetização:
 ![[evolucao magnet.png]]

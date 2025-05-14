@@ -13,12 +13,21 @@
     "2025/3/21": 3595,
     "2025/3/22": 760,
     "2025/3/23": 3009,
-    "2025/3/24": 4
+    "2025/3/24": 4,
+    "2025/4/6": 0,
+    "2025/4/7": 53,
+    "2025/4/10": 0,
+    "2025/4/11": 0,
+    "2025/4/14": 1671
   },
   "todaysWordCount": {
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/2 - Proporções.md": {
-      "initial": 2331,
-      "current": 2335
+    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T5O - OTDR/Resumo doc sensor.md": {
+      "initial": 1,
+      "current": 1095
+    },
+    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T5O - OTDR/Resumo artigo.md": {
+      "initial": 10,
+      "current": 587
     }
   }
 }
