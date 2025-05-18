@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "1ef733e487020b50",
+        "id": "ff43ad195c1ea70c",
         "type": "tabs",
         "children": [
           {
-            "id": "ee751ee2ca7406d8",
+            "id": "b003527717524a15",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 9 - Fibras Óticas.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Aula 9 - Fibras Óticas"
+              "title": "New tab"
             }
           }
         ]
@@ -88,7 +84,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 465.5
+    "width": 465.5,
+    "collapsed": true
   },
   "right": {
     "id": "ff78a0b8e7bb2758",
@@ -205,23 +202,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ee751ee2ca7406d8",
+  "active": "b003527717524a15",
   "lastOpenFiles": [
+    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 9 - Fibras Óticas.md",
+    "Attachments/Pasted image 20250517205622.png",
+    "Attachments/Pasted image 20250517202042.png",
+    "Attachments/Pasted image 20250517170333.png",
     "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 7 - Guia planar.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 8 - Dispersão modal, acoplamento.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 9 - Fibras Óticas.md",
+    "Attachments/Pasted image 20250517154447.png",
+    "Attachments/Pasted image 20250516172033.png",
+    "Attachments/Pasted image 20250516171109.png",
+    "Attachments/Pasted image 20250515162515.png",
+    "Attachments/Pasted image 20250515160632.png",
+    "Attachments/Pasted image 20250515160554.png",
+    "Attachments/Pasted image 20250515155025.png",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T5O - OTDR/Resumo artigo.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T5O - OTDR/Resumo doc sensor.md",
-    "Attachments/Pasted image 20250514232745.png",
-    "Attachments/Pasted image 20250514231809.png",
-    "Attachments/Pasted image 20250514231411.png",
-    "Attachments/Pasted image 20250514231207.png",
-    "Attachments/Pasted image 20250514230335.png",
-    "Attachments/Pasted image 20250514224120.png",
-    "Attachments/Pasted image 20250514223208.png",
-    "Attachments/Pasted image 20250514222109.png",
-    "Attachments/Pasted image 20250514221225.png",
-    "Attachments/Pasted image 20250514220945.png",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T5O - OTDR",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T3M - Mumax/Resumo do vídeo.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/DE/4 - ANOVA.md",
