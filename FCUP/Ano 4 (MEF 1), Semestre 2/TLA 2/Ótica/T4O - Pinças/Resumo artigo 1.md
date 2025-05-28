@@ -18,7 +18,7 @@
 - O processo todo é explicada pela interação luz-matéria
 - Podemos ver abaixo as dinâmicas de uma particula *10x* maior que o comprimento de onda da luz do laser. 
     - Isto é o **regime de Mie**
-![[Pasted image 20250422225709.png|450]]
+![[pinca otica logica.png|450]]
 - Temos que
     - Scattering e reflexão de luz gera uma força na direção de propagação
     - Refração da luz resulta numa força que arrasta a partícula para a região de maior intensidade luminosa (assumindo que a particula tem maior $n$ que a vizinhança)
@@ -38,14 +38,14 @@
 - As pinças óticas usam lentes com alta NA e precisam de feixes altamente focados. 
     - A alta NA garante entrapment no espaço 3D, paraxial e lateral.
 - Para ter esta boa focagem, é preciso que a fonte tenha uma alta coerencia espacial 
-![[Pasted image 20250422231749.png]]
+![[luz wavelength coherent.png]]
 - Coerencia temporal é muito menos importante. Podemos usar um laser fentosegundo e assim não temos o problema de coerencia
 - A maioria das pinças usa uma fonte de ondas contínuas monocromáticas. 
 
 ### Setup de uma pinça
 - Este artigo não foca especificamente no processo de focagem
 - Veremos uma configuração usada para entrapment
-![[Pasted image 20250422232841.png|500]]
+![[montagem pinca otica 1.png|500]]
 - Para formar um ponto de foco no plano focal, uma lente de microscópio com magnificação elevada e com NA alto é uma boa escolha. No entanto, lentes de microscópio modernas consisteme em várias lentes juntas e formam uma imagem no infinito. 
     - Assim, usamos uma lente tubo para formar uma imagem na camara ou detetor usado
     - Este tipo de lente-no-infinito-corrigida não afeta as propriedades da pinça

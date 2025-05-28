@@ -10,7 +10,7 @@
 ### Teoria
 #### CRD
 - Num CRD tradicional temos
-![[Pasted image 20250514230335.png]]
+![[crd tradicional.png]]
 - Num CRD de fibra, um pulso otico é enviado para um loop de fibra. Neste loop temos 2 couplers nas 2 pontas: fonte e detetor. 
     - O loop faz o mesmo efeito que os espelhos.
 - Consoante se propaga no loop, a luz sofre perdas por atenuacao. Ainda assim, o pulso irá fazer várias voltas. 
@@ -26,17 +26,17 @@ e definimos a constante de tempo
 $$\tau=\frac{nL}{c(\alpha L - \ln (T_{s}T_{c}^{2}))}$$
 
 - Começamos por variar a largura do pulso no OTDR no range 0.5-20 us:
-![[Pasted image 20250514231207.png]]
+![[crd otdr medidas.png]]
 - Apenas 0.5 e 1 funcionam - nos outros temos saturação e sobreposição de picos
 - Escolhendo isto, é uma questão de configurar/escolher o sensor de intensidade de forma a ter o $\tau$ desejado
 
 ### Exp
-![[Pasted image 20250514231411.png]]
+![[montagem crd otdr.png]]
 - Usou-se um OTDR comercial e mandou-se pulsos de 1us
 - O pulso apssa uma fibra de 20km. Ao chegar ao coupler, passa para o loop de 800m. 
 - A ponta solta com 3km serve para reduzir reflexoes de Fresnel que iria tornar o sinal instavel.
 - No osciloscopio viu-se este decaimento (lido então à saída do coupler de baixo):
-![[Pasted image 20250514231809.png]]
+![[medicao crd otdr exp.png]]
 - Foi feito um ajuste exponencial e determinou-se um tempo de ring-down de 32us.
 
 **Sensor**
@@ -44,7 +44,7 @@ $$\tau=\frac{nL}{c(\alpha L - \ln (T_{s}T_{c}^{2}))}$$
 - O sensor consiste numa fibra tapered (vai ficando mais estreita) com 50um (na zona mais fina). Isto atua como um sensor de deslocamento
     - Chamamos a isto "sensor" porque podemos usar isto como um indicador. Ao dobrar o sensor, vemos que aumentam muito as perdas no CRD. Isso faz com que o decaimento lido no microscopio seja mais rapido. Em cada volta perdemos mais energia.
 - O taper foi então deslocado diferentes distâncias e temos o resultado abaixo:
-![[Pasted image 20250514232745.png|475]]
+![[efeito do displacement crd otdr.png|475]]
 
 - Viu-se que o tempo de decaimento aumenta linearmente com o deslocamento.
 - 

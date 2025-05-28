@@ -15,7 +15,7 @@
 - Vamos confiar que a informação disto está no artigo 2
 
 - Aqui usa-se um setup muito mais simples
-![[Pasted image 20250423120458.png]]
+![[montagem pinca otica 4.png]]
 - A entrada da objetiva é conjugada ótica de qualquer ponto em M2
     - M1 garante que o feixe chega à objetiva e preenchemos tudo
     - M2 depois é usado para mover a trap na amostra

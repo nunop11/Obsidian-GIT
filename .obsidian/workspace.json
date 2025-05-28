@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ff43ad195c1ea70c",
+        "id": "bbb16ec58229f893",
         "type": "tabs",
         "children": [
           {
-            "id": "b003527717524a15",
+            "id": "33a33810adca4c90",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -84,8 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 465.5,
-    "collapsed": true
+    "width": 465.5
   },
   "right": {
     "id": "ff78a0b8e7bb2758",
@@ -101,7 +100,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 9 - Fibras Óticas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +109,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Aula 9 - Fibras Óticas"
+              "title": "Backlinks"
             }
           },
           {
@@ -181,7 +179,8 @@
               "title": "Daily Stats"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -202,21 +201,39 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b003527717524a15",
+  "active": "33a33810adca4c90",
   "lastOpenFiles": [
+    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T2O - Laser em fibra/Resumo do artigo.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T2O - Laser em fibra/Resumo da introducao da experiencia.md",
+    "Attachments/Pasted image 20250528231031.png",
+    "Attachments/Pasted image 20250528223140.png",
+    "Attachments/Pasted image 20250528222541.png",
+    "Attachments/Pasted image 20250528222523.png",
+    "Attachments/Pasted image 20250528221156.png",
+    "Attachments/Pasted image 20250528181656.png",
+    "Attachments/Pasted image 20250528180904.png",
+    "Attachments/Pasted image 20250528175412.png",
+    "Attachments/Pasted image 20250528171235.png",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T2O - Laser em fibra",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 10 -.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/Robotica/Jacobiano de Projeto.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/Robotica/Receita de SCARA.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 9 - Fibras Óticas.md",
-    "Attachments/Pasted image 20250517205622.png",
-    "Attachments/Pasted image 20250517202042.png",
-    "Attachments/Pasted image 20250517170333.png",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 7 - Guia planar.md",
+    "Attachments/Pasted image 20250521163343.png",
+    "Untitled 5.canvas",
+    "Untitled 4.canvas",
+    "Untitled 3.canvas",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T1O - BB84/Resumo do PPT.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T1O - BB84/Resumo do PDF.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T1O - BB84",
+    "Excalidraw/scara-cine-inversa.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 8 - Dispersão modal, acoplamento.md",
-    "Attachments/Pasted image 20250517154447.png",
-    "Attachments/Pasted image 20250516172033.png",
-    "Attachments/Pasted image 20250516171109.png",
-    "Attachments/Pasted image 20250515162515.png",
-    "Attachments/Pasted image 20250515160632.png",
-    "Attachments/Pasted image 20250515160554.png",
-    "Attachments/Pasted image 20250515155025.png",
+    "Excalidraw/OE-fig1.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 7 - Guia planar.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 6 - Dispersão Vg, Guias.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T5O - OTDR/Resumo artigo.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T5O - OTDR/Resumo doc sensor.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T5O - OTDR",
@@ -230,25 +247,12 @@
     "FCUP/Ano 4 (MEF 1), Semestre 2/DE/2 - Proporções.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T4O - Pinças/Resumo artigo 3.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T4O - Pinças/Resumo artigo 2.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T4O - Pinças/Resumo artigo 1.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 5 - Espalhamento.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T4O - Pinças",
-    "Excalidraw/OE-fig1.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 6 - Dispersão Vg, Guias.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 4 - Onda Gauss, modelo Lorentz.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T3O - Espelhos deformáveis/Resumo documento.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T1M - SQUID/Resumo Arc Melt.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T3O - Espelhos deformáveis",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T1M - SQUID/T1M - Notas aula Nuno.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T4M - Raman/T4M - Notas aula Nuno.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T5M - Baterias/T5M - Notas aula Nuno.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T5M - Baterias",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T1M - SQUID",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T4M - Raman",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T3M - Mumax",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/Robotica",
-    "Untitled.canvas"
+    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T3M - Mumax"
   ]
 }

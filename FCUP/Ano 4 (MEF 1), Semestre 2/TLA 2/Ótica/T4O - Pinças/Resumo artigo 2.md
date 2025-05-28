@@ -20,13 +20,13 @@
 ### Elementos de uma pinça
 #### Oticas da trap
 - O setup de uma pinça normal é deste tipo
-![[Pasted image 20250423095327.png]]
-![[Pasted image 20250423100044.png]]
+![[montagem pinca otica 2.png]]
+![[montagem pinca otica 3.png]]
 - E penso que o segundo será o tipo que temos no lab
 - Tendo uma certa objetiva de microscopio escolhida e um certo laser: maximizar a profundidade da trap consiste em ajustar o tamanho e curvatura da luz incidente de forma que a luz fique focada e garanta um máximo de gradiente de intensidade $\nabla I$
 - Aumentamos $\nabla I$ ao diminuir $w_{trap}$ e manter a potência do laser constante. 	
 - A difração da luz limita bastante o quanto podemos baixar $w_{trap}$. Para uma lente ideal com distância foca $f$ a focar um laser de diametro $D$ e comp onda $\lambda_{0}$ teremos:
-![[Pasted image 20250423101130.png]]
+![[largura trap pinca otica.png]]
 - Com uma objetiva 100x imergida tem NA=1.25 e temos $w_{0}=0.17\mu m$ quando usamos luz vermelha $633nm$
 - Para uma certa lente, a trap tem força máxima quando o diâmetro da luz $d$ é $\approx D$, o diametro da objetiva.
     - Ou seja, a trap é mais forte quando "preenchemos a objetiva"

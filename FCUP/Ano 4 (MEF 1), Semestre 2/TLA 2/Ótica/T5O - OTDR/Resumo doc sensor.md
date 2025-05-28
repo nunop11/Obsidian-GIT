@@ -11,11 +11,11 @@
 - Depois deste tempo de aquisição, é feito processamento de sinal que calcula a distância e perda de cada medição (1 medição = 1 porção do feixe relfetida)
 - Isto permite calcular o comprimento total, a perda total da ligação, ORL e atenuação da fibra
 - Este sistema tem apenas 1 saída/cabo e permite caraterizar uma fibra
-![[Pasted image 20250514214349.png]]
+![[sistema otdr.png]]
 - Pelo que percebi, ficamos com um traçado com uma linha em função de distância. Teremos picos onde há reflexões. Num sistema a ser testado, os picos não são desejados e podemos encontrá-los à distância X da fonte. Penso que os picos medem perdas em dB
 
 #### Reflexão
-![[Pasted image 20250514214916.png]]
+![[otdr scattering.png]]
 - O OTDR permite "ver" a ligação ao ver a quantidade de luz que é refletida
 - Na imagem obtida temos 2 níveis de luz:
     - Luz de fundo - **scattering RAYLEIGH**
@@ -35,7 +35,7 @@
     - Ligação de fibras a aparelhos (bulkheads)
     - Ligadores de 2 fibras - mechanical splice
 - No traçado OTDR estas são marcadas por picos
-![[Pasted image 20250514215340.png]]
+![[otdr leitura.png]]
 
 #### Zonas mortas
 - Resultam de reflexões de **fresnel**. Existem duas: evento e atenuação
@@ -49,13 +49,13 @@
 - Para medir a zona morta, o standard medir a -1.5dB dos dois lados do pico (ver abaixo)
     - Também se pode medir desde o início do evento até -1.5dB após o pico, mas menos usado na industria
 - Claramente, o problema de zonas mortas é que podem impossibilitar detetar componentes se eles estiverem muito proximos (o que é comum em várias configurações). Ora, se um componente não for detetado, também será dificil detetar problemas nele.
-![[Pasted image 20250514220945.png]]
+![[otdr zona morta evento.png]]
 
 **Zonas mortas de atenuação**
 - Distância mínima após uma reflexão de fresnel em que o OTDR consegue medir a perda de um evento que vem a seguir
 - Ou seja, a distância necessária para poder detetar completamente o evento a seguir 
 - Medimos do início do primeiro evento até a reflexão descer para 0.5dB acima do background:
-![[Pasted image 20250514221225.png]]
+![[otdr zona mrota atenuacao.png]]
 - Ou seja, as zonas de Evento é a distância para conseguir detetar minimamente um 2o evento. As zonas de atenuação são a distância para voltar ao normal.
 
 **Importância de zonas mortas**
@@ -63,7 +63,7 @@
 - A zona morta também aumenta com a **largura do pulso**. As especificações de fábrica usam a menor largura possível, para dizer a menor zona morta possível
 
 #### Range dinâmico
-![[Pasted image 20250514222109.png]]
+![[otdr range dinamico.png]]
 - Range de perda máximo que o OTDR consegue medir
 - Na prática, isto significa que a distância de fibra máxima que conseguimos medir está diretamente relacionada com o range dinamico
     - Maior range == maior distancia
@@ -78,7 +78,7 @@
 - Basicamente, o tempo em que temos o laser ligado - a criar o pulso. Consonate o pulso se vai afastando da fonte, isto traduz-se num comprimento do feixe de luz
 - A largura do pulso controla a quantidade de energia que temos disponivel para "gastar" nas reflexoes
     - Pulso + longo = + energia
-![[Pasted image 20250514223208.png]]
+![[otdr largura pulso.png]]
 Como a energia é $E=\int P dt$, vemos que maior largura dá maior energia
 
 - Se o pulso for muito curto, não chega ao fim da fibra. Eventualmente a linha de background fica tão fraca que se mistura com o ruido
@@ -97,4 +97,4 @@ Como a energia é $E=\int P dt$, vemos que maior largura dá maior energia
 - Distância mínima entre 2 pontos seguidos que o OTDR consegue medir.
 - Isto varia com o aparelho em si, largura de pulso e o range de distância. Pode ir de 4cm a uns metros.
 - A resolução pode fazer a diferença em detetar algo:
-![[Pasted image 20250514224120.png]]
+![[otdr resolucao.png]]

@@ -31,7 +31,7 @@ $$\cos\theta= \frac{\beta}{k}= \frac{\beta}{\omega/c_{1}}= \frac{c_{1}\beta}{\om
 $$\tan^{2} \left[ \frac{d}{2} \sqrt{\left(\frac{\omega}{c_{1}}\right)^{2} - \beta^{2}} - \frac{\pi m}{2}\right]=\frac{\beta^{2}- \left(\frac{\omega}{c_{2}}\right)^{2}}{\left(\frac{\omega}{c_{1}}\right)^{2}-\beta^{2}}$$
 isto dá-nos a relação entre $\beta$ e $\omega$ para qualquer $m$.
 - Para polarização TE temos isto:
-![[Pasted image 20250421003210.png]]
+![[freq vs beta.png]]
 Por exemplo, vemos que para $\omega<\omega_{c}$ apenas temos 1 modo possível, tal como vimos para $\lambda_{0c},\nu_{c}$.
 - Podemos definir:
 $$\omega_{c}=2\pi\nu_{c}=\frac{\pi c_{0}}{d \sqrt{n_{1}^{2}-n_{2}^{2}}} \quad;\quad \nu_{c}=\frac{c_{0}}{2d\text{NA}}$$
@@ -48,7 +48,7 @@ $$\omega=\omega_{c} \frac{\sqrt{n_{1}^{2}-n_{2}^{2}}}{\sqrt{n_{1}^{2}-n_\text{ef
 ### Velocidade de grupo
 - A velocidade de grupo num guia é definida da mesma forma que fizemos num meio dispersivo:
 $$v_{g}=\frac{d\omega}{d\beta}$$
-![[Pasted image 20250421004902.png]]
+![[freq vs vel grupo.png]]
 - Usemos a lógica:
     - Um certo modo $m$ tem um ângulo de propagação $\theta_{m}$. A velocidade está associada a um número de oscilações por unidade de comprimento do guia.
     - Mas o gráfico acima mostra que a velocidade de grupo varia com a frequência. Vemos que existe uma maior variação (linha menos vertical) consoante nos aproximamos da frequência de corte. 
@@ -81,14 +81,14 @@ v_{g}&= \frac{d\cot\theta+\Delta z}{\frac{d}{c_{1}}\csc\theta+\Delta \tau}
 
 ### Vg de forma intuitiva
 - Quando o feixe se propaga entre 2 reflexões temos:
-![[Pasted image 20250421164250.png]]
+![[explicar vg de forma intuitiva.png]]
 em que já estão marcadas as distâncias deste triângulo. Sabemos ainda todos os ângulos.
 - Vemos então que $\overline{AB}=d\csc\theta$. Logo a luz demora um tempo $\frac{d\csc\theta}{c_{1}}$ a ir de A para B
 - Temos ainda que, no intervalo de tempo $\frac{d\csc\theta}{c_{1}}$ o feixe  percorre uma distância $d\cot\theta$ *ao longo do guia*
 - Ou seja, a **velocidade de propagação no guia** é: $\frac{d\cot\theta}{\frac{d\csc\theta}{c_{1}}}$
     - Esta equação *não* bate certo com a da velocidade de grupo, sendo que nessa temos uma distância $\Delta z$ extra percorrida, num tempo extra $\Delta\tau$!
 - Isto acontece porque a reflexão NÃO acontece no interface dos meios 1 e 2, mas sim num **plano fronteira dentro do meio 2**!
-![[Pasted image 20250421164900.png]]
+![[reflexao nao é instantanea.png]]
 e daqui surge a distância e tempo extras. Notemos que nesta parte "extra" o feixe move-se a velocidade $n_{2}$. Assim, a velocidade de grupo acaba por ser uma *média pesada* entre as velocidades dos percursos nos 2 meios.
 
 - Temos que o parametro $a$ (ver figura acima) depende de $\theta,\omega$. Sabemos que $\Delta z=\frac{d\phi_{r}}{d\beta}$. Assim, podemos dizzer que: $$a=f[ \phi_{r}(\theta,\omega) ]$$
@@ -98,11 +98,11 @@ e daqui surge a distância e tempo extras. Notemos que nesta parte "extra" o fei
 
 #### Efeito Goos-Hãnchen
 - Este é o nome do efeito em que o feixe se "desloca lateralmente" em cada reflexão:
-![[Pasted image 20250421165554.png]]
+![[reflexao nao é instantanea 2.png]]
 
 ## Guia 2D
 - Até agora estudamos guias que são planos com espessura $d$. Consideremos agora um guia que é um prisma com largura e altura $d$:
-![[Pasted image 20250421165706.png]]
+![[modos permitidos guia 2D.png]]
 - Como já vimos atrás: $\vec{k}=(k_{x},k_{y},\beta)~~,~~\cos\theta_{c}=\frac{n_{2}}{n_{1}}~~,~~ k_{x}^{2}+k_{y}^{2}\le n_{1}^{2}k_{0}^{2}\sin^{2}\theta_{c}$
 - Agora, temos que $k_{x},k_{y}$ são definidos pelas condições de fronteira do guia.
 - Notemos ainda que agora iremos ter modos $(m_{x},m_{y})$
@@ -116,11 +116,11 @@ $$M_{\text{2D}}\approx \frac{\pi}{4} M_{\text{1D}}^{2}~~\to~~M_{\text{2D}}\appro
 notemos que $\frac{\pi}{4}\approx0.78$ :)
 
 ## Geometria de Guias
-![[Pasted image 20250421172500.png]]
+![[tipos de guia planar.png]]
 nesta iamgem, azul mais claro representa um $n$ maior.
 
 - Além destas geometrias de organização de materiais, podemos ter várias configurações. Por exemplo, para o modelo "embedded strip" temos:
-![[Pasted image 20250421172740.png]]
+![[sistemas integrados com guia planar.png]]
 
 ## Acoplamento ótico
 - Temos radiação ótica a ser injetada na face de entrada de um guia
@@ -136,14 +136,14 @@ $$a_{\ell}=\int_{-\infty}^{+\infty}s(y)u_{\ell}(y)dy$$
 
 ### Acoplamento experimental
 - Na prática, o método mais óbvio é focar a radiação ótica na face de entrada. Isto é bom especialmente para excitar 1 modo só (pelo que deve ter o modo correto).
-![[Pasted image 20250421194958.png]]
+![[acoplamento de luz em guia.png]]
 
 - Já no caso de excitar vários modos sem grande cuidado de quais, o que importa é garantir que a radiação incide dentro do cone definido pela NA:
-![[Pasted image 20250421195549.png]]
+![[acoplamento de luz em guia 2.png]]
 em que sabemso que $\text{NA}=\sin\theta_{a}=n_{1}\sin\theta_{c}=\sqrt{n_{1}^{2}-n_{2}^{2}}$
 
 ### Acoplamente lateral
-![[Pasted image 20250421195740.png]]
+![[acoplamento lateral.png]]
 - A lógica é que estamos a inserir o feixe no guia diretamente numa das reflexões, pelo que ele simplesmente se propaga a partir daí.
 - Com este tipo de configuração, o objetivo é excitar um certo modo $m$ ao ajustar o ângulo $\theta_{i}$. 
 - Conhecemos:
@@ -160,7 +160,7 @@ n_{1}k_{0}\cos\theta_{m}&= n_{2}k_{0}\cos\theta_{i}
 - Assim, este método só por si não permite excitar 1 modo.
 
 ### Acoplamento com prisma
-![[Pasted image 20250421201258.png]]
+![[acoplamento prisma.png]]
 - Temos então reflexão total do feixe dentro do prisma, com um ângulo $\theta_{p}$.
 - Vimos também que, neste caso, a reflexão na base do prisma não é instantanea - o feixe "desliza" para o lado antes de refletir.
     - Vimos que isto acontece porque o feixe passa um pouco para além da base.
@@ -184,7 +184,7 @@ n_{1}k_{0}\cos\theta_{m}&= n_{2}k_{0}\cos\theta_{i}
 
 **Contas**
 - Consideremos então 2 guias a uma distância $2a$:
-![[Pasted image 20250421203938.png]]
+![[acoplamento entre modos.png]]
 - O guia 1 é aquele com índice de refração e por aí adiante.
 - Se estes guias estivessem "soltos" teríamos:
 $$\begin{align*}
@@ -226,7 +226,7 @@ P_{2}(z)&= P_{1}(0) \frac{|C_{12}|^{2}}{\gamma^{2}}\sin^{2}(\gamma z)
 \end{align*}$$
 
 - Então, neste caso em que o guia 1 começa com amplitude alta e o guia 2 com amplitude nula temos:
-![[Pasted image 20250421224410.png]]
+![[acoplamento entre modos 2.png]]
 ou seja, temos uma certa quantidade de potência trocar a alternar entre das 2 guias:
 $$P_{1}(z)+P_{2}(z)=\text{constante}$$
 - Notemos que nisto apenas uma porção da potência de $P_{1}$ é que passa para $P_{2}$, como vemos no gráfico.
@@ -245,7 +245,7 @@ P_{2}(z)&= P_{1}(0)\sin^{2}(Cz)
 e vemos que ocorre total.
 
 - Temos:
-![[Pasted image 20250421225300.png]]
+![[acoplamento entre modos 3.png]]
 e vemos que a completa transferência da potência de uma fibra para outra ocorre em intervalos de distância $z=L_{0}=\frac{\pi}{2C}$
 - Ao fazer uma medição da potência média em cada guia vemos que:
 $$\overline{P_{1}}=\overline{P_{2}}=\frac{1}{2}P_{0}$$
@@ -253,7 +253,7 @@ ou seja, temos um **acoplador 50/50**!
 
 #### Acoplador
 - Consideremos um acoplador assim
-![[Pasted image 20250421225541.png]]
+![[coupler.png]]
 - Consideremos que o acoplador tem comprimento fixo $L=L_{0}$ (o comprimento do acoplador é o comprimento da região de alta proximidade dos guias). Consideremos ainda que este acoplador tem $n_{1}=n_{2}$
 - Consideremos que $P_{1}(z=0)=P_{1}(0)~~,~~~P_{2}(z=0)=0$, tal como vimos atrás
 - Ora, como vimos acima, neste sistema a potência passa completamente de um guia para o outro em intervalos de $L_{0}$. Ora, sendo $L_{0}$ o comprimento do guia, iremos fazer apenas UMA troca:
@@ -267,4 +267,4 @@ $$\frac{P_{2}(\beta_{m,1}+\delta\beta_{m,1})}{P_{1}(0)}=\frac{\sin^{2}\left[\fra
 e assim, deixa de passar toda a potência para o guia 2.
 - No entantooooo, se tivermos: $$L_{0}\delta\beta_{m,1}=\sqrt{3}\pi$$temos $\frac{P_{2}(\beta_{m,1}+\delta\beta_{m,1})}{P_{1}(0)}=0$, logo volta a passar a potência toda para o guia 1!
 - Assim, controlando um campo elétrico no guia 1 com um sinal elétrico, podemos comutar a energia $\text{guia }1\to2$ e $2\to1$.
-![[Pasted image 20250421230905.png]]
+![[coupler 2.png]]

@@ -3,18 +3,18 @@
 - Para comparação, a distância de ida e volta Terra-Jupiter é de cerca de $1.5\cdot10^{9}\text{ km}$.
 
 ### Tipos principais
-![[Pasted image 20250421231303.png]]
-![[Pasted image 20250421231318.png]]
+![[tipos de fibra multimodo.png]]
+![[fibra monomodo.png]]
 
 ### Equações
 - Podemos analisar os ângulos num esquema como o de baixo:
-![[Pasted image 20250421231349.png]]
+![[propagacao em fibra simetria.png]]
 e vemos que:
 $$\sin\phi_\text{min}=\frac{n_{2}}{n_{1}}~~~~;~~~~\sin\theta_{0,\text{max}}=\sqrt{n_{1}^{2}-n_{2}^{2}}$$
 - *NOTA* : Aqui mudamos a notação (lol). Agora, ângulos de reflexão relativo à normal são $\phi$ e relativos â superfície são $\theta$. Nos guias usamos $\theta,\overline{\theta}$ nestas situações.
 
 - Facilmente vemos que $\sin\theta_{0,\text{max}}$ está relacionado e identifica a **abertura numérica** da fibra:
-![[Pasted image 20250421231743.png]]
+![[abertura numerica em fibra.png]]
 e isto é algo que já vimos para os guias planos.
 - Podemos escrever:
 $$\text{NA}=\sqrt{n_{1}^{2}-n_{2}^{2}}=\sqrt{(n_{1}-n_{2})(n_{1}+n_{2})}$$
@@ -26,12 +26,12 @@ $$\text{NA}\approx n_{1} \sqrt{2\Delta}$$
 ### Tipos de raios
 #### Meridionais
 - Raios que se propagam, sempre contidos num plano
-![[Pasted image 20250421233329.png]]
+![[raio meridional fibra.png]]
 
 #### Oblíquos
 - A situação mais geral
 - O feixe mais refletindo em planos a uma distância $R$ do centro da fibra
-![[Pasted image 20250421234112.png]]
+![[raio obliquo fibra.png]]
 
 ## Fabricação de fibras
 - Ao fabricar fibras, queremos fazê-las de materiais que permitam:
@@ -41,13 +41,13 @@ $$\text{NA}\approx n_{1} \sqrt{2\Delta}$$
 - Os materiais usados normalmente são *óxidos de vidro*, nomeadamente a **sílica SiO2** 
 
 ### Bainha
-![[Pasted image 20250515143216.png]]
+![[fibra step index.png]]
 - Para ter reflexão total interna, precisamos que $n_{2}<n_{1}$ (índice bainha < índice nucleo)
 - Opções:
     - **N** : Silica dopada com GeO2, **B** : Silica
     - **N** : Silica dopada com P2O5, **B** : Silica
 Silica permite controlar muito o índice de refração ao dopar:
-![[Pasted image 20250515143915.png]]
+![[dopagem e n.png]]
 
 ### Processos
 - A maioria das técnicas usa processos *vapor-phase oxidation*
@@ -56,7 +56,7 @@ Silica permite controlar muito o índice de refração ao dopar:
     - Por aquecimento estas partículas são transformadas numa mass homogénea chamada **preforma**
 - Depois ela é esticada de forma a formar um fio fino e uniforme
 - Caso real:
-![[Pasted image 20250515152212.png|244]]
+![[fabrico de silica e performa.png|244]]
 - No primeiro passo após arrefecimento a fibra é revestida com uma resina que protege a bainha de contaminações
 - A espessura final da fibra é decidida pela velocidade com que a enrolá-mos
 
@@ -67,10 +67,10 @@ Silica permite controlar muito o índice de refração ao dopar:
     - Deposição Vapor Químico Modificado (MCVD)
     - CVD ativada por plasma (PCVD)
 
-#### OPVO
+#### OPVD
 - Processo mais antigo
 - Partículas de sílica formam-se no ar através do processo descrito acima. Elas são depositadas num cilindro rotativo de cerâmica ou grafite. Podemos adicionar partículas nesta atmosfera para dopar
-![[Pasted image 20250515154321.png]]
+![[opvd.png]]
 - A preforma é criada então camada a camada
 - Depois removemos a vara e o tubo de vidro (poroso) é aquecido a 1400C, tornando-se em vidro solido transparente (o buraco central colapsa)
 
@@ -78,7 +78,7 @@ Silica permite controlar muito o índice de refração ao dopar:
 - Partículas de silica fabricadas da mesma forma que já vimos
 - Depois são depositadas no fundo de um cilindro  de vidro
 - Uma preforma porosa é obtida ao mover o cilindro na vertical. No final esta é aquecida para ficar sólida e transparente.
-![[Pasted image 20250515155025.png|360]]
+![[vad.png|360]]
 Na câmara de baixo ocorre reação, as partículas de SiO2 criam-se e depositam na base do cilindro. Entretanto no topo temos uma seed que roda (para termos algo uniforme) e que sobe (para termos um cilindro).
 - Temos as seguintes vantagens face a OPVO:
     - A preforma agora já não tem buraco central
@@ -86,7 +86,7 @@ Na câmara de baixo ocorre reação, as partículas de SiO2 criam-se e depositam
     - Sistema de fabricação mais compacta
 
 #### MCVD
-![[Pasted image 20250515160554.png]]
+![[mcvd.png]]
 - As partículas são mais uma vez formadas como atrás. Depois são metidas dentro de um tubo de sílica. Este depois faz de bainha
     - As partículas usadas podem ser sílica ou sílica + um dopante
 - As partículas depositam na parede interna do tubo por CVD. Depois essa massa é convertida em vidro sólido e transparente através de uma chama que se move para frente e para trás e aquece o tubo.
@@ -94,7 +94,7 @@ Na câmara de baixo ocorre reação, as partículas de SiO2 criam-se e depositam
 - Quando terminado, aquecemos muito o conjunto todo de forma a colapsá-lo todo num cilindro solido - a preforma
 
 #### PCVD
-![[Pasted image 20250515160632.png]]
+![[pcvd.png]]
 - Tal como em MCVD, fazemos deposição de sílica dentro de um tubo de sílica (que fará de bainha)
 - O tubo é mantido a 1000-1200C durante todo o processo. 
 - Usando microondas a 2.45GHz geramos um plasma no tubo. Isso faz com que depositemos vidro transparente diretamente no tubo
@@ -102,7 +102,7 @@ Na câmara de baixo ocorre reação, as partículas de SiO2 criam-se e depositam
 - MCVD e PCVD são os mais usados atualmente
 
 ### Fibras estruturadas / fotónicas
-![[Pasted image 20250515162515.png]]
+![[fibras com buracos.png]]
 - Os métodos que vimos apenas fazem fibras "normais" e sólidas
 - Mas por vezes podemos precisar de fibras estruturadas como vemos acima
 - Depois da preforma, esticamos a fibra como normalmente
@@ -118,7 +118,7 @@ Na câmara de baixo ocorre reação, as partículas de SiO2 criam-se e depositam
 #### Microfraturas
 - Vimos que defeitos, falhas e microfraturas reduzem a tensão 
 - Vamos modelar uma situação com uma microfratura:
-![[Pasted image 20250516171109.png]]
+![[modelagem de mricrofratura em fibra.png]]
 - Para que a fibra não quebre, é preciso que:
 $$h< \left(\frac{K}{\sigma \sqrt{\pi}}\right)^{2}$$
 em que $K$ depende da fibra especifica que está na ordem de $0.1 \text{N/mm}^{2}$
@@ -139,13 +139,13 @@ em que $K$ depende da fibra especifica que está na ordem de $0.1 \text{N/mm}^{2
 - Servem para proteger a fibra com uma estrutura resistente a deformações e ao ambiente
 - São importantes: a fibra só tem deformação elástica logo é péssima a absorver energia em colisões
 - Permite ligar a fibra em sistemas como se fossem fios elétricos
-![[Pasted image 20250516172033.png]]
+![[cabos fibra.png]]
 
 ### Outros tipos
 #### Fibras de Haletos
 - Estas têm menor perda no intervalo 0.2-8 um
 - Uma das melhroes composições: ZBLAN (Zirconio, Bario, Lantanio, Aluminio, Sodio)
-![[Pasted image 20250517154447.png]]
+![[fibra ZBLAN.png]]
 - Este material é pior para fibras longas, porque ainda tem menos elasticidade e quebra facilmente.
 
 #### Fibras de plástico (POF)
@@ -157,7 +157,7 @@ em que $K$ depende da fibra especifica que está na ordem de $0.1 \text{N/mm}^{2
 ## Propagação em fibras óticas
 - Vamos usar uma abordagem diferente daquela para as guias. Para estas:
     - Consideramos que o campo era do tipo onda plana e propagava-se no meio segundo $\pm\theta$
-    - Procuravamos os ângulos de oscilação em que as ondas planas nas direções $+\theta,-\theta$ se cruzam de forma a ter uma padrão de interferência independente de $z$:  ![[Pasted image 20250517170333.png]]
+    - Procuravamos os ângulos de oscilação em que as ondas planas nas direções $+\theta,-\theta$ se cruzam de forma a ter uma padrão de interferência independente de $z$:  ![[planos interferencia guia planar.png]]
     - Para estudar a diferença de fase entre as ondas usou-se Fresnel
     - Determinamos os ângulos modais. Os vetores de onda foram obtidos ao inserir estes ângulos nas equações para as ondas planas. 
     - Usou-se a equaçãi de Helmholtz para ter o campo na bainha
@@ -254,7 +254,7 @@ e vemos que os campos apenas têm **dependência radial!!!**
 - Este é o próximo passo.
 - Vários estudos feitos em guias mostraram que, para ter modos guiados, temos a condição: $$n_{2}k_{0}\le  \beta \le n_{1}k_{0}$$
 - Esta relação pode ser generalizada para fibras e temos:
-![[Pasted image 20250517202042.png]]
+![[n step index.png]]
 
 - Podemos definir a componente transversal do número de onda:
 $$k_{1}^{2}=k_{T}^{2}+\beta^{2}~~\to~~ k_{T}^{2}=k_{1}^{2}-\beta^{2}=n_{1}^{2}k_{0}^{2}-\beta^{2}$$
@@ -286,7 +286,7 @@ u(r)&= A_{n} J_{\ell}(k_{T} r)~~~~,~~ r<a\\
 u(r)&= A_{b}K_{\ell}(\gamma r)~~~~~~,~~r\ge a
 \end{align*}$$
 - Por exemplo, temos algo assim:
-![[Pasted image 20250517205622.png]]
+![[bessel e bessel modificada.png]]
 
 - Notemos que:
     - Quando temos $k_{T}$ maior, temos maior número de oscilações do campo no núcleo

@@ -1,6 +1,6 @@
 ## Algumas tecnologias
-### Sensores em dibra ótica
-![[Pasted image 20250420171732.png]]
+### Sensores em fibra ótica
+![[sensor em fibra otica esquema.png]]
 - Ou seja, a grandeza ou fenómeno a medir altera as propriedades da luz que se propaga na fibra ótica na região de interação
 
 ### Estado da arte
@@ -11,7 +11,7 @@
 
 # Guias dielétricos planares
 - Um guia de onda dielétrico planar tem esta estrutura:
-![[Pasted image 20250420172142.png]]
+![[propagacao em guia plano.png]]
 em que, necessariamente, $$\boxed{n_{1}> n_{2}}$$
 - **NOTA**: uma explicação de notação. $\theta$ marca um ângulo do *feixe com a superfície*. $\overline{\theta}$ marca um ângulo do *feixe com a normal*.
 - A condição para reflexão total é $\overline{\theta}>\overline{\theta}_{C}$, em que: $\overline{\theta}_{C}=\text{arcsin}\left(\frac{n_{2}}{n_{1}}\right)$
@@ -23,10 +23,10 @@ $$\overline{\theta_{C}}=\text{arcsin}\left(\frac{n_{2}}{n_{1}}\right) \quad;\qua
 ### Independente de Z
 - Pretendemos formar modos de propagação que tenham o mesmo efeito que a sobreposição de 2 ondas planas com separação $2\theta$ que seja constante ao longo de Z!
 - Ou seja, há **certos angulos** (não qualquer angulo!) que dão *modos de propagação*
-![[Pasted image 20250420202052.png]]
+![[ondas planas interferencia guia plano.png]]
 
 - Para ter isto, precisamos que isto aconteça:
-![[Pasted image 20250420202138.png]]
+![[ondas planas interferencia guia plano 2.png]]
 - Consideremos $\phi_{1}$ a fase da onda que se propaga até B (e passa em A)
 - Consideremos $\phi_{2}$ a fase da onda que se propaga até C (e passa em A)
 - Temos que ter continuidade em A, logo acontecer o que temos acima, é preciso que
@@ -64,7 +64,7 @@ $$\tan \left[ \frac{\pi d\sin\theta}{\lambda} - \frac{m\pi}{2} \right]=\sqrt{\fr
     - No da direita temos uma função que decresce em função de $\sin\theta$
 - Podemos olhara para esta equação de outra forma: os ângulo modais $\theta_{m}$ são os **pontos de interseção** destas 2 funções de $\sin\theta$.
 
-![[Pasted image 20250420204409.png]]
+![[angulos modais permitidos.png]]
 (LHS e RHS são os lados esquerdo e direito da equação)
 
 - Assim, teremos:
@@ -83,7 +83,7 @@ em que usamos $\left\lceil\dot{~}\right\rceil$ para indicar que $M$ é o inteiro
 
 ### Abertura numérica (NA)
 - Definimos 
-![[Pasted image 20250420205654.png]]  
+![[abertura numerica.png]]  
 $$\text{NA}=\sin\theta_{a}$$
 ou seja, $\theta_{a}$ é o ângulo máximo com que raios a incidir no guia vindos do ar *podem ser guiados*.
 - Temos que (não tenho dedução):
@@ -102,7 +102,7 @@ $$\text{NA}=\sqrt{n_{1}^{2}-n_{2}^{2}}$$
 $$M=\left\lceil \frac{\nu}{\nu_{C}}\right\rceil$$
 isto é uma equação muito mais simples e direta, que permite rapidamente entender o número de modos.
 - Temos então:
-![[Pasted image 20250420211035.png]]
+![[numero de modos e freq critica.png]]
 
 ### Campo TE
 - Vamos agora determinar o campo transverso associado ao ângulo $\theta_{m}$
@@ -179,7 +179,7 @@ $$\gamma_{m}= n_{2}k_{0} \sqrt{\frac{\cos^{2}\theta_{m}}{\cos^{2}\theta_{C}}-1}$
 quando $\theta_{m}$ aumenta, $\gamma_{m}$ diminui. 
 
 **O perfil**
-![[Pasted image 20250420235037.png]]
+![[modos transversais.png]]
 - Notamos que para $m=0$ temos um campo aproximadamente gaussiano
 - Podemos ter outra interpretação: as funções $u_{m}(y)$ *formam uma base* que permite obter todos os perfis dos modos.
     - Esta base é ortonormada como já referimos: $\int_{-\infty}^{+\infty}u_{m}(y)u_{n}(y)dy=\delta_{nm}$

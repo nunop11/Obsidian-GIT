@@ -167,7 +167,7 @@ $$\chi'(\nu)=\chi_{0} \frac{\nu_{0}^{2}(\nu_{0}^{2}-\nu^{2})}{(\nu_{0}^{2}-\nu^{
 - Vimos nesta aula que:
 $$v_{g}=\frac{c_{0}}{N}\quad;\quad D_{\lambda_{0}}=- \frac{\lambda_{0}}{c_{0}} \frac{d^{2}n}{d\lambda_{0}^{2}}  \quad;\quad N(\lambda_{0})=n(\lambda_{0})- \lambda_{0} \frac{dn}{d\lambda_{0}}$$
 - Para $\chi_{0}=0.05, \Delta\nu/\nu_{0}=0.1$, temos:
-![[Pasted image 20250420162458.png]]
+![[dispersao, N e n.png]]
 - Os pontos de inflexão:
     - Dão $N$ máximo - temos a menor velocidade de propagação da envolvente
     - Dão $D_{\lambda_{0}}=0$ - menor dispersão temporal
@@ -181,9 +181,9 @@ $$v_{g}=\frac{c_{0}}{N}\quad;\quad D_{\lambda_{0}}=- \frac{\lambda_{0}}{c_{0}} \
 - Como tal, sílica tem alta pureza e propriedades bem conhecidas
 - Na região de $[0.21-3.71]\mu\text{m}$ a dependência $n(\lambda_{0})$ é descrita pela equação de Sellmeier com 3 ressonâncias:
 $$n^{2}(\lambda_{0})=1 + \chi_{01}\frac{\lambda_{0}^{2}}{\lambda_{0}^{2}-\lambda_{01}^{2}} + \chi_{02}\frac{\lambda_{0}^{2}}{\lambda_{0}^{2}-\lambda_{02}^{2}} + \chi_{03}\frac{\lambda_{0}^{2}}{\lambda_{0}^{2}-\lambda_{03}^{2}}$$
-![[Pasted image 20250420163424.png]]
+![[freqs e susceps de silica.png]]
 e daqui é fácil representar $n,N,D_{\lambda_{0}}$ em função de $\lambda_{0}$:
-![[Pasted image 20250420163455.png]]
+![[grafico de n e D de silica.png]]
 - Tal como vimos acima com equações teóricas, para $\lambda_{0}=1.276\mu\text{m}$ temos 
     - $N$ mínimo, logo temos $v_{g}=c_{0}/N$ máximo
     - $D=0$ 
@@ -193,21 +193,21 @@ e daqui é fácil representar $n,N,D_{\lambda_{0}}$ em função de $\lambda_{0}$
     - Temos lentes, espelhos, polarizadores que têm o objetivo de controlar as propriedades da luz 
     - A isto chamamos de **bulk optics**
 - Mas sistemas deste tipo rapidamente se tornam MUITO complexos:
-![[Pasted image 20250420164016.png]]
+![[montagem otica tradicional.png]]
 - Assim, em algumas situações é possível transmitir ondas óticas através de estruturas dielétricas, evitando-se a propagação no ar - **ótica guiada**
 - Na maioria dos casos, a luz é mantida dentro de um material dielétrico (alto $n$) graças ao princípio de *reflexão total*
 - Podemos ter guias de vários tipos:
-![[Pasted image 20250420164157.png]]
+![[otica guiada.png]]
 
 **Fotónica (ou Ótica) integrada** 
 - Combinar num só chip vários elementos óticos que podem controlar a luz: geração de luz, focagem, divisão, combinação, isolamento, deteção, etc etc
 - A estes chips chamamos de PICs - Photonic Integrated Circuits
-![[Pasted image 20250420164344.png|500]]
+![[sistema otica integrada.png|500]]
 
 ### História
 - Inicialmente comunicava-se com meios de propagação "pelo ar" - sinais de fumo, sinais com lenço
 - Mais recentemente, usam-se lasers colimados para comunicar a distâncias reduzidas:
-![[Pasted image 20250420164555.png]]
+![[lasers comunicacao.png]]
 que é muito interessante e útil, mas apenas para comunicar entre edifícios e que existe comercialmente.
 - Mas, em distâncias maiores, estes não funcionam devido a alta atenuação do sinal na atmosfera
 - Em 1842, Colladon demonstrou reflexão interna total em jatos de água
