@@ -26,16 +26,15 @@
     "2025/4/20": 777,
     "2025/4/21": 2845,
     "2025/4/22": 376,
-    "2025/4/28": 1769
+    "2025/4/28": 1769,
+    "2025/4/29": 1239,
+    "2025/4/31": 1003,
+    "2025/5/1": 510
   },
   "todaysWordCount": {
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T2O - Laser em fibra/Resumo da introducao da experiencia.md": {
-      "initial": 0,
-      "current": 1608
-    },
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T2O - Laser em fibra/Resumo do artigo.md": {
-      "initial": 0,
-      "current": 161
+    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 10 -.md": {
+      "initial": 3647,
+      "current": 4157
     }
   }
 }

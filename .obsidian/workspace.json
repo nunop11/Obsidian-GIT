@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "bbb16ec58229f893",
+        "id": "abc0b08a074442e2",
         "type": "tabs",
         "children": [
           {
-            "id": "33a33810adca4c90",
+            "id": "1505af4a5e869a67",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -84,7 +84,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 465.5
+    "width": 465.5,
+    "collapsed": true
   },
   "right": {
     "id": "ff78a0b8e7bb2758",
@@ -201,25 +202,25 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "33a33810adca4c90",
+  "active": "1505af4a5e869a67",
   "lastOpenFiles": [
+    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 10 - Propagação em fibra.md",
+    "Attachments/Pasted image 20250601011619.png",
+    "Attachments/Pasted image 20250601010310.png",
+    "Attachments/Pasted image 20250601005608.png",
+    "Attachments/Pasted image 20250601005449.png",
+    "Attachments/Pasted image 20250601005344.png",
+    "Attachments/Pasted image 20250531232624.png",
+    "Attachments/Pasted image 20250531232518.png",
+    "Attachments/Pasted image 20250531202028.png",
+    "Attachments/Pasted image 20250531201100.png",
+    "Attachments/Pasted image 20250531195400.png",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 9 - Fibras Óticas, Bessel.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T2O - Laser em fibra/Resumo do artigo.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T2O - Laser em fibra/Resumo da introducao da experiencia.md",
-    "Attachments/Pasted image 20250528231031.png",
-    "Attachments/Pasted image 20250528223140.png",
-    "Attachments/Pasted image 20250528222541.png",
-    "Attachments/Pasted image 20250528222523.png",
-    "Attachments/Pasted image 20250528221156.png",
-    "Attachments/Pasted image 20250528181656.png",
-    "Attachments/Pasted image 20250528180904.png",
-    "Attachments/Pasted image 20250528175412.png",
-    "Attachments/Pasted image 20250528171235.png",
     "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T2O - Laser em fibra",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 10 -.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/Robotica/Jacobiano de Projeto.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/Robotica/Receita de SCARA.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 9 - Fibras Óticas.md",
-    "Attachments/Pasted image 20250521163343.png",
     "Untitled 5.canvas",
     "Untitled 4.canvas",
     "Untitled 3.canvas",
