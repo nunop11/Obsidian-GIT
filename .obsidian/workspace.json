@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "abc0b08a074442e2",
+        "id": "4a1db64cb07754d7",
         "type": "tabs",
         "children": [
           {
-            "id": "1505af4a5e869a67",
+            "id": "31c608f7d1af4821",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -49,9 +49,9 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"mie",
+                "query": "",
                 "matchingCase": false,
-                "explainSearch": false,
+                "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -101,6 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "FCUP/Ano 4 (MEF 1), Semestre 2/OE/OptoE - INDEX.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for OptoE - INDEX"
             }
           },
           {
@@ -120,7 +121,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -179,9 +182,24 @@
               "icon": "bar-graph",
               "title": "Daily Stats"
             }
+          },
+          {
+            "id": "76afe69733b3c4c4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte 2/Parte 2 - Apontamentos de Aula.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Parte 2 - Apontamentos de Aula"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -199,61 +217,62 @@
       "audio-recorder:Start/stop recording": false,
       "daily-notes:Open today's daily note": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "1505af4a5e869a67",
+  "active": "31c608f7d1af4821",
   "lastOpenFiles": [
+    "Excalidraw/Assinatura.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte 2/Parte 2 - Apontamentos de Aula.md",
+    "Attachments/Pasted image 20250703120800.png",
+    "Attachments/Pasted image 20250703111140.png",
+    "Attachments/Pasted image 20250703105523.png",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1/Parte 1 - Resumão.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte 2/ANOVA.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/DesenhoE - INDEX.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1/5 - Modelo Linear.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1/4 - ANOVA.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1/3 - Teste de Potência.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1/1 - Introdução.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1/2 - Proporções.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 5 - Supercondutor/Notas da Aula.md",
+    "FCUP/PEEC/Relatorio PEEC.md",
+    "FCUP/PEEC/Artigo 1 - Medidas Magnéticas.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte 2",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/A4S2 - INDEX.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/Robotica/ROBOTICA - INDEX.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/TLA2 - INDEX.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/OptoE - INDEX.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 12 - Estruturas, Sensores.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 11 - Atenuação, Dispersão, Amplificação em fibra.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 10 - Propagação em fibra.md",
-    "Attachments/Pasted image 20250601011619.png",
-    "Attachments/Pasted image 20250601010310.png",
-    "Attachments/Pasted image 20250601005608.png",
-    "Attachments/Pasted image 20250601005449.png",
-    "Attachments/Pasted image 20250601005344.png",
-    "Attachments/Pasted image 20250531232624.png",
-    "Attachments/Pasted image 20250531232518.png",
-    "Attachments/Pasted image 20250531202028.png",
-    "Attachments/Pasted image 20250531201100.png",
-    "Attachments/Pasted image 20250531195400.png",
     "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 9 - Fibras Óticas, Bessel.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T2O - Laser em fibra/Resumo do artigo.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T2O - Laser em fibra/Resumo da introducao da experiencia.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T2O - Laser em fibra",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/Robotica/Jacobiano de Projeto.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/Robotica/Receita de SCARA.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 8 - Dispersão modal, acoplamento.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 7 - Guia planar.md",
+    "FCUP/Ano 2, Semestre 2/Sinais/Teóricas/Aula 16 - Fourier.md",
+    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 5 - Sommerfeld.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 6 - Dispersão Vg, Guias.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1",
+    "Excalidraw/A3S2/IM",
+    "Excalidraw/A4S2/Robotica",
+    "Excalidraw/A4S2/TLA2",
+    "Excalidraw/A4S2",
+    "Excalidraw/A2S2/Moderna",
+    "Excalidraw/A2S2",
+    "Excalidraw/PEEC",
+    "Attachments/FCUP/A4S2/TLA2/gaussiana assimetrica.png",
+    "Attachments/Pasted Image 20250615172430_376.png",
+    "Attachments/Pasted Image 20250615171136_175.png",
+    "Attachments/Pasted Image 20250615170903_198.png",
+    "Attachments/Pasted Image 20250615170721_978.png",
     "Untitled 5.canvas",
-    "Untitled 4.canvas",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "Untitled.canvas",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T1O - BB84/Resumo do PPT.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T1O - BB84/Resumo do PDF.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T1O - BB84",
-    "Excalidraw/scara-cine-inversa.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 8 - Dispersão modal, acoplamento.md",
-    "Excalidraw/OE-fig1.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 7 - Guia planar.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 6 - Dispersão Vg, Guias.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T5O - OTDR/Resumo artigo.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T5O - OTDR/Resumo doc sensor.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T5O - OTDR",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T3M - Mumax/Resumo do vídeo.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/4 - ANOVA.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/3 - Teste de Potência.md",
-    "FCUP/Ano 3, Semestre 2/FMC/FMC - Estrutura de Bandas.md",
-    "FCUP/Ano 3, Semestre 2/FMC/FMC - Grafeno.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/5 - Modelo Linear.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/1 - Introdução.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/2 - Proporções.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T4O - Pinças/Resumo artigo 3.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T4O - Pinças/Resumo artigo 2.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T4O - Pinças",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T3O - Espelhos deformáveis",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T5M - Baterias",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T1M - SQUID",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T4M - Raman",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T3M - Mumax"
+    "Attachments/FCUP/A4S2/OE/tipos atenuacao vs comp onda.png",
+    "Attachments/FCUP/A4S2/OE/wdm.png",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T2O - Laser em fibra",
+    "Untitled 4.canvas"
   ]
 }

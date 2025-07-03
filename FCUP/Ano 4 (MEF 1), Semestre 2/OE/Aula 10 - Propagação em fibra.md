@@ -66,7 +66,7 @@ $$\begin{vmatrix}J_{\ell}(k_{T}a) & 0 & -K_{\ell}(\gamma a) & 0 \\ \frac{\ell\be
 - Este determinante dá-nos a **equação caraterística**:
 $$(\Gamma_{\ell}+K_{\ell})(k_{1}^{2}\Gamma_{\ell}+k_{2}^{2}K_{\ell})= \left(\frac{\beta \ell}{a}\right)^{2} \left[\frac{1}{k_{T}^{2}} + \frac{1}{\gamma^{2}} \right]^{2}$$
 em que:
-![[Pasted image 20250521163343.png|600]]
+![[gamma e kappa.png|600]]
 
 - Para cada valor $\ell$ (*número azimutal*), temos uma equação. Cada uma destas tem várias soluções, em que cada uma corresponde a uma constante de propagação: $\beta_{\ell m}~~~~,~~m=1,2,3,\dots,M_{\ell}$
 - Assim, podemos caraterizar cada modo com 2 índices: $(\ell,m)$ que descrevem as dependências radial e azimutal do modo
@@ -109,12 +109,12 @@ X \frac{J_{1}(X)}{J_{0}(X)}&= Y \frac{K_{1}(Y)}{K_{0}(Y)}
 \end{align*}$$
 em que:
 $$J_{-1}(X)=-J_{1}(X) \quad;\quad K_{-1}(Y)=K_{1}(Y)$$
-![[Pasted image 20250529142756.png]]
+![[numero de modos grafico.png]]
 - Ora, o lado esquerdo da equação é independente de $V$. Já o lado direito move-se para a direita com aumento de $V$.
 - Assim, consoante aumenta $V$ aumentam o número de interseções (modos) no gráfico acima. Ora, considerando que as curvas tipo parábola são $x \frac{J_1(x)}{J_0(x)}$ vemos que:
 $$\text{numero interseções = numero de zeros de }J_{\ell-1}(X)$$
 apenas *quando* $X\le V$
-![[Pasted image 20250529145122.png]]
+![[numero de modos grafico com zeros.png]]
 
 ##### Zeros
 - Chamamos aos zeros de $J_{\ell-1}(X)$ de $x_{\ell m}$
@@ -141,7 +141,7 @@ apenas *quando* $X\le V$
 - Não existe portanto grande diferença entre modos TE e TM (mesma $\beta$ e distribuição espacial em xOy)
 - Os modos TE e TM são degenerados -  temos propagação modal, cada modo consiste numa radiação com polarização linear constante no plano transverso. Cada modo é identificado por um $(\ell,m)$
 - Na aproximação paraxial deifnimos os modos como linearmente polarizados: modos LP
-![[Pasted image 20250529161754.png]]
+![[modos polarizados.png]]
 - A *equação carateristica da aproximação paraxial* é: $$X \frac{J_{\ell-1}(X)}{J_{\ell}(X)}=-Y \frac{K_{\ell-1}(Y)}{K_{\ell}(Y)}$$
 - Vimos o caso em que $\ell=0,V=10$. O número de valores diferentes de $\beta_{m}$ é igual ao número de interseções de $X\frac{J_{\ell-1}(X)}{J_{\ell}(X)}$ com $Y=\sqrt{V^{2}-X^{2}}$. 
 - Outra forma de formular isso é: número de zeros $x_{\ell m}$ de $J_{\ell-1}(X)$ em que $X\le V$
@@ -165,7 +165,7 @@ $$x_{\ell m}\approx (2m+\ell) \frac{\pi}{2}$$
 $$V= (2M_{\ell}+\ell) \frac{\pi}{2}~~\to~~ M_{\ell}=\frac{V}{\pi}- \frac{\ell}{2}$$
 em que: $M_{0}=V/\pi$, $\ell_{\text{max}}=\frac{2V}{\pi}$ e $M_{\ell_\text{max}}=0$
 - Disto temos a reta que define os estamos $(\ell,m)$ permitidos:
-![[Pasted image 20250529165122.png]]
+![[modos permitidos.png]]
 - Assim, o número total de modos $M$ é: $$M= \underbrace{2}_\text{polarização} \times \underbrace{2}_\text{$\ell$ pode ser <0} \times \sum\limits_{\ell=0}^{\ell_\text{max}}M_{\ell}=  \frac{4V^{2}}{\pi^{2}}$$
 notemos que:
 $$\begin{align*}
@@ -179,7 +179,7 @@ $$\begin{align*}
 Ou seja:
 $$M= \frac{4V^{2}}{\pi^{2}}~~~~;~~~~ V= \frac{\pi}{2} \sqrt{M}$$
 o que nos dá:
-![[Pasted image 20250529170740.png]]
+![[numero de modos vs V.png]]
 
 ### Dispersão
 - Temos que:
@@ -204,7 +204,7 @@ $$\beta_{\ell m}=n_{1}k_{0}\left(1- \frac{(2m+\ell)^{2}}{M}\Delta \right)$$
 - Notemos ainda que, considerando $M=\frac{4V^{2}}{\pi^{2}}$ temos: $$\ell_\text{max}=\sqrt{M}$$
 
 - Temos então:
-![[Pasted image 20250531194255.png]]
+![[modos permitidos 2.png]]
 logo, para um certo $\ell$ temos um $m_\text{lim}$ (para um certo yy iremos bater na reta ao aumentar $m$). Assim:
 $$m_\text{lim} = M_{\ell}=\frac{1}{2}\left(\frac{2V}{\pi}-\ell \right)=\frac{1}{2}(\sqrt{M}-\ell)$$
 
@@ -226,7 +226,7 @@ logo:
 $$\beta_{(\ell m)_\text{min}}=n_{1}k_{0}(1- \Delta)=n_{2}k_{0}$$
 - Ou seja, obtemos a partir dos índices dos modos um resultado que tinhamos obtido nos guias planares:
 $$\beta_{\ell m}\in[n_{2}k_{0},n_{1}k_{0}]$$
-![[Pasted image 20250531195400.png]]
+![[beta vs V.png]]
 
 #### Velocidades
 - Sabemos que a velocidade de grupo é dada por:
@@ -246,7 +246,7 @@ $$c_{1}(1-\Delta)\le v_{g}\le c_{1}$$
     - Para modos *de ordem alta* temos $v_{g}=c_{1}(1-\Delta)~~(2m+\ell=\sqrt{M})$ 
 - Temos então **Dispersão modal**
 - Para o modo LP01:
-![[Pasted image 20250531201100.png]]
+![[dispersao modal lp01.png]]
     - Este gráfico mostra que para cada $\omega$ (frequência da luz AKA comprimento de onda) temos um valor permitido de $\beta_{01}$ (indicado pela linha azul). Ou seja, para um mesmo modo temos dispersão temporal.
     - Os limites  com $c_{1}\beta,c_{2}\beta$ maracam as velocidades com que cada comprimento de onda se propagaria no núcleo e no revestimento da fibra, respetivamente.
 
@@ -254,7 +254,7 @@ $$c_{1}(1-\Delta)\le v_{g}\le c_{1}$$
 - Consideremos a situação geral, obtendo soluções **exatas** para a equação caraterística geral:
 $$(\Gamma_{\ell}+K_{\ell})(k_{1}^{2}\Gamma_{\ell} + k_{2}^{2}K_{\ell})= \left(\frac{\beta \ell}{a}\right)^{2} \left[ \frac{1}{k_{T}^{2}} + \frac{1}{\gamma^{2}} \right]^{2}$$
 em que
-![[Pasted image 20250531202028.png]]
+![[gamma e kappa 2.png]]
 
 - Depois veremos porquê, mas vamos substituir $\ell\in\mathbb{Z}_{0}^{+}$ por $\nu=0,\pm1,\pm2,\dots\in \mathbb{Z}$ logo:
 $$(\Gamma_{\nu}+K_{\nu})(k_{1}^{2}\Gamma_{\nu} + k_{2}^{2}K_{\nu})= \left(\frac{\beta \nu}{a}\right)^{2} \left[ \frac{1}{k_{T}^{2}} + \frac{1}{\gamma^{2}} \right]^{2}$$
@@ -271,9 +271,9 @@ $$b_{\nu m}= \frac{a^{2}\gamma^{2}_{\nu m}}{V^{2}}=\frac{\left(\frac{\beta_{\nu 
     - Temos então $n_\text{eff}= \frac{\beta_{\nu m}}{k_{0}}\in[n_{2},n_{1}]$
 
 - Temos a seguinte relação entre $\beta/k_{0}$ e $V$:
-![[Pasted image 20250531232518.png]]
+![[relacao para modos he e te.png]]
 e podemos determinar os perfis dos campos eletromagnéticos de alguns destes modos:
-![[Pasted image 20250531232624.png]]
+![[modos te, tm e ge.png]]
 
 ### Aproximação
 - Consideremos agora a aproximação $n_{1}\approx n_{2}\to \Delta\ll1$. Esta significa que $k_{1}\approx k_{2}\approx \beta$, logo a equação caraterística fica
@@ -308,16 +308,16 @@ $$X \frac{J_{\ell-1}(X)}{J_{\ell}(X)}=-Y \frac{K_{\ell-1}(Y)}{K_{\ell}(Y)}$$
 
 **LP0m**
 - Cada modo  $\text{LP}_{0m}$ deriva de um modo $\text{HE}_{1m}$:
-![[Pasted image 20250601005344.png]]
+![[lp em funcao de he.png]]
 
 **LP1m**
 - Cada modo $\text{LP}_{1m}$ deriva de modos $\text{TE}_{0m},\text{TM}_{0m},\text{HE}_{2m}$
-![[Pasted image 20250601005449.png]]
+![[lp em funcao de te,tm e he.png]]
 
 **Ordem superior**
 - Podemos generalizar isto.
 - Cada modo  $\text{LP}_{\ell m} (\ell\ge2)$ derivada de modos $\text{HE}_{\ell+1,m}~,~\text{EH}_{\ell-1,m}$
-![[Pasted image 20250601005608.png]]
+![[lp em funcao de he e eh.png]]
 
 ### Constante de propagação normalizada
 - Tudo igual a atrás
@@ -325,7 +325,7 @@ $$X \frac{J_{\ell-1}(X)}{J_{\ell}(X)}=-Y \frac{K_{\ell-1}(Y)}{K_{\ell}(Y)}$$
 - Com ela definimos $b_{\ell m}$, a constante de propagação normalizada
 - Novamente temos $$n_\text{eff}=\frac{\beta_{\ell m}}{k_{0}}\in[n_{2},n_{1}]$$
 - Para modos LP a relação $b$ VS $V$ é assim:
-![[Pasted image 20250601010310.png]]
+![[b vs V para LP.png]]
 - Temos que:
     - num modo de menor ordem temos maior radiação EM no núcleo
     - num modo de maior ordem temos mais radiação na bainha
@@ -343,4 +343,4 @@ P&= \frac{1}{2}\text{Re} \left[\int\limits_{0}^{+\infty}\int\limits_{0}^{2\pi} r
 \end{align*}$$
 - Na aproximação paraxial, tendo-se a energia total dos modos $\ell$ é $P_\ell$. Podemos definir a seguinte relação:
 $$\frac{P_{\ell|\text{bainha}}}{P_{\ell}}=1- \frac{P_{\ell|\text{nucleo}}}{P_{\ell}}$$
-![[Pasted image 20250601011619.png]]
+![[potencia bainha normalizada vs V para cada LP.png]]

@@ -1,17 +1,17 @@
 ## Criptografia
 - Tradicionalmente, usamos criptografia one-way para decifrar texto enviado entre 2 utilizadores.
-![[Pasted image 20250521092259.png]]
+![[encriptacao normal.png]]
 - Usamos funções fáceis de computar e difíceis de reverter sem a chave certa.
 - Em 1994, foi demonstrado um algoritmo que facilmente consegue resolver encripatções tradicionais. Mas este precisa de ser corrido num *computador quântico*. Isto significa que, se um sistema destes se tornar prático, a criptografia tradicional ficará em risco
 - Assim, para continuar a ter segurança, é preciso usar sistemas de criptografia quântica. 
 - Em 1984 foi establecido o 1o protocolo de criptografia quântica: **BB84**.
 
 - Um sitema deste tipo, com QKD (quantum key distribution) seria assim:
-![[Pasted image 20250521092700.png]]
+![[bb84.png]]
 temos uma chave, que é transmitida para o recetor graças a um *canal quântico*.
 
 ## Polarização de 1 fotão
-![[Pasted image 20250521092921.png]]
+![[polarizacao da luz.png]]
 - Sabemos que, com um polarizador, podemos escolher a orientação da polarização de um fotão (ou de um feixe)
 - Assim, podemos dividir a polarização em 2 base: uma normal e uma diagonal (em 45º)
 
@@ -67,7 +67,7 @@ $$\begin{align*}
 
 ### Codificação
 - Tendo em conta os sinais ao medir kets na própria base, definimos:
-![[Pasted image 20250521094947.png]]
+![[bases e bits bb84.png]]
 
 ## Regras da comunicação BB84
 ### 1. Emitir chave
@@ -83,7 +83,7 @@ $$\begin{align*}
 - Guardam apenas as medições que têm a *mesma base*. As restantes são apagadas
 - A Alice e o Bob apenas comunicam entre si a base, não o valor enviado. Isto pode ser feito publicamente.
 - Depois de remover os valores errados, ambos os lados ficam com a *chave de encriptação completa*.
-![[Pasted image 20250521095927.png]]
+![[bb84 criar key.png]]
 
 - Esta chave não é predefinida pela Alice. Como todas as bases são aleatórias, a chave é definida consoante enviamos dados e será diferente de cada vez que a fizermos.
 
@@ -109,12 +109,12 @@ $$\begin{align*}
 ## Montagem Thorlabs
 
 ### Sem espião
-![[Pasted image 20250521100933.png]]
+![[montagem bb84.png]]
 - Vemos assim como o Bob mede os valores de cada polarização
 - O sistema não é quântico (não medimos single photon), mas a polarização do laser permite simular perfeitamente
 
 ### Com espião
-![[Pasted image 20250521101059.png]]
+![[montagem bb84 com espiao.png]]
 - Vemos que a Eve tem que medir, perceber a base e valor e enviar de volta para o Bob
 - Ora, prever a base correta será muito difícil logo o valor poderá ter erros
 
@@ -139,25 +139,25 @@ E_{y}(z,t)=E_{0}\sin\theta e^{i(kz-\frac{k\lambda}{2}-\omega t)}=E_{0}\sin\theta
 \end{align*}$$
 
 ### Alice
-![[Pasted image 20250521102610.png]]
+![[valor, base e angulo alice.png]]
 - A Alice começa por escolher 2 sequências aleatórias: de bases $+\times$ e de bits $01$.
 - Seguimos então a figura acima. 
 - Usaremos isto:
-![[Pasted image 20250521102721.png]]
+![[half wave alice.png]]
 em que devemos sempre usar a planilha -  seguir o excel invés de criar a sequencia.
 
 ### Bob
 - O feixe é divido num componente assim, que permite medir 0 ou 1 em ambas as bases:
-![[Pasted image 20250521101319.png]]
+![[polarizing beamsplitter cube.png]]
 - Ele apenas a HWP para trocar entre as bases $+\times$:
-![[Pasted image 20250521102931.png]]
+![[half wave bob.png]]
 em que:
     - colocamos em $0º$ para selecionar a base $+$
     - colocamos em $45º$ para selecionar a base $\times$
 - Novamente, seguir a sequência e registar na planilha/excel.
 
 ### Todas as possibilidades
-![[Pasted image 20250521103057.png]]
+![[exemplo comunicacao bb84.png]]
 - Ou seja, apenas se as bases forem iguais existe um valor garantido para cada detetor
 - **Penso que** os valores nas colunas 'detetor 0' e 'detetor 1' são as *probabilidades* de cada um dos detetores detetar luz. 
     - Notemos que normalmente estes detetores são fotodiodos que apenas detetam SIM ou NAO luz. Não medem intensidade
@@ -169,9 +169,9 @@ em que:
 - Ou seja, ela tem que fazer o papel da Alice e do Bob em simultâneo.
 - Isto quer dizer que ela tem que escolher 2 bases aleatórias, esperando escolher o mesmo que Alice e Bob
 - Ela será detetada neste caso, por exemplo:
-![[Pasted image 20250521103939.png]]
+![[esquema bb84 com eve.png]]
 - Conforme comparamos mais e mais bits, a probabilidade de detetar a Eve aumenta:
-![[Pasted image 20250521104047.png]]
+![[probabilidade detetar eve.png]]
 com 20bits já temos 99.7%
 
 #### Mais a fundo
@@ -188,7 +188,7 @@ com 20bits já temos 99.7%
             - Mas, neste caso, temos 2 medições *aleatórias*. Eve mediu aleatóriamente o que recebe de Alice e Bob igualmente para o que recebe de Eve. Porque $B_{A}\neq B_{E}~,~B_{E}\neq B_{O}$
             - Em metade dos casos, o Bob vai medir o mesmo que a Alice enviou e Eve não é detetada. Mas na outra metade, a medição é diferente e Eve é detetada.
             - Este caso encontra-se na tabela abaixo
-![[Pasted image 20250521105418.png]]
+![[resumo detetar eve.png]]
 
 - Assim a probabilidade de detetar a Eve será: $$P_{detet} = 1 - \left(\frac{3}{4}\right)^{n}$$
 e temos o gráfico de cima.

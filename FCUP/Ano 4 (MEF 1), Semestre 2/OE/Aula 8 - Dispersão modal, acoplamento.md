@@ -202,7 +202,7 @@ $$\begin{align*}
 \frac{da_{1}}{dz}&= -i C_{21} e^{i\Delta\beta z}a_{2}(z)\\
 \frac{da_{2}}{dz}&= -i C_{12} e^{-i\Delta\beta z}a_{1}(z)
 \end{align*}$$
-em que $\Delta \beta=\beta_{1}-\beta_{2}$. Ou seja, temos equações acopladas (quem diria???) que descrevem como $a_{1},a_{2}$ evoluem ao longo da propagação nos Z.
+em que $\Delta \beta=\beta_{1}-\beta_{2}$. Ou seja, temos equações acopladas que descrevem como $a_{1},a_{2}$ evoluem ao longo da propagação nos Z.
 
 - Podemos definir estes coeficientes de acoplamento:
 $$\begin{align*}
@@ -253,7 +253,7 @@ ou seja, temos um **acoplador 50/50**!
 
 #### Acoplador
 - Consideremos um acoplador assim
-![[coupler.png]]
+![[Attachments/FCUP/A4S2/OE/coupler.png]]
 - Consideremos que o acoplador tem comprimento fixo $L=L_{0}$ (o comprimento do acoplador é o comprimento da região de alta proximidade dos guias). Consideremos ainda que este acoplador tem $n_{1}=n_{2}$
 - Consideremos que $P_{1}(z=0)=P_{1}(0)~~,~~~P_{2}(z=0)=0$, tal como vimos atrás
 - Ora, como vimos acima, neste sistema a potência passa completamente de um guia para o outro em intervalos de $L_{0}$. Ora, sendo $L_{0}$ o comprimento do guia, iremos fazer apenas UMA troca:

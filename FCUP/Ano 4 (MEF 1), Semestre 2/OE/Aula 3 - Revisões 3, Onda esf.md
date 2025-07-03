@@ -29,7 +29,7 @@ já que, sendo $\vec{D}=\varepsilon \vec{E}$ temos $\vec{E}=\frac{1}{\varepsilon
 
 - **NOTA** - se $\vec{E}_{1},\vec{E}_{2}$ são soluções da equação diferencial, a sua soma $\vec{E}_{1}+\vec{E}_{2}$ em geral NÃO é solução. Isto vem do facto que a equação não é linear.
 
-## Outra representação
+## Amplitude complexa
 - Vimos que podemos representar o campo ótico como:
 $$\vec{E}=\vec{E}_{0} e^{i(\vec{k}\cdot\vec{r}-\omega t)}=\hat{e}E_{0}e^{i(\vec{k}\cdot\vec{r}-\omega t)}$$
 isto é a representação do campo como uma onda plana.

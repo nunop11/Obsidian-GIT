@@ -275,7 +275,7 @@ u(r)&= A_{b} J_{\ell}(\gamma r) ~~~~~,~~ r\ge a \quad \quad(\text{bainha})
 \end{align*}$$
 em que $J_{\ell}(x)$ é a função de Bessel de 1ª espécie de ordem $\ell$. $A_{n},A_{b}$ são constantes.
 
-- Quando $x\gg1$ podemos escrever: $$J_{\ell}(x)\approx \sqrt{\frac{2}{\pi x}}\cos \left[x- \left(\ell+ \frac{1}{2}\right) \frac{\pi}{2} \right]$$
+- Quando $x\gg1$ podemos escrever: $$b  $$
 
 **Bessel modificada**
 - Definimos então a função de bessel de 2ª espécie ordem $\ell$ **modificada**:

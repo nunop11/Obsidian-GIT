@@ -4,9 +4,23 @@
 - Para definir um campo deste tipo, podemos começar por definir uma onda plana que se propaga no eixo $z$: $$U(z)=A(z) e^{-ikz}$$
     - Definimos $A(z)$ uma função que varia lentamente com $z$
 - Mas este campo cumpre a equação de Hemholtz? 
-- Se substituirmos $U(z)$ em $\nabla^{2}_{T}U + k^{2}U=0$, obtemos:
+- Dividimos $\nabla^{2}=\nabla_{T}^{2}+\partial_{z}^{2}$ logo: 
+$$\begin{align*}
+\partial^{2}U&= \nabla^{2}(A e^{-ikz})=\nabla^{2}_{T}(A e^{-ikz}) + \partial_{z}^{2}(A e^{-ikz})\\
+&= \nabla_{T}^{2}(A)e^{-ikz} + \partial_{z} \left[\frac{\partial A}{\partial z}e^{-ikz} -ik A e^{-ikz}\right]\\
+&= \nabla_{T}^{2}(A)e^{-ikz} + \frac{\partial^{2}A}{\partial z^{2}}e^{-ikz}-ik \frac{\partial A}{\partial z}e^{-ikz} -ik \frac{\partial A}{\partial z}e^{-ikz} - k^{2}A e^{-ikz}\\
+&= \nabla_{T}^{2}(A)e^{-ikz} + \frac{\partial^{2}A}{\partial z^{2}}e^{-ikz}-i2k \frac{\partial A}{\partial z}e^{-ikz} - k^{2}A e^{-ikz}\\
+\end{align*}$$
+- Assim substituimos $U$ na equação de Helmholtz:
+$$\begin{align*}
+\nabla^{2}U+k^{2}U&= 0\\
+\nabla_{T}^{2}(A)e^{-ikz} + \frac{\partial^{2}A}{\partial z^{2}}e^{-ikz}-i2k \frac{\partial A}{\partial z}e^{-ikz} - k^{2}A e^{-ikz} + k^{2}Ae^{-ikz}&= 0\\
+\nabla_{T}^{2}A + \frac{\partial^{2}A}{\partial z^{2}} -i2k \frac{\partial A}{\partial z}-k^{2}A+k^{2}A&= 0\\
+\nabla^{2}_{T}A+ \frac{\partial^{2}A}{\partial z^{2}}-i2k \frac{\partial A}{\partial z}&= 0
+\end{align*}$$
+- Consideramos o caso em que $A(z)$ é uma função envolvente que varia lentamente e $e^{-ikz}$ é responsável pelas oscilações da onda (já que $k=\frac{2\pi}{\lambda}\gg1$). Assim podemos dizer que $\partial_{z}^{2}A\approx0$ e temos:
 $$\nabla_{T}^{2}A(\vec{r}) - i2k \partial_{z}A(\vec{r})=0$$
-e esta é a **equação de Helmholtz em regime paraxial**.
+que é a **equação de Helmholtz em regime paraxial**.
 - A solução mais simples desta nova equação é a *onda paraboidal*:
 $$A(\vec{r})_\text{parab}=\frac{A_{1}}{z}e^{-ik \frac{x^{2}+y^{2}}{2z}} ~~\to~~ U(\vec{r})_\text{parab}\frac{A_{1}}{z}e^{-ik \frac{x^{2}+y^{2}}{2z}} e^{-ikz}$$
 e notemos que estamos em regime paraxial se $x,y\ll z$.

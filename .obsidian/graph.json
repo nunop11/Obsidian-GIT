@@ -8,31 +8,31 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:\"FCUP/Ano 1, Semestre 1\"",
+      "query": "path:\"FCUP/Ano 1, Semestre 1\"  ",
       "color": {
         "a": 1,
         "rgb": 14701138
       }
     },
     {
-      "query": "path:\"FCUP/Ano 1, Semestre 2\"",
+      "query": "path:\"FCUP/Ano 1, Semestre 2\"  ",
       "color": {
         "a": 1,
         "rgb": 14725458
       }
     },
     {
-      "query": "path:\"FCUP/Ano 2, Semestre 1\"",
+      "query": "path:\"FCUP/Ano 2, Semestre 2\"  ",
       "color": {
         "a": 1,
         "rgb": 11657298
       }
     },
     {
-      "query": "path:\"FCUP/Ano 2, Semestre 2\"",
+      "query": "path:\"FCUP/Ano 2, Semestre 2\"  ",
       "color": {
         "a": 1,
-        "rgb": 5405920
+        "rgb": 5431378
       }
     },
     {
@@ -41,18 +41,39 @@
         "a": 1,
         "rgb": 5431473
       }
+    },
+    {
+      "query": "path:\"FCUP/Ano 3, Semestre 2\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    },
+    {
+      "query": "path:\"FCUP/Ano 4 (MEF 1), Semestre 1\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5395168
+      }
+    },
+    {
+      "query": "path:\"FCUP/Ano 4 (MEF 1), Semestre 2\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 11621088
+      }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": true,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "textFadeMultiplier": 0.1,
+  "nodeSizeMultiplier": 0.996373333333333,
+  "lineSizeMultiplier": 0.996373333333333,
   "collapse-forces": false,
-  "centerStrength": 1,
-  "repelStrength": 20,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
   "linkStrength": 1,
-  "linkDistance": 81,
-  "scale": 0.05607756585711717,
+  "linkDistance": 250,
+  "scale": 0.10392103485073985,
   "close": true
 }

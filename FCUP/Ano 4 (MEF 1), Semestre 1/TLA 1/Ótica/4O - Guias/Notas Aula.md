@@ -96,7 +96,7 @@ novamente, esta configuração permite fazer este interferómetro:
 ![[michelson guia.png]]
 
 ## Aplicação 4 - AWG
-![[awg.png]]
+![[Attachments/FCUP/A4S1/TLA1/awg.png]]
 - Isto permite ter uma fibra multimodo (esquerda) que tem modos associados a muitos comprimentos de onda. Através deste dispositivo os sinais dessa fibra são divididos em cada um dos seus comprimentos de onda (direita).
 - Este tipo de sistema é usado nas fibras óticas subaquáticas. É muito mais fácil ter 1 fibra com milhares de comprimentos de onda que depois são decompostos. De um lado do oceano temo este sistema usado para juntar vários sinais e do outro lado do oceano temos o sistema a separar o sinal.
     - A alternativa era colocar mais cabos de fibra no oceano

@@ -11,5 +11,5 @@ em que $n_{eff}$ é o índice efetivo do modo.
 - Ao mudar o comprimento, curvatura, etc da fibra alteramos $n_{eff}$. E assim alteramos $\lambda_B$. 
 
 ## Montagem
-![[Pasted image 20250528231031.png]]
+![[montagem t2o.png]]
 - A FBG1 é esticada com um parafuso micrometrico

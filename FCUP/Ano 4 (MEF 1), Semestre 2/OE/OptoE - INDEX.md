@@ -1,0 +1,113 @@
+- Temos aqui um index de todos os resumos que tenho de OE, com mini descrições de cada
+
+## Teóricas
+- **1** - [[Aula 1 - Revisões]]
+    - Campos óticos
+    - Comportamento corpuscular / ondulatório de fotões
+    - Maxwell - campo EM em matéria
+- **2** - [[Aula 2 - Revisões 2]]
+    - Campo EM num meio: Polarização, Susceptibilidade, Permeabilidade
+    - Equação de onda
+    - Representação analítica de campo
+    - Tipos de polarização (linear, circular, eliptica)
+    - Interação de campo com a matéria: meio (não) linear, (não) dispersivo, (não) homogéneo, (an)isotrópico
+- **3** - [[Aula 3 - Revisões 3, Onda esf]]
+    - Continuação de "Interação de campo com a matéria" da aula 2
+    - Amplitude complexa: 
+        - Equações de Maxwell no vácuo e em alguns tipos de meios
+        - Vetor Poynting
+    - Dependência espacial de ondas: onda plana e esférica
+    - Dipolo elétrico: campo EM e caso muito longe
+- **4** - [[Aula 4 - Onda Gauss, modelo Lorentz]]
+    - Aproximação paraxial
+    - Feixe/onda gaussiana
+        - Intensidade, potência
+        - W(z) e interpretações
+        - Campo EM
+    - Absorção
+        - $\chi$ e k complexos
+        - Aproximação para meios com alta e baixa absorção
+    - Dispersão: breve introdução
+    - Absorção VS Dispersão
+    - Lorentz
+        - Lógica
+        - Como obter equação de movimento
+        - Como converter em equação diferencial da polarização e campo
+        - Como converter em equação de $\chi(\nu)$
+            - Estudar casos diferentes
+        - Meios com muitas ressonâncias e significados
+- **5** - [[Aula 5 - Espalhamento]]
+    - Introdução sobre espalhamento na prática
+    - Espalhamento pequena amplitude: Aproximações de Born e Bohr
+    - Espalhamento de Rayleigh
+    - Tratamento não escalar do espalhamento
+        - Secção eficaz
+        - Espalhamento de Mie
+        - Atenuação por espalhamento
+    - Dispersão temporal (cenas confusas sobre Fourier e função analítica)
+- **6** - [[Aula 6 - Dispersão Vg, Guias]]
+    - Onda quase monocromática e monocromática
+    - Revisão de OMC: sobreposição de várias ondas, velocidade de grupo
+    - Pulso de luz: vg e N
+        - Formula de vg e formula de N em função de $\lambda$
+    - Dispersão de vg
+    - Lorentz aplicado à dispersão da sílica
+    - Guias de onda: história
+- **7** - [[Aula 7 - Guia planar]]
+    - Guia dielétrico planar
+        - Geometria e reflexão interna total
+        - Independencia dos ângulos ao longo de zz
+        - Condição modal
+        - Modos e como determinar $\theta_{m}$
+        - Abertura numérica
+        - Guia monomodo e cortes
+        - Campo TE e TM
+- **8** - [[Aula 8 - Dispersão modal, acoplamento]]
+    - Dispersão modal, representada em $\omega(n)$
+    - Dedução da velocidade de grupo num guia planar
+        - Versão intuitiva da dedução
+        - Efeito Goos-Hãnchen
+    - Guia 2D
+    - Várias geometrias de guias
+    - Acoplamento ótico em guias
+        - Experimental
+        - Lateral
+        - Com prisma
+    - Acoplamento entre 2 modos (2 guias próximos): interação fraca
+- **9** - [[Aula 9 - Fibras Óticas, Bessel]]
+    - Importância de fibras. Tipos, equações básicas, tipos de raios
+    - Fabricação de fibras e técnicas 
+        - OPVD, VAD, MCVD, PCVD
+        - Fibras estruturadas/fotónicas
+        - Propriedades mecânicas de fibras
+        - Cabos, outros tipos de fibras
+    - Propagação em fibras e tipos de modos
+    - Análise teórica
+        - Equações de Maxwell dentro da fibra
+        - Geometria cilindrica: equações resultantes de maxwell
+        - Fibra step-index: funções de Bessel e Bessel modificada
+- **10** - [[Aula 10 - Propagação em fibra]]
+    - Condições de fronteira do campo EM na fibra. Juntar isto com as equações da aula 9. Dá sistema linear, obtemos matrizes
+    - Equação caraterística
+    - Como usar a equação caraterística para determinar $\theta_m$. Definir $X,Y,V$
+    - Aproximação de $V$ muito elevado
+        - Número de modos $M$
+        - Constante de propagação de um modo $\ell m$
+        - Velocidade de grupo em fibras
+    - Caso não paraxial
+        - Soluções quase exatas da equação caraterística
+        - Obtemos modos HE, EH, hibridos. Temos ainda modos LP
+- **11** - [[Aula 11 - Atenuação, Dispersão, Amplificação em fibra]]
+    - Fibras birrefringentes
+    - Atenuação em fibras. Relação entre potência e dB
+    - Várias fontes de perdas em fibras
+    - Dispersão. Abordar vários tipos de dispersões de forma bem explicada
+        - Dispersion shifted e Dispersion flatted fibers
+    - Amplificação
+        - Comunicação coerente (alternativa estudade)
+        - EDF (Ver experiência T2O de [[TLA2 - INDEX]])
+    - Fibras graded index
+- **12** - [[Aula 12 - Estruturas, Sensores]]
+    - Fibras óticas fotónicas: explicação da guiagem em vários tipos de fibras
+    - Estruturas em fibra: coupler direcional, polarizador em fibra, WDM, FBG, LPG, AWG, fibra multi-nucleo, interface multi-monomodo
+    - Sensores em fibra: vários tipos, muita palha

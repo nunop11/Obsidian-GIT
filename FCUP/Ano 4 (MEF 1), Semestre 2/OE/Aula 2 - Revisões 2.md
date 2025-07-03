@@ -56,7 +56,7 @@ $$\nabla \times(\nabla \times \vec{E}) + \mu_{0} \partial_{t}^{2}\vec{D}=0$$
 **Equação**
 - Temos então:
 $$\nabla \times (\nabla \times\vec{E}) + \frac{1}{c^{2}} \partial_{t}^{2}\vec{E} = -\mu_{0} \partial^{2}_{t}\vec{P}$$
-- Na deduçã assumimos que:
+- Na dedução assumimos que:
     - Não há cargas livres nem correntes externas
 - Para o campo H existe uma equação equivalente.
 - Temos: $$c^{2}=\frac{1}{\mu_{0}\varepsilon_{0}}$$

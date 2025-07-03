@@ -1,0 +1,31 @@
+- Aqui junto os indexes de todas as cadeiras deste semestre. Listo alguns temas das cadeiras
+
+- **Optoeletrónica (OE)** - [[OptoE - INDEX]]
+    - Campos óticos e interação com matéria
+    - Espalhamento
+    - Feixe gaussiano
+    - Guia planar
+    - Fibra ótica
+- **Técnicas Laboratoriais Avançadas 2 (TLA2)** - [[TLA2 - INDEX]]
+    - Materiais
+        - SQUID, Arc Melting
+        - Shielding effectiveness
+        - Mumax3 simulations
+        - Raman scattering
+        - Baterias de água salgada
+    - Ótica
+        - Criptografia BB84
+        - Laser em fibra, amplificação EDF
+        - Espelhos deformáveis
+        - Pinça ótica
+        - OTDR
+- **Desenho experimental** - [[DesenhoE - INDEX]]
+    - Parte 1
+        - Inferência e testes estatísticos
+        - Intervalos de confiança
+        - Testes de potência
+        - ANOVA
+        - Modelo linear
+- **Robótica** - [[ROBOTICA - INDEX]]
+    - Jacobiano de braço RPP
+    - Receita de braço SCARA
