@@ -46,16 +46,13 @@
     "2025/7/4": 0,
     "2025/7/20": 858,
     "2025/7/21": 3201,
-    "2025/7/28": 12
+    "2025/7/28": 12,
+    "2025/8/19": 0
   },
   "todaysWordCount": {
-    "Teste.md": {
-      "initial": 0,
-      "current": 12
-    },
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 2 - Revisões 2.md": {
-      "initial": 2030,
-      "current": 2020
+    "Random Bullshit.md": {
+      "initial": 57,
+      "current": 57
     }
   }
 }

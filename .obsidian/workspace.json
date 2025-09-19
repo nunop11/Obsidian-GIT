@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ec255fef4f90cceb",
+        "id": "56fcfb35d0df34e4",
         "type": "tabs",
         "children": [
           {
-            "id": "39c58b4f257708e7",
+            "id": "254300f8eab87122",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -217,12 +217,16 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "39c58b4f257708e7",
+  "active": "254300f8eab87122",
   "lastOpenFiles": [
     "README.md",
+    "Untitled.md",
+    "Teste.md",
+    "Coisas Úteis.md",
+    "Random Bullshit.md",
+    "Callouts.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 2 - Revisões 2.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 9 - Fibras Óticas, Bessel.md",
-    "Teste.md",
     "Attachments/Pasted image 20250828201641.png",
     "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 1 - Revisões.md",
     "FCUP/PEEC/PEEC INDEX.md",
@@ -242,10 +246,6 @@
     "FCUP/Ano 2, Semestre 2/Moderna/MODERNA - INDEX.md",
     "FCUP/Ano 2, Semestre 2/Moderna/TP - 26 ABRIL.md",
     "FCUP/Ano 2, Semestre 2/Moderna/Teóricas/Aula 21 - Spin (19-5-2023).md",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/TLA1 - INDEX.md",
-    "FCUP/Ano 2, Semestre 2/Sinais/SS - INDEX.md",
-    "FCUP/Ano 2, Semestre 2/Prob Estat/PROB - INDEX.md",
-    "FCUP/Ano 2, Semestre 2/Moderna/Teóricas/Notas sobre dúvidas que me surgem de vez em quando.md",
     "FCUP/Ano 2, Semestre 2/Computacional/Rascunhos",
     "FCUP/Ano 3, Semestre 1/MF/Notas para o estudo de MF.pdf",
     "FCUP/Ano 3, Semestre 2/FMC/Notas teóricas",
