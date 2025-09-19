@@ -50,7 +50,7 @@ $$\begin{align*}
 - Testa se as distribuições de 3+ amostras são diferentes; $H_{0}:\text{todos os grupos têm da mesma distribuição}$
 
 ### ANOVA
-![[Pasted image 20250703105523.png]]
+![[ANOVA desenho.png]]
 - Definimos algo assim. Temos:
     - Resposta $Y$
     - Fator que estudamos. Para o fator temos 4 tratamentos/níveis
@@ -87,7 +87,7 @@ u_{ijkl}\sim N(0,\sigma^{2}) \\
 \end{cases}$$
 
 ### Interação em gráfico
-![[Pasted image 20250703111140.png]]
+![[interacao a partir de grafico.png]]
 - Temos aqui um estudo de PAS (pressão artelial sistólica) em:
     - Homens vs Mulheres (eixo X)
     - Sujeito Normal vs Vegetariano (retas diferentes)
@@ -155,5 +155,5 @@ $$Y_{ij}=\mu + a_{i} + \beta_{j} + u_{ij}$$
 ### Efeitos crossed
 - Pode haver sistema em que temos combinação de interação/crossed e nested
 - Podemos ter algo assim:
-![[Pasted image 20250703120800.png]]
+![[efeitos crossed.png]]
 em que temos 1 medição por combinação I,M. Mas NÃO temos interação apesar do gráfico o indicar.

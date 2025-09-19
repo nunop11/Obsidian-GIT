@@ -1,4 +1,4 @@
-![[TP Moderna 26-4-2023|650]]
+w![[TP Moderna 26-4-2023|650]]
 - Temos então 3 regiões. 
 - As regiões 1 e 3 são proibídas na fisica clássica. Isto porque temos $E=E_{c}+V$. Ora, se $E<V$, então é preciso que se tenha $E_{c}<0$, o que é impossível na física clássica.
 

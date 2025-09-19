@@ -1,6 +1,7 @@
 - Temos aqui um index de todos os resumos que tenho de DE, com mini descrições de cada
 
 ## Parte 1 - ew
+[[Parte 1 - Resumão]]
 - **1** - [[1 - Introdução]]
     - Inferência estatística
     - Estimação de média, variância, etc
@@ -33,5 +34,6 @@
     - Regressão componentes principais, Regressão alta dimensão
 
 ## Parte 2 - yay
+- [[Parte 2 - Apontamentos de Aula]]
 - Tenho apontamentos OK, mas só em papel
 - No verão, tentar passar

@@ -87,6 +87,3 @@ temos metal, isolador, metal.
 - Computação neuromórfica consiste em sistemas large-scale que emitam arquiteturas neuro-biológicas
     - É então preciso conseguir imitar as dinâmicas não lineares dos neurónios e o paralelismo e densidade
 - A implementação mais comum de tentar fazer isto são **redes neuronais**!
-
-### Neurónios artificiais
-- 

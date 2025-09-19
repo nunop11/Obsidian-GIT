@@ -1,0 +1,110 @@
+## Sala limpa (3?)
+- Notas sobre coisas da sala limpa: o que fizemos em cada aula, ao detalhe: [[Notas Sala Limpa 3]]
+
+## Apresentação
+- Coisas que eu disse, pesquisei e estudei para a apresentação:
+    - [[Artigos que o Nuno encontrou (feat. Carlos)]]
+    - [[O que falta mencionar]]
+    - [[Perguntas e Detalhes]]
+    - [[Respostas R&D]]
+
+## Teóricas
+- **1** - [[1 - Intro]]
+    - O que é nanotecnologia? História, aplicações, etc
+    - Técnicas top-down e bottom-up
+    - Ramos de aplicação de nano
+- **2** - [[2 - Yield, Contaminações]]
+    - Lei de Moore
+    - Rendimento, contaminações
+    - Sala limpa: definição, classificações, filtros
+    - Evolução de nº de partículas numa sala limpa
+- **3** - [[3 - Litografia]]
+    - Processo de litografia
+        - substrato: fabrico de wafers
+        - promover adesão da wafer
+        - spin coating com PR
+            - controlo de espessura
+            - tipos de PRs
+            - equações de exposição (concentração de PR vs tempo)
+        - soft bake
+        - alinhamento de mascara
+        - bake após exposição
+        - development
+        - hard bake
+        - inspeção transferência de padrão
+- **4** - [[4 - Litografia Ótica]]
+    - contact, proximity e projection printing
+    -  revisão de ótica
+        - difração
+        - profundidade de foco
+        - reflexões
+        - resolução
+    - Litografia de imersão
+- **5** - [[5 - Técnicas de Litografia pt1]]
+    - litografia EUV
+        - fonte 
+        - masks
+        - PRs
+    - litografia raio X
+        - fonte 
+        - masks 
+        - PRs
+    - Técnicas alternativas de litografia
+        - EBeam
+            - interação com o substrato
+            - resist
+            - E-guns
+        - IBeam
+            - fontes
+            - litografia FIB
+- **6** - [[6 - Técnicas de Litografia pt2]]
+    - NIL
+        - NIL térmico e UV
+        - problemas
+        - moldes
+        - PRs
+        - contaminações
+    - SPM, STM
+    - Scanning probe litography
+        - exposição
+        - manipulação atómica: STM, AFM
+        - Millipede
+- **7** - [[7 - Thin Film Deposition pt1]]
+    - O que são filmes finos? Método de deposição geral
+    - Caraterização de técnicas
+        - step coverage
+        - qualidade do filme
+        - morfologia
+        - epitaxia
+    - Crescimento de filmes: processo, modelos, ilhas
+        - Tensão superficial
+        - Cinemática
+        - Nucleação
+- **8** - [[8 - Thin Film Deposition pt2]]
+    - Evaporação
+        - distribuição de densidade de partículas
+        - Evaporação térmica
+        - Evaporação EBeam
+        - Problemas
+        - Glancing angle evaporation
+    - Epitaxia com beam molecular
+    - Sputtering
+        - Sistema, processo, equações de energia e resolução
+        - Sputtering de alloys: DC, RF, magnetron
+        - Vantagens e desvantagens
+    - Deposição de laser pulsado
+- **9** - [[9 - Thin Film Deposition pt3]]
+    - CVD
+        - Passos do processo
+        - Cinemática, equações
+        - Tipos de reatores
+    - ALD
+- **10** - [[10 - Aplicações]]
+    - Armazenamento digital
+        - Spintronica
+        - Magnetoresistência
+        - SSD
+    - RAM
+        - MOSFET
+        - Flash
+        - Técnicas novas

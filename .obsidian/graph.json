@@ -1,11 +1,11 @@
 {
-  "collapse-filter": false,
+  "collapse-filter": true,
   "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "path:\"FCUP/Ano 1, Semestre 1\"  ",
@@ -64,16 +64,16 @@
       }
     }
   ],
-  "collapse-display": false,
+  "collapse-display": true,
   "showArrow": true,
   "textFadeMultiplier": 0.1,
   "nodeSizeMultiplier": 0.996373333333333,
   "lineSizeMultiplier": 0.996373333333333,
-  "collapse-forces": false,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "collapse-forces": true,
+  "centerStrength": 0.982848232848233,
+  "repelStrength": 20,
   "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.10392103485073985,
+  "linkDistance": 30,
+  "scale": 0.13992100822216447,
   "close": true
 }

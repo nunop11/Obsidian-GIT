@@ -1,4 +1,4 @@
-- Temos aqui um index de todos os resumos que tenho de TLA2, com mini descrições de cada
+    - Temos aqui um index de todos os resumos que tenho de TLA2, com mini descrições de cada
 
 ## MATERIAIS
 ### 1 - SQUID / Arc Melting
@@ -19,7 +19,7 @@
 
 ### 4 - Raman
 - Temos 2 resumos:
-    - *Resumo do artigo do Agostinho e Vilarinho* - Explica o estudo de NNO3 durante a sua transição estrutural (descida grande de temperatura) no Raman, usando uma câmara. Util, porque fizemos isto na aula. [[FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T5O - OTDR/Resumo artigo|Resumo artigo]]
+    - *Resumo do artigo do Agostinho e Vilarinho* - Explica o estudo de NNO3 durante a sua transição estrutural (descida grande de temperatura) no Raman, usando uma câmara. Util, porque fizemos isto na aula. [[FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T4M - Raman/Resumo artigo|Resumo artigo]]
     - *Resumo do documento do fabricante* do Raman - explica o fenomeno de Raman e o instrumento que vamos usar bastante bem. [[FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T4M - Raman/Resumo documento|Resumo documento]] 
 - Como era o Agostinho, tenho **muitos** apontamentos e notas da aula: [[T4M - Notas aula Nuno]]
 

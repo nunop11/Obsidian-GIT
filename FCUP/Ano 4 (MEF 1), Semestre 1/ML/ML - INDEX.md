@@ -1,0 +1,96 @@
+## Teóricas
+- **0** - [[0 - Intro a ML]]
+    - Tipos de ML e modelos 
+    - Under e Overfitting
+- **1** - [[1 - Revisão de Estatísticas]]
+    - Definição de probabilidade 
+    - VAs discretas e continua. Media, Var, Cov
+    - Distribuições Discretas
+        - Bernoulli
+        - Binomial
+        - Multinomial
+    - Distribuições Contínuas
+        - Uniforme
+        - Gauss (e Guass Multivariável)
+    - Teorema Limite central
+- **2** - [[2 - Estimadores]]
+    - MSE
+    - Bias e Variância
+    - Método de Máxima Verosimillhança
+- **3** - [[3 - Regressão]]
+    - Tipos de regressões
+    - Como se faz um fit: função de custo e perda
+    - Regressão Linear
+        - Least squares
+        - 2 dedução da solução ótima de LS
+        - Regularização
+    - Problemas inversos
+    - LMS de forma probabilística (gaussiano)
+    - Maximum a Posteriori
+    - Regressão de Bayes
+- **4** - [[4 - Classifiers Generativos]]
+    - Features e classificadores
+    - Teoria de Bayes
+    - Estimar probabilidades
+        - Densidade gaussiana e classificador linear de Bayes
+    - Matriz de perdas
+    - Naive Bayes
+        - Vários algortimos para vários contextos
+    - Estimação de densidade
+        - Técnicas não paramétricas
+- **5** - [[5 - Classifiers Não Generativos]]
+    - Classificadores discriminativos
+        - Regressão logística
+        - Treinar regressão logisitca: MLE, descida de gradiente, MAP, regularização
+    - Modelos lineares de classificação (LDA)
+        - LDA de Fisher
+    - Perceptron
+        - Funcionamento
+        - Funções de ativação
+- **6** - [[6 - Assessment de modelos]]
+    - Risco verdadeiro e empírico
+    - Comportamento do risco real e de um previsor optimo ao aumentar a complexidade
+    - Escolha de modelos
+        - Hold out
+        - Métodos com treino e teste em que avaliamos a performance de vários estimadores - cross validation
+    - Medidas de classificação
+        - Avaliar regressores
+    - Ensembles
+        - Boosting e bagging
+- **7** - [[7 - Intro a NN]]
+    - Intro contextual
+    - Com a NN aprende
+        - Estrutura de uma NN
+        - Sigma
+        - Detalhes sobre coisas de NN
+        - Descida de gradiente e regressão logistica
+    - Classificação com uma NN
+    - Problemas a treinar NN
+    - Outros tipos de NN
+- **8** - [[8 - Deep Learning]]
+    - Definição de Deep learning
+    - CNN
+        - Imagens, como uma CNN funciona
+    - Como treinar redes profundas, problemas e soluções usadas
+    - Soluções para optimizar treino de redes profundas
+- **9** - [[9 - Clustering]]
+    - Aprendizagem supervisionada e não supervisionada
+    - Regras de associação: semelhança e des-semelhança
+    - Algoritmos de clustering (K-means)
+    - Clustering gaussiano
+    - Clustering hierárquico
+- **10** - [[10 - Subspace Learning]]
+    - Aprendizagem não supervisionda
+        - SOM: definição, treino e notas
+        - PCA
+        - MDS
+        - ISOMAP
+
+## TPCs
+- Tem notas sobre coisas que escrevi nos notebooks dos TPCs
+    - [[FCUP/Ano 4 (MEF 1), Semestre 1/ML/TPCs/tpc2|tpc2]]
+    - [[tpc3-carolina]]
+
+## Projeto
+- Notas sobre o que eu disse na apresentação do projeto
+    - [[Apresentação nuno]]

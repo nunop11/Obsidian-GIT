@@ -42,12 +42,20 @@
     "2025/5/29": 382,
     "2025/6/1": 2187,
     "2025/6/2": 3739,
-    "2025/6/3": 1139
+    "2025/6/3": 1139,
+    "2025/7/4": 0,
+    "2025/7/20": 858,
+    "2025/7/21": 3201,
+    "2025/7/28": 12
   },
   "todaysWordCount": {
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte 2/Parte 2 - Apontamentos de Aula.md": {
-      "initial": 1,
-      "current": 1140
+    "Teste.md": {
+      "initial": 0,
+      "current": 12
+    },
+    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 2 - Revisões 2.md": {
+      "initial": 2030,
+      "current": 2020
     }
   }
 }

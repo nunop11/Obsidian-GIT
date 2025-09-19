@@ -1,0 +1,31 @@
+## Apontamentos do Griffiths
+- [[1 - Análise Vetorial]]
+- [[2 - Eletroestática]]
+
+## Notas das teóricas
+- [[EM2 - Teórica 2 - Eletrostática]]
+- [[EM2 - Teórica 3 - Energia Eletrostática]]
+- [[EM2 - Teórica 4 - Descontinuidade campo em superfícies]]
+- [[EM2 - Teórica 5 - Condutores]]
+- [[EM2 - Teórica 6 - Teorema, Método Imagens]]
+- [[EM2 - Teórica 7 - Sep Variáveis e Coords Esféricas]]
+- [[EM2 - Teórica 8 - Expansão Multipolar]]
+- [[EM2 - Teórica 9 - Polarização]]
+- [[EM2 - Teórica 10 - Deslocamento]]
+- [[EM2 - Teórica 11 - Dielétricos Lineares]]
+- [[EM2 - Teórica 12 - Energia e Forças em Dielétricos]]
+- [[EM2 - Teórica 13 - Magnetostática]]
+- [[EM2 - Teórica 14 - Biot-Savart, Multipolo Magnético]]
+- [[EM2 - Teórica 15 - Dipolo Magnético, Magnetização]]
+- [[EM2 - Teórica 16 - Campo H, Ferromagnetismo]]
+- [[EM2 - Teórica 17 - Eletrodinâmica, Força Eletromotriz]]
+- [[EM2 - Teórica 18 - Campo Induzido e Indutância]]
+- [[EM2 - Teórica 19 - Energia e Eqs Maxwell]]
+- [[EM2 - Teórica 20 - Conservação q,E,p]]
+- [[EM2 - Teórica 21 - Ondas Eletromagnéticas]]
+- [[EM2 - Teórica 22 - Polarização e Energias]]
+- [[EM2 - Teórica 23 - Refração, Fresnel]]
+- [[EM2 - Teórica 24 - Ondas EM em condutores]]
+
+## Outros
+- [[Apontamentos graças a EXS]]

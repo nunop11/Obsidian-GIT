@@ -260,7 +260,6 @@ Ao fenómeno do feixe se espalhar chamamos de **Proximity effect**
 
 ### Implantação com FIB
 ![[fib implantacao.png]]
-- ???
 
 ### Litografia FIB com gás
 - Ao introduzir um gás:

@@ -1,0 +1,69 @@
+## Projeto
+- Notas sobre o que escrevemos nas repostas no projeto, assim como notas sobre o vídeo-apresentação que fizemos:
+    - [[Ex4]]
+    - [[Ex5]]
+    - [[Ex6]]
+    - [[Ex7]]
+    - [[Guião vídeo]]
+    - [[Linearização (Notas aula)]]
+
+## Teóricas
+- **1** - [[Aula 1 - Intro, MIMO]]
+    - Matéria que iremos ver
+    - Malha aberta e fechada
+    - MIMO, representação
+- **2** - [[Aula 2 - Representações]]
+    - Representação de SDs
+        - ODE
+        - Laplace
+        - SS
+            - Dedução
+    - Passagens:
+        - SS >> TF
+    - Mudança de coordenadas
+    - Notas da TP sobre com exemplo prático da passagem SS >> TF
+- **3** - [[Aula 3 - Formas Canónicas]]
+    - Valores próprios
+        - Multiplicidade
+        - Matriz diagonalizável
+    - Sistema fundamental
+    - Notas da TP
+        - Formas canónica controlável
+        - Forma canónica observável
+        - Forma canónica diagonal
+        - Exemplo prático para todas
+        - Exemplo prático de mudança de base
+        - Forma real: adaptar matriz com valores próprios complexos
+- **4** - [[Aula 4 - Matrix Exponencial]]
+    - Continuação de sistema fundamental
+        - Propriedades
+    - Calcular matriz exponencial
+        - Laplace
+        - Diagonal
+        - Cayley-Hamilton
+    - Controlabidade
+        - Forma canónica controlável
+    - Observabilidade
+        - Forma canónica observável
+- **5** - [[Aula 5 - Linear State Feedback]]
+    - Feedback linear
+    - Exemplo de aplicação/utilidade
+- **6** - [[Aula 6 - Linear State Feedback pt2]]
+    - Quando usar feedback?
+    - Como determinar o K
+        - Forma direta
+        - Ackerman
+        - CCF
+- **7** - [[Aula 7 - Linear Feedback State Estimation]]
+    - Equação de sistema com estimação e feedback
+    - Como determinar o Ke
+        - Polos
+        - Forma direta
+        - Ackerman
+        - COF
+    - Juntar tudo
+        - Equações de matrizes
+- **8** - [[Aula 8 - Discreto no Tempo]]
+    - Tipos de sinais
+    - Equação SS de sistema discreto
+    - É tudo parecido acima, basta ver o formulário. Não tenho apontamentos aprofundados

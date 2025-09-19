@@ -10,5 +10,3 @@ $$\Huge\boxed{\begin{align*}
 \end{align*}}$$
 
 
-
-

@@ -7,9 +7,9 @@
   "better-word-count",
   "settings-search",
   "quick-latex",
-  "mousewheel-image-zoom",
-  "obsidian-image-caption",
   "obsidian-latex",
   "obsidian-daily-stats",
-  "novel-word-count"
+  "novel-word-count",
+  "image-captions",
+  "mousewheel-image-zoom"
 ]

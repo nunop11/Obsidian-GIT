@@ -22,7 +22,7 @@ $$\boxed{\varepsilon_{r}=\frac{\varepsilon}{\varepsilon_{0}}=1+\chi}$$
 - Podemos ainda ver que, como $\varepsilon,\chi$ relacionam diretamente: $\vec{P}\Leftrightarrow \vec{E}$ e $\vec{D}\Leftrightarrow \vec{E}$, então estas 2 grandezas caraterizam *completamente* a resposta do material!
 
 **Exemplo**
-![[decaimento campo pulso.png|600]]
+![[decaimento campo pulso.png|500]]
 - Nota: nesta imagem, o campo elétrico é apenas um delta de Dirac em $t'$. 
 - Este campo cria dipolos positivos. Depois de o campo desaparecer, os dipolos diminuem, mas fazem overshoot e tornam-se negativos. Assim, voltam a aumentar mas fazem overshoot outra vez. Assim adiante até lentamente se tornar zero.
 

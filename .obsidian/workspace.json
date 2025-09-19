@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4a1db64cb07754d7",
+        "id": "ec255fef4f90cceb",
         "type": "tabs",
         "children": [
           {
-            "id": "31c608f7d1af4821",
+            "id": "39c58b4f257708e7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1/Parte 1 - Resumão.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Parte 1 - Resumão"
+              "title": "New tab"
             }
           }
         ]
@@ -70,8 +66,8 @@
             "state": {
               "type": "starred",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "lucide-ghost",
+              "title": "starred"
             }
           },
           {
@@ -88,7 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 465.5
+    "width": 414.5
   },
   "right": {
     "id": "ff78a0b8e7bb2758",
@@ -99,12 +95,26 @@
         "type": "tabs",
         "children": [
           {
+            "id": "76afe69733b3c4c4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
             "id": "4ea09a018e1db959",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FCUP/Ano 4 (MEF 1), Semestre 2/OE/OptoE - INDEX.md",
+                "file": "FCUP/Ano 4 (MEF 1), Semestre 1/Nano/NANO - INDEX.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +124,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for OptoE - INDEX"
+              "title": "Backlinks for NANO - INDEX"
             }
           },
           {
@@ -143,16 +153,6 @@
             }
           },
           {
-            "id": "f3c77c93b76eb720",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
             "id": "91c3298ccc1cc9cb",
             "type": "leaf",
             "state": {
@@ -177,7 +177,17 @@
             }
           },
           {
-            "id": "27ddfdaf4db80170",
+            "id": "3961855609b50feb",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "a8b8816cc9b358dc",
             "type": "leaf",
             "state": {
               "type": "stats-tracker",
@@ -185,32 +195,16 @@
               "icon": "bar-graph",
               "title": "Daily Stats"
             }
-          },
-          {
-            "id": "76afe69733b3c4c4",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte 2/Parte 2 - Apontamentos de Aula.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of Parte 2 - Apontamentos de Aula"
-            }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 333.5,
-    "collapsed": true
+    "width": 298.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -223,59 +217,59 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "31c608f7d1af4821",
+  "active": "39c58b4f257708e7",
   "lastOpenFiles": [
-    "Excalidraw/Assinatura.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte 2/Parte 2 - Apontamentos de Aula.md",
-    "Attachments/Pasted image 20250703120800.png",
-    "Attachments/Pasted image 20250703111140.png",
-    "Attachments/Pasted image 20250703105523.png",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1/Parte 1 - Resumão.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte 2/ANOVA.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/DesenhoE - INDEX.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1/5 - Modelo Linear.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1/4 - ANOVA.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1/3 - Teste de Potência.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1/1 - Introdução.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1/2 - Proporções.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/Atividade 5 - Supercondutor/Notas da Aula.md",
-    "FCUP/PEEC/Relatorio PEEC.md",
-    "FCUP/PEEC/Artigo 1 - Medidas Magnéticas.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte 2",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/A4S2 - INDEX.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/Robotica/ROBOTICA - INDEX.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/TLA2 - INDEX.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/OptoE - INDEX.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 12 - Estruturas, Sensores.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 11 - Atenuação, Dispersão, Amplificação em fibra.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 10 - Propagação em fibra.md",
+    "README.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 2 - Revisões 2.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 9 - Fibras Óticas, Bessel.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 8 - Dispersão modal, acoplamento.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 7 - Guia planar.md",
-    "FCUP/Ano 2, Semestre 2/Sinais/Teóricas/Aula 16 - Fourier.md",
-    "FCUP/Ano 3, Semestre 2/FMC/FMC - Teórica 5 - Sommerfeld.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 6 - Dispersão Vg, Guias.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1",
-    "Excalidraw/A3S2/IM",
-    "Excalidraw/A4S2/Robotica",
-    "Excalidraw/A4S2/TLA2",
-    "Excalidraw/A4S2",
-    "Excalidraw/A2S2/Moderna",
-    "Excalidraw/A2S2",
-    "Excalidraw/PEEC",
+    "Teste.md",
+    "Attachments/Pasted image 20250828201641.png",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 1 - Revisões.md",
+    "FCUP/PEEC/PEEC INDEX.md",
+    "FCUP/PEEC/Notas sobre o VESTA.md",
+    "FCUP/PEEC/Notas ISOTROPY.md",
+    "FCUP/PEEC/Relatorio PEEC.md",
+    "FCUP/PEEC/Notas BILBAO.md",
+    "FCUP/Ano 1, Semestre 1/A1S1 - INDEX.md",
+    "FCUP/Ano 1, Semestre 2/Análise 2/ANAL2 - INDEX.md",
+    "FCUP/Ano 1, Semestre 2/A1S2 - INDEX.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/DesenhoE - INDEX.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/TLA2 - INDEX.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte 2/Parte 2 - Apontamentos de Aula.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T4M - Raman/Resumo artigo.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1/Parte 1 - Resumão.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/1M - Nanofios/Apontamentos Aula.md",
+    "FCUP/Ano 2, Semestre 2/Moderna/MODERNA - INDEX.md",
+    "FCUP/Ano 2, Semestre 2/Moderna/TP - 26 ABRIL.md",
+    "FCUP/Ano 2, Semestre 2/Moderna/Teóricas/Aula 21 - Spin (19-5-2023).md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/TLA1 - INDEX.md",
+    "FCUP/Ano 2, Semestre 2/Sinais/SS - INDEX.md",
+    "FCUP/Ano 2, Semestre 2/Prob Estat/PROB - INDEX.md",
+    "FCUP/Ano 2, Semestre 2/Moderna/Teóricas/Notas sobre dúvidas que me surgem de vez em quando.md",
+    "FCUP/Ano 2, Semestre 2/Computacional/Rascunhos",
+    "FCUP/Ano 3, Semestre 1/MF/Notas para o estudo de MF.pdf",
+    "FCUP/Ano 3, Semestre 2/FMC/Notas teóricas",
+    "FCUP/Ano 3, Semestre 2/FMC/Notas Fernando",
+    "FCUP/Ano 3, Semestre 2/Projeto/PROJETO - INDEX",
+    "FCUP/Ano 3, Semestre 2/MCE/TPCs",
+    "FCUP/Ano 3, Semestre 2/MCE/Teoria (documentos)",
+    "FCUP/Ano 3, Semestre 2/MCE/Teoricas",
+    "FCUP/Ano 3, Semestre 2/Instrumentação/Divisor tensão",
+    "FCUP/Ano 3, Semestre 2/Instrumentação/Balança",
+    "Attachments/breadbord.png",
+    "Attachments/arduino.png",
+    "Attachments/FCUP/A4S2/DE/efeitos crossed.png",
+    "Attachments/FCUP/A4S2/DE/interacao a partir de grafico.png",
+    "Attachments/FCUP/A4S2/DE/ANOVA desenho.png",
+    "Attachments/FCUP/A3S2/Instrumentação/breadboard.png",
     "Attachments/FCUP/A4S2/TLA2/gaussiana assimetrica.png",
     "Attachments/Pasted Image 20250615172430_376.png",
     "Attachments/Pasted Image 20250615171136_175.png",
-    "Attachments/Pasted Image 20250615170903_198.png",
-    "Attachments/Pasted Image 20250615170721_978.png",
     "Untitled 5.canvas",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "Untitled.canvas",
-    "Attachments/FCUP/A4S2/OE/tipos atenuacao vs comp onda.png",
-    "Attachments/FCUP/A4S2/OE/wdm.png",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Ótica/T2O - Laser em fibra",
     "Untitled 4.canvas"
   ]
 }

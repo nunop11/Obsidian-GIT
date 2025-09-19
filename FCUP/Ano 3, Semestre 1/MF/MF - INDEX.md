@@ -1,0 +1,10 @@
+## Apontamentos do livro do prof
+- [[MF - Capítulo 1 - Forças Transversais]]
+- [[MF - Capítulo 2 - Hidrostática]]
+- [[MF - Capítulo 3 - Cinemática de Fluidos]]
+- [[MF - Capítulo 4 - Bernoulli]]
+- [[MF - Capítulo 5 - Análise Integral]]
+- [[MF - Capítulo 6 - Análise Dimensional]]
+- [[MF - Capítulo 7 - Escoamento Laminar e Turbulento]]
+- [[MF - Capítulo 8 - Escoamento em Tubagens]]
+- [[MF - Capítulo X - Navier-Stokes]]
