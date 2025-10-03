@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "56fcfb35d0df34e4",
+        "id": "4ef9f7c576f11d9f",
         "type": "tabs",
         "children": [
           {
-            "id": "254300f8eab87122",
+            "id": "1700df0d01a97f14",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Entrevistas aula 3.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Entrevistas aula 3"
             }
           }
         ]
@@ -37,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -58,16 +62,6 @@
               },
               "icon": "lucide-search",
               "title": "Search"
-            }
-          },
-          {
-            "id": "4d9244b610df117a",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "starred"
             }
           },
           {
@@ -100,12 +94,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Coisas Úteis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Coisas Úteis"
             }
           },
           {
@@ -200,7 +195,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 298.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,54 +213,53 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "254300f8eab87122",
+  "active": "1700df0d01a97f14",
   "lastOpenFiles": [
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Aula 3.md",
+    "Untitled.base",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Entrevistas aula 3.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Aula 2 - Technology Push.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 3 - Percepção 3D (pt. 1).md",
+    "Attachments/Pasted image 20251002143637.png",
+    "Attachments/Pasted image 20251002142752.png",
+    "Attachments/Pasted image 20251002142559.png",
+    "Attachments/Pasted image 20251002142048.png",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 1.md",
+    "Attachments/Pasted image 20250930235644.png",
+    "Attachments/Pasted image 20250930233552.png",
+    "Attachments/Pasted image 20250930225849.png",
+    "Attachments/Pasted image 20250930145413.png",
+    "Attachments/Pasted image 20250930121245.png",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 2 - Sensores e Coordenadas.md",
+    "Attachments/Pasted image 20250929145809.png",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/A5S1 - INDEX.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Untitled.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 1 - Introdução.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Aula 1 - Introdução.md",
+    "Callouts.md",
+    "Coisas Úteis.md",
     "README.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Empreendedorismo - INDEX.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/PES - INDEX.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/PMAP - INDEX.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 2/A4S2 - INDEX.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES",
+    "FCUP/Ano 5 (MEF 2), Semestre 1",
     "Untitled.md",
     "Teste.md",
-    "Coisas Úteis.md",
     "Random Bullshit.md",
-    "Callouts.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 2 - Revisões 2.md",
     "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 9 - Fibras Óticas, Bessel.md",
-    "Attachments/Pasted image 20250828201641.png",
     "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 1 - Revisões.md",
     "FCUP/PEEC/PEEC INDEX.md",
     "FCUP/PEEC/Notas sobre o VESTA.md",
-    "FCUP/PEEC/Notas ISOTROPY.md",
-    "FCUP/PEEC/Relatorio PEEC.md",
-    "FCUP/PEEC/Notas BILBAO.md",
-    "FCUP/Ano 1, Semestre 1/A1S1 - INDEX.md",
-    "FCUP/Ano 1, Semestre 2/Análise 2/ANAL2 - INDEX.md",
-    "FCUP/Ano 1, Semestre 2/A1S2 - INDEX.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/DesenhoE - INDEX.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/TLA2 - INDEX.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte 2/Parte 2 - Apontamentos de Aula.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T4M - Raman/Resumo artigo.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/DE/Parte  1/Parte 1 - Resumão.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/TLA 1/Materiais/1M - Nanofios/Apontamentos Aula.md",
-    "FCUP/Ano 2, Semestre 2/Moderna/MODERNA - INDEX.md",
-    "FCUP/Ano 2, Semestre 2/Moderna/TP - 26 ABRIL.md",
-    "FCUP/Ano 2, Semestre 2/Moderna/Teóricas/Aula 21 - Spin (19-5-2023).md",
     "FCUP/Ano 2, Semestre 2/Computacional/Rascunhos",
     "FCUP/Ano 3, Semestre 1/MF/Notas para o estudo de MF.pdf",
     "FCUP/Ano 3, Semestre 2/FMC/Notas teóricas",
     "FCUP/Ano 3, Semestre 2/FMC/Notas Fernando",
     "FCUP/Ano 3, Semestre 2/Projeto/PROJETO - INDEX",
-    "FCUP/Ano 3, Semestre 2/MCE/TPCs",
-    "FCUP/Ano 3, Semestre 2/MCE/Teoria (documentos)",
-    "FCUP/Ano 3, Semestre 2/MCE/Teoricas",
-    "FCUP/Ano 3, Semestre 2/Instrumentação/Divisor tensão",
-    "FCUP/Ano 3, Semestre 2/Instrumentação/Balança",
-    "Attachments/breadbord.png",
-    "Attachments/arduino.png",
-    "Attachments/FCUP/A4S2/DE/efeitos crossed.png",
-    "Attachments/FCUP/A4S2/DE/interacao a partir de grafico.png",
-    "Attachments/FCUP/A4S2/DE/ANOVA desenho.png",
-    "Attachments/FCUP/A3S2/Instrumentação/breadboard.png",
-    "Attachments/FCUP/A4S2/TLA2/gaussiana assimetrica.png",
-    "Attachments/Pasted Image 20250615172430_376.png",
-    "Attachments/Pasted Image 20250615171136_175.png",
     "Untitled 5.canvas",
     "Untitled 3.canvas",
     "Untitled 2.canvas",

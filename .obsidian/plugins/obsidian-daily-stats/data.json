@@ -47,12 +47,26 @@
     "2025/7/20": 858,
     "2025/7/21": 3201,
     "2025/7/28": 12,
-    "2025/8/19": 0
+    "2025/8/19": 0,
+    "2025/8/20": 257,
+    "2025/8/21": 27,
+    "2025/8/24": 1720,
+    "2025/8/25": 1699,
+    "2025/8/26": 729,
+    "2025/8/27": 475,
+    "2025/8/29": 777,
+    "2025/8/30": 2544,
+    "2025/9/2": 609,
+    "2025/9/3": 401
   },
   "todaysWordCount": {
-    "Random Bullshit.md": {
-      "initial": 57,
-      "current": 57
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Aula 3.md": {
+      "initial": 1,
+      "current": 177
+    },
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Entrevistas aula 3.md": {
+      "initial": 0,
+      "current": 225
     }
   }
 }
