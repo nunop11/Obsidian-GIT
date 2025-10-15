@@ -6,7 +6,7 @@
     - **Ativo** - sensores que medem reações do ambiente após emitir algo
     - **Passivo** - sensores que medem coisas do ambiente diretamente
 - Vejamos como isto pode ser usado para caraterizar vários sensores:
-![[Pasted image 20250924175149.png]]
+![[tipos de sensores.png]]
 
 ### Caraterizar performance
 - Temos 9 caraterísticas que caraterizam a performance/comportamento de um sensor:
@@ -40,7 +40,7 @@
 - Nos casos com padrões mais complexos, temos variação de intensidade de luz muito mais controlada e específica. Isto permite-nos determinar a **posição/ângulo** do motor!
     - Num caso só com riscas apenas medimos picos equivalentes a 0 ou 1
     - Num caso complexo podemos medir de 0 a 1, com resoluções elevadas. Isto significa então que conseguimos saber em que posição do circulo estamos através da intensidade medida!!!
-![[Pasted image 20250924181558.png]]
+![[tipos de encodres modelo.png]]
 (Podemos ver o caso de um encoder simples e um complexo)
 - Uma medida de performance de encoders é CPR (ciclos por revolução) que indica quantos picos de luz vão ser medidos em 1 volta. O normal é 2k-10k
 
@@ -65,15 +65,15 @@
 
 ### Sensores de Range/Distância
 #### Sensor ultrassónico
-![[Pasted image 20250924184110.png]]
+![[funcionamento sonar na natureza.png]]
 - Usa o princípio TOF (time of flight), em que o tempo de voo $t$ e a velocidade de propagação $c$ de um sinal, dão-nos a distância do objeto que refletiu o sinal:
 $$d= \frac{c\cdot t}{2}$$
 (Notemos que $t$ é o tempo que passa desde que o sinal é emitido até ele ser recebido, depois de refletido no obstáculo)
 
 - A velocidade de propagação de som num gás ideal é dada por:
-![[Pasted image 20250924184209.png]]
+![[formula de velocidade do som.png]]
 - Em líquidos, a velocidade do som é maior:
-![[Pasted image 20250924184352.png]]
+![[velocidade do som em varios meios.png]]
 
 - Normalmente usam-se sons na gama 40-180 kHz. É comum fazer a "coluna" com um transdutor piezoelétrico (transforma uma corrente AC em oscilação mecânica)
 - Temos que ter em conta o **blanking time**: o tempo que a fonte de som fica a vibrar após emitir um sinal. Nesse tempo não podemo emitir novo sinal. Este costuma ser de alguns milisegundos
@@ -87,7 +87,7 @@ $$d= \frac{c\cdot t}{2}$$
 - O que distingue isto de sensores ultrassónicos como falamos antes é que estes são os sistemas usados em contextos subaquáticos, para medir a profundidade da água. Nestes meios, recordemos, a velocidade é **5 vezes** maior que a velcoidade do som no ar!
     - Os trandutores que geram os sinais sonoros para sensorização chamam-se **projetores**.
 - O sinal sonoro é emitido e, ao atingir o solo do mar diz-se que **ilumina / _ensonify_** a parte do solo que acerta
-![[Pasted image 20250924185618.png|356]]
+![[sonar em uso.png|356]]
 
 *Eco*
 - Assim, a energia que é refletida de volta para cima (enviada para o receptor) É o **eco**.
@@ -103,7 +103,7 @@ $$\text{Perda transmissão} = \text{Perda Absorção} + \text{Perda Espalhamento
 ##### SBES (Single Beam Echo Sounders)
 - Iluminamos 1 ponto abaixo do projetor com uma frequência 12-200 kHz e tira medição da profundidade _nesse ponto_.
 
-![[Pasted image 20250924224604.png]]
+![[sonar esquema ranges.png]]
 - Na imagem podemos ver que este método resulta em medições erradas: o som reflete em todos os obstáculos, então o primeiro eco vem do obstáculo mais próximo NÃO do obstáculo abaixo do projetor.
     - Além disso, estamos muito sujeitos a inclinações do projetor, devido a ondas no mar
 - Quanto MAIOR a face do transdutor, MENOR a largura do feixe. Mais concretamente, a resolução do sonar é dada pelo *ângulo sólido* do feixe.
@@ -113,24 +113,24 @@ $$\text{Perda transmissão} = \text{Perda Absorção} + \text{Perda Espalhamento
 
 ##### MBES (Multi Beam Echo Sounders)
 - Os projetores iluminam uma risca fina no solo do mal, perpendicular à trajetória do navio
-![[Pasted image 20250924234208.png]]
+![[sonar multi beam.png]]
 - Mas apenas existe 1 linha de hidrofones LOGO apenas 1 linha de medições é feita (ver imagem no canto superior direito)
 - Mas notemos algo importante: 
     - Temos um array de projetores. Ora, cada um emite uma onda sonora esférica. Como sabemos desde OMC, estas ondas vão interferir de forma construtiva e destrutiva. Isto faz com que a propação se torne ANISOtrópica:
-        - ![[Pasted image 20250925112246.png|309]] (aqui temos 2 fendas, mas pelo principio de Huygens o padrão é o mesmo que no caso de termos 2 projetores a criar ondas esféricas)
+        - ![[Attachments/experiencia young.png|309]] (aqui temos 2 fendas, mas pelo principio de Huygens o padrão é o mesmo que no caso de termos 2 projetores a criar ondas esféricas)
     - Apesar disto, os hidrofones apenas captam uma área reduzida: quase que um só feixe 
     - Vemos estes 2 pontos no canto superior direito da imagem com o barco, há uma grande diferença entre a emissão e recepção de som
 - Outra coisa a notar/recordar de OMC é que: para o padrão de difração acontecer como previsto, é preciso que os projetores estarem espaçados de multiplos do comprimento de onda $m\lambda~,~~ m\in\mathbb{Z}$
 
 **Exemplo**
 - Consideremos que temos 2 projetores espaçados de $\frac{1}{2}\lambda$:
-![[Pasted image 20250925113005.png]]
+![[interferencias de 2 fontes.png]]
 - Tal como sabemos de OMC, o padrão de difração de algo com múltiplas fendas tem intensidade máxima no centro. No caso de projetores a criar ondas esférricas vemos o mesmo. 
 - Como estamos em 3D, o que observamos é que a intensidade é máxima no eixo *perpendicular aos projetores*:
-![[Pasted image 20250925113145.png]]
+![[zona maior intensidade 2 fontes.png]]
 Ou seja, se temos um array de projetores nos XX, iremos ter intensidade de iluminação máxima nos YY. (na figura, dentro da forma temos intensidade máxima).
 - No entanto, por funcionarem na base dos mesmos transdutores, os hidrofones também têm uma zona de deteção máxima perpendicular ao seu array:
-![[Pasted image 20250925115130.png]]
+![[zona maior intensidade hidrofones.png]]
 
 **Beam steering**
 - Nos nossos ouvidos, quando algum som vem do nosso lado direito, a orelha direita capta o som alguns nanosegundos da esquerda e assim percebes de onde veio.
@@ -140,7 +140,7 @@ Ou seja, se temos um array de projetores nos XX, iremos ter intensidade de ilumi
 
 **Mills Cross**
 - Para maximizar a intensidade medida, metemos então o array de hidrofones *perpendicular* ao de projetores, para captar o eixo de interferência construtiva dos projetores.
-![[Pasted image 20250925114938.png]]
+![[criacao de multi beam com array de sensores e projetores.png]]
 - Notemos que
     - o array de projetores aponta na direção de movimento do navio, para que a zona de deteção seja perpendicular a este a consigamos fazer um varrimento do fundo do mar
     - Na imagem da esquerda vemos o que acontece neste design: as zonas de deteção/emissão máxima sobrepõe-se e temos um quadrado de deteção - isto é péssimo
@@ -156,7 +156,7 @@ Ou seja, se temos um array de projetores nos XX, iremos ter intensidade de ilumi
     - **LiDAR de medição phase-shift** - mede a diferença de fase entre sinal transmitido e recebido e calcula o range
 
 ##### Phase-shift
-![[Pasted image 20250925121403.png]]
+![[medicao de fase.png]]
 - Consideremos que a distância total que o feixe tem que viajar para ser emitido e regressar é $D'$. Tendo em conta a figura temos que $D'=B+2A$
 - Vemos que o feixe transmitido também viaja $B$. 
 - Ou seja, a diferença de fase $\theta$ tem que ser causada por $2A$
@@ -180,7 +180,7 @@ $$D = A = \frac{\lambda}{4\pi} \theta$$
 - Cada pixel tem um circuito com lente, fotodíodo, amplificador e ADC. O sinal medido em cada pixel é amplificado
 
 #### Comparação
-![[Pasted image 20250925122902.png]]
+![[ccd e cmos.png]]
 
 **CCD**
 - O CCD tem apoenas um ADC, ligado a todos os capacitors
@@ -199,7 +199,7 @@ Além disso, configurando o ADC do CCD podemos puxar os limites da sensibilidade
 - Como vimos na introdução, sistemas de percepção têm sensores em várias posições e com diferentes orientações
 - Assim, precisamos de considerar e estudar os *referenciais* de cada sensor
 - Usaremos usar esta onvenção para definir o referencial cartesiano:
-![[Pasted image 20250925123552.png]]
+![[regra mao direita.png]]
 
 ## Notação
 - Consideremos o caso 2D por simplicidade
@@ -218,17 +218,17 @@ e os ângulos são medidos relativamente a $x,y,z$.
     - para decorar a ordem: pensemos que o A vem primeiro em cima porque em cima temos "o referencial em que estamos" e temos B em A - "B está em A"
 - Usando isto, podemos igualar a posição de um ponto em 2 referenciais assim:
 $${}^{A}P = {}^{A}\xi_{B}{}^{B}P$$
-![[Pasted image 20250925125153.png]]
+![[diferentes referenciais.png]]
 
 - E vemos que nesta notação é facil entender que referencial estamos a converter em qual. Por exemplo, num caso com 4 referenciais, poderíamos fazer isto:
 $${}^{A}\xi_{B}={}^{A}\xi_{C}{}^{C}\xi_{D}{}^{D}\xi_{B}$$
-![[Pasted image 20250925141232.png]]
+![[mudança de referenciais.png]]
 - Entendemos também que é relativamente fácil trocar de referenciais. Ou seja, podemos facilmente associar algo medido por um certo sensor (como estando 5m na direção xx) para algo no referencial do robot ou no referencial mundo. 
 - Notemos agora que $\xi$ pode ser substituido por qualquer letra, de forma a representar alguma **transformação**!
 
 ## Transformações
 - No mundo $w$ temos um robot $w$ com uma câmara $c$:
-![[Pasted image 20250925141433.png]]
+![[referenciais child.png]]
 Vemos que a figura da direita esquematiza esta situação de forma rápida e compreensível.
 - Aqui dizemos que "o robot é child do mundo" e "a câmara é child do robot". Ao contrário, "o robot é parent da câmara".
     - Usamos estes termos para reforçar que (exemplo) a câmara está contida no robot então o seu referencial estará dependente do referencial do robot: se o robot se mover, o referencial da camara irá mover igual.
@@ -236,7 +236,7 @@ Vemos que a figura da direita esquematiza esta situação de forma rápida e com
 ### Translação
 - Um vetor $t=[t_{x},t_{y},t_{z}]^{T}$ representa uma translação 3D de um objeto no referencial do parent:
 $${}^{A}p={}^{B}p+t$$
-![[Pasted image 20250925141854.png]]
+![[referenciais 3D child.png]]
 - Neste exemplo, temos a transformação ${}^{p}t_{c}=[1.5, 1.0, 0.5]^{T}$ que representa $\{c\}$ relativamente a $\{p\}$ através de 1 translação pura. 
 - Vendo os pontos 1 e 2, podemos representálos nos referenciais $\{p\},\{c\}$ e temos: $${}^{p}p_{1}=(0,0,0.5) \quad;\quad {}^{p}p_{2}=(0,0,0.5)$$
 - E podemos escrever:
@@ -248,7 +248,7 @@ $$\begin{cases}
 ### Rotação
 - Usamos a matriz ${}^{A}R_{B}$ para descrever como pontos são transformados de $\{B\}$ para $\{A\}$ através de rotação pura:
 $${}^{A}p={}^{A}R_{B}{}^{B}p$$
-![[Pasted image 20250925143342.png]]
+![[mudanca ref por rotacao.png]]
 
 #### Propriedades de matriz de rotação
 - **Ortogonal** (e normalizado)
@@ -261,7 +261,7 @@ $${}^{A}p={}^{A}R_{B}{}^{B}p$$
 - De forma geral, rotações NÃO são comutativas
 
 #### em 2D
-![[Pasted image 20250925143912.png]]
+![[ponto em refrencial rodado e nao rodadao.png]]
 - Para obter os pontos nas coordenadas temos:
 $${}^{a}p={}^{a}R_{b}{}^{b}p$$
 em que temos (sempre assim em 2D):
@@ -284,7 +284,7 @@ R_{z}(\theta)&= \begin{pmatrix}\cos\theta & -\sin\theta & 0 \\
 \end{align*}$$
 
 #### Ângulos Euler
-![[Pasted image 20250927194834.png|500]]
+![[Attachments/roll pitch yaw.png|500]]
 - Podemos definir 3 rotações: **roll**, **pitch** e **yaw**
 
 #### Tipos de rotação
@@ -345,8 +345,8 @@ $$\begin{pmatrix}A_{x} \\ A_{y} \\ A_{z} \\ 1\end{pmatrix} = \begin{pmatrix}a & 
 **Exemplo**
 - Consideremos as 2 transformações $\xi_{a}=\text{Rot}(45º)~,~\xi_{B}=\text{Trans}(x,a)$ 
 - Consideremos as duas ordens possíveis: ${}^{R}\xi_{1}=\xi_{B}\xi_{A} ~,~ {}^{R}\xi_{2}=\xi_{A}\xi_{B}$ 
-![[Pasted image 20250929145618.png]]
+![[ordem de transformacoes.png]]
 - Vemos a diferença no que fazem as 2 transformações
 
 ##### Matrizes de transformação
-![[Pasted image 20250929145809.png]]
+![[transformacoes matrizes.png]]

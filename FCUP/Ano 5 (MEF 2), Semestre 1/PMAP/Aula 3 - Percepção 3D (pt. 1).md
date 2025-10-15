@@ -5,7 +5,7 @@
 
 ### Aquisição de pontos
 - Como vimos atrás, existem sensores ativos e passivos.
-![[Pasted image 20251002142048.png]]
+![[tipos de metodos de aquisicao.png]]
 
 #### Passivos
 - Estes tipos de sistemas são usados em SLAM visual e estimação de posição de robots
@@ -20,10 +20,10 @@
     - stereo matching online
     - triangulação online
 
-![[Pasted image 20251002142559.png]]
+![[aquisicao passiva 2 cams.png]]
 - Em *stereo matching*, conhecemos o espaçamento entre as câmaras/sensores. Assim, associamos pares de pontos correspondentes aos mesmos pontos do objeto. 
 - Conforme a *disparity / afastamento* de 2 pontos associados, atribuimos uma intensidade grayscale. Assim, podemos obter uma imagem que mostra a profundidade do objeto:
-![[Pasted image 20251002142752.png]]
+![[mapa profundidade passiva.png]]
 
 **Problemas**
 - Um fator que afeta muito a qualidade deste método é a **textura** do objeto. Se tivermos regiões sem qualquer textura, não temos como associar pontos e não conseguimos estimar a estrutura 3D de forma adequada. 
@@ -33,7 +33,7 @@
 - Envolve manipulação da cena observada
 - Para fazer isso, normalmente observamos a cena/objeto com uma câmara/sensor *enquanto* emitimos um sinal com um projetor/laser. A forma como o feixe/ponto laser interage com o objeto permite estimar a sua estrutura 3D
 - Este método chama-se **structured light**:
-![[Pasted image 20251002143637.png]]
+![[metodo ativo aquisicao.png]]
 (O projetor e a câmara podem estar num mesmo dispositivo unidos por um braço)
 
 - Estes métodos conseguem determinar a estrutura e geometria do objeto com precisão, através dos defietos no padrão laser
@@ -53,5 +53,91 @@
 - A nuvem não ter estrutura implica ainda que não temos informação sobre *conexão de vertices* (NOTA: 'vertex' é 'vértice' em inglês). Por outras palavras, nada nos dados da nuvem de pontos nos diz como montar a estrutura 3D.
 
 #### Nuvem de pontos estruturada
-- Os pontos são ligados através de uma estrutura consistente. Para isso ligamos vértices (os pontos de dados passam a ser vértices ao ligá-los) adjacentes.
-- SLIDE 13
+- Os pontos são ligados através de uma estrutura consistente. Para isso ligamos vértices (os pontos de dados passam a ser vértices ao ligá-los) adjacentes. Notemos ainda que nestas nuvens, vértices adjacentes têm indices adjacentes.
+- Consideremos vértices $p(i,j)\in\mathbb{R}^{3}$ num array $m\times n\times3$. 
+    - Podemos defini-los como tuplos do tipo $(x(i,j), y(i,j), z(i,j))$ em que $i\in(1,\dots,m)~,~ j\in(1,\dots,n)$
+    - O $3$ na dimensão do array indica as 3 dimensões xyz
+    - Podemos ainda usar um array binário 2D $m\times n$ para indicar se um certo ponto $m,n$ existe ou não
+- Neste tipo de nuvens podemos ligar os pontos de várias formas, mas uma muito frequente consiste em 4 ligações a vizinhos e 2 ligações diagonais:
+![[ligacao de pontos para fazer mesh.png|425]]
+(em cada ponto, temos 4 ligações vermelhas e 2 ligações diagonais como vemos a azul)
+
+#### Mapa de profundidade e Imagem de Range
+- Estes são 2 casos em que usamos uma nuvem estruturada de pontos para representar um objeto 3D no espaço 2D. Usamos uma grid $(i,j)$
+- Normalmente observamos os pontos como imagens a preto e branco, podendo observar a profundidade:
+![[mapa de range e profundidade.png]]
+
+- Para fazer estas imagens, atribuimos uma intensidade diferente a cada ponto (mais próximo = mais branco). Mas existe aqui uma diferença entre estas 2 representações:
+    - **Imagem de range** - Cada ponto tem a sua cor controlada pela *distância radial* do ponto ao sensor que o mediu. Comum em sistemas LiDAR ou TOF
+    - **Mapa de profundidade** - Cada ponto tem uma cor relacionada com a sua *distância ortogonal ao plano de visão* do sensor. Normalmente isto é a distância ao longo do eixo Z do referencial da câmara/sensor
+- Este tipo de representação pode ser analisada ou criada por redes neuronais de convolução (CNNs).
+
+#### Representação com mesh de superfície
+- Temos, no espaço 3D, os vértices ligados com triângulos
+- A mesh pode ser fechada ou aberta (cria ou não um volume fechado)
+- Não é obrigatório usar triângulos em meshes, mas essa é a escolha mais comum de longe
+![[mesh bunny.png]]
+- Notemos que o tamanho (e concentração) de triângulos indica a quantidade de pontos que temos numa certa região
+
+#### Voxels
+- Equivalente a Pixeis em 3D
+- Temos uma rede 3D de voxels. Para cada um temos um booleano que nos diz se existe algo ou não
+![[voxel bunny.png]]
+
+**Propriedades**
+- A precisão da representação é decidida pelo tamanho de 1 voxel
+- O número de voxels aumenta *cubicamente* com a precisão
+- Este tipo de representação é muito bom para fazer cálculos de volume e coisas relacionadas
+- Representações de voxels são armazenadas no PC como arrays 3D. Portanto, podem ser usadas por CNNs
+
+##### Octree
+- Versão optimizada de representação de voxels
+- Baseia-se num sistema de árvore, em que cada nodo tem 8 filhos. Vamos subdividindo o espaço de acordo com a complexidade da estrutura. Temos então uma resolução adaptativa
+![[octree.png]]
+
+**O algoritmo**
+1. Voxels completamente preenchidos ou vazios não são divididos
+2. Voxels parcialmente ocupados são divididos
+3. Subdividir um voxel resulta em 8 novos voxels menores
+4. Voltar ao passo 1. Repetimos isto atéq« que todos os voxels estejam completamente preenchidos OU até que se atinja um certo tamanho mínimo predefinido.
+![[octree evolucao.png]]
+
+##### K-D Trees
+- Representação em que vamos subdividindo o espaço ao longo de planos perpendiculares aos eixos.
+![[kd tree mapa.png]]
+- Por exemplo, neste exemplo em 2D temos o plano $x=8$ a dividir o espaço a meio
+    - Notemos que este plano é perpendicular ao eixo dos XX
+
+**Utilidade**
+- Esta técnica permite acelerar a procura de pontos num espaço a várias dimensões. 
+- Como dividimos o espaço aproximadamente "a meio", conseguimos encontrar um certo ponto muito eficientemente. Podemos pensar em binary search, como um análogo conhecido
+- Como veremos abaixo no exemplo, guardamos esta informação numa árvore binária, em que cada nodo representa uma divisão do plano
+
+**Algoritmo**
+1. Organizamos os pontos segundo o eixo dos XX
+2. Escolhemos a mediana desse conjunto. Se nele tivermos $x=a$, então usamos esse plano para dividir o espaço em 2 partições: $x<a$ e $x>a$. O ponto mediana NÃO fica em nenhuma das partições.
+3. Para cada uma destas partições, organizamos os pontos segundo o eixo dos YY
+4. Escolhemos a mediana desse conjunto e dividimos a partição conforme $y=b$
+5. Repetir até todos os pontos marcarem uma divisão
+
+**NOTA**: quanto temos um número par de pontos dentro de uma partição, podemos escolher o ponto à direita ou à esquerda do centro como "mediana". No entanto, temos que ser consistentes e escolher sempre o mesmo lado em toda a árvore!!!
+
+**EXEMPLO**
+- Vejamos uma resolução à mão a mostrar como obtemos a divisão KD-tree mostrada no gráfico acima
+![[kd tree resolucao.png|500]]
+![[kd tree resolucao 2.png|500]]
+
+##### Vizinho mais próximo
+- Podemos usar uma KD tree para procurar o vizinho mais próximo de um certo ponto $R$.
+- Fazemos isto usando binary search:
+    - Primeiro descemos pela árvore, seguindo o ponto $R$. Se $R=(10,2)$ virámos para o ramos que nos diz $x>5$ e por aí fora.
+    - Quando chegamos a uma *folha* (ponta solta sem filhos), esse ponto é a nossa melhor estimativa de vizinho mais próximo. Chamemos a esse ponto $P_{best}$
+    - Finalmente, fazemos um processo de backtracking. 
+        - Partimos de $P_{best}$ e subimos para o nodo acima dele. Comparamos a distância entre $R$ e $P_{best}$ com a distância entre $R$ e o plano de divisão desse nodo
+        - Se a distância R-Plano for *menor* que R-Pbest, exploramos o ramo oposto a $P_{best}$
+        - Repetimos isto sempre à procura da menor distância para $R$
+
+- Esta técnica tem complexidade $O(\log n)$ se a árvore for equilibrada.
+    - Isto é bom, quer dizer que o tempo que demoramos a encontrar o vizinho mais próximo aumenta com $\log n$ consoante aumentamos o número de elementos na árvore ($n$)
+
+- Podemos aplicar esta técnica para fazer **range searching** - encontrar todos os vértices dentro de um range de distância euclideana.

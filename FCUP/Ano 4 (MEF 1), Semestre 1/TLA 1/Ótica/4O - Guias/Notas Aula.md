@@ -22,7 +22,7 @@ $$TL=2CL-PL$$
 **Alinhadores**
 - Os alinhadores das fibras têm 3 eixos de movimento: X (perpendicular à fibra), Y (direção da fibra, aproximar e afasta da amostra) e Z (vertical)
 - O alinhador da amostra tem 4 parafusos: X (igual às fibras, mais coarse), Z (vertical), YAW e PITCH. O professor disse para nunca mexer no pitch
-![[roll pitch yaw.png]]
+![[Attachments/FCUP/A4S1/TLA1/roll pitch yaw.png]]
 - Como os alinhadores são controlados por piezocristais, pelo que há 2 dispostivos que permitem controlar o alinhador de cada fibra com muita precisão
 
 **Fibras**

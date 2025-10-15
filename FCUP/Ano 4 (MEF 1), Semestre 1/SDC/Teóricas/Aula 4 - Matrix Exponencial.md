@@ -104,7 +104,7 @@ que, para o sistema ser controlável tem que *span* $\mathbb{R}^{n}$. De outra f
 $$\text{rank}(M)=n$$
 mais especificamente, se o input for escalar, isto é equivalente a
 $$\det(M)\equiv|M|\neq0$$
-- O **rank** é a "dimensão do subespaço vetorial que cosneguimos criar com as colunas da matriz" ou "o número de colunas OU linhas que são vetores linearmente independentes".
+- O **rank** é a "dimensão do subespaço vetorial que conseguimos criar com as colunas da matriz" ou "o número de colunas OU linhas que são vetores linearmente independentes".
     - Por exemplo, se tivermos uma linha ou coluna de zeros, o rank nunca será zero.
 
 **EX**

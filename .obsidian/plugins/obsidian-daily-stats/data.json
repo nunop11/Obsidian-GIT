@@ -57,16 +57,24 @@
     "2025/8/29": 777,
     "2025/8/30": 2544,
     "2025/9/2": 609,
-    "2025/9/3": 401
+    "2025/9/3": 401,
+    "2025/9/4": 3051,
+    "2025/9/5": 2951,
+    "2025/9/6": 249,
+    "2025/9/7": 1072,
+    "2025/9/8": 4727,
+    "2025/9/9": 0,
+    "2025/9/10": 591,
+    "2025/9/11": 383,
+    "2025/9/12": 2196,
+    "2025/9/13": 1062,
+    "2025/9/14": 4120,
+    "2025/9/15": 1182
   },
   "todaysWordCount": {
-    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Aula 3.md": {
-      "initial": 1,
-      "current": 177
-    },
-    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Entrevistas aula 3.md": {
-      "initial": 0,
-      "current": 225
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 4 -.md": {
+      "initial": 4714,
+      "current": 5896
     }
   }
 }

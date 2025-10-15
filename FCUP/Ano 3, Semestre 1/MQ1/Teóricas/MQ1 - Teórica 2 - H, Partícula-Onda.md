@@ -63,7 +63,7 @@ em que $n$ é o número de fotões, $h$ a constante de Planck e $\nu$ a frequên
 - Verificou-se ainda que só há remoção de eletrões acima de uma certa frequência crítica. Ou seja, mesmo que um feixe de luz seja muito energético (muitos fotões por unidade de tempo), se a energia for inferior à necessária não irão ser libertados eletrões. Isto porque a energia de 1 fotão será sempre $h \nu$ e 1 eletrão é removido por 1 fotão **apenas**.
 
 ## Experiência de Young (1801)
-![[experiencia Young.png|850]]
+![[Attachments/FCUP/A3S1/MQ1/experiencia Young.png|850]]
 
 - Tem-se representado na figura acima:   
     - Se taparmos a fenda 2, é transmitida uma onda com intensidade $I_{1}(x)\propto |E_{1}(x)|^{2}$

@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4ef9f7c576f11d9f",
+        "id": "ae239571fb3639ae",
         "type": "tabs",
         "children": [
           {
-            "id": "1700df0d01a97f14",
+            "id": "0baf8008d1426b18",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Entrevistas aula 3.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Entrevistas aula 3"
+              "title": "New tab"
             }
           }
         ]
@@ -78,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 414.5
+    "width": 414.5,
+    "collapsed": true
   },
   "right": {
     "id": "ff78a0b8e7bb2758",
@@ -94,13 +91,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Coisas Úteis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Coisas Úteis"
+              "title": "Outline"
             }
           },
           {
@@ -109,7 +105,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FCUP/Ano 4 (MEF 1), Semestre 1/Nano/NANO - INDEX.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +114,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for NANO - INDEX"
+              "title": "Backlinks"
             }
           },
           {
@@ -213,53 +208,54 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "1700df0d01a97f14",
+  "active": "0baf8008d1426b18",
   "lastOpenFiles": [
-    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Aula 3.md",
-    "Untitled.base",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Entrevistas aula 3.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Aula 2 - Technology Push.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 3 - Percepção 3D (pt. 1).md",
-    "Attachments/Pasted image 20251002143637.png",
-    "Attachments/Pasted image 20251002142752.png",
-    "Attachments/Pasted image 20251002142559.png",
-    "Attachments/Pasted image 20251002142048.png",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 1.md",
-    "Attachments/Pasted image 20250930235644.png",
-    "Attachments/Pasted image 20250930233552.png",
-    "Attachments/Pasted image 20250930225849.png",
-    "Attachments/Pasted image 20250930145413.png",
-    "Attachments/Pasted image 20250930121245.png",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 2 - Sensores e Coordenadas.md",
-    "Attachments/Pasted image 20250929145809.png",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/A5S1 - INDEX.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/Untitled.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 1 - Introdução.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Aula 1 - Introdução.md",
-    "Callouts.md",
-    "Coisas Úteis.md",
-    "README.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Empreendedorismo - INDEX.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/PES - INDEX.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 4 - Estimar AR.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/ACE/LAB1/Registo progresso LAB1 v2.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/SDC/Teóricas/Aula 3 - Formas Canónicas.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/SDC/Teóricas/Aula 4 - Matrix Exponencial.md",
+    "Attachments/Pasted image 20251014100143.png",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 2 - Densidade espectral.md",
+    "Attachments/Pasted image 20251014095632.png",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 3 - ARMA, Estado.md",
+    "Attachments/Pasted image 20251014095401.png",
+    "Attachments/Pasted image 20251014093713.png",
+    "Attachments/Pasted image 20251014093648.png",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/PES - Divisao Longa.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 4 - Percepção 3D (pt. 2).md",
+    "Attachments/Pasted image 20251013160434.png",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Aula 4 - Valor.md",
+    "FCUP/TESE/Notas Kalman.net.md",
+    "Attachments/Pasted image 20251013001140.png",
+    "Attachments/Pasted image 20251012234618.png",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/ML/Teóricas/9 - Clustering.md",
+    "Attachments/Pasted image 20251012170154.png",
+    "Attachments/Pasted image 20251012170119.png",
+    "Untitled 2.md",
+    "Untitled 1.md",
     "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/PMAP - INDEX.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/A4S2 - INDEX.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PES",
-    "FCUP/Ano 5 (MEF 2), Semestre 1",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 3 - Percepção 3D (pt. 1).md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Empreendedorismo - INDEX.md",
+    "FCUP/TESE/Notas git.md",
+    "Excalidraw/empresas e competicao.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Aula 3 - Desenvolvimento de ideias.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 1 - Introdução.md",
+    "Attachments/FCUP/A5S1/Tese",
+    "Attachments/FCUP/A5S1/New folder",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 1 - Processos estocásticos.md",
+    "Attachments/FCUP/A5S1/Empreendedorismo",
+    "Attachments/FCUP/A5S1/PES",
+    "Attachments/FCUP/A5S1/PMAP",
+    "Attachments/FCUP/A5S1",
+    "Attachments/FCUP/New folder",
+    "P.md",
+    "FCUP/TESE",
     "Untitled.md",
-    "Teste.md",
-    "Random Bullshit.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 2 - Revisões 2.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 9 - Fibras Óticas, Bessel.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 2/OE/Aula 1 - Revisões.md",
-    "FCUP/PEEC/PEEC INDEX.md",
-    "FCUP/PEEC/Notas sobre o VESTA.md",
-    "FCUP/Ano 2, Semestre 2/Computacional/Rascunhos",
-    "FCUP/Ano 3, Semestre 1/MF/Notas para o estudo de MF.pdf",
-    "FCUP/Ano 3, Semestre 2/FMC/Notas teóricas",
-    "FCUP/Ano 3, Semestre 2/FMC/Notas Fernando",
-    "FCUP/Ano 3, Semestre 2/Projeto/PROJETO - INDEX",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Aula 1 - Introdução.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Entrevistas aula 3.md",
+    "Untitled.base",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Aula 2 - Technology Push.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo",
     "Untitled 5.canvas",
     "Untitled 3.canvas",
     "Untitled 2.canvas",

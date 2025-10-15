@@ -24,7 +24,7 @@ aquilo salientado em baixo é o diagrama de Jordan.
 - O sistema fundamental de $\dot{x}(t)=A x(t)$ é um operador:
 $$\Phi(t,\tau):\mathbb{R}\times \mathbb{R}\to\mathbb{R}^{n\times n}$$
 tal que: $$\frac{d\Phi}{dt}=A \Phi \quad,\quad \Phi(\tau,\tau)=I$$
-- Temos as propriedades:
+- Temos as peropriedades:
     - $\forall t_{1},t_{2}$
         - $\det(\Phi(t_{1},t_{2}))\neq0$
         - $\Phi(t_{1},t_{2})=\Phi^{-1}(t_{2},t_{1})$
