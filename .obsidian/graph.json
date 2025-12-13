@@ -1,6 +1,6 @@
 {
-  "collapse-filter": true,
-  "search": "",
+  "collapse-filter": false,
+  "search": "\\mu_{20}'&= \\frac{\\mu_{20}}{\\mu_{00}}=\\frac{M_{20}}{M_{00}} - \\frac{M_{01}^{2}}{M_{00}^{2}}\\\\dcbhjmikn', tcgytrfloes[\\dw]q3",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
@@ -75,5 +75,5 @@
   "linkStrength": 1,
   "linkDistance": 30,
   "scale": 0.13992100822216447,
-  "close": true
+  "close": false
 }

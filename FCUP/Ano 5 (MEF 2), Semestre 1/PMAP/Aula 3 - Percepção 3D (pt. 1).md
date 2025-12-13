@@ -45,7 +45,47 @@
     - **direct coded** - o padrão emitido apresenta um código/sequencia binária específica, que podemos associar a cada pixel na imagem captada na câmara. Facilita a reconstrução 3D
     - **time of flight (ToF) ou medição de fase** - analisamos melhor o sinal que é refletido do objeto para o sensor
 
------------ EXPLICAÇÃO DA AULA COM A GEOMETRIA
+##### Temporal coded
+- Queremos determinar as coordenadas de um ponto $P=(X,Y,Z)$ num objeto. Conhecemos as coordendas de um laser $(x_{L},y_{L},z_{L})$. Representamos uma câmara como um plano focal (a azul), em que o ponto $P$ é projetado, tendo as coordenadas $(x,y)$ nele.
+![[temporal coded figura|654]]
+- Temos que:
+$$x=f \frac{X}{Z} \quad;\quad y=f \frac{Y}{Z}$$
+podemos entender isto com uma semelhança de triângulos. Um da origem até $P$ e outro da origem até $(x,y)$: $$\frac{x}{f}=\frac{X}{Z} \quad;\quad \frac{y}{f}=\frac{Y}{Z}$$
+isto quer dizer que, se tivermos $Z$ menor (câmara mais perto de $P$, sem alterar a sua orientação Z) veremos que $x,y$ aumentam - o ponto vai mais para longe do centro do plano.
+
+- Nós conhecemos $(x,y)$ - são as coordenadas que medimos na imagem da câmara: o "plano focal" acaba por ser **a fotografia que tiramos**
+- Conseguimos definir:
+$$X=\frac{fx}{Z} \quad;\quad Y=\frac{fy}{Z}$$
+ou seja, se descobrirmos $Z$ temos todas as coordenadas de $P$ !!!
+
+**Reta laser-P**
+- Podemos definir um reta entre $(x_{L},y_{L},z_{L})$ e $P$. Usemos a equação paramétrica:
+$$\begin{cases}
+X=x_{L}+at \\
+Y=y_{L}+bt \\
+Z=z_{L}+ct
+\end{cases} ~~,~~ t\in[0,1]$$
+e podemos escrever
+$$\frac{X-x_{L}}{a} = \frac{Y-y_{L}}{b} = \frac{Z-z_{L}}{c}$$
+e substituímos
+$$\frac{Z \frac{x}{f}-x_{L}}{a} = \frac{Z \frac{y}{f}-y_{L}}{b} = \frac{Z-z_{L}}{c}$$
+e daqui podemos usar $x,y,f$ para determinar $a,b,c,Z$
+
+##### Temporal coded v2
+- Outra opção é ter vários lasers. Consideremos que temos 7 lasers. O objetivo é fazer os cálculos como acima, determinando as coordenadas de vários pontos do objeto, para acelerar o processo de scanning.
+![[temporal coded figura v2|554]]
+- Mas notemos que na foto não tesmo como saber que linha veio de que laser, então não podemos fazer contas porque não sabemos as coordenadas do laser que originou o ponto $B_{i}$
+- Para resolver isto, acendemos e desligamos os lasers de forma coordenada. Assim, este é que é o verdadeiro *temporal coded*. Podemos ligar os lasers de forma a fazer codigo binario:
+
+| Instante (t) | Laser L₁ | Laser L₂ | Laser L₃ |
+| ------------ | -------- | -------- | -------- |
+| t₁           | 1        | 0        | 0        |
+| t₂           | 0        | 1        | 0        |
+| t₃           | 0        | 0        | 1        |
+| t₄           | 1        | 0        | 1        |
+| t₅           | 0        | 1        | 1        |
+
+- Imaginemos que ao fazer esta variação vemos algo tipo: 100,001,010,110,011. Ao comprar os 2 padrões, podemos ver que a primeira risca é L1, a segunda é L3 e a terceira é L2
 
 ### Representação
 - Como vimos, uma **nuvem de pontos** é uma coleção $P=\{p_{1},\dots,p_{n}\}$ de pontos $p_{i}\in \mathbb{R}^{3}$. Isto é feito com um array $n\times3$

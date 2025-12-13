@@ -18,16 +18,18 @@
     - Por outro lado, podemos ter muita variância e baixa resolução espectral
 
 - Esta última desvantagem de métodos não paramétricos pode ser visualizada abaixo: (periodograma é um método não paramétrico)
-![[Pasted image 20251013160434.png]]
+![[estimacao parametrica e nao parametrica resultado.png]]
 
 ## Paramétricos
+- Antes de mais, notemos que nestes modelos assumimos sempre que $A(q^{-1}),C(q^{-1})$ são estáveis PORQUE o sistema é estável
+
 ### AR
 - Temos a equação que define processos AR:
 $$A(q^{-1})y(t)=e(t) \quad;\quad A(q^{-1})=1+a_{1}q^{-1}+\dots+a_{n}q^{-n}$$
 e $e(t)$ é ruído branco com média nula e variância $\sigma^{2}$
 - Como já vimos, modelos AR são estacionários. 
 - E neste caso temos a densidade espectral:
-$$y(t)=\frac{1}{A(q^{-1})}\quad\to\quad \Phi_{yy}(\omega)=\frac{\sigma^{2}}{|A(e^{-j\omega})|^{2}}$$
+$$y(t)=\frac{1}{A(q^{-1})}e(t)\quad\to\quad \Phi_{yy}(\omega)=\frac{\sigma^{2}}{|A(e^{-j\omega})|^{2}}$$
 - Como tal, determinar a densidade espectral implica determinar os coeficientes $a_{1},\dots,a_{n}$
 
 ### AR : Yule-Walker
@@ -77,10 +79,10 @@ $$\sigma^{2}=\lambda_{yy}(0)+a_{1}\lambda_{yy}(1)+\dots+a_{n}\lambda_{yy}(n)$$
 
 #### EXEMPLO
 - Consideremos o seguinte processo estocástico que medimos:
-![[Pasted image 20251014093648.png]]
+![[ex  processo AR.png]]
 
 - Determinamos a sequência de  autocovariância deste sinal em Matlab:
-![[Pasted image 20251014093713.png]]
+![[ex seq autocovariancia processo AR.png]]
 
 - Tendo isto, queremos determinar o **modelo AR que gera este sinal**. 
 - Decidiu-se usar apenas os primeiros 4 termos da sequência:
@@ -115,14 +117,14 @@ $$\hat{\sigma}^{2}=\lambda_{yy}(0)+a_{1}\lambda_{yy}(1)+a_{2}\lambda_{yy}(2)+a_{
 
 ##### Validar teórico
 - Podemos calcular a sequência de autocovariância para a nossa estimativa AR:
-![[Pasted image 20251014095401.png]]
+![[estimativa autoocov processo AR vs real.png]]
 - Vemos que as sequências sao identicas para $\tau=-3,\dots,3$ e que o erro vai aumentando com $\tau$. Isto faz sentido porque apenas usamos $|\tau|\le3$ para estimar o modelo
 - Podemos fazer a seguinte comparação:
-![[Pasted image 20251014095632.png]]
+![[estimativa densidade espectral processo AR vs real.png]]
 Em azul temos a densidade espectral determinada com os coeficientes estimados $\Phi(\omega)=\sum_{\tau}\lambda_{yy}(\tau)e^{-j\omega}$, a laranja temos a densidade teórica $\Phi(\omega)=\frac{\sigma^{2}}{|A(j\omega)|^{2}}$
 
 ##### Erro de estimação 
-![[Pasted image 20251014100143.png]]
+![[estimativa sinal AR vs real e ruido.png]]
 - Aqui vemos o sinal $y$, a estimativa $\hat{y}$ e o erro $\hat{e}=y-\hat{y}$
 - Ao calcular a variância do erro de estimação temos $\mathbb{E}[\hat{e}^{2}(t)]=0.8759$, que é bastante **maior que** a variância de ruído branco estimada 
     - Notemos que o ruído branco será o erro num caso ideal: a única fonte de erro que nunca podemos controlar é o ruído branco e a sua aleatoriedade
@@ -142,7 +144,7 @@ $$\small
 \end{pmatrix}$$
 - Com as cores assinaladas, conseguimos ver que os elementos das diagonais são todos iguais!! 
 - Além disso, na diagonal $i$ acima (ou abaixo) da diagonal principal temos o valor $\lambda_{yy}(\tau=i)$
-- Estas caraterísticas dizem-nos que $\boldsymbol{\Lambda}_{n}$ é uma **matriz de Toeplitz**!
+- Estas caraterísticas dizem-nos que $\boldsymbol{\Lambda}_{n}$ é uma **matriz de Toeplitz**! (lê-se « toiplitz »)
 - Temos ainda que a matriz é igual acima e abaixo da diagonal principal: é **simétrica**
 - Ou seja, a matriz de covariâncias é de Toeplitz simétrica
 
@@ -259,7 +261,7 @@ $$\begin{align*}
 \boldsymbol{\lambda}_{k:1}^{T}\boldsymbol{\epsilon}_{k}&=\boldsymbol{\lambda}_{k:1}^{T} a_{k+1}^{(k+1)}\boldsymbol{\theta}_{R}^{(k)}\\
 \boldsymbol{\lambda}_{k:1}^{T}\boldsymbol{\epsilon}_{k}&=\boldsymbol{\lambda}_{1:k}^{T} \boldsymbol{\theta}^{(k)} \cdot a_{k+1}^{(k+1)}\\
 \end{align*}$$
-em que no último passo usamos: $\boldsymbol{\lambda}_{k:1}^{T}\boldsymbol{\theta}_{R}^{(k)}=\boldsymbol{\lambda}_{1:k}^{T}\boldsymbol{\theta}^{(k)}$, uma equação relativamente intuitiva.
+em que no último passo usamos: $\boldsymbol{\lambda}_{k:1}^{T}\boldsymbol{\theta}_{R}^{(k)}=\boldsymbol{\lambda}_{1:k}^{T}\boldsymbol{\theta}^{(k)}$, uma equação relativamente intuitiva. Esta equação é verdade porque temos um **produto escalar**, que é comutativo.
 
 - Acima, obtivemos o seguinte sistema a partir de Yule-Walker:
 $$\begin{cases}
@@ -296,6 +298,8 @@ Presumo que seja para reforçar que $\boldsymbol{\theta}^{(k+1)}$ tem $k+1$ par�
 - Estas são ferramentas que estimam modelos paramétricos de processos estocásticos ou sistemas determinístico-estocásticos
 - Ajustamos os parâmetros do sistema de forma a minimizar o erro (diferença entre previsões e valores previstos)
 - Estes métodos são essenciais para reforçar e melhorar a estimativa
+- Estes métodos são **fortemente consistentes**: a partir de certo $n$, temos probabilidade $=1$ de a nossa previsão estar dentro de um intervalo de confiança em torno do valor real. Ou seja, convergimos para o valor real ao aumentar $n$
+- Este método tem um defeito: estamos a minimizar um erro que NÃO é quadrático. Assim, existem vários mínimos locais de erro e podemos não convergir para o mínimo global.
 
 #### Propriedades
 **Consistência**

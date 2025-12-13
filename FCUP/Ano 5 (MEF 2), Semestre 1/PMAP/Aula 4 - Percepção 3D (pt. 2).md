@@ -2,10 +2,10 @@
 ### Fontes de incerteza
 - Fontes de incerteza causam ruído nos dados. Isto cria orificios, picos e outros defeitos nos nossos pontos/meshes
 - Por sua vez, isto afeta as features que detetamos e extraímos
-![[Pasted image 20251011201226.png]]
+![[resolucao modelo 3d.png]]
 
 - Existem imensas fontes de incerteza, que devemos ter sempre em conta ao adquirir e analisar dados:
-![[Pasted image 20251011201300.png]]
+![[tipos incerteza.png]]
 
 ### Filtragem
 - Ora, como em princípio temos sempre *algum* ruído nos dados, um importante passo de pré-processamento é **filtragem de ruído**
@@ -70,7 +70,7 @@ $$L = \frac{\lambda_{1}-\lambda_{2}}{\lambda_{1}}~~,~~P=\frac{\lambda_{2}-\lambd
         - Isto resulta em keypoints que mantêm a sua relevância **independentemente da escala**. Um algoritmo popular que faz isto é SIFT
 
 - Normalmente usamos pontos de alta curvatura, porque consideramos como sendo mais ricos em informação sobre a forma do objeto:
-![[Pasted image 20251012161213.png]]
+![[armadillo keypoints.png]]
 
 #### Fixed Scale: Métodos de curvatura
 - Como referido acima, pontos de altura curvatura costumam ser associados a altos níveis de informação sobre o objeto. Assim, vejamos como podemos usar esta propriedade para estudar objetos
@@ -78,12 +78,12 @@ $$L = \frac{\lambda_{1}-\lambda_{2}}{\lambda_{1}}~~,~~P=\frac{\lambda_{2}-\lambd
 - Com estes 2 vetores podemos definir o **plano normal** e a **curva normal**
     - O plano normal é aquele que contém $\mathbf{n}$ e $\mathbf{v}$
     - A curva normal é a interseção do plano normal com a superfície do objeto
-![[Pasted image 20251012162945.png]]
+![[curva normal.png]]
 - Assim, podemos definir a **curvatura normal** $\kappa_{n}(\mathbf{v})$ que nos dá uma medida do desvio entre o vetor tangente $\mathbf{v}$ e a curva normal. Por outras palavras, mede o quanto a superfície curva 
 - Tal como temos infinitos vetores tangentes $\mathbf{v}$, também temos infinitas curvas normais, ambos obtidos ao rodar $\mathbf{v}$ em torno de $\mathbf{n}$
 
 **Como calcular**
-![[Pasted image 20251012164053.png]]
+![[angulo curva normal.png]]
 - Ora, a curvatura consiste em "quanto varia o ângulo ao longo desta superfície" ou seja: $\kappa=\frac{d\theta}{ds}$ 
 - Assim, tendo em conta um ponto $p_{2}$ em que o ângulo entre a superfície e o vetor tangente é $\delta$, podemos definir a curvatura:
 $$\begin{align*}
@@ -114,10 +114,10 @@ em que $\theta$ é o ângulo entre $\mathbf{v}$ e $\mathbf{e}_{1}$.
     - Hiperbólicas: $G<0$
     - Parabólicas ou planas: $G=0$
 - De uma forma geral temos (esta figura usa $K$ para representar $G$):
-![[Pasted image 20251012170119.png]]
+![[curvaturas superficies.png]]
 
 - Ao aplicar os 2 tipos de curvatura ao modelo de um coelho temos (curvatura média na direita e curvatura gaussiana na direita):
-![[Pasted image 20251012170154.png]]
+![[curvatura media e gaussiana.png]]
 
 **Operador de forma**
 - Definimos como
@@ -182,7 +182,7 @@ $$\sigma(P,\delta)=\frac{\lambda_{1}}{\lambda_{1}+\lambda_{2}+\lambda_{3}}$$
 #### Aparte: Vetor normal e tangente
 - O vetor normal $\mathbf{n}(P)$ pode ser calculado num ponto $P$ ao conhecer os seu vizinhos
 - Podemos definir um vetor $\mathbf{v}=u_{t}f_{u}+v_{t}f_{v}$ como vetor tangente (mas noetemos que existem infinitos vetores tangetes em qualquer ponto)
-![[Pasted image 20251012161530.png]]
+![[plano tangente e vetor normal.png]]
 
 - Os vetores tangentes que definiem $\mathbf{v}$ podem ser definidos como derivadas:
 $$f_{u}(u,v)=\frac{\partial f(u,v)}{\partial u} \quad;\quad f_{v}(u,v)=\frac{\partial f(u,v)}{\partial }$$
@@ -226,7 +226,7 @@ $$z_{x}=-\frac{2Ax+Ey+Fz+G}{2Cz+Fz+Hy+K} \quad;\quad z_{y}=-\frac{2By+Ex+Hz+J}{2
 1. Geramos um círculo/esfera com raio $r$ em torno de $P$
 2. Definimos um conjunto de pontos $p_{\theta}$ na intercepção da esfera com a superfície do objeto, em intervalos angulares regulares $\Delta\theta$
 3. Definimos um LRF (local reference frame) usando o vetor normal em $P$ ($\mathbf{n}$) e o plano tangente em $P$
-![[Pasted image 20251012234618.png]]
+![[metodo signature.png]]
 - Algumas informações que podemos extrair com este método e guardar no descriptor:
     - curvatura
     - ângulos de torsão 
@@ -242,7 +242,7 @@ $$z_{x}=-\frac{2Ax+Ey+Fz+G}{2Cz+Fz+Hy+K} \quad;\quad z_{y}=-\frac{2By+Ex+Hz+J}{2
 - Podemos definir um referencial centrado no keypoint $P$ - chamamos a estes referenciais de *object centered*
 - Tendo o ponto $P$ e o seu vetor normal $\mathbf{n}$, podemos definir 2 coordenadas cilíndricas: distância radial $\alpha$ e distância na direção normal $\beta$ 
 - Temos então:
-![[Pasted image 20251013001140.png]]
+![[metodo signature coordenadas.png]]
 
 **Funcionamento**
 - Para um certo vizinho $Q$, determinamos as coordenadas cilíndricas $(\alpha,\beta)$:
@@ -273,3 +273,44 @@ em que $\mu$ é a média dos atributos todos, de todos os pontos
     - Distância entre vizinhos
     - Combinações de fatores
     - etc
+
+## Regristration / Registo
+- Isto consiste em pegar em 2 point clouds correspondentes ao mesmo objeto e juntá-las/encaixá-las
+- Consideremos $M_{a},M_{b}$ as point clouds parciais do objeto
+- Queremos determinar a matriz $\mathbf{w}^{*}$ da transformação $H(\mathbf{w}^{*}, M_{a})$ que melhor alinha $M_{a}$ e $M_b$. Usamos minimização de erro:
+$$\mathbf{w}^{*}=\text{argmin}_{\text{w}}E[ H(\mathbf{w},M_{a}), M_{b} ]$$
+em que temos $E(\cdot)$ o erro de registo
+- Por exemplo:
+![[registration peças coelho.png]]
+
+- A **função de transformação** $H(\cdot)$ normalmente é uma transformação *rígida* do espaço 3D: **translação e rotação**
+- A **função de erro** $E(\cdot)$ mede a concordância/proximidade entre $M_{b}$ e $M_{a}$ transformada. Podemos usar, por exemplo, distâncias L2
+- Para resolver a equação acima usamos um **método de otimização**
+
+### ICP (Iterative Closest Points)
+- Este é o método que vamos ver
+- Temos as nuvens $M_{a}=\{a_{1},\dots,a_{n}\}$ e $M_{b}=\{b_{1},\dots,a_{m}\}$
+- Podemos definir a função de erro como 
+$$\begin{align*}
+E(\mathbf{w},M_{a},M_{b})&= \sum\limits_{i=1}^{n}\|(R \cdot a_{i}+t) - b_{j}\|^{2}\\
+\text{em que }j&= \text{argmin}_{k=1,\dots,m}\sum\limits_{i=1}^{n}\|(R\cdot a_{i}+t) - b_{k}\|^{2}
+\end{align*}$$
+ou seja, o erro é a soma das distâncias entre os pontos de $M_{a}$ transformado e o ponto de $M_{b}$ mais próximo.
+
+- As matrizes de rotação e translação estão em $\mathbf{w}$.
+
+**Algoritmo**
+- Ok, definimos o erro como sendo a distância entre vizinhos. Vamos ver como podemos usar isso num algoritmo.
+- Sabendo os pares de pontos mais próximos podemos definir:
+$$C= \frac{1}{n} \sum\limits_{i=1}^{n}(a_{i} - \mu_{a})\cdot(b_{i}-\mu_{B})^{T}$$
+em que $\mu_{a},\mu_{b}$ é o centro destas nuvens $M_{a},M_{b}$.
+
+- Tendo a matriz $C$ podemos fazer decomposição SVD:
+$$C=USV^{T}$$
+e temos a rotação e translação:
+$$R=VU^{T} \quad;\quad t=\mu_{b}-R\mu_{a}$$
+- E finalmente temos o **algoritmo ICP**:
+    1. Para cada ponto $a_{i}\in M_{a}$ encontrar o ponto mais próximo $b_{j}\in M_{b}$
+    2. Tend o os pares, determinar as transformações $R,t$ com a matriz $C$
+    3. Aplicar $R,t$ em $M_{a}$
+    4. Repetir até convergir ou estar abaixo dum erro threshold

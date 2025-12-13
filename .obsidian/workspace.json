@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ae239571fb3639ae",
+        "id": "4489e04ccea838fa",
         "type": "tabs",
         "children": [
           {
-            "id": "0baf8008d1426b18",
+            "id": "4869c0a99e34d57e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -74,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 414.5,
-    "collapsed": true
+    "width": 414.5
   },
   "right": {
     "id": "ff78a0b8e7bb2758",
@@ -85,20 +84,6 @@
         "id": "445cd8c7da8bfafb",
         "type": "tabs",
         "children": [
-          {
-            "id": "76afe69733b3c4c4",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline"
-            }
-          },
           {
             "id": "4ea09a018e1db959",
             "type": "leaf",
@@ -115,6 +100,20 @@
               },
               "icon": "links-coming-in",
               "title": "Backlinks"
+            }
+          },
+          {
+            "id": "76afe69733b3c4c4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
             }
           },
           {
@@ -190,8 +189,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5,
-    "collapsed": true
+    "width": 217.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -208,54 +206,54 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "0baf8008d1426b18",
+  "active": "4869c0a99e34d57e",
   "lastOpenFiles": [
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 4 - Estimar AR.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/ACE/LAB1/Registo progresso LAB1 v2.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/SDC/Teóricas/Aula 3 - Formas Canónicas.md",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/SDC/Teóricas/Aula 4 - Matrix Exponencial.md",
-    "Attachments/Pasted image 20251014100143.png",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 2 - Densidade espectral.md",
-    "Attachments/Pasted image 20251014095632.png",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 3 - ARMA, Estado.md",
-    "Attachments/Pasted image 20251014095401.png",
-    "Attachments/Pasted image 20251014093713.png",
-    "Attachments/Pasted image 20251014093648.png",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/PES - Divisao Longa.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 4 - Percepção 3D (pt. 2).md",
-    "Attachments/Pasted image 20251013160434.png",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Aula 4 - Valor.md",
+    "Attachments/FCUP/A5S1/PES/luenberger adaptado para perturbacao - 4 observadores zoomed.png",
+    "Attachments/FCUP/A5S1/PES/janela bartlett.png",
+    "Attachments/FCUP/A5S1/PES/hann.png",
+    "Attachments/FCUP/A5S1/PES/hamming.png",
+    "Attachments/FCUP/A5S1/PES/fourier de bartlett.png",
+    "Attachments/FCUP/A5S1/PES/fourier bartlett diferentes L.png",
+    "Attachments/FCUP/A5S1/PES/flat-top.png",
+    "Attachments/FCUP/A5S1/PES/dividir sinal em estocastico e deterministico.png",
+    "Attachments/FCUP/A5S1/PES/blackman.png",
+    "Attachments/FCUP/A5S1/PES/previsor vs filtro kalman.png",
+    "Attachments/FCUP/A5S1/PES/luenberger adaptado para perturbacao - resultados.png",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 9 - Kalman..md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 10 - Navegação Inercial, SLAM.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 8 - Observadores.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 7 - Não estacionário.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 9 - Estimação não linear.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 8 - Estimação linear.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 10 - Não paramétrico.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 1 - Processos estocásticos.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 6 - Estimar ARMA.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/SDC/Projeto/Ex5.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/SDC/Projeto/Ex4.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/SDC/Projeto/Linearização (Notas aula).md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/SDC/Projeto/Ex7.md",
+    "FCUP/Ano 4 (MEF 1), Semestre 1/SDC/Projeto/Ex6.md",
+    "FCUP/TESE/Notas sobre ajustes de pontos.md",
+    "Untitled.md",
+    "FCUP/TESE/NOTAS software picorobot.md",
+    "FCUP/TESE/Regras Robot@Factory.md",
     "FCUP/TESE/Notas Kalman.net.md",
-    "Attachments/Pasted image 20251013001140.png",
-    "Attachments/Pasted image 20251012234618.png",
-    "FCUP/Ano 4 (MEF 1), Semestre 1/ML/Teóricas/9 - Clustering.md",
-    "Attachments/Pasted image 20251012170154.png",
-    "Attachments/Pasted image 20251012170119.png",
-    "Untitled 2.md",
-    "Untitled 1.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/PMAP - INDEX.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 3 - Percepção 3D (pt. 1).md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Empreendedorismo - INDEX.md",
     "FCUP/TESE/Notas git.md",
-    "Excalidraw/empresas e competicao.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Aula 3 - Desenvolvimento de ideias.md",
+    "FCUP/TESE/Calcular distância vertical.md",
     "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 1 - Introdução.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 11 - SLAM.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 6 - Multiview.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 2 - Densidade espectral.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Extras",
+    "Untitled.base",
     "Attachments/FCUP/A5S1/Tese",
     "Attachments/FCUP/A5S1/New folder",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 1 - Processos estocásticos.md",
     "Attachments/FCUP/A5S1/Empreendedorismo",
     "Attachments/FCUP/A5S1/PES",
     "Attachments/FCUP/A5S1/PMAP",
     "Attachments/FCUP/A5S1",
     "Attachments/FCUP/New folder",
-    "P.md",
     "FCUP/TESE",
-    "Untitled.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Aula 1 - Introdução.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Entrevistas aula 3.md",
-    "Untitled.base",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Aula 2 - Technology Push.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo",
     "Untitled 5.canvas",
     "Untitled 3.canvas",
     "Untitled 2.canvas",

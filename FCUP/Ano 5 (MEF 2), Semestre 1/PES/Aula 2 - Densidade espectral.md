@@ -2,6 +2,9 @@
 - Se a função de covariância de um processo estacionário for *absolutamente somável* ($\sum_{\tau=-\infty}^{+\infty}|\lambda_{xx}(\tau)|<\infty$) então podemos determinar a sua transformada de **Fourier** 
 - Ora, a transformada de Fourier da função covariância de um processo estocástico chama-se **Densidade Espectral de Potência** ou *Densidade espectral*
 
+- Notemos que matrizes de covariância são simétricas:
+$$\Lambda=\begin{bmatrix}\lambda_{yy}(0) & \lambda_{yy}(1) & \cdots & \lambda_{yy}(n) \\ \lambda_{yy}(1) & \lambda_{yy}(0) & \cdots & \lambda_{yy}(n-1) \\ \vdots & \vdots & \ddots & \vdots \\ \lambda_{yy}(n) & \lambda_{yy}(n-1) & \cdots & \lambda_{yy}(0)\end{bmatrix}$$
+
 ### Definição formal
 - Se um processo estacionário $\{x(t)\}$ tiver uma função de covariância absolutamente somável então a sua densidade espectral de potência é dada por
 $$\Phi_{xx}(\omega)=\sum\limits_{\tau=-\infty}^{+\infty}\lambda_{xx}(\tau)e^{-j\omega\tau}$$

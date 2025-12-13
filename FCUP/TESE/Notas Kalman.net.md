@@ -582,3 +582,548 @@ $$\boxed{p_{n,n}=(1-K_{n})p_{n,n-1}}$$
 - Na primeira iteração consideramos a estimativa inicial como "previsão do estado anterior"
 
 ### Intuição de ganho de Kalman
+- Podemos reescrever a equação de atualização de estado:
+$$\begin{align*}
+\hat{x}_{n,n}&= \hat{x}_{n,n-1} + K_{n}(z_{n} - \hat{x}_{n,n-1})\\
+&= (1 - K_{n})\hat{x}_{n,n-1} + K_{n}z_{n}
+\end{align*}$$
+e assim: o ganho de Kalman é o *peso da medição*, enquanto que $1-K_{n}$ é o *estimativa de estado feita antes*
+
+- O ganho será perto de zero quando a incerteza da medição é alta (como vimos acima) e vice-versa. 
+- Isso faz sentido: menor incerteza == Kn maior == damos mais peso à medição
+
+#### Caso de alto ganho
+- Neste caso a incerteza de medição é bem menor que a de estimativa. 
+- Ou seja, tendo em conta a equação de atualização de estado, vemos que a estimativa do estado atual $\hat{x}_{n,n}$ será bastante próxima de $z_{n}$
+- Graficamente teríamos isto:
+![[kalman 1d esquema alto ganho.png]]
+
+#### Caso de ganho baixo
+- Temos o caso oposto: temos bem mais incerteza de medição do que de estimativa
+- Então, tendo o oposto, teremos uma estimativa atual próxima da estimativa feita antes:
+![[kalman 1d esquema baixo ganho.png]]
+
+### EX - altura de prédio
+- Isto é um exemplo numérico
+- Temos um prédio com altura de 50m (isto é a altura **real**)
+- O medidor de altura tem desvio padrão / erro de medição de $5\text{m}$
+- Temos 10 medições: $49.03, 48.44, 55.21, 49.98, 50.60, 52.61, 45.87, 42.64, 48.26, 55.84\text{ m}$
+
+#### Iteração 0
+**Inicialização**
+- Definimos a estimativa inicial $\hat{x}_{0,0}=60\text{m}$ 
+- Consideramos que a nossa estimativa tem um erro de estimação de tipo $\sigma=15 \text{m}$ logo temos uma variância $\sigma^{2}=225\text{m}^{2}=p_{0,0}$ e temos a nossa estimativa inicial de covariância
+
+**Previsão**
+- O prédio em princípio não muda de altura então consideramos um modelo dinâmico **constante**, logo as nossa estimativa para o próximo estado é:
+$$\hat{x}_{1,0}=\hat{x}_{0,0}=60 \text{m}$$
+e a estimativa da variância também não muda:
+$$p_{1,0}=p_{0,0}=225\text{m}^{2}$$
+
+#### Iteração 1
+**Passo 1 - medir**
+- Conforme acima, temos a medição $z_{1}=49.03\text{m}$
+- Como visto no início, o desvio padrão do sensor é $5\text{m}$ logo temos a incerteza da medição $r_{1}=25\text{m}^{2}$ 
+
+**Passo 2 - atualizar estado**
+- Calculamos o filtro de Kalman:
+$$K_{1}=\frac{p_{1,0}}{p_{1,0} + r_{1}} = \frac{255}{255 + 25} = 0.9$$
+e estimamos o estado atual com a equação de cima:
+$$\hat{x}_{1,1}= \hat{x}_{1,0}+K_{1}(z_{1}-\hat{x}_{1,0})=50.13\text{m}$$
+e estimamos a variância deste estado:
+$$p_{1,1}=(1-K_{1})p_{1,0}=22.5\text{m}^{2}$$
+
+**Passo 3 - previsão**
+- Como o modelo dinâmico é constante, logo
+$$\begin{align*}
+\hat{x}_{2,1}&= \hat{x}_{1,1}=50.13\text{ m}\\
+p_{2,1}&= p_{1,1}=22.5\text{ m}^{2}
+\end{align*}$$
+
+#### Iteração 2
+**Passo 1 - medir**
+- Depois de 1 unidade de tempo, voltamos a fazer uma medição e obtemos $z_{2}=48.44\text{m}~,~r_{2}=25\text{m}^{2}$
+
+**Passo 2 - atualizar**
+- Calculamos o ganho de Kalman desta nova medição
+$$K_{2}=\frac{p_{2,1}}{p_{2,1}+r_{2}}=\frac{22.5}{22.5+25}= 0.47$$
+agora temos que o ganho baixo bastante: isto significa que a nossa nova medição têm uma incerteza demasiado alta e que não a podemos dar demasiada importância.
+- Podemos estimar o estado atual:
+$$\hat{x}_{2,2}=\hat{x}_{2,1} + K_{2}(z_{2}-\hat{x}_{2,1})=49.33\text{m}$$
+e a estimativa da variância
+$$p_{2,2}=(1-K_{2})p_{2,1} = 11.84\text{m}^{2}$$
+
+**Passo 3 - previsão**
+- O modelo é constante logo:
+$$\begin{align*}
+\hat{x}_{3,2}&= \hat{x}_{2,2}=49.33\text{m}\\
+p_{3,2}&= p_{2,2}=11.84\text{m}^{2}
+\end{align*}$$
+
+#### Final
+- Vamos repetindo isto com as 10 medições (logo fazemos 10 iterações)
+![[ex numerico 1.png|525]]
+
+- Podemos ver que o ganho vai descendo sempre, o que signfica que estamos a converger para uma estimativa. Isso também significa que vamos ficando mais e mais confiantes na nossa estimativa de estado atual $\hat{x}_{n,n}$
+- Se fizessemos 100 iterações teríamos algo do tipo:
+![[evolucao ganho kalman.png|525]]
+consideramos que o filtro atinge steady-state após ~50 iterações
+
+- Também podemos ver que as estimativas do filtro são muito robustas a variância das medições:
+![[estimativas kalman 1d.png]]
+
+- Podemos definir vários critérios de precisão:
+    - Erro máximo 
+    - Erro médio
+    - RMSE (Root Mean Square Error)
+e por erro entendemos $e=x-\hat{x}$.
+
+- Precisamos ainda de estimar a incerteza do nosso filtro. Uma maneira "fácil" de fazer isso é definir um intervalo de confiança. Uma opção comum é o intervalode de 95%
+![[zona confianca kalman 1d.png]]
+
+## Com ruído de processo
+- Isto é então o **filtro de Kalman 1D COMPLETO**
+
+### Ruído de processo
+- Na realidade, o modelo do sistema dinâmico **tem incerteza** e isto é algo que nunca vimos até agora
+    - Por exemplo, um modelo constante (como "valor de resistência do componente X") pode não ser mesmo constante: o valor real pode variar entre medições
+    - Se estivermos a serguir algo com um radar, as "incertezas" do modelo são variações abruptas da aceleração do alvo
+- Por outro lado, podemos ter incerteza nula: se estivermos a determinar a posição de um objeto com GPS.
+- Ora, essa *incerteza* É o **ruído de processo**
+- Representamos este ruído com $q$
+- O algoritmo do filtro de Kalman muda no sentido que *incluimos o ruído na equação de extrapolação da covariância*
+![[resumo equacoes kalman 1d.png]]
+(claro, as equações de extrapolação dependem muito do problema específico)
+
+### EX - temperatura de líquido
+- Temos um tanque de líquido a temperatura constante 
+    - Mas isso é o que normalmente assumimos
+    - Vamos considerar a presença de flutuações da temperatura do líquido
+- Modelamos a temperatura como
+$$x_{n}=T+w_{n}$$
+em que $T$ é a temperatura "constante" e $w_{n}$ é um processo aleatório com variância $q$.
+
+**Assumimos que...**
+- Assumimos a temperatura média $T=50ºC$
+- Consideremos que o modelo é exato: temos variância do ruído de processo $q=0.0001ºC$ 
+- Temos um desvio padrão de medição de $0.1ºC$. 
+- Fazemos medições a cada $5s$
+- Devido ao processo aleatório, a **temperatura real varia**: $50.005, 49.994, 49.993, 50.001, 50.006, 49.998, 50.021, 50.005, 50, 49.997$
+- E as medições feitas são: $49.986, 49.963, 50.09, 50.001, 50.018, 50.05, 49.938, 49.858, 49.965, 50.114$
+- Ou seja, temos isto:
+![[estimativa kalman 1d valor constante.png]]notemos que o valor real varia!!!
+
+#### Iteração 0
+**Inicialização**
+- Definimos uma estimativa inicial: $\hat{x}_{0,0}=60ºC$
+- Como esta estimativa inicial é só um palpite, forçamos uma variância de estimativa muito elevada de propósito. 
+    - Consideremos um desvio padrão de $100ºC$ 
+    - Temos $p_{0,0}=100^{2}=10000ºC^{2}$
+- Se conseguirmos fazer uma estimativa melhor com menos incerteza, o filtro vai converger mais rapidamente
+
+**Previsão**
+- Consideramos um modelo de dinâmica constante: $\hat{x}_{1,0}=60ºC$
+- E temos a equação de extrapolação da variância com o processo aleatório:
+$$p_{1,0}=p_{0,0}+q=10000.0001ºC$$
+
+#### Iteração 1
+**Passo 1 - medir**
+- Medimos $z_{1}=49.986ºC$
+- Como vimos, o desvio padrão é $\sigma=0.1$ logo temos: $r_{1}=0.01ºC^{2}$
+
+**Passo 2 - atualizar**
+- Calculamos o ganho:
+$$K_{1}=\frac{p_{1,0}}{p_{1,0}+r_{1}}=0.999999$$
+e isto é resultado de fazermos uma estimativa inicial muito fraca: ela terá peso nulo na atualização de estado, enquanto que a medição terá todo o peso.
+
+- Assim:
+$$\begin{align*}
+\hat{x}_{1,1}&= \hat{x}_{1,0}+K_{1}(z_{1}-\hat{x}_{1,0})=49.986ºC\\
+p_{1,1}&= (1-K_{1})p_{1,0}=0.01ºC^{2}
+\end{align*}$$
+
+**Passo 3 - prever**
+- O modelo é constante com ruído:
+$$\begin{align*}
+\hat{x}_{2,1}&= \hat{x}_{1,1}=49.986ºC\\
+p_{2,1}&= p_{1,1}+q=0.0101ºC
+\end{align*}$$
+
+#### Iteração 2
+**Passo 1 - medir**
+- Medimos $z_{2}=49.963ºC$
+- Novamente, temos $r_{2}=0.01ºC^{2}$ -- isto será constante, assumimos ruído de processo com variância constante
+
+**Passo 2 - atualizar**
+- Temos o ganho:
+$$K_{2}=\frac{p_{2,1}}{p_{2,1}+r_{2}}=0.5$$
+- E podemos estimar o estado atual
+$$\begin{align*}
+\hat{x}_{2,2}&= \hat{x}_{2,1}+K_{2}(z_{2}-\hat{x}_{2,1})=49.974ºC\\
+p_{2,2}&= (1-K_{2})p_{2,1}=0.005ºC^{2}
+\end{align*}$$
+
+**Passo 3 - prever**
+- Temos modelo constante com ruído:
+$$\begin{align*}
+\hat{x}_{3,2}&= \hat{x}_{2,2}=49.974ºC\\
+p_{3,2}&= p_{2,2} + q = 0.0051ºC
+\end{align*}$$
+
+#### Final
+- Continuamos isto até à iteração 10
+![[ex numerico 2.png]]
+
+- O ganho evoluiu desta forma
+![[evolucao ganho kalman 2.png]]
+
+- Podemos ver o intervalo 95%:
+![[intervalo confianca kalman valor constante.png]]
+
+### mais 2 EXs
+- No site tem mais 2 exemplos:
+    - **Exemplo 7** - estimar temperatura de tanque em aqecimento I
+        - A temperatura real aumenta linearmente com o tempo e temos ruído de processo de variância $q$.
+        - Neste exemplo mantivemos o modelo constante
+        - As estimativas não conseguem acompanhar o valor real: ![[estimativa kalman aviao com aquecimento.png]]
+
+    - **Exemplo 8** - estimar temperatura de tanque em aqecimento II
+        - Neste caso aumentamos a variância do ruído ($q$) de 0.0001 para 0.15
+        - Isto faz com que o nosso modelo seja muito mais livre, mas também fica muito mais dependente das medições (qualquer ruído afeta a nossa estimativa)
+        - Temos um resultado melhor, mas muito justo das medições: ![[estimativa kalman com aceleracao e variancia alta.png]]
+        - No entanto, notemos que não temos **erro de lag**
+        - Neste caso, o ganho estabiliza em 0.94 logo na 2ª iteração. Ou seja, ficamos com um modelo que quase só replica as medições e introduz alguma memória
+
+# Kalman Multivariável
+- Consideramos um Filtro de Kalman Linear (LKF) assume que o sistema dinâmico é linear
+- Até aqui vimos estimação de parâmetros 1D (distância, temperatura, etc) 
+- Agora vamos ver como fica o filtro quando temos algo multivariável como um **espaço de estado**: $\begin{bmatrix}x\\ y\\ z\end{bmatrix}$ ou  $\begin{bmatrix}x & y & z & \dot{x} & \dot{y} & \dot{z}\end{bmatrix}$
+- Ou podemos até ter um vetor 9D com posições, velocidades ou acelerações
+
+- Assumindo aceleração costante, podemos evoluir o vetor para o próximo instante assim
+$$\begin{cases}
+x_{n}=x_{n-1} + \dot{x}_{n-1}\Delta t + \frac{1}{2} \ddot{x}_{n-1}\Delta t^{2} \\
+y_{n}=y_{n-1} + \dot{y}_{n-1}\Delta t + \frac{1}{2} \ddot{y}_{n-1}\Delta t^{2} \\
+z_{n}=z_{n-1} + \dot{z}_{n-1}\Delta t + \frac{1}{2} \ddot{z}_{n-1}\Delta t^{2} \\
+\dot{x}_{n}=\dot{x}_{n-1} + \ddot{x}_{n-1}\Delta t \\
+\dot{y}_{n}=\dot{y}_{n-1} + \ddot{y}_{n-1}\Delta t \\
+\dot{z}_{n}=\dot{z}_{n-1} + \ddot{z}_{n-1}\Delta t \\
+\ddot{x}_{n}=\ddot{x}_{n-1} \\
+\ddot{y}_{n}=\ddot{y}_{n-1} \\
+\ddot{z}_{n}=\ddot{z}_{n-1} \\
+\end{cases}$$
+mas isto é chato de escrever e é pouco efiicente. É **MUITO** mais fácil fazer isto em matrizes!! Essa é a forma do filtro de Kalman mais útil e comum
+
+## Bases de álgebra
+- Notação:
+    - letras minusculas a negrito $\boldsymbol{x}$ são **vetores**
+    - letras maiusculas a negrito $\mathbf{A}$ são **matrizes**
+    - letras minusculas normais $x$ são *escalares ou elementos de matrizes*
+    - letras maiusculas normais $A$ são *elementos de matriz*
+
+### Álgebra e probabilidades
+#### Valor esperado
+$$\boxed{\mathbb{E}[X]=\mu_{X}}$$
+- E temos as propriedades:
+    - $E[X]=\mu_{X}=\sum x p(x)$
+    - $E[a]=a$
+    - $E[aX]=aE[X]$
+    - $E[a\pm X]=a\pm E[X]$
+    - $E[a\pm bX]=a\pm b E[X]$
+    - $E[X\pm Y]=E[X]\pm E[Y]$
+    - $E[XY]=E[X]E[Y]$
+
+#### Variância
+$$\boxed{V(X) = \mathbb{E}[X^{2}] - \mu_{X}^{2}}$$
+- Temos as propriedades:
+    - $V(a)=0$
+    - $V(a\pm X)=V(X)$
+    - $V(aX)=a^{2}V(x)$
+        - **Cinemática**: podemos aplicar esta equação com uma posição $x$ e velocidade $v$: $$V(x)=\Delta t^{2} V(v) ~~~~,~~~~ \sigma_{x}^{2}=\Delta t^{2}\sigma_{v}^{2}$$
+
+#### COV
+$$\boxed{COV(X,Y) = \mathbb{E}[XY] - \mu_{X}\mu_{Y}}$$
+- E temos as propriedades
+    - $COV(X,Y)=0 ~~,~~ \text{se X,Y são independentes}$
+    - $V(aX)=a^{2}V(X)$ 
+    - $V(X\pm Y)=V(X) + V(Y) \pm 2 COV(X,Y)$
+    - $V(XY)\neq V(X)V(Y)$
+
+### Distribuição normal multivariável
+- Mantemos a notação que acima:
+    - $p_{n,n}$ é a estimativa da variância do instante atual
+    - $p_{n+1,n}$ é a estimativa da variância do próximo instante
+    - $r_{n}$ é a incerteza/variância da próxima medição
+    - $q$ é o ruído de processo
+mas no caso multivariável tudo isto passa a ser matrizes!!! Temos as matrizes $\mathbf{P}_{n,n}, \mathbf{P}_{n+1,n}, \mathbf{R}_{n}, \mathbf{Q}$
+- E usamos isto porque o output do filtro de Kalman normalmente é um VA com n-dimensões: $\boldsymbol{x}=\begin{bmatrix}x\\y \end{bmatrix}$
+
+#### Covariância
+- A covariância mede o quanto 2+ variáveis se relacionam. 
+- No caso 2D, isto significa "quanto é que os dados se relacionam no xOy"
+![[covariancia 2d.png]]
+- Por exemplo, temos que nos 2 plots de cima temos medições com baixa correlação: 
+    - No 1º plot os valores parecem aleatórios
+    - No 2º plot os valores de y são +/- constantes para qualquer valor de x, logo eles não se afetam um ao outro
+- Nos 2 plots de baixo temos medições correlacionadas: em ambos os casos, aumentar X causa uma variação de Y.
+- Podemos então definir covariância como:
+$$COV(X,Y)=\frac{1}{N-1} \sum\limits_{i=1}^{N} (x_{i}-\mu_{X})(y_{i}-\mu_{Y})$$
+que podemos escrever como:
+$$COV(X,Y)=\frac{1}{N-1}\sum\limits_{i=1}^{N}(x_{i}y_{i}) - \frac{N}{N-1}\mu_{X}\mu_{Y}$$
+ou ainda, usando $x,y$ como vetores com forma $N\times1$
+$$COV(X,Y)=\frac{1}{N-1} \boldsymbol{x}^{T}\boldsymbol{y} - \frac{N}{N-1} \mu_{X}\mu_{Y}$$
+
+#### Matriz covariância
+- Vimos como determinar a covariância entre 2 VAs. Mas tendo 2VAs temos 4 combinações possíveis de covariâncias XX, XY, YX, YY
+- É precisamente isso que a matriz de covariância contém:
+$$\boldsymbol{\Sigma} = \begin{bmatrix}\sigma_{xx} & \sigma_{xy} \\ \sigma_{yx} & \sigma_{yy}\end{bmatrix}=\begin{bmatrix}\sigma_{x}^{2} & \sigma_{xy} \\ \sigma_{yx} & \sigma_{y}^{2}\end{bmatrix}=\begin{bmatrix}\text{V}(x) & \text{Cov}(x,y) \\ \text{Cov}(y,x) & \text{V}(y)\end{bmatrix}$$
+- Claro, temos que $\text{Cov}(x,y)=\text{Cov}(y,x)$
+- Se $x,y$ não tiverem correlação, os elementos fora da diagonal principal são zero
+- Em $n$ dimensões temos
+$$\boldsymbol{\Sigma}=\begin{bmatrix} \sigma_{1}^{2} & \sigma_{12} & \cdots & \sigma_{1n} \\ \sigma_{21} & \sigma_{2}^{2} & \cdots & \sigma_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ \sigma_{n1} & \sigma_{n2} & \cdots & \sigma_{n}^{2} \end{bmatrix}$$
+
+##### Propriedades
+1. Os elementos da diagonal principal da matriz são as variâncias dos componentes da VA multivariável.
+    - Se tivermos $\boldsymbol{x}=\begin{pmatrix}x\\y\end{pmatrix}$ teremos $\text{diag}[\boldsymbol{\Sigma}]=\begin{pmatrix}\sigma_{x}^{2} & \sigma_{y}^{2}\end{pmatrix}$
+2. Por serem variâncias, os valores da diagonal são não negativos. Logo, também o traço da matriz é não negativo: $$\text{tr}[\boldsymbol{\Sigma}] = \sum\limits_{i=1}^{n}\boldsymbol{\Sigma}_{ii} \ge 0$$
+3. Como $COV(X,Y)=COV(Y,X)$ temos $\sigma_{ij}=\sigma_{ji}$ e a **a matriz é simétrica**
+4. A matriz é positiva semidefinida
+    - Uma matriz $\mathbf{A}$ é positiva semidefinida se, para qualquer vetor $\boldsymbol{v}\neq0$ temos $\boldsymbol{v}^{T}\mathbf{A}\boldsymbol{v}\ge0$
+    - Isso significa ainda que os valores próprios de $\mathbf{A}$ são não negativos
+
+##### Matriz COV e valor esperado
+- Consideremos os vetores $\boldsymbol{x}=\begin{pmatrix}x_{1} \\ x_{2} \\ \vdots \\ x_{k}\end{pmatrix}~,~ \boldsymbol{\mu}_{x}=\begin{pmatrix}\mu_{x1} \\ \mu_{x2} \\ \vdots \\ \mu_{xk}\end{pmatrix}$
+- Podemos definir a covariância deste vetor como sendo:
+$$\text{COV}(\boldsymbol{x})= \mathbb{E} \{(\boldsymbol{x}-\boldsymbol{\mu}_{x})(\boldsymbol{x} - \boldsymbol{\mu}_{x})^{T}\}$$
+que nos dá uma matriz de covariância com forma $k\times k$
+
+#### Distribuição
+- Em 1D temos:
+$$p(x|\mu,\sigma)=\frac{1}{\sqrt{2\pi}\sigma}\exp \left(- \frac{(x-\mu)^{2}}{2\sigma^{2}} \right)\sim N(\mu, \sigma^{2})$$
+- Ora, num espaço com $n$ dimensões temos:
+$$p(\boldsymbol{x}|\boldsymbol{\mu},\boldsymbol{\Sigma})=\frac{1}{\sqrt{2\pi |\boldsymbol{\Sigma}|}}\exp \left(- \frac{1}{2} (\boldsymbol{x}-\boldsymbol{\mu})^{T}\boldsymbol{\Sigma}^{-1}(\boldsymbol{x}-\boldsymbol{\mu}) \right)$$
+
+#### Normal bivariável
+- Isto é o caso de uma distribuição normal no espaço 3D: temos $z$ a ser definido através de  $x,y$
+![[Attachments/gaussiana 2d.png]]
+Notemos ainda que ao projetar esta curva no plano $z=0$ temos uma elipse:
+![[gaussiana 2d projecao.png]]
+
+#### Elipse de covariância
+- Vamos então ver essa elipse. Ela marca uma curva de contorno da gaussiana que, por exemplo, podemos usar para representar a região $xOy$ onde temos probabilidade de  95%
+- Recordemos os 4 parâmetros que definem uma elipse:
+![[elipse carateristicas.png]]
+temos o ângulo $\theta$, o semieixo maior $a$ e menor $b$ e as coordenadas do seu centro $(\mu_{x},\mu_{y})$
+- E podemos definir todos eles:
+    - $\mu_{x}=\frac{1}{N}\sum_{i} x_{i}$
+    - $\mu_{y}=\frac{1}{N}\sum_{i} y_{i}$
+    - $a=\sqrt{\lambda_{1}}$ (em que $\lambda_{1}$ é o maior valor próprio da matriz $\boldsymbol{\Sigma}$)
+    - $b=\sqrt{\lambda_{2}}$ (em que $\lambda_{2}$ é o segundo maior valor próprio da matriz $\boldsymbol{\Sigma}$)
+    - $\theta=\arctan(\frac{v_{y}}{v_{x}})$ em que $v_{x},v_{y}$ são as coordenadas do vetor próprio associado a $\lambda_{1}$
+
+## Equações e deduções
+### Equação de extrapolação de estado
+- Esta é a equação que permite estimar o estado no próximo instante: $\hat{x}_{n+1,n}$
+- Esta é então a equação em que aplicamos o modelo do sistema dinâmico que descreve o sistema
+- Podemos então definir uma forma geral, que encaixa com o que vimos em 1D
+$$\hat{\boldsymbol{x}}_{n+1,n}= \mathbf{F}\hat{\boldsymbol{x}}_{n,n} + \mathbf{G}\boldsymbol{u}_{n}+\boldsymbol{w}_{n}$$
+em que:
+    - $\hat{x}_{n+1,n}$ é a estimativa do estado no próximo instante
+    - $\hat{x}_{n,n}$ é a estimativa do nosso estado atual
+    - $u_{n}$ é uma variável de controlo ou de input : algo **medível e determinístico**
+    - $w_{n}$ é o ruído de processo : algo **não medível e aleatório**
+    - $\mathbf{F}$ é a matriz de transição de estado
+    - $\mathbf{G}$ é a matriz de controlo ou de transição de input
+- Vejamos as dimensões:
+![[variaveis eq extrapolacao estado.png]]
+- E temos uma esquematização disto
+![[esquema kalman multivariavel.png]]
+- Ao modelar a física de um sistema, o termo de ruído de processo não aparece claro. Ele é introduzido como forma de modelar e explicar a incerteza.
+
+**Inputs VS variáveis de estado**
+- Propriedades físicas do objeto devem ser variáveis de estado
+- Forças externas são inputs, que controlam o estado do objeto
+- Em certos casos, a aceleração do objeto é um input (porque é como se fosse uma força externa). Nestes casos, consideramos a posição e velocidade como principais variáveis
+
+**Exemplos**
+- No site tem alguns exemplos a mostrar como se obtem $\mathbf{F,G}$ e como o sistema fica quando consideramos a aceleração uma variável de estado VS um input externo
+
+**Exemplo: queda livre**
+- Temos um objeto em queda livre. Consideremos que a altura $h$ e velocidade $\dot{h}$ são as variáveis de estado. Temos:
+$$\hat{\boldsymbol{x}}_{n}=\begin{pmatrix}h_{n} \\ \dot{h}_{n}\end{pmatrix}$$
+- Sabemos que $x_{n+1}=x_{n} + \Delta t \dot{x}_{n}$. Assim, temos a matriz $\mathbf{F}$:
+$$\mathbf{F}=\begin{pmatrix}1 & \Delta t \\ 0 & 1\end{pmatrix}$$
+- Consideramos a aceleração da gravidade como sendo um input externo. Ou seja:
+$$\boldsymbol{u}_{n}=\begin{pmatrix}g\end{pmatrix}$$
+- Sabemos que, quanto temos aceleração: $x_{n+1}=x_{n}+\Delta t \dot{x}_{n}+0.5\Delta t^{2}\ddot{x}_{n}$ e $\dot{x}_{n+1}=\dot{x}_{n}+ \Delta t \ddot{x}_{n}$. Assim temos:
+$$\mathbf{G}=\begin{pmatrix} \frac{1}{2}\Delta t^{2} \\ \Delta t\end{pmatrix}$$
+- Juntando tudo:
+$$\boldsymbol{h}_{n+1}= \begin{pmatrix}1 & \Delta t \\ 0 & 1\end{pmatrix}\boldsymbol{h}_{n} + \begin{pmatrix} \frac{1}{2}\Delta t^{2} \\ \Delta t\end{pmatrix}\boldsymbol{u}_{n}$$
+
+### SLITs
+- Um filtro de Kalman linear assume um modelo SLIT
+- Ou seja, o filtro de Kalman assume que o sistema em estudo é Linear e invariante no tempo
+- Ser **linear** implica que:
+$$y(t)=\mathcal{F}[ag(t)+bh(t)]=a \mathcal{F}[g(t)] + b \mathcal{F}[h(t)]$$
+o que significa: a resposta do sistema a um conjunto de inputs é igual à soma das respostas a cada um desses inputs
+
+- Ser **invariante no tempo** implica que a função de transferência é constante no tempo.
+    - Claro, isto não quer dizer que a resposta será constante no tempo
+    - Num sistema invariante no tempo, um atraso de 1 unidade no input causa um atraso de 1 unidade no input
+
+### Modelar sistemas lineares
+- A lógica é esta:
+![[sistemas lineares kalman.png|500]]
+
+#### Espaço de estados
+- Este tipo de representação que já conheço é escrito como
+$$\begin{align*}
+\dot{x}=Ax+Bu\\
+y=Cx+Du
+\end{align*}$$
+- De seguida o site mostra alguns exemplos de como obter a representação SS em sistemas físicos
+- Também se fala no caso de um sistema ser descrito por equações diferenciais de alta ordem. Convertem uma equação numa representação SS na forma canónica controlável
+    - Calculam 2 exemplos físicos em que obtemos a equação diferencial e depois a equação SS
+
+#### Resolver a equação diferencial
+- OK, voltemos a Kalman. Queremos relacionar as equações:
+$$\begin{align*}
+\hat{\boldsymbol{x}}_{n+1,n}&= \mathbf{F}\hat{\boldsymbol{x}}_{n,n}+\mathbf{G}\hat{\boldsymbol{u}}_{n,n}\\
+\dot{x}(t) &= A x(t) + B u(t)
+\end{align*}$$
+
+##### Sem input
+- Num SLIT sem input temos $\dot{x}=Ax$
+- Em 1D podemos escrever $A\equiv k$ e resolvemos a equação diferencial:
+$$\begin{align*}
+\frac{dx}{dt}&= kx\\
+\frac{dx}{x}&= kdt\\
+\ln(x_{1}) - \ln(x_{0})&= k \Delta t\\
+x_{1}&= e^{\ln x_{0}+k\Delta t}\\
+x_{1}&= x_{0}e^{k \Delta t}
+\end{align*}$$
+
+- Em nD ficamos com:
+$$x_{n+1}=x_{n} e^{\mathbf{A}\Delta t}$$
+e temos que a matriz de transição é dada por:
+$$\boxed{\mathbf{F} = \exp(\mathbf{A}\Delta t)}$$
+- Uma forma de calcular a matriz exponencial é por série de Taylor:
+$$\mathbf{F}=e^{\mathbf{A} \Delta t}=\mathbf{I} + \mathbf{A}\Delta t + \frac{(\mathbf{A}\Delta t)^{2}}{2!} + \frac{(\mathbf{A}\Delta t)^{3}}{3!}+\dots$$
+
+##### Com input
+- Não vamos deduzir. O que queremos fazer para obter a equação de extrapolação de estado é *passar SS para um sistema discreto*. Ou seja, considerando que temos um hold sampling de ordem zero, em que o input é constante entre pedaços, temos que
+$$\begin{align*}
+\dot{x}(t)&= \mathbf{A}x(t)+\mathbf{B}u(t)\\
+&\downarrow\\
+\boldsymbol{x}(t+\Delta t)&= e^{\mathbf{A}\Delta t}x(t) + \int_{0}^{\Delta t}e^{\mathbf{A}\Delta t}dt \mathbf{B} u(t)
+\end{align*}$$
+ou seja:
+$$\boxed{\mathbf{G} = \int_{0}^{\Delta t}\exp(\mathbf{A}\Delta t)dt \cdot\mathbf{B}}$$
+
+### Equação de extrapolação de covariância
+- A equação geral é:
+$$\mathbf{P}_{n+1,n}= \mathbf{FP}_{n,n}\mathbf{F}^{T}+\mathbf{Q}$$
+em que:
+    - $\mathbf{P}_{n,n}$ é a matriz de covariância da estimativa de estado atual
+    - $\mathbf{P}_{n+1,n}$ é a covariância da estimativa para o próximo estado
+    - $\mathbf{F}$ é a matriz de transição que deduzimos antes
+    - $\mathbf{Q}$ é a matriz do ruído de processo
+- No site deduzem a equação sem ruído. O ruído é depois adicionado para completar o modelo
+
+### Definir a matriz de ruído Q
+- Em 1D, vimos que o ruído de processo pode ser introduzido no modelo como uma variância extra $q$
+    - Vimos nos exemplos que um $q$ demasiado reduzido faz com que as estimativas não consigam acompanhar as medições.
+    - Já um valor muito elevado faz com que as estimativas sigam cegamente as medições
+- Em nD, vimos a equação de extrapolação de estado:
+$$\hat{\boldsymbol{x}}_{n+1,n}=\mathbf{F}\hat{\boldsymbol{x}}_{n,n}+\mathbf{G}\hat{\boldsymbol{u}}_{n,n}+\boldsymbol{w}_{n}$$
+em que temos o ruído de processo $\boldsymbol{w}_{n}$
+
+- Normalmente assumimos uma matriz diagonal, o que indica que o **ruído é independente**:
+$$\mathbf{Q} = \begin{pmatrix}q_{11} & 0 & \cdots & 0 \\ 0 & q_{22} & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & q_{kk}\end{pmatrix}$$
+- Em certos casos, podemos considerar o ruído dependente do tempo! Ou seja, é algo variável e algo que pertence ao ambiente. Temos 2 tipos:
+    - Modelo de ruído discreto
+    - Modelo de ruído contínuo
+- E se quiseres ver isto direito, compra o livro :)
+
+### Equação de medição
+- Vimos as 2 equações que estimam o futuro, o próximo estado do sistema
+- Agora vamos ver as equações que permitem determinar o estado atual, algo essencial para conseguirmos estimar o futuro
+- Em 1D indicamos as medições como $z_{n}$, com uma variância $r_{n}$
+- Em nD, generalizamos isto:
+$$\boldsymbol{z}_{n}=\mathbf{H} \boldsymbol{x}_{n} + \boldsymbol{v}_{n}$$
+em que
+    - $\boldsymbol{z}_{n}$ é um vetor com as medições de todos os componentes do estado
+    - $\boldsymbol{x}_{n}$ é o vetor de estado **real** (sendo portanto escondido e desconhecido)
+    - $\boldsymbol{v}_{n}$ é um vetor de ruído aleatório
+    - $\mathbf{H}$ é a **matriz de observação**
+- E temos estas formas:
+![[variaveis equacao medicoes kalman.png]]
+
+### Matriz de observação
+- Muitas vezes medimos algo que não é diretamente o estado: um termómetro digital mede corrente, mas o estado que queremos conhecer é a temperatura
+- Assim, usamos uma matriz $\mathbf{H}$ para fazer esta transformação entre o estado do sistema e a medição
+- Notemos, claro, que o número de medições e de variáveis de estado será muitas vezes diferente. Esta matriz pretende tornar os tamanhos compatíveis
+
+#### Scaling
+- Isto é o caso de radares. Enviamos um sinal e medimos o tempo de voo dele, o que nos permite determinar a distância.
+- Fazemos **scaling**:
+$$\boldsymbol{z}_{n}=\begin{pmatrix} \frac{2}{c}\end{pmatrix}\boldsymbol{x}_{n}+\boldsymbol{v}_{n}~~~~\to~~~~ \mathbf{H}=\begin{pmatrix} \frac{2}{c} \end{pmatrix}$$
+- Ou seja, reduzimos todas as medições com uma escala 
+
+#### Escolha de estado
+- Isto é o caso quando medimos apenas alguns dos estados num certo instante. Ou então, quando apenas alguns estados são medíveis.
+- Por exemplo, se apenas o 1º, 3º e 5º estados forem medíveis, temos:
+$$\boldsymbol{z}_{n}=\mathbf{H}\boldsymbol{x}_{n}+\boldsymbol{v}_{n}=\begin{pmatrix}1 & 0 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 & 1\end{pmatrix}\begin{pmatrix}x_{1} \\ x_{2} \\ x_{3} \\ x_{4} \\ x_{5}\end{pmatrix}+\boldsymbol{v}_{n}$$
+
+#### Combinação de estados
+- Para os casos em que só conseguimos medir vários estados juntos, sem os conseguir separar
+$$\boldsymbol{z}_{n}=\mathbf{H}\boldsymbol{x}_{n}+\boldsymbol{v}_{n}=\begin{pmatrix}1 & 1 & 1\end{pmatrix}\begin{pmatrix}x_{1}  \\ x_{2}  \\ x_{3} \end{pmatrix}+\boldsymbol{v}_{n}=(x_{1}+x_{2}+x_{3})+\boldsymbol{v}_{n}$$
+
+### Equação de atualização de estado
+- Seguindo o formato da versão 1D, temos
+$$\hat{\boldsymbol{x}}_{n,n}=\hat{\boldsymbol{x}}_{n,n-1}+ \mathbf{K}_{n}(\boldsymbol{z}_{n}- \mathbf{H}\hat{\boldsymbol{x}}_{n,n-1})$$
+em que
+    - $\mathbf{K}_{n}$ é o ganho de Kalman
+
+- E temos as dimensões:
+![[variaveis eq atualizacao estado.png]]
+notemos especialmente a forma do ganho de Kalman.
+
+
+### Equação de atualização de covariância
+- Consiste em
+$$\mathbf{P}_{n,n}=(\mathbf{I}-\mathbf{K}_{n}\mathbf{H})\mathbf{P}_{n,n-1}(\mathbf{I}-\mathbf{K}_{n}\mathbf{H})^{T} + \mathbf{K}_{n}\mathbf{R}_{n}\mathbf{K}_{n}^{T}$$
+em que
+    - $\mathbf{K}_{n}$ é o ganho de Kalman
+    - $\mathbf{R}_{n}$ é a matriz de covariância do ruído de medição
+    - $\mathbf{I}$ é a matriz identidade com forma $n\times n$
+
+- No site tem toda a dedução desta equação. Quero apenas notar 2 das equações na base da dedução:
+$$\mathbf{P}_{n,n}=\mathbb{E}\{(\boldsymbol{x}_{n}-\hat{\boldsymbol{x}_{n}})(\boldsymbol{x}_{n}-\hat{\boldsymbol{x}_{n}})^{T}\}=\mathbb{E}\{\boldsymbol{e}_{n}\boldsymbol{e}_{n}^{T}\} \quad;\quad \mathbf{R}_{n}=\mathbb{E}\{\boldsymbol{v}_{n}\boldsymbol{v}_n^T\}$$
+(em que $\boldsymbol{e}_{n}=\boldsymbol{x}_{n}-\hat{\boldsymbol{x}}_{n}$ é o erro da estimativa)
+
+### Equação do ganho de Kalman
+- Temos
+$$\mathbf{K}_{n}= \mathbf{P}_{n,n-1}\mathbf{H}^{T}(\mathbf{HP}_{n,n-1}\mathbf{H}^{T} +\mathbf{R}_{n})^{-1}$$
+e notemos as semelhanças à equação 1D equivalente:
+$$k_{n}=\frac{p_{n,n-1}}{p_{n,n-1}+r_{n}}=p_{n,n-1}(p_{n,n-1}+r_{n})^{-1}$$
+
+### Equação de atualização da covariância simplificada
+- Em alguma literatura, podemos ver esta equação muito mais simplificada:
+$$\mathbf{P}_{n,n}=(\mathbf{I}-\mathbf{K}_{n}\mathbf{H})\mathbf{P}_{n,n-1}$$
+- Isto é obtido ao substituir a equação do ganho $\mathbf{K}_{n}$ na segunda parcela da equação completa $\mathbf{P}_{n,n}=(\mathbf{I}-\mathbf{K}_{n}\mathbf{H})\mathbf{P}_{n,n-1}(\mathbf{I}-\mathbf{K}_{n}\mathbf{H})^{T} + \mathbf{K}_{n}\mathbf{R}_{n}\mathbf{K}_{n}^{T}$
+- Isto é uma versão muito mais fácil de memorizar e calcular, mas pode causar erros de cálculo enormes, especialmente devido a erros de floating point. Ou seja: esta equação é **numericamente instável**
+
+## Resumo das equações
+### Algoritmo
+![[algoritmo kalman multivar.png]]
+
+### Equações
+![[resumo equacoes kalman multivariavel.png]]
+
+### Dimensões
+![[resumo variaveis kalman multivariavel.png]]
+
+# Kalman extendido / não linear
+- Não tem nada no site, é preciso comprar o livro :)
+- 

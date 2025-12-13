@@ -15,13 +15,14 @@
     - **Resolução** - menor diferença entre valores de medição seguidos (menor divisão da escala)
     - **Sensibilidade** - rácio de variação da medição para um certo input (relacionado à quantização das medições devido a instrumentos serem digitais)
     - **Linearidade** - um sensor é linear se verificarmos que: $f(ax+by)=af(x)+bf(y)$ em que $ax+by$ é o que estamos a medir e $f(\cdot)$ a medição
-    - **Frequência/rate** - velocidade com que o sensor faz medições
+    - **Frequência/rate** - velocidade com que o sensor faz medições. 
+        - Se for maior permite remover aliasing. Como sei de Métodos Computacionais, a frequência deve ser *o dobro* da frequência do evento que estamos a medir
     - **Erro** - Diferenºa entre a medição $m$ e o valor real $g$: $e=m-g$
         - *Erro sistemático* - devido a desvios na calibração, são determinísticos e podemos compensá-los
         - *Erro aleatório* - Causados por coisas imprevisíveis, apenas probabilísticos
     - **Exatidão** - o quão próximas as medições estão do valor real: $$\text{Exatidão} = 1- \frac{\text{abs}(m-g)}{g}$$
     - **Precisão** - mede a reproducibilidade da medição. 
-        - Consideremos que o ruído aleatório segue uma distribuição $\text{N}(\mu, \delta)$. A precisão é dada por $$\text{Precisão} = \frac{\text{Range}}{\delta}$$
+        - Consideremos que o ruído aleatório segue uma distribuição $\text{N}(\mu, \delta)$. A precisão pode ser vista como a "largura" estatísitca e é dada por $$\text{Precisão} = \frac{\text{Range}}{\delta}$$
 
 ## Tipos de sensores
 ### Beacons (GPS)
@@ -34,14 +35,14 @@
 ### Sensores de motores/rodas
 - Medem o estado interno e dinâmica de um robot móvel (velocidade, sentido). 
 - Estamos principalmente a falar de **encoders**! Falaremos apenas  dos óticos. 
-    - *Encoders absolutos* - 
-    - *Encoders relativos* -
+    - *Encoders absolutos* - temos um padrão mais complexo. Com ele, conseguimos saber o ângulo do mmotor sem precisar dum sistema mecânico. São mais caros
+    - *Encoders relativos* - temos um padrão simples, que não permite determinar a orientação. Apenas conseguimos estimar a velocidade e saber a direção de rotação (se tivermos um index track). São mais baratos
 - Ambos os casos aproveitam buracos num disco para determinar a velocidade de rotação e sentido. Os buracos vão fazendo com que a quantidade de luz que chega ao encoder varie, o que permite detetar o movimento: medimos um sinal rising edge (onda quadrada).
 - Nos casos com padrões mais complexos, temos variação de intensidade de luz muito mais controlada e específica. Isto permite-nos determinar a **posição/ângulo** do motor!
     - Num caso só com riscas apenas medimos picos equivalentes a 0 ou 1
     - Num caso complexo podemos medir de 0 a 1, com resoluções elevadas. Isto significa então que conseguimos saber em que posição do circulo estamos através da intensidade medida!!!
 ![[tipos de encodres modelo.png]]
-(Podemos ver o caso de um encoder simples e um complexo)
+(Podemos ver o caso de um encoder relativo e um absoluto)
 - Uma medida de performance de encoders é CPR (ciclos por revolução) que indica quantos picos de luz vão ser medidos em 1 volta. O normal é 2k-10k
 
 ### Sensores de Heading/Orientação
@@ -62,6 +63,7 @@
 
 #### IMU (Inertial Measurement Unit)
 - Junta um giroscópio e um acelerómetro. Assim obtemos os **6 graus de liberdade**: 3 de posição e 3 de aceleração
+- É possível usar os dados do IMU para integrar a aceleração e obter a velocidade. Mas como sabemos que acontece nos PIDs, integrais rapidamente acumulam erro!!
 
 ### Sensores de Range/Distância
 #### Sensor ultrassónico
@@ -81,6 +83,9 @@ $$d= \frac{c\cdot t}{2}$$
 - NÃO devemos ter vários sensores ultrassons juntos:
     - Se estiverem juntos devemos tentar que tenham frequências distintas
     - Mesmo nesse caso, eles devem fazer medições de forma não-simultânea
+    - Nisto, notemos que uma frequência maior significa que temos menos range de medição porque a onda penetra menos
+- Outra coisa a notar é que o som propaga-se isotropicamente no ar. Assim, um objeto a uma distância $d$ do sensor, pode estar um vários ângulos:
+![[pmap radar isotropico]]
 
 #### Echo / Sonars
 - Sensores que produzem ondas sonoras de frequências específicas e detetam os ecos destas ondas, após refletidas em objetos.

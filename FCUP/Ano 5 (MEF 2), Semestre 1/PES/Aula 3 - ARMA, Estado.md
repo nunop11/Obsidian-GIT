@@ -89,6 +89,7 @@ $$\begin{align*}
 $$A(q^{-1})y(t)=C(q^{-1})e(t)$$
 e temos a função de transferência 
 $$H(q)=\frac{C(q^{-1})}{A(q^{-1})}$$
+em que notemos que $C(q^{-1}),A(q^{-1})$ são estáveis e que $C(0)=1$
 
 ### Estimador
 - Aplicamos mais uma vez a mesma lógica que acima e obtemos:
