@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4489e04ccea838fa",
+        "id": "86635177191814b0",
         "type": "tabs",
         "children": [
           {
-            "id": "4869c0a99e34d57e",
+            "id": "19fa570e46c236a6",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -206,8 +206,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "4869c0a99e34d57e",
+  "active": "b8b9b4ec01b7d208",
   "lastOpenFiles": [
+    "Excalidraw/Assinatura.md",
+    "Excalidraw/diferentes profundidades.md",
     "Attachments/FCUP/A5S1/PES/luenberger adaptado para perturbacao - 4 observadores zoomed.png",
     "Attachments/FCUP/A5S1/PES/janela bartlett.png",
     "Attachments/FCUP/A5S1/PES/hann.png",
@@ -218,7 +220,6 @@
     "Attachments/FCUP/A5S1/PES/dividir sinal em estocastico e deterministico.png",
     "Attachments/FCUP/A5S1/PES/blackman.png",
     "Attachments/FCUP/A5S1/PES/previsor vs filtro kalman.png",
-    "Attachments/FCUP/A5S1/PES/luenberger adaptado para perturbacao - resultados.png",
     "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 9 - Kalman..md",
     "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 10 - Navegação Inercial, SLAM.md",
     "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 8 - Observadores.md",
@@ -243,7 +244,6 @@
     "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 1 - Introdução.md",
     "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 11 - SLAM.md",
     "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 6 - Multiview.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 2 - Densidade espectral.md",
     "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Extras",
     "Untitled.base",
     "Attachments/FCUP/A5S1/Tese",
