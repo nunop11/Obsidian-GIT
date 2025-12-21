@@ -8,40 +8,38 @@
 
 ### TAM
 #### Lares
-- Nesta parte assumimos que todos os lares aderem e grande parte das famílias também
-- Subscrição mensal do software institucional + aluger das caixas ao lar custe 3 euros por utente por mês. **Mercado**: 3x12x100k = 3.6M
+- Nesta parte assumimos que todos os lares a derem e grande parte das famílias também
+- Subscrição mensal do software institucional + aluger das caixas ao lar custe 4 euros por 10 utentes por mês. **Mercado**: 4x12x100k/10 = 480k
     - Para este preço basiei-me no preço de 2€/utente praticado por softwares de gestão de lares (https://mysenior.com/prices)
 - Aqui assumimos que a caixa e software poderiam ser usados por todos os doentes em todos os lares. Isto assume que em lares temos mais de 77% de idosos a tomar vários medicamentos
 
 #### Casas
 - Vimos que existem 2.4M de idosos em portugal. Destes, 2.3M não estão em lares.
     - Destes, 77% precisam de tomar vários medicamentos logo poderão usar as caixas: 1.77M de utentes 
-    - Consideremos que 50% destes têm família próxima E poderiam/saberiam/teriam meios para usar o nosso produto. 
-    - Temos 885k clientes
-- Consideremos que a subscrição de funcionalidades extra no software para famílias (app) é de 3€ mensais. **Mercado:** 3x12x885k=31.86M (na prática a pessoa teria a opção de apenas pagar quando quiserem e cancelarem quando quiserem, conforme quando precisam de tomar medicamentos)
+- Consideremos que a subscrição de funcionalidades extra no software para famílias (app) é de 6€ mensais. **Mercado:** 6x12x1.77M=127.44M (na prática a pessoa teria a opção de apenas pagar quando quiserem e cancelarem quando quiserem, conforme quando precisam de tomar medicamentos)
     - Escolhi este valor porque está na gama de valores de subscrições anuais de produtos de gestão familiar
-- Neste caso a caixa seria vendida e não alugada, trazendo a aplicação base de graça consigo. Consideremos que custa 25 euros e tem um tempo de vida/garantia de 5 anos. Isto quer dizer que temos um rendimento anual médio de **Mercado:** 25/5 x 885k=4.4M
+- Neste caso a caixa seria vendida e não alugada, trazendo a aplicação base de graça consigo. Consideremos que custa 25 euros e tem um tempo de vida/garantia de 5 anos. Isto quer dizer que temos um rendimento anual médio de **Mercado:** 30/5 x 1.77M=10.6M
 
 #### Total
 - Temos um TAM total:
-$$\text{TAM}=3.6+31.86+4.4=39.9\text{M€}$$
+$$\text{TAM}=0.48+127.44+10.6=138.88\text{M€}$$
 - Notemos que temos a maior "fatia" deste mercado nas subscrições da app para famílias
 
 ### SAM
 - Este consiste em restringir o TAM, considerando que realisticamente nem todos os clientes vão aderir ao nosso produto
 - *Lares*
-    - Adoção do software + aluguer de caixas (terão que adotar sempre as 2 coisas): 40%. **Mercado:** 0.4x3.6M = 1.4M
+    - Adoção do software + aluguer de caixas (terão que adotar sempre as 2 coisas): 60%. **Mercado:** 0.6x480k = 288k
 - *Casas*
-    - Adoção da caixa: 40%. **Mercado:** 0.4x4.4 = 1.76M
-    - Adoção do software com subscrição (menor que da caixa): 20%. **Mercado:** 0.2x31.86M = 6.3M
+    - Adoção da caixa: 40%. **Mercado:** 0.4x10.6M = 4.24M
+    - Adoção do software com subscrição (menor que da caixa): 20% *desses 40%*. **Mercado:** 0.2x0.4x127.44M = 10.6M
 
 - Temos o SAM:
-$$\text{SAM}=1.4 + 1.76 + 6.3 = 9.46 \text{M€}$$
-que é cerca de 25%
+$$\text{SAM}=0.288 + 4.24 + 10.6 = 15.13 \text{M€}$$
+que é cerca de 10.9% do TAM
 
 ### SOM
-- Consideramos que nos primeiros 3 anos conseguimos atingir 10% do nosso SAM. Assim teremos um SOM de:
-$$\text{SOM}=946\text{k€}$$
+- Consideramos que nos primeiros 5 anos conseguimos atingir 10% do nosso SAM. Assim teremos um SOM de:
+$$\text{SOM}=1.51\text{M€}$$
 
 ## NOTAS
 - Este valor não é alto, mas apenas estamos a considerar portugal. Se considerassemos a UE isto seria muito maior

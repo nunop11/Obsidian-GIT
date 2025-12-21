@@ -1,4 +1,4 @@
-    # Previsor e filtro de Kalman
+# Previsor e filtro de Kalman
 ## Sistemas com perturbações
 - Na aula anterior vimos como se pode estimar as variáveis de estado de SLITs
 - No entanto apenas vimos sistemas **sem perturbações**. Ora, estas perturbações podem ser ruído ou funções determinísticas. De qualquer forma, são algo importante e que temos de saber modelar

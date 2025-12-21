@@ -1,4 +1,4 @@
-No final da aula anterior vimos que podemos definir um filtro de Kalman em steady state a partir desta assunção:
+ No final da aula anterior vimos que podemos definir um filtro de Kalman em steady state a partir desta assunção:
 $$(x|z=z_{0})\sim N(x^{+},P^{+})$$
 
 ## Estimação não linear

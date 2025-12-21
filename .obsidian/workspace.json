@@ -4,17 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "86635177191814b0",
+        "id": "9a8bdaa3fb4deabe",
         "type": "tabs",
         "children": [
           {
-            "id": "19fa570e46c236a6",
+            "id": "7f1f129673e07d0d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Assumptions Nuno.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Assumptions Nuno"
+            }
+          },
+          {
+            "id": "03a6735487709bd9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/TAMSAMSOM - projeto.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TAMSAMSOM - projeto"
             }
           }
         ]
@@ -90,6 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 12 - Deduções SLAM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +118,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Aula 12 - Deduções SLAM"
             }
           },
           {
@@ -189,7 +208,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 217.5
+    "width": 217.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,44 +226,44 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "b8b9b4ec01b7d208",
+  "active": "7f1f129673e07d0d",
   "lastOpenFiles": [
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/TAMSAMSOM - projeto.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Assumptions Nuno.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Preencher excel.md",
+    "Untitled.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 12 - Deduções SLAM.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 9 - Estimação não linear.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 6 - Estimar ARMA.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 7 - Não estacionário.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 8 - Observadores.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 9 - Kalman..md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 8 - Estimação linear.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 11 - SLAM.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/PMAP - INDEX.md",
+    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 10 - Navegação Inercial, SLAM.md",
+    "Attachments/Pasted image 20251214002839.png",
+    "Attachments/Pasted image 20251214001953.png",
+    "Attachments/Pasted image 20251214001837.png",
+    "Attachments/Pasted image 20251214001617.png",
+    "Attachments/Pasted image 20251214001406.png",
+    "Attachments/Pasted image 20251213235612.png",
+    "Attachments/Pasted image 20251213235442.png",
+    "Attachments/Pasted image 20251213235313.png",
+    "Attachments/Pasted image 20251213235046.png",
+    "Attachments/Pasted image 20251213234931.png",
     "Excalidraw/Assinatura.md",
     "Excalidraw/diferentes profundidades.md",
-    "Attachments/FCUP/A5S1/PES/luenberger adaptado para perturbacao - 4 observadores zoomed.png",
-    "Attachments/FCUP/A5S1/PES/janela bartlett.png",
-    "Attachments/FCUP/A5S1/PES/hann.png",
-    "Attachments/FCUP/A5S1/PES/hamming.png",
-    "Attachments/FCUP/A5S1/PES/fourier de bartlett.png",
-    "Attachments/FCUP/A5S1/PES/fourier bartlett diferentes L.png",
-    "Attachments/FCUP/A5S1/PES/flat-top.png",
-    "Attachments/FCUP/A5S1/PES/dividir sinal em estocastico e deterministico.png",
-    "Attachments/FCUP/A5S1/PES/blackman.png",
-    "Attachments/FCUP/A5S1/PES/previsor vs filtro kalman.png",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 9 - Kalman..md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 10 - Navegação Inercial, SLAM.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 8 - Observadores.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 7 - Não estacionário.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 9 - Estimação não linear.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 8 - Estimação linear.md",
     "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 10 - Não paramétrico.md",
     "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 1 - Processos estocásticos.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 6 - Estimar ARMA.md",
     "FCUP/Ano 4 (MEF 1), Semestre 1/SDC/Projeto/Ex5.md",
     "FCUP/Ano 4 (MEF 1), Semestre 1/SDC/Projeto/Ex4.md",
     "FCUP/Ano 4 (MEF 1), Semestre 1/SDC/Projeto/Linearização (Notas aula).md",
     "FCUP/Ano 4 (MEF 1), Semestre 1/SDC/Projeto/Ex7.md",
     "FCUP/Ano 4 (MEF 1), Semestre 1/SDC/Projeto/Ex6.md",
     "FCUP/TESE/Notas sobre ajustes de pontos.md",
-    "Untitled.md",
     "FCUP/TESE/NOTAS software picorobot.md",
     "FCUP/TESE/Regras Robot@Factory.md",
-    "FCUP/TESE/Notas Kalman.net.md",
-    "FCUP/TESE/Notas git.md",
-    "FCUP/TESE/Calcular distância vertical.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 1 - Introdução.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 11 - SLAM.md",
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Aula 6 - Multiview.md",
     "FCUP/Ano 5 (MEF 2), Semestre 1/PMAP/Extras",
     "Untitled.base",
     "Attachments/FCUP/A5S1/Tese",

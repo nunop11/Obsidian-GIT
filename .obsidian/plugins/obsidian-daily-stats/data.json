@@ -31,12 +31,18 @@
     "2025/11/8": 1202,
     "2025/11/9": 62,
     "2025/11/11": 0,
-    "2025/11/12": 0
+    "2025/11/12": 0,
+    "2025/11/13": 1997,
+    "2025/11/14": 2945,
+    "2025/11/16": 838,
+    "2025/11/18": 1,
+    "2025/11/20": 472,
+    "2025/11/21": 210
   },
   "todaysWordCount": {
-    "FCUP/Ano 5 (MEF 2), Semestre 1/PES/Aula 8 - Observadores.md": {
-      "initial": 1146,
-      "current": 1146
+    "FCUP/Ano 5 (MEF 2), Semestre 1/Empreendedorismo/Assumptions Nuno.md": {
+      "initial": 472,
+      "current": 682
     }
   }
 }
