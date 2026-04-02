@@ -107,7 +107,7 @@ P_{k}&= P_{k}^{-}-K_{k}S_{k}K_{k}^{T}
 obtendo $\mu_{k},P_{k}$ que nos dão a distribuição de $x_{k}$
 - Este método tenta linearizar o sistema $f(x)$. Enquanto sabemos que o filtro de Kalman normal dá **sempre** a solução óptima, o EKF pode não funcionar de todo.
 
-## Transformada unsected (sem cheiro)
+## Transformada unscented (sem cheiro)
 - Novamente, assumimos $x\sim N(\mu,P)$ e $z=h(x)$ (sem ruído)
 
 ### Sigma

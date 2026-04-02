@@ -131,13 +131,13 @@
         - Estado entrado manualmente para testes
         - Ligar modo de controlo `cm_pid`
     - *MODOS DE MOVER*
-    - **ts_set_theta** - Modo "set theta"
+    - **ts_set_theta (110)**  - Modo "set theta"
         - Ligar modo de controlo `cm_kinematics`
         - Aplicar função `set_theta` do `trajectories.cpp`
-    - **ts_goto_xy** - Modo "ir para ponto x,y"
-    - **ts_follow_line** - Modo "seguir linha"
-    - **ts_follow_circle** - Modo "seguir circulo"
-    - **ts_follow_track** - Modo de seguir pista com sensor IR
+    - **ts_goto_xy (111)** - Modo "ir para ponto x,y"
+    - **ts_follow_line (112)** - Modo "seguir linha"
+    - **ts_follow_circle (113)** - Modo "seguir circulo"
+    - **ts_follow_track (114)** - Modo de seguir pista com sensor IR
         - Todos estes últimos 4 funcionam igual ao `set_theta`
         - Todos estes estados são entrados manualmente ou noutros ficheiros
     - *CONTROLAR TENSÃO*

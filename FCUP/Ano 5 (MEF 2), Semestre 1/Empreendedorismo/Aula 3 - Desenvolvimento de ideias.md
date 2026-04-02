@@ -8,7 +8,7 @@
 - **2 - multiplicar estímulos**
     - brainstorm
     - brain-write
-    - arranjar ideias criativas e inovadoras
+    - arranjar ideias criativas e inovadorasf
 - **3 - criar conceitos para o consumidor**
     - construir um ou vários mockups
 - **4 - optimizar praticalidade**

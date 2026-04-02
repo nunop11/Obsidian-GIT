@@ -5,4 +5,3 @@
 - **Processamento Estatístico de Sinal (PES)** - [[PES - INDEX]]
 
 - **Perceção e Mapeamento (PMAP)** - [[PMAP - INDEX]]
-

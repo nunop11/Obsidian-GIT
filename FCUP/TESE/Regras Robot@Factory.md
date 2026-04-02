@@ -37,11 +37,11 @@ e temos as paredes que serão medidas pelo LIDAR
 ![[armazem e suas parede - raf.png]]
 
 - Temos as **_informações das paredes_**:
-    - Parede esquerda: 
+    - Máquina esquerda: 
         - Arucos em $(-357.5, 0)~;~(-337.5,0)~;~(-357.5,-150)~;~(-337.5,-150)$
         - Centro dos pares de arucos: $(-347.5,0)~;~(-347.5,-150)$
         - Centro da parede: $(-347.5,-75)$ com orientação YY e comprimento de 32cm
-    - Parede esquerda: 
+    - Máquina direita: 
         - Arucos em $(357.5, 0)~;~(337.5,0)~;~(357.5,150)~;~(337.5,150)$
         - Centro dos pares de arucos: $(347.5,0)~;~(347.5,150)$
         - Centro da parede: $(347.5,75)$ com orientação YY e comprimento de 32cm 

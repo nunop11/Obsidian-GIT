@@ -123,7 +123,7 @@ $$(X-\mu)^{T}\Sigma^{-1}(X-\mu)=s$$
 $$\Sigma=\begin{pmatrix}\sigma_{X}^{2} & 0 \\ 0 & \sigma_{Y}^{2}\end{pmatrix}~~\to~~ \left(\frac{x}{\sigma_{X}}\right)^{2}+\left(\frac{y}{\sigma_{Y}}\right)^{2}=s$$
 em que temos uma elipse simples. $\sigma_{X},\sigma_{Y}$ controlam os eixos. 
 - Ao aumentar o $s$ aumentamos a área e a probabilidade contida:
-![[elipse incerteza.png]]
+![[elipse incerteza.png|600]]
 
 # Sistemas lineares estocásticos
 - Temos um sistema SS discreto:
