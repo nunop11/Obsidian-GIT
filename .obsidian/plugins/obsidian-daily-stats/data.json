@@ -66,12 +66,23 @@
     "2026/2/5": 624,
     "2026/2/6": 2147,
     "2026/2/17": 377,
-    "2026/2/18": 0
+    "2026/2/18": 0,
+    "2026/3/6": 49,
+    "2026/3/7": 2053,
+    "2026/3/8": 4177
   },
   "todaysWordCount": {
-    "FCUP/Ano 4 (MEF 1), Semestre 2/TLA 2/Materiais/T4M - Raman/T4M - Notas aula Nuno.md": {
-      "initial": 1675,
-      "current": 1675
+    "FCUP/TESE/CEDME - Notas cap3.md": {
+      "initial": 9,
+      "current": 2121
+    },
+    "FCUP/TESE/CEDME - Notas cap4.md": {
+      "initial": 0,
+      "current": 1023
+    },
+    "FCUP/TESE/CEDME - Notas cap1.md": {
+      "initial": 0,
+      "current": 1042
     }
   }
 }
