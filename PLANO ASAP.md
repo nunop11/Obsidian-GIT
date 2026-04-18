@@ -1,0 +1,21 @@
+- FAZER ARTIGO
+- Tenho feito:
+    - Convergencias EKF
+    - Estudo COV sem EKF
+- É preciso fazer:
+    - ARTIGOOOO !!!!
+    - Melhorar estabilidade de EKF
+    - Melhorar movimento - parar menos
+    - Correção movimento - tentar meter isto a funcionar (não é preciso pista para ficar bem)
+        - Código para o robot rodar a velocidade constante: digo velocidade, calculo v1,v2 e ele roda
+    - Perceber se há algum erro no lidar.cpp
+
+- Para a reunião 20/4
+    - Artigo v1 (POR COMEÇAR LOL)
+        - Explicar contexto
+        - Como fiz calibração (explicar muito bem, sem erros estatisticos)
+        - Analise e conclusões: tentar descobrir cenas do funcionamento deste LiDAR concreto
+        - Algoritmo linhas e pose (resumidos do artigo OL2A)
+    - Teste COV - mau mas dá para ter uma ideia (repetir em viana) (A MELHORAR)
+    - Teste EKF - ótimo, melhorar ficheiro (FEITO)
+    - Correção movimento e demo a rodar -- fazer vídeo invés de mostrar (IMPROVAVEL)
